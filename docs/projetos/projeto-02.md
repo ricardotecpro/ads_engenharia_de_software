@@ -1,43 +1,18 @@
-# Projeto 02 - Calculadora de IMC
+# Projeto 02 - Escolha do Processo e Roadmap
 
 ## 🎯 Objetivo
-Criar um programa que peça as informações físicas do usuário e calcule seu Índice de Massa Corporal (IMC).
+Organizar as funcionalidades definidas na Aula 01 em um Roadmap de entregas (abordagem Ágil).
 
-## 📋 Requisitos
+## 📝 Descrição
+Em vez de tentar fazer tudo de uma vez (Big Bang), vamos planejar o desenvolvimento em ciclos. Isso permite que tenhamos uma versão funcional do To-Do App o mais rápido possível.
 
-O programa deve solicitar:
-1. O nome do usuário.
-2. O peso (em kg). Permita números quebrados (ex: 70.5).
-3. A altura (em metros). Permita números quebrados (ex: 1.75).
+## 🚀 Passo a Passo
+1.  Recupere a lista de funcionalidades da Aula 01.
+2.  Classifique cada item em uma das 3 fases:
+    - **Fase 1 (MVP - Mínimo Produto Viável)**: O que é essencial? Sem isso, o app não serve para nada (ex: "Criar Tarefa").
+    - **Fase 2 (Melhorias)**: O que seria muito bom ter? (ex: "Editar Tarefa").
+    - **Fase 3 (Polimento)**: O que é legal, mas pode esperar? (ex: "Modo Escuro", "Categorias Coloridas").
+3.  Crie uma tabela ou lista com essa divisão.
 
-O cálculo do IMC é:
-$$
-IMC = \frac{Peso}{Altura^2}
-$$
-
-## 💡 Saída Esperada
-
-O programa deve exibir uma mensagem amigável com o resultado arredondado (opcional: pesquise sobre `round()`).
-
-Exemplo:
-```text
-Calculadora de IMC
-------------------
-Qual seu nome? Carlos
-Qual seu peso (kg)? 80
-Qual sua altura (m)? 1.80
-
-Olá, Carlos!
-Seu IMC é: 24.69
-```
-
-## 👣 Passo a Passo
-
-1. Use `input()` para ler os dados.
-2. Converta (`float()`) os dados de peso e altura imediatamente.
-3. Aplique a fórmula matemática. Lembre-se que "ao quadrado" é `** 2`.
-4. Use `print()` com f-strings para mostrar o resultado formatado.
-5. (Extra) Tente formatar o número para mostrar apenas 2 casas decimais: `{imc:.2f}`.
-
-## 🚀 Desafio Extra
-Pesquise como usar a tabela de classificação do IMC e exiba (apenas visualmente no print, sem condicionais ainda) a tabela para o usuário comparar o resultado dele.
+## 📤 Entrega
+Adicione essa tabela de planejamento ao seu documento do projeto. Agora temos um plano de execução!

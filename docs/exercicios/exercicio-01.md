@@ -1,38 +1,13 @@
-# Exercícios - Aula 01
+# Exercício 01 - Fundamentos da Engenharia de Software
 
-## 1. Olá, você!
-Crie um programa que imprima na tela a frase: "Olá, meu nome é [Seu Nome] e eu estou aprendendo Python!".
+## 🛠 Questões Práticas
 
-## 2. Etiqueta
-Escreva um programa que imprima seu endereço completo em múltiplas linhas, como se fosse uma etiqueta de correspondência:
-Exemplo:
-```text
-Destinatário: João Silva
-Rua das Flores, 123
-Bairro: Jardim Python
-CEP: 12345-678
-Cidade: São Paulo - SP
-```
+**1. Identificação de Fases**
+Pense em um aplicativo que você usa diariamente (ex: Instagram, WhatsApp). Liste uma atividade que provavelmente ocorreu na fase de *Design* e uma na fase de *Testes* durante o desenvolvimento desse app.
+*Dica: Design envolve interfaces e bancos de dados; Testes envolvem encontrar bugs.*
 
-## 3. Desenho ASCII
-Use múltiplos comandos `print()` para desenhar uma forma geométrica ou um objeto simples usando caracteres.
-Exemplo (Quadrado):
-```text
-*****
-*   *
-*   *
-*****
-```
+**2. Cenário de Erro**
+Se um erro grave (crítico) é descoberto apenas na fase de *Implantação* (quando o usuário já está usando), qual fase anterior provavelmente falhou em detectá-lo? Por que corrigir esse erro agora é muito mais caro do que se tivesse sido corrigido no início?
 
-## 4. Letra de Música
-Escolha o refrão de sua música favorita e escreva um programa que o imprima na tela, respeitando as quebras de linha.
-
-## 5. Receita de Bolo (Algoritmo)
-Escreva, usando comentários (`#`), os passos (algoritmo) para fazer um sanduíche.
-Depois, use `print()` para exibir apenas a frase "Sanduíche pronto!".
-
-```python
-# 1. Pegar duas fatias de pão
-# ... continue ...
-print("Sanduíche pronto!")
-```
+**3. Debate: Codificar direto?**
+Muitos iniciantes querem pular direto para a fase de *Codificação* sem fazer *Requisitos* ou *Design*. Por que isso pode ser perigoso para um projeto profissional? Cite dois riscos.

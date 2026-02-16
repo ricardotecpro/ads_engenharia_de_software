@@ -1,100 +1,28 @@
-# Aula 12
-## Tratamento de Erros e Exceções
+# Slide 12 - Segurança de Software
 
-![bg right:40% 80%](https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg)
+## Slide 1: Título
+- **Título**: Segurança de Software
+- **Subtítulo**: Aula 12 - Protegendo o Sistema
 
----
+## Slide 2: A Tríade CIA
+- **C**onfidencialidade (Sigilo).
+- **I**ntegridade (Precisão).
+- **D**isponibilidade (Acesso).
 
-## 🎯 Objetivos
+## Slide 3: Autenticação vs. Autorização
+- **Autenticação**: Identidade (Crachá).
+- **Autorização**: Permissão (Onde o crachá abre).
 
-- Impedir que o programa quebre ("Crash").
-- Blocos `try`, `except`, `else`, `finally`.
-- Tipos comuns de erros.
-- Lançar exceções (`raise`).
+## Slide 4: O Principal Inimigo
+- **Input do Usuário**: Nunca confie no que o usuário digita.
+- SQL Injection.
+- XSS (Cross-Site Scripting).
 
----
+## Slide 5: Security by Design
+- Segurança não é "cereja do bolo". É ingrediente da massa.
+- Pensar em segurança desde os Requisitos.
 
-## 💥 O Problema
-
-O mundo real é caótico. Usuários digitam errado, arquivos somem, a internet cai.
-
-```python
-x = int(input("Número: "))
-# Se digitar "oi", o programa FECHA com erro vermelho.
-```
-
-Precisamos lidar com isso elegantemente.
-
----
-
-## 🛡️ A Estrutura Básica
-
-```python
-try:
-    # Tente fazer isso...
-    x = int(input("Número: "))
-    print(10 / x)
-
-except ValueError:
-    # Se der erro de valor (texto em vez de num)
-    print("Digite apenas números!")
-
-except ZeroDivisionError:
-    # Se tentar dividir por zero
-    print("Não pode dividir por 0!")
-
-except Exception as e:
-    # Qualquer outro erro
-    print(f"Erro desconhecido: {e}")
-```
-
----
-
-## ☀️ Else e Finally
-
-```python
-try:
-    arquivo = open("dados.txt", "r")
-except FileNotFoundError:
-    print("Erro ao abrir.")
-else:
-    # Só executa se o TRY deu certo
-    print("Arquivo aberto com sucesso!")
-    conteudo = arquivo.read()
-finally:
-    # Executa SEMPRE (dando erro ou não)
-    print("Finalizando operação...")
-```
-
----
-
-## 🤚 Raise (Levantar erro)
-
-Você pode criar suas próprias regras.
-
-```python
-def sacar(saldo, valor):
-    if valor > saldo:
-        raise ValueError("Saldo insuficiente!")
-    
-    return saldo - valor
-
-try:
-    sacar(100, 500)
-except ValueError as e:
-    print(f"Falha no saque: {e}")
-```
-
----
-
-## 🏁 Resumo
-
-1. Use `try/except` para código perigoso (I/O, Conversão).
-2. Capture erros específicos (`ValueError` é melhor que `Exception`).
-3. O programa não para se o erro for tratado.
-4. `finally` é ótimo para fechar recursos.
-
----
-
-# Prática! 🚀
-Vamos blindar nossos códigos.
+## Slide 6: Resumo
+- Hackers procuram o elo mais fraco.
+- Mantenha bibliotecas atualizadas.
+- O maior erro é achar que "ninguém vai tentar me atacar".

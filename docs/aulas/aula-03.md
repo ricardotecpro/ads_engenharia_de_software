@@ -1,166 +1,111 @@
-# Aula 03 - Operadores
+# Aula 03 – Metodologias Ágeis: Scrum e Kanban
 
-## 🎯 Objetivos da Aula
-
-- [ ] Revisar Operadores Aritméticos
-- [ ] Aprender Operadores de Comparação (Relacionais)
-- [ ] Dominar Operadores Lógicos (`and`, `or`, `not`)
-- [ ] Conhecer Operadores de Atribuição (`+=`, `-=`, etc.)
-- [ ] Entender a Precedência de Operadores
-
----
+## 🎯 Objetivos de Aprendizagem
+- Aprofundar o conhecimento em metodologias Ágeis.
+- Entender o framework Scrum (Papéis, Artefatos, Eventos).
+- Entender o método Kanban (Visualização e fluxo).
+- Diferenciar Scrum de Kanban.
 
 ## 📚 Conteúdo
 
-### 1. Operadores Aritméticos (Revisão)
+### 1. Scrum: O Framework Mais Popular
+O Scrum é uma estrutura para gerenciar trabalhos complexos. Ele divide o tempo em ciclos chamados **Sprints** (geralmente 2 semanas).
 
-Já vimos os básicos (`+`, `-`, `*`, `/`), mas vale relembrar e aprofundar:
+#### Os Papéis (Quem faz o quê?)
+- **Product Owner (PO)**: Representa o cliente. Decide *O QUE* será feito (o "Dono do Produto").
+- **Scrum Master**: Garante que o time siga as regras do Scrum e remove impedimentos.
+- **Time de Desenvolvimento**: Quem constrói o software (Designers, Devs, Testers).
 
-```python
-x = 10
-y = 3
+#### Os Artefatos (Documentos)
+- **Product Backlog**: Lista de tudo que o produto precisa ter.
+- **Sprint Backlog**: Lista do que será feito *nesta* Sprint.
+- **Incremento**: O pedaço do software pronto ao final da Sprint.
 
-print(x + y)  # Soma: 13
-print(x - y)  # Subtração: 7
-print(x * y)  # Multiplicação: 30
-print(x / y)  # Divisão: 3.333...
-print(x // y) # Divisão Inteira: 3 (IMPORTANTE!)
-print(x % y)  # Módulo (Resto): 1  (IMPORTANTE!)
-print(x ** y) # Potência: 1000
-```
+#### Os Eventos (Reuniões)
+- **Sprint Planning**: Planejar o que fazer.
+- **Daily Scrum**: Reunião diária de 15 min para alinhar o time.
+- **Sprint Review**: Mostrar o trabalho pronto ao cliente.
+- **Sprint Retrospective**: Discutir como melhorar o processo.
 
-> 💡 **Dica:** O operador de módulo (`%`) é muito usado para saber se um número é par ou ímpar.
-> `numero % 2 == 0` (Par)
-> `numero % 2 == 1` (Ímpar)
+### 2. Kanban: Fluxo Contínuo
+O Kanban (placa visual) foca em visualizar o trabalho e limitar a quantidade de coisas sendo feitas ao mesmo tempo.
 
-### 2. Operadores de Comparação (Relacionais)
+- **Quadro Kanban**: Colunas como "A Fazer" (To Do), "Fazendo" (In Progress), "Feito" (Done).
+- **Sem Sprints fixas**: O trabalho flui continuamente. Terminou uma tarefa? Puxa a próxima.
 
-Usados para comparar dois valores. O resultado é **SEMPRE** um Booleano (`True` ou `False`).
-
-| Operador | Significado | Exemplo (`x=5`, `y=10`) | Resultado |
-| :---: | :--- | :--- | :--- |
-| `==` | Igual a | `x == y` | `False` |
-| `!=` | Diferente de | `x != y` | `True` |
-| `>` | Maior que | `x > y` | `False` |
-| `<` | Menor que | `x < y` | `True` |
-| `>=` | Maior ou igual a | `x >= 5` | `True` |
-| `<=` | Menor ou igual a | `y <= 2` | `False` |
-
-> ⚠️ **Cuidado:** `==` (comparação) é diferente de `=` (atribuição)!
-
-### 3. Operadores Lógicos
-
-Permitem combinar múltiplas condições.
-
-| Operador | Descrição | Regra | Exemplo |
-| :---: | :--- | :--- | :--- |
-| `and` | E | Retorna `True` se **AMBAS** as condições forem verdadeiras. | `True and False` -> `False` |
-| `or` | OU | Retorna `True` se **PELO MENOS UMA** for verdadeira. | `True or False` -> `True` |
-| `not` | NÃO | Inverte o valor (De `True` para `False` e vice-versa). | `not True` -> `False` |
-
-**Tabela Verdade:**
-
-```python
-# AND
-print(True and True)   # True
-print(True and False)  # False
-
-# OR
-print(True or False)   # True
-print(False or False)  # False
-
-# NOT
-print(not True)        # False
-```
-
-### 4. Operadores de Atribuição
-
-Atalhos para atualizar o valor de uma variável.
-
-```python
-saldo = 100
-
-saldo = saldo + 50 # Atribuição normal
-# Equivalente com operador de atribuição:
-saldo += 50 
-
-print(saldo) # 200 (100 + 50 + 50)
-
-# Outros exemplos
-saldo -= 20  # saldo = saldo - 20
-saldo *= 2   # saldo = saldo * 2
-saldo /= 10  # saldo = saldo / 10
-```
-
-### 5. Precedência de Operadores
-
-Assim como na matemática, o Python resolve as operações em uma ordem específica:
-
-1.  Parênteses `()`
-2.  Potência `**`
-3.  Multiplicação `*`, Divisão `/`, `//`, `%`
-4.  Soma `+`, Subtração `-`
-5.  Relacionais `==`, `!=`, `>`, etc.
-6.  Lógicos `not`
-7.  Lógicos `and`
-8.  Lógicos `or`
-
-```mermaid
-graph TD
-    A[Expressão: 5 + 2 * 3]
-    B[Multiplicação Primeiro: 2 * 3 = 6]
-    C[Soma Depois: 5 + 6]
-    D[Resultado: 11]
-    A --> B
-    B --> C
-    C --> D
-```
+### 3. Scrum vs. Kanban
+- **Scrum**: Mais estruturado, ciclos fixos, papéis definidos. Bom para projetos onde mudanças são esperadas mas precisam de ordem.
+- **Kanban**: Mais flúido, fluxo contínuo. Bom para manutenção ou quando as prioridades mudam diariamente.
 
 ---
 
-## 💻 Em Prática
-
-Vamos criar um programa que verifica se uma pessoa pode votar (maior de 16 anos) **E** se o voto é obrigatório (entre 18 e 70 anos).
-
-```python
-# verifica_voto.py
-
-idade = int(input("Qual sua idade? "))
-
-# Voto facultativo ou obrigatório?
-pode_votar = idade >= 16
-voto_obrigatorio = idade >= 18 and idade < 70
-
-print(f"Pode votar? {pode_votar}")
-print(f"Voto obrigatório? {voto_obrigatorio}")
-```
-
----
-
-## 📝 Resumo
-
-- **Aritméticos:** Cálculos matemáticos. Destaque para `//` (inteiro) e `%` (resto).
-- **Relacionais:** Comparam valores e retornam `True`/`False` (`==`, `!=`, `>`).
-- **Lógicos:** Combinam booleanos (`and`, `or`, `not`).
-- **Atribuição:** Atalhos para alterar variáveis (`+=`).
-- **Precedência:** A ordem importa! Use parênteses `()` para forçar a ordem desejada.
+## 📽 Roteiro de Slides
+- **Slide 1: Capa**
+    - Metodologias Ágeis: Scrum e Kanban.
+- **Slide 2: Scrum - Visão Geral**
+    - Ciclos (Sprints) de 2 a 4 semanas.
+    - 3 Papéis: PO, Scrum Master, Time.
+- **Slide 3: O Fluxo do Scrum**
+    - Backlog -> Planning -> Sprint (Dailies) -> Review/Retro -> Incremento.
+- **Slide 4: Kanban**
+    - Visualização do fluxo de trabalho.
+    - Quadro: To Do -> Doing -> Done.
+    - Foco em terminar tarefas antes de começar novas.
+- **Slide 5: Qual escolher?**
+    - Scrum: Para criar produtos novos com time focado.
+    - Kanban: Para fluxo contínuo (suporte, manutenção).
 
 ---
 
-## 🎯 Próximos Passos
+## 📝 Quiz
 
-<div class="grid cards" markdown>
+**1. Quem é o responsável por decidir O QUE será feito no produto (Product Backlog)?**
+A) Scrum Master
+B) Time de Desenvolvimento
+C) Product Owner (PO)
+D) Gerente de RH
 
--   :material-presentation: **Acessar Slides**
-    -   [Ver Slides da Aula](../slides/slide-03.html)
+**2. O que é uma Sprint?**
+A) Uma corrida de 100 metros.
+B) Um ciclo de tempo fixo (ex: 2 semanas) onde o trabalho é executado.
+C) Uma reunião diária.
+D) Um tipo de documento.
 
--   :material-school: **Quiz**
-    -   [Responder Quiz](../quizzes/quiz-03.md)
+**3. Qual o objetivo da reunião Daily Scrum?**
+A) Alinhar o time sobre o progresso e impedimentos (15 min).
+B) Reclamar do chefe.
+C) Fazer o planejamento do ano todo.
+D) Apresentar o software para o cliente.
 
--   :material-dumbbell: **Exercícios**
-    -   [Lista de Exercícios](../exercicios/exercicio-03.md)
+**4. O que significa "Kanban"?**
+A) Código rápido.
+B) Placa visual ou cartão.
+C) Reunião longa.
+D) Gerente bravo.
 
--   :material-rocket: **Projeto**
-    -   [Mini Projeto](../projetos/projeto-03.md)
+**5. Qual a diferença principal entre Scrum e Kanban?**
+A) Scrum usa quadros e Kanban não.
+B) Kanban tem Sprints fixas e Scrum é contínuo.
+C) Scrum tem papéis e ciclos fixos; Kanban foca em fluxo contínuo.
+D) Não há diferença.
 
-</div>
+**Gabarito:**
+1-C, 2-B, 3-A, 4-B, 5-C
+
+---
+
+## 🛠 Exercícios
+1.  **Simulação de Daily**: Reúna 3 amigos (ou imagine). Cada um deve responder: 1) O que fiz ontem? 2) O que farei hoje? 3) Tenho algum impedimento?
+2.  **Quadro Kanban**: Pegue post-its (ou papel picado) e monte um quadro "To Do", "Doing", "Done" na sua parede para suas tarefas pessoais da semana.
+3.  **Papéis**: Se você fosse criar o "To-Do App" com amigos, quem seria o PO? Quem seria o Scrum Master? Por que?
+
+---
+
+## 🚀 Projeto da Aula: Criando o Backlog
+**Atividade da Aula:**
+Vamos organizar as tarefas que definimos na Aula 02 usando conceitos do Scrum.
+
+1.  **Product Backlog**: Pegue todas as tarefas listadas (Fase 1, 2 e 3) e coloque em uma lista única, ordenada por prioridade (o mais importante no topo).
+2.  **Sprint 1**: Selecione os itens do topo da lista que cabem na primeira "Sprint" (nosso MVP).
+3.  **Ferramenta**: Crie um quadro no Trello, Notion ou apenas desenhe em papel com colunas: *Backlog*, *Sprint 1*, *Fazendo*, *Feito*.
+4.  Mova os itens da **Sprint 1** para a coluna *A Fazer*.

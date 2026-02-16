@@ -1,39 +1,18 @@
-# Projeto 01 - Cartão de Visitas Digital
+# Projeto 01 - Definição do Escopo (To-Do App)
 
 ## 🎯 Objetivo
-Criar um script Python que exiba um "Cartão de Visitas" formatado no terminal com suas informações profissionais.
+Iniciar o projeto do curso definindo o escopo do **Sistema de Gerenciamento de Tarefas**.
 
-## 📋 Requisitos
+## 📝 Descrição
+Nesta etapa, não escreveremos código. Como engenheiros de software, nosso primeiro passo é entender o problema. Você deve listar as funcionalidades básicas que o sistema precisa ter.
 
-1. O cartão deve ter uma "borda" feita com caracteres (ex: `*`, `-`, `|`).
-2. Deve conter:
-    - Seu Nome Completo
-    - Seu Cargo (ex: Estudante de Python)
-    - Seu Email
-    - Um link (GitHub ou LinkedIn)
-3. Use apenas a função `print()`.
+## 🚀 Passo a Passo
+1.  Imagine que você foi contratado para criar um app onde pessoas podem organizar seu dia a dia.
+2.  Liste 3 a 5 funcionalidades **essenciais** (o chamado MVP - Produto Mínimo Viável).
+3.  Exemplo de funcionalidades:
+    - O usuário deve conseguir adicionar uma nova tarefa.
+    - O usuário deve conseguir marcar uma tarefa como concluída.
+    - O usuário deve conseguir ver todas as suas tarefas.
 
-## 💡 Exemplo de Saída
-
-```text
-****************************************
-*                                      *
-*           RICARDO SILVA              *
-*        Estudante de Python           *
-*                                      *
-*   📧 email: ricardo@example.com      *
-*   🐱 github: github.com/ricardo      *
-*                                      *
-****************************************
-```
-
-## 👣 Passo a Passo
-
-1. Crie um arquivo chamado `projeto01.py`.
-2. Planeje o desenho no papel ou bloco de notas.
-3. Escreva os `print()` linha por linha.
-4. Teste e ajuste o alinhamento (espaços) até ficar bonito.
-5. Execute no terminal para ver o resultado final.
-
-## 🚀 Desafio Extra
-Tente usar caracteres diferentes para a borda ou mudar o formato do cartão!
+## 📤 Entrega
+Guarde essa lista. Na próxima aula, usaremos esses itens para criar requisitos mais detalhados e escolher um modelo de processo.

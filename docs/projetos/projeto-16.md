@@ -1,47 +1,29 @@
-# Projeto Final - Gerenciador de Tarefas (Task Manager) com TDD
+# Projeto 16 - A Entrega Final
 
 ## 🎯 Objetivo
-Desenvolver o "núcleo" (backend) de um gerenciador de tarefas profissional usando TDD. Você não fará a interface (menu), apenas as classes e a lógica, garantidas por testes.
+Compilar todo o aprendizado em um "Book" do Projeto.
 
-## 📋 Requisitos do Sistema
+## 📝 Descrição
+O software é importante, mas a documentação do processo prova que você é um Engenheiro, não apenas um digitador de código.
 
-1. **Classe `Tarefa`:**
-    - Atributos: `titulo`, `descricao`, `concluida` (bool, default False).
-    - Método `concluir()`: Marca como True.
-    - Método `pendente()`: Marca como False.
+## 🚀 Estrutura do Seu Portfólio
+Organize seus arquivos (simbolicamente) nesta ordem:
 
-2. **Classe `GerenciadorTarefas`:**
-    - Atributos: `tarefas` (lista).
-    - Método `adicionar(titulo, descricao)`: Cria e adiciona tarefa. Retorna a tarefa criada.
-    - Método `listar()`: Retorna lista de tarefas.
-    - Método `listar_concluidas()`: Retorna apenas as True.
-    - Método `remover(indice)`: Remove tarefa. Lança `IndexError` se inválido.
+1.  **Capa (README)**: O que é o projeto.
+2.  **Planejamento**:
+    - Backlog e Priorização (MoSCoW).
+    - Estimativas.
+3.  **Design**:
+    - Diagramas de Caso de Uso e Classes.
+    - Arquitetura Escolhida.
+4.  **Qualidade**:
+    - Plano de Testes.
+    - Casos de Teste.
+5.  **Segurança**:
+    - Modelagem de Ameaças.
+6.  **Evolução**:
+    - Changelog (Histórico de Mudanças).
 
-## 👣 Passo a Passo (Modo TDD)
-
-Siga estritamente esta ordem. Não pule!
-
-### Ciclo 1: Criar Tarefa
-1. **Red:** Crie `test_tarefa.py`. Teste se ao instanciar `Tarefa("Estudar", "Python")`, os atributos estão certos e `concluida` é `False`.
-2. **Green:** Crie a classe `Tarefa` em `tarefas.py`.
-3. **Refactor:** Está limpo?
-
-### Ciclo 2: Concluir Tarefa
-1. **Red:** Adicione teste em `test_tarefa.py` chamando `.concluir()` e verificando se virou `True`.
-2. **Green:** Implemente o método `concluir`.
-
-### Ciclo 3: Gerenciador (Adicionar)
-1. **Red:** Crie `test_gerenciador.py`. Teste `adicionar`. Verifique se a lista `tarefas` aumentou.
-2. **Green:** Crie a classe `GerenciadorTarefas` e o método.
-
-### Ciclo 4: Remover (Com erro)
-1. **Red:** Teste `remover(0)` com lista vazia. Deve lançar exceção. (Use `pytest.raises`).
-2. **Green:** Implemente a validação no `remover`.
-
-## 🚀 Entrega
-Seu projeto final deve ter:
-- `src/tarefas.py` (O código)
-- `tests/test_tarefa.py` (Testes da unidade Tarefa)
-- `tests/test_gerenciador.py` (Testes da unidade Gerenciador)
-
-Rode `pytest` e veja tudo verde. 🟢 Parabéns, você é um programador Python profissional!
+## 📤 Parabéns!
+Você completou o curso "Engenharia de Software para Iniciantes".
+Agora você tem uma visão holística de como softwares nascem, vivem e evoluem.

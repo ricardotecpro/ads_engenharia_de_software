@@ -1,122 +1,36 @@
-# Aula 03
-## Operadores
+# Slide 03 - Metodologias Ágeis: Scrum e Kanban
 
-![bg right:40% 80%](https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg)
+## Slide 1: Título
+- **Título**: Scrum e Kanban
+- **Subtítulo**: Aula 03 - Gerenciando Projetos Ágeis
 
----
+## Slide 2: Scrum - A Estrutura
+- **Sprints**: Ciclos de tempo fixo (1-4 semanas).
+- **Cerimônias**:
+    - Planning
+    - Daily
+    - Review
+    - Agile
 
-## 🎯 Objetivos
+## Slide 3: Papéis do Scrum
+- **Product Owner (PO)**: Define "O Quê". Voz do cliente.
+- **Scrum Master**: Define "Como" (processo). Cuida do time.
+- **Time**: Constrói o produto. Auto-organizável.
 
-- Operadores Aritméticos (Revisão e Aprofundamento)
-- Operadores Relacionais (Comparação)
-- Operadores Lógicos (`and`, `or`, `not`)
-- Atribuição Simplificada (`+=`)
+## Slide 4: Kanban - O Fluxo
+- Origem no Sistema Toyota de Produção (Just-in-Time).
+- **Princípios**:
+    - Visualize o trabalho.
+    - Limite o trabalho em progresso (WIP).
+    - Gerencie o fluxo.
 
----
+## Slide 5: Quadro Kanban
+- Colunas típicas:
+    - Backlog (Lista de pedidos)
+    - To Do (Selecionados)
+    - Doing (Em andamento)
+    - Done (Feito)
 
-## 🧮 Aritméticos: Os Detalhes
-
-Além do básico (`+`, `-`, `*`, `/`):
-
-- **Divisão Inteira (`//`):** Corta a parte decimal.
-  ```python
-  7 // 2 # Resultado: 3 (e não 3.5)
-  ```
-- **Módulo (`%`):** O resto da divisão.
-  ```python
-  7 % 2 # Resultado: 1 (7 dividido por 2 dá 3 e sobra 1)
-  ```
-- **Potenciação (`**`):**
-  ```python
-  2 ** 3 # Resultado: 8 (2 ao cubo)
-  ```
-
----
-
-## ⚖️ Operadores Relacionais
-
-Comparam dois valores e retornam `True` ou `False`.
-
-| Op | Significado | Exemplo |
-| :--: | :--- | :--- |
-| `==` | Igual | `5 == 5` (True) |
-| `!=` | Diferente | `5 != 3` (True) |
-| `>` | Maior | `10 > 2` (True) |
-| `<` | Menor | `1 < 5` (True) |
-| `>=` | Maior/Igual | `5 >= 5` (True) |
-| `<=` | Menor/Igual | `4 <= 3` (False) |
-
----
-
-## 🧠 Operadores Lógicos
-
-Para tomar decisões complexas.
-
-1. **`and` (E):** Tudo tem que ser verdade.
-   - `True and True` ➡ `True`
-   - `True and False` ➡ `False`
-
-2. **`or` (OU):** Basta um ser verdade.
-   - `True or False` ➡ `True`
-   - `False or False` ➡ `False`
-
-3. **`not` (NÃO):** Inverte.
-   - `not True` ➡ `False`
-
----
-
-## ⚡ Atribuição Simplificada
-
-Preguiça produtiva!
-
-```python
-x = 10
-
-x += 5  # Igual a: x = x + 5 (x agora é 15)
-x -= 2  # Igual a: x = x - 2 (x agora é 13)
-x *= 2  # Igual a: x = x * 2 (x agora é 26)
-```
-
----
-
-## 👑 Precedência (Ordem)
-
-Quem ganha a briga?
-
-1. `()` Parênteses (O Chefe)
-2. `**`
-3. `*`, `/`, `//`, `%`
-4. `+`, `-`
-5. `==`, `>`, etc
-6. `not`
-7. `and`
-8. `or`
-
-**Na dúvida, use parênteses!**
-
----
-
-## 📝 Exemplo Prático
-
-```python
-idade = 25
-tem_carteira = True
-
-pode_dirigir = idade >= 18 and tem_carteira
-
-print(pode_dirigir) # True
-```
-
----
-
-## 🏁 Resumo
-
-1. **Módulo (`%`)** é útil para par/ímpar.
-2. **Relacionais** retornam Booleanos.
-3. **Lógicos** combinam condições.
-4. **Parênteses** controlam a ordem.
-
----
-
-# Hora de Codar! 🚀
-Bora para os exercícios.
+## Slide 6: Resumo
+- Scrum organiza o trabalho em caixas de tempo (Sprints).
+- Kanban organiza o trabalho em fluxo contínuo.

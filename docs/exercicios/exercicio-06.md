@@ -1,23 +1,20 @@
-# Exercícios - Aula 06
+# Exercício 06 - Arquitetura de Software
 
-## 1. Soma da Lista
-Crie uma lista com 5 números inteiros. Calcule e imprima a soma de todos eles.
-*(Tente usar um loop `for` para somar, e depois compare com a função `sum()`)*
+## 🛠 Questões Práticas
 
-## 2. Maior e Menor
-Peça ao usuário para digitar 5 números e armazene-os em uma lista.
-No final, imprima o Maior número e o Menor número digitados.
+**1. Identificando Camadas**
+Num site de compras, quando você clica em "Comprar", várias coisas acontecem. Associe a camada correta:
+a) O botão muda de cor (Feedback visual).
+b) O sistema verifica se você tem saldo (Regra).
+c) O sistema salva o pedido no banco de dados.
+*( ) Lógica de Negócio*
+*( ) Apresentação*
+*( ) Dados*
 
-## 3. Apenas Pares
-Dada a lista `numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]`.
-Crie uma nova lista chamada `pares` contendo apenas os números pares da lista original.
+**2. Monólito ou Microserviços?**
+Você vai criar um blog pessoal simples, só para você escrever artigos. Qual arquitetura você escolheria e por quê? (Pense na complexidade x necessidade).
 
-## 4. Inversão
-Peça 5 nomes ao usuário. Armazene em uma lista. Imprima a lista na ordem inversa à digitada.
-
-## 5. Média de Notas
-Peça notas de alunos até que o usuário digite -1. Armazene as notas em uma lista.
-Calcule e mostre:
-- Quantas notas foram lançadas.
-- A média das notas.
-- Aprovados (notas >= 7).
+**3. Cliente-Servidor**
+Quando você joga um jogo online multiplayer:
+- O que roda no seu computador (Cliente)?
+- O que roda nos computadores da empresa do jogo (Servidor)?

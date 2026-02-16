@@ -1,93 +1,29 @@
-# Aula 14
-## POO Avançada
+# Slide 14 - Documentação Técnica
 
-![bg right:40% 80%](https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg)
+## Slide 1: Título
+- **Título**: Documentação Técnica
+- **Subtítulo**: Aula 14 - O Guia do Projeto
 
----
+## Slide 2: Por que Documentar?
+- Ninguém lembra do código de 6 meses atrás.
+- Facilita o onboarding de novos membros.
+- Evita "conhecimento tribal" (só na cabeça de um).
 
-## 🎯 Objetivos
+## Slide 3: README.md
+- A recepção do seu projeto.
+- Responde: O que é? Como instala? Como usa?
+- Formato Markdown.
 
-- Herança ("É um...")
-- Polimorfismo (Comportamentos diferentes)
-- Encapsulamento (`__privado`)
-- Sobrescrita de métodos
+## Slide 4: Documentação Técnica vs. Usuário
+- **Técnica**: Para devs (Arquitetura, API, Setup).
+- **Usuário**: Para clientes (Manual, FAQ).
 
----
+## Slide 5: Boas Práticas
+- Mantenha atualizado (Doc desatualizada é pior que nenhuma).
+- Seja conciso.
+- Use diagramas.
 
-## 🧬 Herança (Inheritance)
-
-Evita copiar código.
-Se `Animal` tem `comer()`, `Cachorro` também tem.
-
-```python
-class Animal:
-    def comer(self):
-        print("Comendo...")
-
-class Cachorro(Animal): # Cachorro herda de Animal
-    def latir(self):
-        print("Au!")
-```
-
-Cachorro faz DUAS coisas: come e late.
-
----
-
-## 🎭 Polimorfismo
-
-O mesmo método, várias formas.
-
-```python
-class Gato(Animal):
-    def fazer_som(self):
-        print("Miau")
-
-class Pato(Animal):
-    def fazer_som(self):
-        print("Quack")
-```
-
-Se eu chamar `fazer_som()`, cada um reage do seu jeito.
-
----
-
-## 🦸‍♂️ O poder do `super()`
-
-Chama a classe pai. Essencial no `__init__`.
-
-```python
-class Funcionario:
-    def __init__(self, nome):
-        self.nome = nome
-
-class Gerente(Funcionario):
-    def __init__(self, nome, senha):
-        super().__init__(nome) # Pai cuida do nome
-        self.senha = senha     # Eu cuido da senha
-```
-
----
-
-## 🔒 Encapsulamento
-
-Protegendo seus atributos.
-
-- Público: `self.nome` (Acesso livre)
-- Protegido: `self._saldo` (Só subclasses deviam mexer - Convenção)
-- Privado: `self.__senha` (O Python "esconde" o nome)
-
-Para acessar privados, usamos métodos **Getters e Setters** (`get_senha`, `set_senha`).
-
----
-
-## 🏁 Resumo
-
-1. **Herança** cria hierarquias.
-2. **Polimorfismo** traz flexibilidade.
-3. **`super()`** reaproveita construtores.
-4. **Encapsulamento** traz segurança.
-
----
-
-# Prática! 🚀
-Vamos evoluir nossos objetos.
+## Slide 6: Ferramentas
+- Markdown (Padrão).
+- Wikis (Confluence, Notion).
+- Swagger (APIs).

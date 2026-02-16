@@ -1,97 +1,30 @@
-# Aula 13
-## Orientação a Objetos (Intro)
+# Slide 13 - Gerenciamento de Projetos e Estimativas
 
-![bg right:40% 80%](https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg)
+## Slide 1: Título
+- **Título**: Gerenciamento de Projetos
+- **Subtítulo**: Aula 13 - Estimativas e Priorização
 
----
+## Slide 2: O Triângulo de Ferro
+- Escopo, Tempo, Custo.
+- Qualidade no centro.
+- Não dá para mexer em um sem afetar os outros.
 
-## 🎯 Objetivos
+## Slide 3: MVP (Mínimo Produto Viável)
+- Menor versão que entrega valor.
+- Foco em aprendizado.
+- Construir -> Medir -> Aprender.
 
-- Paradigma OO.
-- Classes vs Objetos.
-- Atributos (`self.variavel`).
-- Métodos (`def funcao()`).
-- O Construtor `__init__`.
+## Slide 4: Por que estimativas falham?
+- Lei de Parkinson: "O trabalho se expande para preencher o tempo disponível".
+- Síndrome do Estudante.
+- Incertezas da tecnologia.
 
----
+## Slide 5: MoSCoW (Priorização)
+- **M**ust Have (Obrigatório).
+- **S**hould Have (Importante).
+- **C**ould Have (Desejável).
+- **W**on't Have (Futuro).
 
-## 🏗️ Classe vs Objeto
-
-Imagine uma fábrica de carros.
-
-- **Classe (Molde):** O desenho técnico do carro. Definições de motor, cor, rodas. Não dá para dirigir o desenho.
-- **Objeto (Instância):** O carro real que saiu da fábrica. Dá para dirigir, abastecer e bater.
-
-```python
-class Carro: # Molde
-    pass
-
-meu_fusca = Carro() # Objeto
-```
-
----
-
-## 💾 Atributos (Dados)
-
-São as variáveis que "vivem" dentro do objeto.
-Usamos `self` para dizer "meu atributo".
-
-```python
-class Carro:
-    def __init__(self, cor, modelo):
-        self.cor = cor
-        self.modelo = modelo
-
-c1 = Carro("Azul", "Fusca")
-print(c1.cor) # Azul
-```
-
-### `__init__`
-Roda AUTOMATICAMENTE quando criamos o objeto. Serve para inicializar.
-
----
-
-## ⚙️ Métodos (Ações)
-
-São funções que o objeto sabe executar.
-O primeiro parâmetro TEM QUE SER `self`.
-
-```python
-class Carro:
-    # ... init ...
-
-    def acelerar(self):
-        print(f"O {self.modelo} está acelerando! Vrum!")
-
-c1.acelerar()
-```
-
----
-
-## 🤳 O tal do `self`
-
-Por que preciso declarar `self`?
-O Python passa o objeto automaticamente como primeiro argumento.
-
-Quando chamamos:
-`c1.acelerar()`
-
-O Python faz internamente:
-`Carro.acelerar(c1)`
-
-Isso é o `self`: o próprio objeto `c1`.
-
----
-
-## 🏁 Resumo
-
-1. **POO** modela o mundo real.
-2. **Classes** definem a estrutura.
-3. **Objetos** são criados a partir de classes.
-4. **Atributos** guardam estado.
-5. **Métodos** definem comportamento.
-
----
-
-# Prática! 🚀
-Vamos criar nossos próprios objetos.
+## Slide 6: Resumo
+- Priorizar é dizer "não".
+- Comece pequeno (MVP) e cresça rápido.

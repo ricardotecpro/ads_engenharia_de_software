@@ -1,27 +1,18 @@
-# Exercícios - Aula 08
+# Exercício 08 - Design de Software
 
-## 1. Dicionário Simples
-Crie um dicionário representando um livro, com chaves para `titulo`, `autor` e `ano`.
-Imprima cada informação formatada: "O livro X foi escrito por Y em Z".
+## 🛠 Questões Práticas
 
-## 2. Contagem de Caracteres
-Peça uma frase ao usuário.
-Crie um programa que conte quantas vezes cada caractere aparece na frase e guarde em um dicionário.
-Exemplo: "banana" -> `{'b': 1, 'a': 3, 'n': 2}`.
+**1. Refatorando**
+Analise o código abaixo (JavaScript simples) e diga qual princípio ele viola (DRY ou KISS):
+```javascript
+function calcularAreaQuadrado() { return 5 * 5; }
+function calcularAreaSala() { return 5 * 5; }
+function calcularAreaTapete() { return 5 * 5; }
+```
+Como você corrigiria?
 
-## 3. Boletim Escolar
-Crie um dicionário vazio `aluno`.
-Peça ao usuário `nome` e `media`. Adicione ao dicionário.
-Se a média for >= 7, adicione a chave `situacao` com valor "Aprovado", senão "Reprovado".
-Mostre o dicionário final.
+**2. Responsabilidade Única**
+Você tem uma classe `Usuario`. Ela deveria ter um método `enviarEmailPromocional()`? Por que? (Pensa na coesão).
 
-## 4. Cadastro de Pessoas
-Crie uma lista vazia `pessoas`.
-Faça um loop que peça Nome e Idade. Armazene esses dados em um dicionário e adicione o dicionário na lista `pessoas`.
-O loop para quando o nome for "sair".
-No final, imprima a lista completa de pessoas cadastradas.
-
-## 5. Tradutor Simples
-Crie um dicionário com 5 palavras em inglês e suas traduções (ex: `{'dog': 'cachorro', 'cat': 'gato'}`).
-Peça para o usuário digitar uma palavra em inglês.
-Se a palavra existir no dicionário, mostre a tradução. Se não, mostre "Palavra não encontrada".
+**3. Acoplamento**
+Imagine que a classe `Carro` chama diretamente a classe `PneuMichelin`. Se quisermos trocar o pneu para `Pirelli`, teremos que mudar a classe `Carro`. Isso é alto acoplamento. Como resolver? (Dica: criar uma interface genérica `Pneu`).

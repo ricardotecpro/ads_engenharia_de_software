@@ -1,20 +1,15 @@
-# Exercícios - Aula 09
+# Exercício 09 - Qualidade de Software
 
-## 1. Saudação
-Crie uma função `saudar(nome, periodo)` que receba um nome e um período (manhã, tarde, noite) e imprima "Bom dia/tarde/noite, [nome]!".
+## 🛠 Questões Práticas
 
-## 2. Calculadora Simples (Retorno)
-Crie 4 funções: `somar`, `subtrair`, `multiplicar`, `dividir`.
-Cada uma deve receber dois números e **retornar** o resultado.
-Teste as funções imprimindo os retornos.
+**1. Identificando a Falha**
+Você abre um app de banco e seu saldo aparece como "NaN" (Not a Number).
+- Qual foi a **Falha**? (O que você viu).
+- Qual pode ter sido o **Defeito**? (No código).
+- Qual pode ter sido o **Erro**? (No raciocínio do dev).
 
-## 3. É Par?
-Crie uma função `eh_par(numero)` que retorne `True` se o número for par e `False` se for ímpar.
-*(Dica: use o operador %)*
+**2. Teste Caixa Preta vs. Branca**
+Pesquise rapidamente: Qual a diferença entre "Teste de Caixa Branca" (olhando o código) e "Teste de Caixa Preta" (sem olhar o código)? Qual deles o usuário final executa sem querer?
 
-## 4. Maior de Três
-Crie uma função `maior_de_tres(a, b, c)` que retorne o maior dos três números passados.
-*(Tente não usar a função max() do Python, use if/else para treinar a lógica)*
-
-## 5. Contador de Vogais
-Crie uma função `contar_vogais(texto)` que receba uma string e retorne a quantidade de vogais nela.
+**3. Cultura de Qualidade**
+Em algumas empresas, o time de desenvolvimento joga o código para o time de QA e diz "Vocês que lutem para achar os bugs". Por que essa atitude é ruim (e cara)?

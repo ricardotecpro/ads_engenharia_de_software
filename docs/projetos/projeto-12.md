@@ -1,49 +1,21 @@
-# Projeto 12 - Calculadora Robusta com Testes
+# Projeto 12 - Segurança e Ameaças
 
 ## 🎯 Objetivo
-Criar uma calculadora que realiza as 4 operações básicas, mas que é "imune" a erros de digitação e divisão por zero.
+Identificar vulnerabilidades potenciais no projeto (Threat Modeling).
 
-## 📋 Requisitos
-Crie um módulo `calculadora.py`:
-1. Funções: `somar(a, b)`, `subtrair(a, b)`, `multiplicar(a, b)`, `dividir(a, b)`.
-2. A função `dividir` deve lançar (`raise`) um `ValueError` se o divisor for zero (ou deixar o Python lançar `ZeroDivisionError`, mas vamos tratar no menu).
-3. Função `ler_numero(mensagem)`: Faz um loop infinito pedindo input até o usuário digitar um número válido (`float`). Trata `ValueError` internamente.
+## 📝 Descrição
+Nenhum sistema é 100% seguro, mas devemos conhecer os riscos. Vamos analisar o To-Do App.
 
-Crie um `main.py` (ou bloco main):
-- Usa `ler_numero` para obter os valores.
-- Chama as operações.
-- Trata erros de divisão por zero.
+## 🚀 Análise de Riscos
 
-## 🧪 Testes Automatizados
-Crie `test_calculadora.py`.
-Vamos testar o caminho feliz (sucesso) e o caminho triste (erro).
+### 1. Cross-Site Scripting (XSS)
+- **Ameaça**: Um usuário malicioso pode tentar salvar uma tarefa com código JavaScript no título. Ex: `<script>roubarCookies()</script>`.
+- **Consequência**: Quando a lista for carregada, o navegador pode executar esse script.
+- **Solução**: Nunca confiar no input do usuário. Ao exibir o texto na tela, usar funções que convertem caracteres especiais (ex: `<` vira `&lt;`). `innerText` é mais seguro que `innerHTML`.
 
-```python
-import pytest # Se tiver pytest instalado, senão use unittest ou try/except manual
-from calculadora import dividir
+### 2. Privacidade Local
+- **Ameaça**: Como usamos LocalStorage, qualquer pessoa que usar o mesmo computador/navegador pode ver as tarefas.
+- **Solução**: Aviso ao usuário: "Não use em computadores públicos". (Para um sistema real, precisaríamos de Login no Backend).
 
-# Vamos usar try/except manual para não depender de bibliotecas externas por enquanto
-def testar_divisao():
-    # Teste Sucesso
-    assert dividir(10, 2) == 5.0
-    print("Divisão correta: PASSOU")
-    
-    # Teste Erro (Divisão por Zero)
-    try:
-        dividir(10, 0)
-        print("Divisão por zero: FALHOU (Deveria ter dado erro)")
-    except ZeroDivisionError: # ou ValueError, dependendo da sua implementação
-        print("Divisão por zero: PASSOU (Erro capturado corretamente)")
-
-if __name__ == "__main__":
-    testar_divisao()
-```
-
-## 👣 Passo a Passo
-1. Crie `calculadora.py` com as funções matemáticas.
-2. Implemente `ler_numero` usando `try/except ValueError` dentro de um `while True`.
-3. No menu, envolva a chamada da divisão em um `try/except` para exibir mensagem bonita em vez de erro vermelho.
-4. Crie o script de teste e valide se o erro é lançado quando deve.
-
-## 🚀 Desafio Extra
-Adicione uma função de Log que salva em arquivo `erros.log` toda vez que uma exceção acontecer, com data e hora.
+## 📤 Entrega
+Adicione esses dois pontos ao seu documento. Desenhe um "Alerta de Segurança" simbólico.

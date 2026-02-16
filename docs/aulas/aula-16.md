@@ -1,140 +1,97 @@
-# Aula 16 - Testes e TDD (Test Driven Development)
+# Aula 16 – Carreira e Ética na Engenharia de Software
 
-## 🎯 Objetivos da Aula
-
-- [ ] Compreender a importância dos **Testes Automatizados**
-- [ ] Conhecer a filosofia **TDD** (Desenvolvimento Guiado por Testes)
-- [ ] Usar a biblioteca `pytest` (padrão de mercado)
-- [ ] Estruturar um projeto Python profissional
-
----
+## 🎯 Objetivos de Aprendizagem
+- Refletir sobre a responsabilidade ética do Engenheiro de Software.
+- Conhecer as Soft Skills necessárias para o mercado.
+- Discutir o futuro da área (IA, Low-code).
+- Concluir o curso com o projeto final.
 
 ## 📚 Conteúdo
 
-### 1. Por que testar?
+### 1. Grandes Poderes, Grandes Responsabilidades
+Software controla aviões, bancos, hospitais e redes sociais. Um erro seu pode causar prejuízo financeiro ou até vidas.
+- **Ética**: Não criar software para prejudicar, espionar ou discriminar. Respeitar a privacidade dos dados (LGPD).
 
-Imagine que você consertou um erro no código, mas sem querer quebrou outra parte que estava funcionando. Isso se chama **Regressão**.
-Testes automatizados garantem que seu código continua funcionando como esperado, mesmo após alterações.
+### 2. O Profissional "T-Shaped"
+O mercado busca profissionais em forma de T:
+- **Barra vertical**: Profundidade em uma área (ex: Backend Python).
+- **Barra horizontal**: Conhecimento generalista em outras (Frontend, DevOps, Design).
+- Você não precisa saber tudo, mas precisa saber conversar com todos.
 
-> "Código sem testes é código legado." - Michael Feathers
+### 3. Soft Skills (Habilidades Comportamentais)
+Saber programar é o básico. O que diferencia o Senior do Junior é:
+- **Comunicação**: Explicar problemas técnicos para não-técnicos.
+- **Empatia**: Entender a dor do usuário.
+- **Resiliência**: Aprender com o erro.
 
-### 2. O que é TDD?
-
-TDD (**Test Driven Development**) é uma técnica onde você escreve o teste **ANTES** do código.
-O ciclo do TDD (Red-Green-Refactor):
-
-1.  🔴 **Red:** Escreva um teste que falha (porque a funcionalidade ainda não existe).
-2.  🟢 **Green:** Escreva o código mínimo necessário para o teste passar.
-3.  🔵 **Refactor:** Melhore o código (limpeza), mantendo o teste passando.
-
-```mermaid
-graph TD
-    A[Red: Teste Falha] --> B[Green: Código Passa]
-    B --> C[Refactor: Melhorar Código]
-    C --> A
-```
-
-### 3. A biblioteca `pytest`
-
-O Python tem o `unittest` nativo, mas o mundo usa `pytest` porque é mais simples e poderoso.
-Ele procura automaticamente arquivos que começam com `test_` ou terminam com `_test.py`.
-
-```python
-# test_calculadora.py
-def test_soma():
-    assert 2 + 2 == 4
-```
-
-Para rodar, basta digitar no terminal:
-`pytest`
-
-### 4. Escrevendo Tests Profissionais
-
-Um teste geralmente segue o padrão **AAA**:
-- **Arrange (Preparar):** Cria os objetos e dados necessários.
-- **Act (Agir):** Chama a função que queremos testar.
-- **Assert (Verificar):** Confere se o resultado é o esperado.
-
-```python
-def test_deve_adicionar_item_na_lista():
-    # Arrange
-    lista = []
-    item = "Arroz"
-    
-    # Act
-    lista.append(item)
-    
-    # Assert
-    assert len(lista) == 1
-    assert lista[0] == "Arroz"
-```
-
-### 5. Estrutura de Projeto
-
-Organização é tudo. Um projeto Python moderno se parece com isso:
-
-```text
-meu_projeto/
-├── src/             <-- Código fonte (source)
-│   ├── __init__.py
-│   └── main.py
-├── tests/           <-- Testes
-│   ├── __init__.py
-│   └── test_main.py
-├── README.md        <-- Documentação
-└── pyproject.toml   <-- Configurações e Dependências
-```
+### 4. O Futuro: A IA vai roubar meu emprego?
+Ferramentas de IA (como Copilot, ChatGPT) são copilotos. Elas aumentam a produtividade.
+- O engenheiro que usa IA substituirá o engenheiro que não usa.
+- O foco muda de "escrever sintaxe" para "resolver problemas complexos".
 
 ---
 
-## 💻 Em Prática (Mini TDD)
-
-Vamos criar uma função que retorna o dobro, usando TDD.
-
-**Passo 1 (Red):** Criar o teste `test_dobro.py`.
-```python
-from app import dobro
-
-def test_dobro_de_cinco():
-    assert dobro(5) == 10
-```
-*Se rodar agora, dá erro (ImportError), pois `app.py` nem existe.*
-
-**Passo 2 (Green):** Criar `app.py` com o mínimo para passar.
-```python
-def dobro(x):
-    return x * 2
-```
-*Agora roda o `pytest` e passa!*
-
-**Passo 3 (Refactor):** Melhorar se necessário (neste caso, já está simples).
+## 📽 Roteiro de Slides
+- **Slide 1**: Carreira e Ética
+- **Slide 2**: Ética Digital (O impacto do código no mundo real).
+- **Slide 3**: Hard Skills vs. Soft Skills.
+- **Slide 4**: O perfil em T (Especialista + Generalista).
+- **Slide 5**: Futuro da Engenharia (IA, Cloud).
+- **Slide 6**: Encerramento (A jornada continua).
 
 ---
 
-## 📝 Resumo
+## 📝 Quiz
 
-- **TDD:** Teste antes do código.
-- **Ciclo:** Vermelho -> Verde -> Refatorar.
-- **Pytest:** Ferramenta poderosa e simples.
-- **Assert:** O comando que valida se é Verdade ou Falso.
-- **Confiança:** Testes dão segurança para mudar o código.
+**1. O que é um profissional "T-Shaped"?**
+A) Alguém que só usa camisetas com gola T.
+B) Alguém que tem conhecimento profundo em uma área e conhecimentos gerais em outras.
+C) Alguém que só sabe uma coisa e ignora o resto.
+D) Alguém que sabe tudo sobre tudo.
+
+**2. Por que a ética é fundamental na Engenharia de Software?**
+A) Porque softwares impactam vidas, privacidade e a sociedade.
+B) Porque é bonito no currículo.
+C) Para passar na faculdade.
+D) Não é importante.
+
+**3. Qual destas é uma Soft Skill essencial?**
+A) Saber programar em Assembly.
+B) Comunicação clara e empática.
+C) Digitar muito rápido.
+D) Instalar o Windows.
+
+**4. Sobre o futuro com IA na programação:**
+A) A IA vai programar tudo sozinha amanhã e ninguém mais terá emprego.
+B) A IA servirá como ferramenta de apoio, aumentando a produtividade dos engenheiros.
+C) A IA é proibida.
+D) Devemos voltar a usar papel e caneta.
+
+**5. Qual o próximo passo após terminar este curso?**
+A) Parar de estudar para sempre.
+B) Continuar praticando, construir portfólio e aprender novas tecnologias (Lifelong Learning).
+C) Esquecer tudo.
+D) Mudar de área.
+
+**Gabarito:**
+1-B, 2-A, 3-B, 4-B, 5-B
 
 ---
 
-## 🎯 Próximos Passos
+## 🛠 Exercícios
+1.  **Dilema Ético**: Seu chefe pede para você criar um algoritmo que mostre vagas de emprego de alto salário apenas para homens. O que você faz? (Isso viola princípios éticos e legais).
+2.  **Autoavaliação**: Desenhe um "T". Na barra vertical, coloque o que você mais gostou/quer aprofundar (ex: Backend, Frontend, Testes). Na horizontal, o que você precisa conhecer o básico.
+3.  **Portfólio**: Reúna todos os documentos do "Projeto To-Do App" que fizemos. Isso já é um início de portfólio mostrando que você sabe documentar e pensar o software.
 
-<div class="grid cards" markdown>
+---
 
--   :material-presentation: **Acessar Slides**
-    -   [Ver Slides da Aula](../slides/slide-16.html)
+## 🚀 Projeto Final: A Entrega
+**Atividade da Aula:**
+Consolidar todo o trabalho do curso.
 
--   :material-school: **Quiz**
-    -   [Responder Quiz](../quizzes/quiz-16.md)
-
--   :material-dumbbell: **Exercícios**
-    -   [Lista de Exercícios](../exercicios/exercicio-16.md)
-
--   :material-rocket: **Projeto Final**
-    -   [Gerenciador de Tarefas com TDD](../projetos/projeto-16.md)
-
-</div>
+1.  **Revisão Final**: Junte todos os artefatos que você criou (Requisitos, Diagramas, Testes, Código Simulado, Documentação).
+2.  **Apresentação**: Imagine que você tem 5 minutos para "vender" seu projeto para um investidor.
+    - Problema: Pessoas desorganizadas.
+    - Solução: To-Do App Simples e Seguro.
+    - Diferencial: Funciona offline, código limpo, testado.
+3.  **Conclusão**: Parabéns! Você percorreu todo o ciclo de vida de um software. De uma ideia vaga na Aula 01 até um produto documentado e mantido na Aula 15.

@@ -1,33 +1,33 @@
-# Projeto 05 - Jogo da Adivinhação
+# Projeto 05 - Modelagem do Sistema
 
 ## 🎯 Objetivo
-Um jogo clássico onde o computador "pensa" em um número e o usuário tenta adivinhar.
+Criar diagramas visuais para documentar o funcionamento e estrutura do To-Do App.
 
-## 📋 Requisitos
-1. O computador sorteia um número entre 1 e 100 (use `random.randint`).
-2. O usuário chuta um número.
-3. O programa diz se o chute foi **Maior** ou **Menor** que o número secreto.
-4. O jogo continua (`while`) até o usuário acertar.
-5. No final, mostre quantas tentativas foram necessárias.
+## 📝 Descrição
+Uma imagem vale mais que mil palavras. Vamos traduzir nossas User Stories em diagramas UML simples.
 
-## 💡 Dicas
-Vai precisar importar `random`:
-```python
-import random
-secreto = random.randint(1, 100)
-```
+## 🚀 Passo a Passo
 
-## 👣 Passo a Passo
-1. Gere o número secreto.
-2. Crie uma variável `tentativas = 0`.
-3. Crie um loop `while True`.
-4. Dentro do loop:
-    - Peça o chute.
-    - Aumente `tentativas`.
-    - Se chute == secreto: `break`.
-    - Se chute > secreto: "Menos...".
-    - Se chute < secreto: "Mais...".
-5. Fora do loop, parabenize e mostre o total de tentativas.
+### 1. Diagrama de Caso de Uso
+Desenhe um diagrama mostrando quem usa o sistema e o que faz.
+- **Ator**: Usuário.
+- **Casos de Uso**: Fazer Login, Criar Tarefa, Listar Tarefas, Concluir Tarefa, Excluir Tarefa.
+- Ligue o Ator às elipses.
 
-## 🚀 Desafio Extra
-Limite o número de tentativas! Se o usuário não acertar em 10 chances, ele perde (Game Over) e o loop para.
+### 2. Modelo de Domínio (Classes Simplificado)
+Vamos definir a estrutura da nossa principal entidade: a `Tarefa`.
+Imagine um cartão com os dados dela:
+
+**Classe: Tarefa**
+- `id`: número (Identificador único)
+- `titulo`: texto
+- `descricao`: texto
+- `data_criacao`: data
+- `concluida`: booleano (Verdadeiro/Falso)
+
+### 3. Fluxo de Navegação (Opcional)
+Tente desenhar um rabisco das telas.
+- Tela de Login -> Tela de Lista -> Tela de Nova Tarefa.
+
+## 📤 Entrega
+Adicione as imagens (prints ou fotos dos desenhos) à documentação do seu projeto.

@@ -1,164 +1,112 @@
-# Aula 10 - Módulos e Pacotes
+# Aula 10 – Testes de Software
 
-## 🎯 Objetivos da Aula
-
-- [ ] Entender o que são **Módulos** (arquivos `.py`)
-- [ ] Importar módulos da biblioteca padrão (`math`, `random`, `datetime`)
-- [ ] Criar seus próprios módulos
-- [ ] Entender a diferença entre `import x` e `from x import y`
-- [ ] Conhecer o conceito de **Pacotes** (pastas)
-
----
+## 🎯 Objetivos de Aprendizagem
+- Entender a importância dos testes automatizados.
+- Conhecer a Pirâmide de Testes.
+- Diferenciar Testes Unitários de Integração.
+- Introduzir o conceito de TDD (Test Driven Development).
 
 ## 📚 Conteúdo
 
-### 1. O que são Módulos?
+### 1. Por que testar automaticamente?
+Testar manualmente (clicar no botão toda vez que muda o código) é:
+- Lento.
+- Chato.
+- Propenso a erro humano.
 
-Um módulo é simplesmente um arquivo com extensão `.py` contendo código Python (funções, variáveis, classes).
-O objetivo é **organizar** o projeto, separando responsabilidades. Em vez de um arquivo gigante com 1000 linhas, temos 10 arquivos de 100 linhas com nomes claros.
+Testes automatizados são robôs que verificam seu código em milissegundos.
 
-### 2. Importando Módulos
+### 2. A Pirâmide de Testes
+Idealizada por Mike Cohn, sugere a quantidade de testes que devemos ter:
+1.  **Base (Muitos)**: Testes Unitários. Rápidos e baratos.
+2.  **Meio (Alguns)**: Testes de Integração.
+3.  **Topo (Poucos)**: Testes de Interface (E2E). Lentos e caros.
 
-Usamos a palavra-chave `import` para trazer funcionalidades de outros arquivos.
+### 3. Tipos de Teste
+#### Teste Unitário
+Testa a menor parte do código isoladamente (uma função, uma classe).
+- *Ex*: A função `somar(2, 2)` retorna `4`?
 
-**Exemplo: Biblioteca Padrão (Built-in)**
-O Python já vem com "baterias inclusas", vários módulos prontos.
+#### Teste de Integração
+Testa se duas ou mais partes funcionam juntas.
+- *Ex*: A função `SalvarPedido` consegue gravar no `BancoDeDados`?
 
-```python
-import math
+#### Teste End-to-End (E2E)
+Testa o fluxo completo do usuário.
+- *Ex*: Um robô abre o navegador, clica em comprar e verifica se apareceu "Sucesso".
 
-raiz = math.sqrt(25)
-print(raiz) # 5.0
-```
-
-### 3. Variações de Importação
-
-Podemos importar apenas o que precisamos, economizando memória e digitação.
-
-```python
-# Importa APENAS a função sqrt
-from math import sqrt
-
-raiz = sqrt(81) # Não precisa usar math.sqrt()
-print(raiz) # 9.0
-```
-
-**Apelidos (Alias):**
-Podemos dar um nome curto para o módulo.
-
-```python
-import datetime as dt
-
-agora = dt.datetime.now()
-print(agora)
-```
-
-### 4. Criando seu Próprio Módulo
-
-Imagine que temos um arquivo `utilidades.py`:
-
-```python
-# Arquivo: utilidades.py
-def dobro(x):
-    return x * 2
-
-taxa_padrao = 0.1
-```
-
-Podemos usar esse código em outro arquivo (`main.py`):
-
-```python
-# Arquivo: main.py
-import utilidades
-
-resultado = utilidades.dobro(10)
-print(resultado) # 20
-
-print(utilidades.taxa_padrao) # 0.1
-```
-
-### 5. O que são Pacotes?
-
-Pacotes são **pastas** que contêm módulos.
-Para o Python entender uma pasta como pacote, antigamente era obrigatório ter um arquivo `__init__.py` (hoje é opcional, mas boa prática).
-
-Estrutura:
-
-```mermaid
-graph TD
-    A[Meu Projeto] --> B[main.py]
-    A --> C[Pacote Matemática]
-    C --> D[geometria.py]
-    C --> E[estatistica.py]
-```
-
-```text
-meu_projeto/
-├── main.py
-└── matematica/          <-- Pacote
-    ├── __init__.py
-    ├── geometria.py     <-- Módulo
-    └── estatistica.py   <-- Módulo
-```
-
-Uso:
-```python
-from matematica import geometria
-
-area = geometria.calcular_area_quadrado(4)
-```
+### 4. TDD (Test Driven Development)
+Uma técnica onde você escreve o teste ANTES do código.
+- **Red**: Escreve o teste (ele falha, pois o código não existe).
+- **Green**: Escreve o código mínimo para o teste passar.
+- **Refactor**: Melhora o código garantindo que o teste continua passando.
 
 ---
 
-## 💻 Em Prática
-
-Vamos criar um "Gerador de Senhas" usando o módulo `random` e `string`.
-
-```python
-# gerador_senha.py
-import random
-import string
-
-def gerar_senha(tamanho=8):
-    # Letras + Números + Pontuação
-    caracteres = string.ascii_letters + string.digits + string.punctuation
-    
-    senha = ""
-    for _ in range(tamanho):
-        senha += random.choice(caracteres)
-    
-    return senha
-
-# Testando
-print(gerar_senha(12))
-```
+## 📽 Roteiro de Slides
+- **Slide 1**: Testes de Software
+- **Slide 2**: Manual vs. Automatizado (Tartaruga vs. Foguete).
+- **Slide 3**: Pirâmide de Testes (Unitário > Integração > E2E).
+- **Slide 4**: Teste Unitário (A lupa no código).
+- **Slide 5**: Teste de Integração (O quebra-cabeça).
+- **Slide 6**: TDD (Red -> Green -> Refactor).
 
 ---
 
-## 📝 Resumo
+## 📝 Quiz
 
-- **Módulo**: Arquivo `.py`.
-- **Pacote**: Pasta com módulos.
-- **`import math`**: Importa tudo (acessa com `math.func`).
-- **`from math import sqrt`**: Importa específico (acessa direto `sqrt`).
-- **`import pandas as pd`**: Importa com apelido.
+**1. Qual teste fica na base da Pirâmide de Testes (devemos ter em maior quantidade)?**
+A) Teste Manual.
+B) Teste End-to-End (E2E).
+C) Teste Unitário.
+D) Teste de Usabilidade.
+
+**2. O que valida um Teste Unitário?**
+A) O sistema inteiro.
+B) A menor parte testável do código (ex: uma função).
+C) A integração com o banco de dados.
+D) A cor do botão.
+
+**3. No TDD (Test Driven Development), qual a ordem correta?**
+A) Código -> Teste -> Refatoração.
+B) Teste -> Código -> Refatoração.
+C) Refatoração -> Teste -> Código.
+D) Teste -> Refatoração -> Código.
+
+**4. Por que não devemos ter APENAS testes manuais?**
+A) Porque são lentos, caros e propensos a falhas humanas.
+B) Porque testadores manuais não existem.
+C) Porque computadores não gostam de mãos.
+D) Porque é muito rápido.
+
+**5. O que significa o estado "Red" no TDD?**
+A) O teste falhou (porque a funcionalidade ainda não existe).
+B) O computador está superaquecendo.
+C) O código está pronto e funcionando.
+D) O teste deve ser apagado.
+
+**Gabarito:**
+1-C, 2-B, 3-B, 4-A, 5-A
 
 ---
 
-## 🎯 Próximos Passos
+## 🛠 Exercícios
+1.  **Escrevendo Testes (Papel)**: Imagine uma função `ehMaiorDeIdade(idade)`. Escreva 3 casos de teste para ela.
+    - Ex: Entrada 10 -> Esperado: Falso.
+    - Ex: Entrada 18 -> Esperado: ???
+    - Ex: Entrada 25 -> Esperado: ???
+2.  **Classificação**: Um teste que verifica se, ao clicar no botão "Login", o usuário é redirecionado para a "Home", é Unitário ou E2E?
+3.  **Reflexão TDD**: Por que escrever o teste antes ajuda a desenhar melhor o código? (Pense em como você é "obrigado" a pensar na entrada e saída da função).
 
-<div class="grid cards" markdown>
+---
 
--   :material-presentation: **Acessar Slides**
-    -   [Ver Slides da Aula](../slides/slide-10.html)
+## 🚀 Projeto da Aula: Criando Casos de Teste
+**Atividade da Aula:**
+Vamos planejar os testes para o nosso To-Do App.
 
--   :material-school: **Quiz**
-    -   [Responder Quiz](../quizzes/quiz-10.md)
-
--   :material-dumbbell: **Exercícios**
-    -   [Lista de Exercícios](../exercicios/exercicio-10.md)
-
--   :material-rocket: **Projeto**
-    -   [Mini Projeto](../projetos/projeto-10.md)
-
-</div>
+1.  **Escolha uma funcionalidade**: Vamos usar "Adicionar Tarefa".
+2.  **Crie Casos de Teste (Cenários)**:
+    - *CT01*: Adicionar tarefa com título válido. (Resultado Esperado: Tarefa aparece na lista).
+    - *CT02*: Tentar adicionar tarefa sem título. (Resultado Esperado: Erro/Alerta, tarefa NÃO aparece).
+    - *CT03*: Adicionar tarefa com título muito longo (ex: 500 caracteres). (Resultado Esperado: Truncar ou erro?).
+3.  **Ação**: Adicione uma tabela "Plano de Testes" ao seu documento de projeto com esses casos.

@@ -1,118 +1,28 @@
-# Aula 10
-## Módulos e Pacotes
+# Slide 10 - Testes de Software
 
-![bg right:40% 80%](https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg)
+## Slide 1: Título
+- **Título**: Testes de Software
+- **Subtítulo**: Aula 10 - Automatização e TDD
 
----
+## Slide 2: Manual vs. Automatizado
+- **Manual**: Lento, caro, falho. Ideal para testes exploratórios.
+- **Automatizado**: Rápido, repetível, confiável. Ideal para regressão.
 
-## 🎯 Objetivos
+## Slide 3: A Pirâmide de Testes
+- **Topo (E2E)**: Lentos, frágeis, poucos.
+- **Meio (Integração)**: Verificam conexões.
+- **Base (Unitários)**: Rápidos, isolados, muitos.
 
-- Reutilizar código com `import`
-- Biblioteca Padrão (`stdlib`)
-- Criar Módulos próprios (`.py`)
-- Pacotes (Pastas)
+## Slide 4: Teste Unitário
+- Testa a menor unidade (função/método).
+- Não toca banco de dados ou rede.
+- Executa em milissegundos.
 
----
+## Slide 5: Teste de Integração e E2E
+- **Integração**: Testa componentes juntos.
+- **E2E (Ponta a Ponta)**: Simula o usuário real no navegador.
 
-## 📦 O que é um Módulo?
-
-Arquivos `.py` contendo:
-- Funções
-- Classes
-- Variáveis
-
-**Vantagem:** Divide problemas grandes em partes pequenas e organizadas.
-
----
-
-## 🔌 Importando ("Baterias Inclusas")
-
-O Python já vem com muita coisa pronta.
-
-**Exemplo `math`:**
-```python
-import math
-
-print(math.pi) # 3.14159...
-print(math.sqrt(16)) # 4.0
-```
-
-**Exemplo `random`:**
-```python
-import random
-
-print(random.randint(1, 10)) # Sorteia de 1 a 10
-```
-
----
-
-## 🎯 Import Específico (`from ... import`)
-
-Pega só o que precisa (mais limpo).
-
-```python
-from math import sqrt, pi
-
-print(pi) # Não precisa do math.pi
-print(sqrt(9))
-```
-
----
-
-## 🏷️ Apelidos (`as`)
-
-Para nomes longos ou convenções.
-
-```python
-import datetime as dt
-import pandas as pd # Convenção mundial
-
-inicio = dt.datetime.now()
-```
-
----
-
-## 🔨 Seus Próprios Módulos
-
-Crie `minha_lib.py`:
-```python
-def ola():
-    print("Oi do módulo!")
-```
-
-Use em `main.py`:
-```python
-import minha_lib
-
-minha_lib.ola()
-```
-
----
-
-## 📂 Pacotes
-
-São **pastas** com arquivos Python.
-Geralmente têm um `__init__.py` dentro.
-
-`from meu_pacote import meu_modulo`
-
-Exemplo de estrutura:
-- `jogo/` (Pacote)
-  - `__init__.py`
-  - `graficos.py` (Módulo)
-  - `som.py` (Módulo)
-
----
-
-## 🏁 Resumo
-
-1. `import modulo`: Traz o arquivo.
-2. `from modulo import item`: Traz a função/classe.
-3. `as apelido`: Renomeia.
-4. Módulos organizam e evitam arquivos gigantes.
-5. Biblioteca Padrão é poderosa (`os`, `sys`, `math`, `random`...).
-
----
-
-# Prática! 🚀
-Vamos modularizar o mundo.
+## Slide 6: TDD (Test Driven Development)
+- Ciclo Red-Green-Refactor.
+- Escrever o teste antes do código.
+- Garante testabilidade e documentação viva.

@@ -1,37 +1,30 @@
-# Projeto 08 - Agenda de Contatos
+# Projeto 08 - Design de Código (Modularização)
 
 ## 🎯 Objetivo
-Criar uma agenda telefônica simples usando um dicionário para armazenar os contatos.
+Aplicar conceitos de modularização e DRY para organizar a lógica do sistema.
 
-## 📋 Requisitos
-1. O programa deve ter um menu:
-    - Adicionar Contato.
-    - Buscar Contato.
-    - Remover Contato.
-    - Listar Todos.
-    - Sair.
-2. Os dados devem ser armazenados em um único dicionário onde:
-    - **Chave:** Nome do contato.
-    - **Valor:** Telefone do contato.
+## 📝 Descrição
+Antes de escrever muito código, vamos planejar nossas funções principais para evitar repetição.
 
-## 💡 Dicas
-- Para adicionar/editar: `agenda[nome] = telefone`.
-- Para buscar: `agenda.get(nome, "Não encontrado")`.
-- Para remover: `agenda.pop(nome)`.
-- Use `.items()` para listar tudo.
+## 🚀 Passo a Passo
 
-## 👣 Passo a Passo
-1. Crie `agenda = {}`.
-2. Implemente o loop do menu.
-3. Leia a opção e execute a lógica do dicionário.
-4. Teste adicionar um contato e depois buscá-lo.
+### 1. Identificando Responsabilidades
+Olhe para as funcionalidades do app. Quais ações se repetem?
+- *Salvar no LocalStorage*: Vamos precisar salvar ao criar, editar e excluir.
+- *Renderizar a Lista*: Vamos precisar desenhar a lista na tela ao carregar e ao mudar algo.
 
-## 🚀 Desafio Extra
-Faça com que o valor do dicionário não seja apenas o telefone (string), mas sim outro dicionário contendo `telefone` e `email`.
-Exemplo:
-```python
-agenda = {
-    "Ricardo": {"tel": "9999-8888", "email": "ricardo@email.com"}
-}
-```
-Atualize as funções de adicionar e buscar para lidar com essa estrutura.
+### 2. Definindo Funções Reutilizáveis
+Crie uma lista de funções "Utilitárias" que seu projeto terá:
+1. `salvarDados()`: Pega a lista de tarefas e salva no navegador.
+2. `carregarDados()`: Lê do navegador e devolve a lista.
+3. `renderizarTela()`: Limpa a lista atual e desenha os itens novamente.
+
+### 3. Exemplo de Fluxo Limpo
+Ao adicionar uma tarefa, o fluxo seria:
+1. Ler dados (`carregarDados()`)
+2. Adicionar novo item na lista.
+3. Salvar dados (`salvarDados()`)
+4. Atualizar tela (`renderizarTela()`)
+
+## 📤 Entrega
+Adicione esse planejamento de funções ao seu documento de projeto. Mostra que você pensou na estrutura antes de sair digitando.

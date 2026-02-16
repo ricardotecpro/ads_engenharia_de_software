@@ -1,150 +1,108 @@
-# Aula 07 - Tuplas e Sets
+# Aula 07 – Versionamento de Código (Git & GitHub)
 
-## 🎯 Objetivos da Aula
-
-- [ ] Entender o que são Tuplas (`tuple`) e sua imutabilidade
-- [ ] Conhecer o Desempacotamento de Tuplas
-- [ ] Entender o que são Sets (`set`) e sua unicidade
-- [ ] Realizar operações de conjuntos (União, Interseção, Diferença)
-- [ ] Saber quando usar Listas, Tuplas ou Sets
-
----
+## 🎯 Objetivos de Aprendizagem
+- Entender para que serve o Versionamento de Código.
+- Conhecer o Git (ferramenta) e o GitHub (plataforma).
+- Aprender os comandos básicos: `init`, `add`, `commit`, `push`.
+- Entender o conceito de Branches (Ramos).
 
 ## 📚 Conteúdo
 
-### 1. Tuplas (Tuples)
+### 1. O Problema das Versões
+Sem versionamento, os arquivos ficam assim:
+- `trabalho_final.doc`
+- `trabalho_final_agora_vai.doc`
+- `trabalho_final_V2_corrigido.doc`
 
-Tuplas são muito parecidas com listas, mas são **imutáveis**. Uma vez criadas, não podemos adicionar, remover ou alterar itens.
-Usamos parênteses `()` para criar.
+No desenvolvimento de software, isso é o caos. Precisamos de uma máquina do tempo.
 
-```python
-# Lista (Mutável)
-lista = [1, 2, 3]
-lista[0] = 10 # OK
+### 2. O que é Git?
+O Git é um sistema de controle de versão distribuído. Ele registra **quem** mudou **o que** e **quando**.
+- **Máquina do Tempo**: Você pode voltar o código para como ele estava ontem.
+- **Trabalho em Equipe**: Permite que várias pessoas mexam no mesmo projeto sem apagar o trabalho uma da outra.
 
-# Tupla (Imutável)
-tupla = (1, 2, 3)
-# tupla[0] = 10 # ERRO! TypeError
-```
+### 3. O que é GitHub?
+O GitHub é uma rede social para códigos. É um servidor na nuvem onde você guarda seus repositórios Git.
+- **Git** = Ferramenta instalada no seu PC.
+- **GitHub** = Site onde o código fica hospedado.
 
-**Para que servem?**
-- Dados que não devem mudar (ex: coordenadas GPS, dias da semana).
-- São mais leves e rápidas na memória que listas.
+### 4. Ciclo Básico
+1.  **Working Directory**: Onde você edita os arquivos.
+2.  **Staging Area (`git add`)**: Escolhe os arquivos que vão ser salvos.
+3.  **Repository (`git commit`)**: Tira uma "foto" definitiva (Save Point).
+4.  **Remote (`git push`)**: Envia para o GitHub.
 
-### 2. Desempacotamento de Tuplas
-
-Podemos atribuir os valores de uma tupla a várias variáveis de uma vez.
-
-```python
-coordenadas = (10, 20)
-x, y = coordenadas
-
-print(x) # 10
-print(y) # 20
-```
-
-### 3. Sets (Conjuntos)
-
-Sets são coleções **não ordenadas** de elementos **únicos**.
-Usamos chaves `{}`.
-
-```python
-# Criando um set
-frutas = {"Maçã", "Banana", "Maçã", "Uva"}
-
-print(frutas)
-# Saída: {'Banana', 'Maçã', 'Uva'} 
-# Note que "Maçã" apareceu só uma vez!
-```
-
-> **Não tem índice:** Como não é ordenado, não podemos fazer `frutas[0]`.
-
-### 4. Operações com Sets
-
-Sets brilham na matemática dos conjuntos.
-
-- **União (`|`)**: Junta tudo (sem repetir).
-- **Interseção (`&`)**: Só o que tem nos dois.
-- **Diferença (`-`)**: O que tem em um mas não no outro.
-
-```python
-A = {1, 2, 3, 4}
-B = {3, 4, 5, 6}
-
-print(A | B) # {1, 2, 3, 4, 5, 6} -> União
-print(A & B) # {3, 4} -> Interseção
-print(A - B) # {1, 2} -> Diferença (O que tem só em A)
-```
-
-### 5. Quando usar o quê?
-
-**Árvore de Decisão:**
-
-1. **Precisa mudar os dados?**
-   - ✅ Sim → Continue para 2
-   - ❌ Não → Use **Tupla**
-
-2. **Precisa manter ordem?**
-   - ✅ Sim → Use **Lista**
-   - ❌ Não → Use **Set**
-
-| Estrutura | Ordenada? | Mutável? | Duplicatas? | Sintaxe | Uso Ideal |
-| :--- | :---: | :---: | :---: | :---: | :--- |
-| **Lista** | Sim | Sim | Sim | `[]` | Coleções gerais, pilhas, filas. |
-| **Tupla** | Sim | Não | Sim | `()` | Dados fixos, configurações. |
-| **Set** | Não | Sim | Não | `{}` | Garantir unicidade, operações matemáticas. |
+### 5. Branches (Ramos)
+Imagine uma linha do tempo principal (`main`). Para criar uma nova funcionalidade sem quebrar o que já funciona, criamos uma linha paralela (`feature`). Se der certo, juntamos tudo (`merge`).
 
 ---
 
-## 💻 Em Prática
-
-Vamos usar um Set para remover itens duplicados de uma lista de convidados bagunçada.
-
-```python
-# limpando_lista.py
-
-# Lista com nomes repetidos
-convidados_lista = ["Ana", "Carlos", "Ana", "Beto", "Carlos", "Dani"]
-
-print(f"Lista original: {convidados_lista}")
-
-# Converte para set (remove duplicatas automaticamente)
-convidados_set = set(convidados_lista)
-
-print(f"Set limpo: {convidados_set}")
-
-# Voltando para lista (se precisar ordenar, por exemplo)
-convidados_unicos = list(convidados_set)
-convidados_unicos.sort()
-
-print(f"Lista final ordenada: {convidados_unicos}")
-```
+## 📽 Roteiro de Slides
+- **Slide 1**: Git e GitHub
+- **Slide 2**: O problema "trabalho_final_v2" (Caos de versões).
+- **Slide 3**: Git (Ferramenta local) vs. GitHub (Nuvem).
+- **Slide 4**: Comandos Essenciais (add, commit, push, pull).
+- **Slide 5**: A metáfora da "Foto" (Snapshot).
+- **Slide 6**: Branches (Trabalho paralelo).
 
 ---
 
-## 📝 Resumo
+## 📝 Quiz
 
-- **Tuplas `()`**: Imutáveis. Boas para dados constantes.
-- **Sets `{}`**: Elementos únicos e não ordenados.
-- **Desempacotamento**: `a, b = (1, 2)` facilita a vida.
-- **Operações de Conjunto**: `|` (União), `&` (Interseção), `-` (Diferença).
+**1. Qual a diferença entre Git e GitHub?**
+A) Git é pago, GitHub é grátis.
+B) Git é a ferramenta de versionamento; GitHub é a plataforma de hospedagem.
+C) São a mesma coisa.
+D) GitHub é para jogos.
+
+**2. Qual comando "tira a foto" (salva a versão) no histórico local?**
+A) `git add`
+B) `git upload`
+C) `git commit`
+D) `git save`
+
+**3. O que é um "Branch"?**
+A) Um erro no código.
+B) Uma ramificação paralela para desenvolver sem afetar o código principal.
+C) A marca do computador.
+D) Um tipo de vírus.
+
+**4. Para que serve o `git push`?**
+A) Para empurrar o computador.
+B) Para enviar as alterações locais para o repositório remoto (GitHub).
+C) Para baixar atualizações.
+D) Para apagar tudo.
+
+**5. Por que usamos controle de versão?**
+A) Para gastar mais espaço em disco.
+B) Para ter histórico, backup e facilitar o trabalho em equipe.
+C) Porque é difícil.
+D) Para nada.
+
+**Gabarito:**
+1-B, 2-C, 3-B, 4-B, 5-B
 
 ---
 
-## 🎯 Próximos Passos
+## 🛠 Exercícios
+1.  **Analogia**: Explique para uma criança o que é `git commit` usando a metáfora de um videogame (Save Point).
+2.  **Cenário**: Você apagou sem querer uma parte importante do código hoje de manhã. Se você estiver usando Git, como ele pode te salvar?
+3.  **Fluxo**: Desenhe setas conectando:
+    - `Meu PC` -> `Área de Preparação` -> `Histórico Local` -> `GitHub`
+    - (Associe aos comandos: `add`, `commit`, `push`).
 
-<div class="grid cards" markdown>
+---
 
--   :material-presentation: **Acessar Slides**
-    -   [Ver Slides da Aula](../slides/slide-07.html)
+## 🚀 Projeto da Aula: Versionando o Projeto
+**Atividade da Aula:**
+Vamos simular o versionamento do nosso To-Do App.
 
--   :material-school: **Quiz**
-    -   [Responder Quiz](../quizzes/quiz-07.md)
-
--   :material-dumbbell: **Exercícios**
-    -   [Lista de Exercícios](../exercicios/exercicio-07.md)
-
--   :material-rocket: **Projeto**
-    -   [Mini Projeto](../projetos/projeto-07.md)
-
-</div>
+1.  **Inicializar**: Imagine que você rodou `git init` na pasta do projeto.
+2.  **Primeiro Commit**:
+    - Você criou os arquivos iniciais (`index.html`, `style.css`).
+    - Rodou `git add .`
+    - Rodou `git commit -m "Estrutura inicial do projeto"`.
+3.  **Simulação de Branch**:
+    - Você quer tentar mudar a cor de fundo para rosa, mas não tem certeza se vai gostar.
+    - O que você faz? Tenta direto na `main` ou cria uma `branch experimentacao-cor`?
+4.  **No Documento**: Escreva o nome de 3 commits que você faria ao longo do projeto (ex: "Adicionar funcionalidade de login").

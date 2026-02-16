@@ -1,39 +1,26 @@
-# Projeto 04 - Pedra, Papel e Tesoura 👊✋✌️
+# Projeto 04 - Descrição de User Stories
 
 ## 🎯 Objetivo
-Criar o clássico jogo "Jokenpô" (Pedra, Papel e Tesoura) para jogar contra o computador.
+Transformar itens simples do backlog em Histórias de Usuário detalhadas com Critérios de Aceite.
 
-## 📋 Requisitos
-1. O usuário escolhe sua jogada (Pedra, Papel ou Tesoura).
-2. O computador escolhe aleatoriamente (vamos ensinar como fazer isso).
-3. O programa compara as escolhas e declara o vencedor.
+## 📝 Descrição
+No desenvolvimento Ágil, a comunicação é chave. Uma tarefa solta como "Fazer Login" pode ser interpretada de mil maneiras. User Stories trazem contexto.
 
-Regras:
-- Pedra ganha de Tesoura
-- Tesoura ganha de Papel
-- Papel ganha de Pedra
-- Iguais = Empate
+## 🚀 Passo a Passo
+1.  Selecione os cartões da coluna **Sprint 1 (To Do)**.
+2.  Para cada cartão, crie um pequeno documento (ou escreva no verso do post-it/descrição do Trello) contendo:
+    - **Título**: (Ex: Fazer Login)
+    - **User Story**: "Como um... Quero... Para..."
+    - **Critérios de Aceite**: Lista de verificações (Checklist).
 
-## 💡 Como o computador escolhe?
-Você vai precisar importar a biblioteca `random`.
+## Exemplo Prático (To-Do App)
+**Cartão: Criar Tarefa**
+- **História**: "Como usuário organizado, quero adicionar uma nova tarefa à minha lista, para que eu lembre do que preciso fazer."
+- **Critérios de Aceite**:
+    - [ ] O campo "título" não pode ficar vazio.
+    - [ ] Deve ser possível adicionar uma descrição opcional.
+    - [ ] Ao clicar em "Salvar", a tarefa deve aparecer imediatamente na tela.
+    - [ ] Deve haver um botão "Cancelar" para desistir da criação.
 
-```python
-import random
-
-opcoes = ["Pedra", "Papel", "Tesoura"]
-computador = random.choice(opcoes) # Escolhe um aleatório da lista
-```
-
-## 👣 Passo a Passo
-1. Importe `random`.
-2. Peça a jogada do usuário (`input`). Dica: Converta para letra minúscula ou tratada para facilitar.
-3. Gere a jogada do computador.
-4. Use `if/elif/else` para comparar:
-    - Se forem iguais -> Empate.
-    - Se usuário == Pedra e computador == Tesoura -> Usuário ganha.
-    - (...) Liste todas as vitórias.
-    - Se não for empate e usuário não ganhou -> Computador ganha.
-5. Mostre as duas jogadas e o resultado final.
-
-## 🚀 Desafio Extra
-Faça o programa aceitar inputs como "p", "pedra", "PEDRA" da mesma forma (tratamento de string).
+## 📤 Entrega
+Suas histórias da Sprint 1 detalhadas. Isso será a "especificação" para quando formos codificar.

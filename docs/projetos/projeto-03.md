@@ -1,39 +1,23 @@
-# Projeto 03 - Calculadora de Gorjeta
+# Projeto 03 - Backlog e Quadro Ágil
 
 ## 🎯 Objetivo
-Criar um programa que ajude a dividir a conta de um restaurante, calculando a gorjeta e o valor por pessoa.
+Criar o Product Backlog e o Quadro Kanban para gerenciar o projeto.
 
-## 📋 Requisitos
-1. Solicitar o valor total da conta.
-2. Solicitar a porcentagem da gorjeta que o usuário quer dar (ex: 10, 12, 15).
-3. Solicitar quantas pessoas vão dividir a conta.
-4. Calcular:
-    - Valor da gorjeta.
-    - Valor total (conta + gorjeta).
-    - Valor para cada pessoa.
-5. Exibir os resultados formatados (com 2 casas decimais).
+## 📝 Descrição
+Agora que temos o Roadmap, vamos quebrá-lo em tarefas menores e visualizá-las. Vamos simular que estamos prontos para começar a codificar a primeira versão.
 
-## 💡 Saída Esperada
-```text
-Bem-vindo à Calculadora de Gorjeta!
------------------------------------
-Valor total da conta: R$ 150.00
-Porcentagem da gorjeta: 10
-Quantas pessoas: 3
+## 🚀 Passo a Passo
+1.  **Product Backlog**: Liste todas as funcionalidades que você imaginou. Chame isso de "Product Backlog".
+    *Ex: Login, Criar Tarefa, Editar Tarefa, Excluir Tarefa, Modo Escuro.*
+2.  **Sprint Planning (Simulado)**: Escolha quais tarefas você faria nas primeiras 2 semanas. Isso vira seu "Sprint Backlog".
+    *Ex: Apenas "Criar Tarefa" e "Listar Tarefas".*
+3.  **Quadro Visual**:
+    - Crie 4 colunas em um papel ou software (Trello/Notion):
+        - **Backlog** (Tudo que falta)
+        - **To Do** (Sprint atual - A Fazer)
+        - **Doing** (Fazendo agora)
+        - **Done** (Pronto)
+4.  Mova os itens da Sprint 1 do Backlog para o "To Do".
 
-Gorjeta: R$ 15.00
-Total com gorjeta: R$ 165.00
-Cada um paga: R$ 55.00
-```
-
-## 👣 Passo a Passo
-1. `input()` para ler valor, porcentagem e pessoas.
-2. Converter inputs (`float` para dinheiro, `int` para pessoas).
-3. Cálculos:
-    - `valor_gorjeta = total * (porcentagem / 100)`
-    - `total_final = total + valor_gorjeta`
-    - `por_pessoa = total_final / pessoas`
-4. `print()` com f-strings e formatação `:.2f`.
-
-## 🚀 Desafio Extra
-Garanta que, mesmo que a conta dê um número quebrado na divisão (ex: 33.33333), o valor exibido seja amigável (arredondado).
+## 📤 Entrega
+Um print ou foto do seu quadro com os cartões posicionados. Agora você tem controle visual do projeto!

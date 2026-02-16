@@ -1,23 +1,17 @@
-# Exercícios - Aula 15
+# Exercício 15 - Manutenção
 
-## 1. Instalando Requests
-*(Exercício de configuração)*
-Abra seu terminal e execute: `pip install requests` (ou verifique se já está instalado).
-Crie um arquivo `.py` e faça `import requests` para ver se não dá erro.
+## 🛠 Questões Práticas
 
-## 2. Consumindo uma API Pública
-Use a URL `https://jsonplaceholder.typicode.com/todos/1`.
-Faça um GET e imprima o título (`title`) da tarefa que retornou.
+**1. O Chefe Apressado**
+Seu chefe diz "Não temos tempo para refatorar, temos que entregar features novas!". Como você explicaria para ele, usando uma metáfora financeira (Dívida), que se não refatorar agora, o time vai ficar cada vez mais lento nas próximas entregas?
 
-## 3. Lista de Usuários
-Use a URL `https://jsonplaceholder.typicode.com/users`.
-Isso retorna uma LISTA de dicionários.
-Faça um loop e imprima o `name` e o `email` de cada usuário.
+**2. Código Legado**
+Você recebeu um código escrito há 10 anos, sem documentação e com nomes de variáveis como `x`, `y` e `temp`. Qual o primeiro passo para começar a dar manutenção nisso sem quebrar tudo? (Dica: Testes).
 
-## 4. Cotação de Moedas
-A API `https://awesomeapi.com.br/last/USD-BRL` retorna a cotação do Dólar.
-Faça um programa que acessa essa API e diz quanto está valendo 1 Dólar em Reais (`bid` ou `ask`).
-
-## 5. Tratamento de Erro
-Tente acessar uma URL que não existe (ex: `https://google.com/naoexiste`).
-Use `try/except` para capturar o erro e imprimir "Página não encontrada" em vez de deixar o programa explodir.
+**3. Refatoração Visual**
+Olhe este código:
+```python
+if (idade > 18 and dinheiro > 50 and temCarro == True and naoBebeu == True):
+   podeDirigir = True
+```
+Como você refatoraria essa condição complexa para torná-la legível? (Talvez extrair para uma função `estaAptoParaDirigir()`?).

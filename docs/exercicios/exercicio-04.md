@@ -1,28 +1,22 @@
-# Exercícios - Aula 04
+# Exercício 04 - Requisitos de Software
 
-## 1. Positivo, Negativo ou Zero?
-Peça um número ao usuário e diga se ele é Positivo, Negativo ou Zero.
+## 🛠 Questões Práticas
 
-## 2. Par ou Ímpar (com if)
-Peça um número e diga se é par ou ímpar.
-(Dica: Se o resto da divisão por 2 for 0, é par).
+**1. Classificando Requisitos**
+Abaixo temos uma lista de desejos de um cliente para uma loja virtual. Marque como **[RF]** (Funcional) ou **[RNF]** (Não-Funcional):
+- ( ) O cliente deve conseguir colocar produtos no carrinho.
+- ( ) O site deve carregar em menos de 1 segundo.
+- ( ) O sistema deve aceitar pagamentos via PIX.
+- ( ) Os dados do cartão de crédito não podem ser salvos no banco de dados.
+- ( ) O layout deve ser responsivo (funcionar no celular).
 
-## 3. Maior de dois números
-Peça dois números e diga qual é o maior, ou se são iguais.
+**2. Escrevendo sua História**
+Pense no recurso "Modo Noturno" para o To-Do App. 
+Preencha:
+- **Como um**: ______________________
+- **Eu quero**: ______________________
+- **Para que**: ______________________
 
-## 4. Classificação de Idade
-Peça a idade e classifique:
-- 0 a 12: Criança
-- 13 a 17: Adolescente
-- 18 a 59: Adulto
-- 60+: Idoso
-
-## 5. Simulador de Empréstimo
-Para aprovar um empréstimo bancário, peça:
-- O valor da casa
-- O salário do comprador
-- Em quantos anos vai pagar
-
-Calcule o valor da prestação mensal (Valor Casa / Meses).
-Se a prestação for maior que 30% do salário, imprima "Empréstimo negado".
-Caso contrário, imprima "Empréstimo aprovado" e o valor da prestação.
+**3. Critérios de Aceite**
+Para a história do "Modo Noturno", defina 2 critérios de aceite para garantir que ela foi bem implementada.
+*Ex: O sistema deve lembrar da escolha do usuário na próxima vez que ele abrir o app?*

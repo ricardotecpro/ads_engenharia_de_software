@@ -1,118 +1,33 @@
-# Aula 04
-## Estruturas Condicionais (if/elif/else)
+# Slide 04 - Requisitos de Software
 
-![bg right:40% 80%](https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg)
+## Slide 1: Título
+- **Título**: Engenharia de Requisitos
+- **Subtítulo**: Aula 04 - Funcionais, Não-Funcionais e User Stories
 
----
+## Slide 2: O que são Requisitos?
+- A base do projeto.
+- Definem o que o software deve fazer e como deve se comportar.
+- Requisitos ruins = Projeto fracassado.
 
-## 🎯 Objetivos
+## Slide 3: Tipos de Requisitos
+- **Funcionais (RF)**: O que o sistema FAZ.
+    - Ex: Calcular imposto, Cadastrar usuário.
+- **Não-Funcionais (RNF)**: Como o sistema É (Restrições).
+    - Ex: Performance, Segurança, Usabilidade.
 
-- Controlar o fluxo do programa
-- `if` (Se)
-- `else` (Senão)
-- `elif` (Senão Se)
-- Importância da **Indentação**
+## Slide 4: User Stories (Histórias de Usuário)
+- Formato ágil para requisitos.
+- **Estrutura**:
+    - Como um **<persona>**
+    - Eu quero **<ação>**
+    - Para que **<valor/benefício>**
+- Foco no valor de negócio, não na tecnologia.
 
----
+## Slide 5: Critérios de Aceite
+- Condições para uma história ser considerada "Pronta" (Done).
+- Evita o "mas eu achei que ia ter X".
+- Serve de base para testes.
 
-## 🤔 Tomando Decisões
-
-Até agora nossos códigos eram lineares.
-Mas precisamos fazer escolhas!
-
-![width:600px](https://mermaid.ink/img/pako:eNpFj0ELgkAQhf_KMGcT9Ch0CiK6RB06eAizq6u4a-q6EaL_3l0TIzrN9968GcYKE0oCA3qVvF5hYgYlWx0N9FbaAdpaQ1aWcNk0vS707q5l_8i80WjO_44p-5scd1K8iR9iE73F3vWRLkY_xS66iXW0iU30T2wX2XT7f5I2R_oD6c4vVA)
-
----
-
-## 🔹 A Estrutura `if`
-
-Se a condição for `True`, executa o bloco.
-
-```python
-idade = 20
-
-if idade >= 18:
-    print("Pode entrar.")
-    print("Bem-vindo!")
-    
-print("Fim")
-```
-
-👉 **INDENTAÇÃO:** Os espeços no início da linha (TAB ou 4 espaços) definem o que está "dentro" do `if`.
-
----
-
-## 🔹 A Estrutura `else`
-
-O caminho alternativo. Se o `if` falhar, o `else` assume.
-
-```python
-idade = 15
-
-if idade >= 18:
-    print("Maior de idade")
-else:
-    print("Menor de idade")
-```
-
----
-
-## 🔹 A Estrutura `elif`
-
-Para testar várias opções.
-
-```python
-cor = "vermelho"
-
-if cor == "verde":
-    print("Siga")
-elif cor == "amarelo":
-    print("Atenção")
-elif cor == "vermelho":
-    print("Pare")
-else:
-    print("Cor desconhecida")
-```
-
----
-
-## ⚠️ Erros Comuns
-
-1. Esquecer os dois pontos (`:`) no final.
-2. Errar a indentação (usar espaços e tabs misturados).
-3. Usar `=` (atribuição) em vez de `==` (comparação).
-
-```python
-if x = 10: # ERRO!
-    print("X é 10")
-```
-
----
-
-## 🧩 Combinando Lógica
-
-Use `and`, `or`, `not` para condições complexas.
-
-```python
-# Entra se for sócio OU se pagar ingresso
-if socio or pagou_ingresso:
-    print("Entra")
-
-# Entra se for maior de idade E tiver carteira
-if idade >= 18 and tem_carteira:
-    print("Dirige")
-```
-
----
-
-## 🏁 Resumo
-
-1. **`if`**: Início da decisão.
-2. **`elif`**: Outras opções (opcional).
-3. **`else`**: Opção final/padrão (opcional).
-4. **Indentação**: Obrigatória para definir os blocos.
-
----
-
-# Prática! 🚀
-Vamos resolver problemas reais.
+## Slide 6: Resumo
+- Documentar o que fazer antes de fazer economiza muito tempo.
+- Use User Stories para manter o foco no usuário.

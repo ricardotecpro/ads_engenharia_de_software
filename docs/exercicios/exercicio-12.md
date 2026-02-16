@@ -1,33 +1,12 @@
-# Exercícios - Aula 12
+# Exercício 12 - Segurança
 
-## 1. Divisão Segura
-Peça dois números ao usuário e faça a divisão.
-Trate os erros:
-- `ValueError` (se não digitar números).
-- `ZeroDivisionError` (se dividir por zero).
-Mostre o resultado ou a mensagem de erro apropriada.
+## 🛠 Questões Práticas
 
-## 2. Lista Segura
-Crie uma lista com 3 nomes: `lista = ["Ana", "Bia", "Carol"]`.
-Peça ao usuário um índice (número inteiro).
-Imprima o nome correspondente.
-Trate os erros:
-- `ValueError` (se não digitar inteiro).
-- `IndexError` (se o índice não existir na lista).
+**1. Analisando URL**
+Você recebe um link: `banco-seguro.com/login?usuario=<script>alert(1)</script>`. Se você clicar e aparecer um alerta na tela, o site tem uma vulnerabilidade. Qual é o nome dela? (Dica: começa com X).
 
-## 3. Dicionário Seguro
-Crie um dicionário com alguns produtos e preços.
-Peça ao usuário o nome de um produto.
-Tente imprimir o preço.
-Se o produto não existir (`KeyError`), avise o usuário e mostre os produtos disponíveis.
+**2. Autenticação de Dois Fatores (2FA)**
+Por que usar apenas senha não é mais considerado seguro o suficiente? O que é o "segundo fator" (algo que você tem ou algo que você é)?
 
-## 4. Validador de Senha
-Crie uma função `verificar_senha(senha)` que:
-- Lance uma exceção `ValueError` se a senha tiver menos de 6 caracteres.
-- Lance uma exceção `ValueError` se a senha for apenas números (`.isdigit()`).
-Use `try/except` para testar sua função com senhas válidas e inválidas.
-
-## 5. Arquivo Fantasma
-Tente abrir um arquivo chamado `nao_existe.txt` para leitura.
-Capture o erro `FileNotFoundError` e imprima "Arquivo não encontrado, criando um novo...".
-No bloco `except`, crie o arquivo vazio.
+**3. Princípio do Menor Privilégio**
+Um estagiário precisa acessar o banco de dados para tirar um relatório. Você deve dar a ele a senha de `admin` (acesso total) ou criar um usuário com permissão apenas de `leitura` (SELECT)? Por que?

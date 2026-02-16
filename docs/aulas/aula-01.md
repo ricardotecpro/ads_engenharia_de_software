@@ -1,167 +1,109 @@
-# Aula 01 - Introdução à Computação e Python
+# Aula 01 – Fundamentos da Engenharia de Software
 
-## 🎯 Objetivos da Aula
-
-- [ ] Compreender o que é lógica de programação e algoritmos
-- [ ] Conhecer a linguagem Python e suas características
-- [ ] Preparar o ambiente de desenvolvimento (VSCode + Python)
-- [ ] Escrever e executar o primeiro código ("Olá Mundo")
-- [ ] Entender o conceito de entrada e saída básica
-
----
+## 🎯 Objetivos de Aprendizagem
+- Compreender o que é Engenharia de Software e sua importância.
+- Diferenciar "programação" (coding) de "engenharia de software".
+- Conhecer o Ciclo de Vida de Desenvolvimento de Software (SDLC).
+- Entender as fases fundamentais da construção de um software.
 
 ## 📚 Conteúdo
 
-### 1. O que é Programação?
+### 1. O que é Engenharia de Software?
+Engenharia de Software é a aplicação de uma abordagem sistemática, disciplinada e quantificável para o desenvolvimento, operação e manutenção de software. Diferente de apenas escrever código, ela se preocupa com:
+- **Qualidade**: O software funciona como esperado? É seguro?
+- **Prazo e Custo**: O projeto será entregue no tempo e orçamento previstos?
+- **Manutenibilidade**: O código pode ser entendido e alterado por outras pessoas no futuro?
 
-Programação é a arte de dar instruções a um computador para que ele realize tarefas específicas. Computadores não são "inteligentes"; eles são extremamente rápidos e obedientes. Eles precisam de comandos precisos para funcionar.
+> "Software Engineering is programming integrated over time." — Titus Winters (Google)
 
-Esses comandos são organizados em uma sequência lógica chamada **Algoritmo**.
+### 2. A Crise do Software e a Necessidade de Processos
+Historicamente, muitos projetos de software falhavam (estouravam prazos, orçamentos ou não funcionavam). Isso levou à **Crise do Software**, que impulsionou a criação de métodos para organizar o trabalho.
 
-> **Definição:** Um **Algoritmo** é uma sequência finita de passos bem definidos para resolver um problema.
+### 3. O Ciclo de Vida de Desenvolvimento de Software (SDLC)
+O SDLC (Software Development Life Cycle) é a estrutura que define as etapas envolvidas na criação de um software. As fases clássicas são:
 
-**Exemplo do dia a dia (Receita de Bolo):**
-1. Pegar os ingredientes
-2. Misturar a massa
-3. Colocar no forno
-4. Esperar assar
-5. Servir
+1.  **Levantamento de Requisitos**: Entender O QUE deve ser construído (ex: "O usuário precisa fazer login").
+2.  **Análise e Design**: Planejar COMO será construído (ex: "Usaremos um banco de dados SQL e uma interface web").
+3.  **Implementação (Codificação)**: Escrever o código de fato.
+4.  **Testes (Verificação)**: Garantir que não há erros (bugs).
+5.  **Implantação (Deploy)**: Colocar o software no ar para o usuário.
+6.  **Manutenção**: Corrigir problemas e adicionar novas funcionalidades após o lançamento.
 
-Na computação, usamos **Linguagens de Programação** para escrever esses algoritmos de uma forma que o computador entenda.
-
-
-```mermaid
-graph TD
-    A[Início] --> B{Tem Ingredientes?}
-    B -- Não --> C[Comprar]
-    C --> B
-    B -- Sim --> D[Misturar Massa]
-    D --> E[Assar]
-    E --> F[Servir]
-    F --> G[Fim]
-```
-
-### 2. Por que Python?
-
-Python é uma das linguagens mais populares do mundo. Ela foi criada por **Guido van Rossum** e lançada em 1991.
-
-**Principais características:**
-- **Simplicidade:** Sintaxe limpa e fácil de ler (parece inglês!).
-- **Versatilidade:** Usada em Web, Data Science, IA, Automação, Jogos, etc.
-- **Comunidade:** Milhares de bibliotecas prontas e muito suporte.
-
-### 3. Ambiente de Desenvolvimento
-
-Para programar em Python, precisamos de duas ferramentas principais:
-
-1.  **Interpretador Python:** O programa que lê e executa seu código.
-2.  **Editor de Código (IDE):** Onde escrevemos o código. Usaremos o **Visual Studio Code (VSCode)**.
-
-!!! info "Guia de Instalação"
-    Se você ainda não instalou o Python e o VSCode, consulte nosso [Guia de Instalação](../setups/setup-01.md).
-
-### 4. Seu Primeiro Código: "Olá Mundo"
-
-A tradição na programação diz que o primeiro código que você escreve em uma nova linguagem deve exibir a mensagem "Olá Mundo" na tela. Em Python, isso é extremamente simples.
-
-Usamos a função `print()` para mostrar (imprimir) informações na tela.
-
-**Exemplo:**
+### 4. Analogia: Construindo uma Casa
+- **Requisitos**: Conversar com o arquiteto sobre quantos quartos a casa terá.
+- **Design**: Desenhar a planta baixa e escolher os materiais.
+- **Implementação**: Pedreiros levantando paredes e instalando encanamento.
+- **Testes**: Verificar se as luzes acendem e se não há vazamentos.
+- **Implantação**: Entregar as chaves ao dono.
+- **Manutenção**: Pintar paredes descascadas ou consertar uma telha quebrada anos depois.
 
 ---
 
-<!-- termynal -->
-```console
-$ print("Olá, Mundo!")
----> 100%
-$ Olá, Mundo!
-```
+## 📽 Roteiro de Slides
+- **Slide 1: Capa**
+    - Título: Fundamentos da Engenharia de Software
+    - Subtítulo: Aula 01
+- **Slide 2: Definição**
+    - Engenharia de Software vs. Programação Simples
+    - Foco em qualidade, prazo e manutenção.
+- **Slide 3: O Ciclo de Vida (SDLC)**
+    - Diagrama circular com as 6 fases.
+    - Requisitos -> Design -> Código -> Teste -> Deploy -> Manutenção.
+- **Slide 4: Analogia da Casa**
+    - Comparação visual entre construir software e construir uma casa.
+- **Slide 5: Conclusão**
+    - Software é mais do que código; é processo e disciplina.
 
 ---
 
-```python
-print("Olá, Mundo!")
-```
+## 📝 Quiz
 
-**O que aconteceu?**
-- `print`: É o comando (função) que diz ao Python: "Mostre isso na tela".
-- `(...)`: Os parênteses indicam que estamos chamando uma função.
-- `"Olá, Mundo!"`: As aspas indicam que isso é um **texto** (string), e não um comando.
+**1. Qual é o principal objetivo da Engenharia de Software?**
+A) Escrever código o mais rápido possível, sem se preocupar com erros.
+B) Aplicar uma abordagem sistemática e disciplinada para o desenvolvimento de software.
+C) Criar apenas jogos de computador.
+D) Consertar computadores quebrados (hardware).
 
-### 5. Comentários
+**2. O que significa a sigla SDLC?**
+A) Software Design Leveled Code
+B) System Development Linear Code
+C) Software Development Life Cycle (Ciclo de Vida de Desenvolvimento de Software)
+D) Super Dynamic Life Cycle
 
-Comentários são anotações no código que o Python ignora. Eles servem para explicar o que o código faz para você mesmo (no futuro) ou para outros programadores.
+**3. Em qual fase do SDLC definimos "O QUE" será construído?**
+A) Testes
+B) Implementação
+C) Levantamento de Requisitos
+D) Manutenção
 
-```python
-# Isto é um comentário de uma linha
-print("Python é legal")  # Comentário na frente do código
+**4. O que ocorre na fase de "Manutenção"?**
+A) O software é deletado.
+B) O software é planejado do zero.
+C) Correções e melhorias são feitas após o software estar em uso.
+D) Os desenvolvedores tiram férias.
 
-"""
-Isto é um comentário
-de múltiplas linhas (Docstring)
-"""
-```
+**5. Qual a diferença principal entre Programação e Engenharia de Software?**
+A) Programação é apenas escrever código; Engenharia envolve todo o ciclo de vida e gestão.
+B) Não há diferença, são sinônimos.
+C) Engenharia de Software é apenas para hardware.
+D) Programação é mais difícil que Engenharia.
 
-### 6. Variáveis (Intro rápida)
-
-Imagine que variáveis são **caixinhas** na memória do computador onde guardamos informações. Cada caixinha tem um **nome** (rótulo) e um **valor** (conteúdo).
-
-```python
-mensagem = "Bem-vindo ao curso!"
-print(mensagem)
-```
-
-Neste exemplo:
-1. Criamos uma variável chamada `mensagem`.
-2. Guardamos o texto `"Bem-vindo ao curso!"` dentro dela.
-3. Pedimos para imprimir o *conteúdo* da variável `mensagem`.
+**Gabarito:**
+1-B, 2-C, 3-C, 4-C, 5-A
 
 ---
 
-## 💻 Em Prática
-
-Vamos abrir o VSCode e criar um arquivo chamado `aula01.py`.
-
-**Desafio:**
-Escreva um código que imprima seu nome, sua idade e sua cidade, um por linha.
-
-```python
-# aula01.py
-
-print("Nome: Ricardo")
-print("Idade: 30")
-print("Cidade: São Paulo")
-```
-
-Para executar:
-1. Abra o terminal no VSCode (`Ctrl + '`)
-2. Digite: `python aula01.py`
+## 🛠 Exercícios
+1.  **Identificação de Fases**: Pense em um aplicativo que você usa (ex: Instagram). Liste uma atividade que provavelmente ocorreu na fase de *Design* e uma na fase de *Testes* desse app.
+2.  **Cenário de Erro**: Se um erro grave é descoberto apenas na fase de *Implantação*, qual fase anterior provavelmente falhou em detectá-lo? Por que corrigir agora é mais caro?
+3.  **Debate**: Por que não devemos pular direto para a fase de *Codificação* sem fazer *Requisitos* ou *Design*?
 
 ---
 
-## 📝 Resumo
+## 🚀 Projeto da Aula: To-Do App (Início)
+Neste curso, vamos simular o desenvolvimento de um **Sistema de Gerenciamento de Tarefas (To-Do App)** completo.
 
-- **Algoritmo** é uma sequência de passos para resolver um problema.
-- **Python** é uma linguagem de alto nível, fácil e poderosa.
-- Usamos `print("Texto")` para mostrar informações na tela.
-- Comentários (`#`) servem para documentar o código e são ignorados pelo computador.
-
----
-
-## 🎯 Próximos Passos
-
-<div class="grid cards" markdown>
-
--   :material-presentation: **Acessar Slides**
-    -   [Ver Slides da Aula](../slides/slide-01.html)
-
--   :material-school: **Quiz**
-    -   [Responder Quiz](../quizzes/quiz-01.md)
-
--   :material-dumbbell: **Exercícios**
-    -   [Lista de Exercícios](../exercicios/exercicio-01.md)
-
--   :material-rocket: **Projeto**
-    -   [Mini Projeto](../projetos/projeto-01.md)
-
-</div>
+**Atividade da Aula:**
+- **Papel**: Você é o Engenheiro de Software responsável.
+- **Tarefa**: Definir o escopo inicial (Requisitos de Alto Nível).
+- **Ação**: Crie um documento de texto simples listando 3 funcionalidades essenciais que um App de Tarefas DEVE ter para ser útil (ex: "Adicionar tarefa"). Isso será a base para as próximas aulas.

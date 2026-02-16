@@ -1,49 +1,35 @@
-# Quiz 05 - Introdução
+# Quiz 05 - Modelagem e UML
 
---8<-- "assets/quiz.html"
+**1. O que significa UML?**
+A) Ultramodern Modeling Language
+B) Unified Modeling Language (Linguagem de Modelagem Unificada)
+C) Universal Machine Language
+D) User Management Logistic
 
-<div class="quiz-container">
-  <div class="quiz-question">1. Qual a saída de `list(range(3))`?</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">[1, 2, 3]</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">[0, 1, 2, 3]</div>
-  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! [0, 1, 2]">[0, 1, 2]</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">[1, 2]</div>
-  <div class="quiz-feedback"></div>
-</div>
+**2. No Diagrama de Caso de Uso, o que o "boneco palito" representa?**
+A) Um erro no sistema.
+B) O banco de dados.
+C) Um Ator (quem interage com o sistema).
+D) O gerente do projeto.
 
-<div class="quiz-container">
-  <div class="quiz-question">2. O que acontece se a condição do `while` nunca for False?</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">O programa para sozinho</div>
-  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! Loop infinito">Loop infinito</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">O Python corrige</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Nada</div>
-  <div class="quiz-feedback"></div>
-</div>
+**3. Qual diagrama mostra a estrutura estática (classes e atributos) do sistema?**
+A) Diagrama de Caso de Uso.
+B) Diagrama de Classes.
+C) Diagrama de Sequência.
+D) Fluxograma.
 
-<div class="quiz-container">
-  <div class="quiz-question">3. Qual comando **interrompe** totalmente um loop?</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">stop</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">continue</div>
-  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! break">break</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">exit</div>
-  <div class="quiz-feedback"></div>
-</div>
+**4. Para que serve a modelagem de software?**
+A) Para deixar o escritório mais bonito com desenhos.
+B) Para visualizar, comunicar e documentar o sistema antes de programar.
+C) Para substituir o código final.
+D) Para tornar o software mais lento.
 
-<div class="quiz-container">
-  <div class="quiz-question">4. Qual comando **pula** a iteração atual e volta ao início do loop?</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">skip</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">next</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">break</div>
-  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! continue">continue</div>
-  <div class="quiz-feedback"></div>
-</div>
+**5. Em um diagrama de classes, o que são os "Métodos"?**
+A) As características da classe (ex: cor).
+B) As ações ou comportamentos da classe (ex: andar).
+C) O nome da classe.
+D) As conexões.
 
-<div class="quiz-container">
-  <div class="quiz-question">5. Para repetir um código exatamente 10 vezes, qual a melhor opção?</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">while i < 10</div>
-  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! for i in range(10)">for i in range(10)</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">if i == 10</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">print(10)</div>
-  <div class="quiz-feedback"></div>
-</div>
-
+---
+**Gabarito:**
+1-B, 2-C, 3-B, 4-B, 5-B

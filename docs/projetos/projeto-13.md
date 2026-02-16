@@ -1,29 +1,26 @@
-# Projeto 13 - Sistema de Biblioteca
+# Projeto 13 - Priorização e Estimativa
 
 ## 🎯 Objetivo
-Criar um sistema básico para gerenciar livros usando Classes e Objetos.
+Refinar o backlog usando técnicas profissionais de priorização.
 
-## 📋 Requisitos
+## 📝 Descrição
+Recursos (tempo e energia) são finitos. Decidir o que NÃO fazer é tão importante quanto decidir o que fazer.
 
-### Classe 1: `Livro`
-- Atributos: `titulo`, `autor`, `disponivel` (booleano, começa True).
-- Métodos:
-    - `emprestar()`: Muda `disponivel` para False. Se já emprestado, avisa que não pode.
-    - `devolver()`: Muda `disponivel` para True.
+## 🚀 Passo a Passo
 
-### Classe 2: `Biblioteca` (Opcional/Desafio)
-- Atributos: `catalogo` (uma lista de objetos Livro).
-- Métodos:
-    - `adicionar_livro(livro)`: Recebe um objeto Livro e põe na lista.
-    - `listar_livros()`: Mostra os títulos e se estão disponíveis.
+### 1. Classificação MoSCoW
+Revise seu Backlog e adicione etiquetas:
+- **[M] Must**: Tem que ter agora.
+- **[S] Should**: Deveria ter logo.
+- **[C] Could**: Legal ter depois.
+- **[W] Won't**: Esquece por enquanto.
 
-## 💡 Dica
-Você pode criar objetos dentro de objetos! A Biblioteca TEM livros.
+### 2. Estimativa de Esforço (T-Shirt Sizing)
+Como estamos sozinhos, em vez de poker, use tamanhos de camiseta:
+- **P**: Tarefa rápida (ex: Mudar cor do botão).
+- **M**: Tarefa média (ex: Criar tela de lista).
+- **G**: Tarefa complexa (ex: Sistema de Login).
+- **GG**: Tarefa muito complexa (ex: Sincronizar com a nuvem).
 
-## 👣 Passo a Passo
-1. Crie a classe `Livro` e teste unitariamente (crie um livro, empreste, tente emprestar de novo, devolva).
-2. (Se for fazer o desafio) Crie a `Biblioteca`, adicione livros e liste.
-3. Faça um menu interativo simples.
-
-## 🚀 Desafio Extra
-Adicione um atributo `ano_publicacao` no Livro e crie um método na Biblioteca para `buscar_por_ano(ano)`.
+## 📤 Entrega
+Atualize seu Backlog (tabela ou lista) adicionando duas colunas: **Prioridade** e **Esforço**.

@@ -1,49 +1,35 @@
-# Quiz 01 - Introdução
+# Quiz 01 - Fundamentos da Engenharia de Software
 
---8<-- "assets/quiz.html"
+**1. Qual é o principal objetivo da Engenharia de Software?**
+A) Escrever código o mais rápido possível, sem se preocupar com erros.
+B) Aplicar uma abordagem sistemática e disciplinada para o desenvolvimento de software.
+C) Criar apenas jogos de computador.
+D) Consertar computadores quebrados (hardware).
 
-<div class="quiz-container">
-  <div class="quiz-question">1. O que é um algoritmo?</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Um tipo de computador super rápido</div>
-  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! Uma sequência finita de passos para resolver um problema">Uma sequência finita de passos para resolver um problema</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Uma peça de hardware do computador</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Um erro de programação</div>
-  <div class="quiz-feedback"></div>
-</div>
+**2. O que significa a sigla SDLC?**
+A) Software Design Leveled Code
+B) System Development Linear Code
+C) Software Development Life Cycle (Ciclo de Vida de Desenvolvimento de Software)
+D) Super Dynamic Life Cycle
 
-<div class="quiz-container">
-  <div class="quiz-question">2. Qual função usamos para exibir informações na tela em Python?</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">echo()</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">write()</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">show()</div>
-  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! print()">print()</div>
-  <div class="quiz-feedback"></div>
-</div>
+**3. Em qual fase do SDLC definimos "O QUE" será construído?**
+A) Testes
+B) Implementação
+C) Levantamento de Requisitos
+D) Manutenção
 
-<div class="quiz-container">
-  <div class="quiz-question">3. Qual o caractere usado para comentários de uma linha em Python?</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">//</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">--</div>
-  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! #">#</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">%</div>
-  <div class="quiz-feedback"></div>
-</div>
+**4. O que ocorre na fase de "Manutenção"?**
+A) O software é deletado.
+B) O software é planejado do zero.
+C) Correções e melhorias são feitas após o software estar em uso.
+D) Os desenvolvedores tiram férias.
 
-<div class="quiz-container">
-  <div class="quiz-question">4. O Python é sensível a letras maiúsculas e minúsculas (Case Sensitive)?</div>
-  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! Sim, 'print' é diferente de 'Print'">Sim, 'print' é diferente de 'Print'</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Não, tanto faz</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Apenas em variáveis</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Apenas no Windows</div>
-  <div class="quiz-feedback"></div>
-</div>
+**5. Qual a diferença principal entre Programação e Engenharia de Software?**
+A) Programação é apenas escrever código; Engenharia envolve todo o ciclo de vida e gestão.
+B) Não há diferença, são sinônimos.
+C) Engenharia de Software é apenas para hardware.
+D) Programação é mais difícil que Engenharia.
 
-<div class="quiz-container">
-  <div class="quiz-question">5. O que acontece se você escrever `print "Olá"` (sem parênteses) no Python 3?</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Exibe "Olá" normalmente</div>
-  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! Gera um erro de sintaxe (SyntaxError)">Gera um erro de sintaxe (SyntaxError)</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">O computador trava</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Abre uma janela pop-up</div>
-  <div class="quiz-feedback"></div>
-</div>
-
+---
+**Gabarito:**
+1-B, 2-C, 3-C, 4-C, 5-A

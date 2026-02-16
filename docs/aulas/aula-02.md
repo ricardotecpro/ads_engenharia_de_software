@@ -1,163 +1,107 @@
-# Aula 02 - Variáveis, Tipos de Dados e Operadores
+# Aula 02 – Processos de Software: Cascata e Ágil
 
-## 🎯 Objetivos da Aula
-
-- [ ] Entender profundamente o conceito de variáveis e memória
-- [ ] Conhecer os tipos primitivos: `int`, `float`, `str`, `bool`
-- [ ] Aprender regras de nomeação (snake_case)
-- [ ] Realizar entrada de dados com `input()`
-- [ ] Converter tipos de dados (Casting)
-- [ ] Conhecer os operadores aritméticos básicos
-
----
+## 🎯 Objetivos de Aprendizagem
+- Entender a evolução dos modelos de processo de software.
+- Conhecer o modelo Cascata (Waterfall) e suas limitações.
+- Introduzir o conceito de Desenvolvimento Ágil.
+- Comparar abordagens tradicionais vs. ágeis.
 
 ## 📚 Conteúdo
 
-### 1. O que são Variáveis?
+### 1. O Modelo Cascata (Waterfall)
+O modelo mais antigo e tradicional. Nele, cada fase do SDLC deve ser completada antes da próxima começar.
 
-Variáveis são nomes que damos a espaços na memória do computador para guardar dados. Pense nelas como **etiquetas** em caixas.
+- **Fluxo**: Requisitos -> Design -> Código -> Testes -> Deploy.
+- **Características**: Rígido, documentação extensa.
+- **Problema**: Se o cliente mudar de ideia na fase de testes, voltar para mudar os requisitos é muito caro e difícil. É como construir um prédio: difícil mudar a fundação depois que o teto está pronto.
 
-```python
-idade = 25
-nome = "Ana"
-preco = 19.99
-```
+### 2. O Modelo V (V-Model)
+Uma evolução do Cascata que enfatiza os testes. Para cada fase de desenvolvimento (verifique o lado esquerdo do V), existe uma fase de teste correspondente (lado direito do V).
 
-- `idade`: O nome da variável (etiqueta).
-- `=`: O operador de atribuição (significa "recebe").
-- `25`: O valor armazenado na caixa.
+### 3. O Manifesto Ágil (2001)
+Devido à rigidez do Cascata, um grupo de desenvolvedores propôs uma nova forma de trabalhar, valorizando:
+- **Indivíduos e interações** mais que processos e ferramentas.
+- **Software em funcionamento** mais que documentação abrangente.
+- **Colaboração com o cliente** mais que negociação de contratos.
+- **Responder a mudanças** mais que seguir um plano.
 
-> **Importante:** Em Python, não precisamos declarar o tipo da variável antes (tipagem dinâmica). O Python descobre sozinho.
-
-### 2. Tipos de Dados Primitivos
-
-Python tem 4 tipos básicos fundamentais:
-
-| Tipo | Nome no Python | Descrição | Exemplo |
-| :--- | :--- | :--- | :--- |
-| **Inteiro** | `int` | Números sem vírgula (positivos, negativos ou zero) | `10`, `-5`, `0` |
-| **Ponto Flutuante** | `float` | Números com vírgula (ponto decimal) | `3.14`, `2.5`, `-0.01` |
-| **Texto (String)** | `str` | Sequência de caracteres entre aspas | `"Olá"`, `'Python'` |
-| **Booleano** | `bool` | Valores lógicos (Verdadeiro ou Falso) | `True`, `False` |
-
-
-```mermaid
-flowchart TD
-    A[Tipos de Dados] --> B[Texto: str]
-    A --> C[Numeros]
-    A --> D[Booleanos: bool]
-    C --> E[int]
-    C --> F[float]
-```
-
-### 3. A Função `type()`
-
-```python
-print(type(10))      # <class 'int'>
-print(type(3.14))    # <class 'float'>
-print(type("Olá"))   # <class 'str'>
-print(type(True))    # <class 'bool'>
-```
-
-### 3. Regras de Nomeação (Boas Práticas)
-
-Para escrever código profissional, seguimos o guia de estilo **PEP 8**.
-
-- Use **snake_case**: letras minúsculas separadas por underline.
-    - ✅ `nome_completo`, `idade_usuario`, `total_vendas`
-    - ❌ `nomeCompleto`, `IdadeUsuario`, `Total-Vendas`
-- Não comece com números (`1nome` ❌).
-- Não use espaços (`nome usuario` ❌).
-- Evite caracteres especiais (`coração` ❌).
-
-### 4. Entrada de Dados (Input)
-
-Para interagir com o usuário, usamos a função `input()`. Ela pausa o programa e espera o usuário digitar algo.
-
-> ⚠️ **Atenção:** O `input()` **SEMPRE** retorna um texto (`str`), mesmo que o usuário digite um número!
-
-```python
-nome = input("Digite seu nome: ")
-print(f"Olá, {nome}!")
-```
-
-### 5. Conversão de Tipos (Casting)
-
-Como o `input()` retorna texto, se quisermos fazer contas, precisamos converter (fazer o casting) para número.
-
-- `int()`: Converte para inteiro.
-- `float()`: Converte para real.
-- `str()`: Converte para texto.
-
-```python
-# Exemplo de erro comum
-numero = input("Digite um número: ") # Usuário digita 5
-# print(numero + 1) # ERRO! Não pode somar texto com número "5" + 1
-
-# Forma correta
-numero = int(input("Digite um número: "))
-print(numero + 1) # Funciona! 6
-```
-
-### 6. Operadores Aritméticos Básicos
-
-| Operador | Nome | Exemplo | Resultado |
-| :---: | :--- | :--- | :--- |
-| `+` | Adição | `5 + 2` | `7` |
-| `-` | Subtração | `5 - 2` | `3` |
-| `*` | Multiplicação | `5 * 2` | `10` |
-| `/` | Divisão | `5 / 2` | `2.5` |
-| `//` | Divisão Inteira | `5 // 2` | `2` (parte inteira) |
-| `%` | Resto (Módulo) | `5 % 2` | `1` (sobra da divisão) |
-| `**` | Potência | `5 ** 2` | `25` ($5^2$) |
+### 4. Abordagem Ágil vs. Tradicional
+- **Tradicional (Cascata)**: Planeja tudo no início (Big Design Up Front). Entrega o software só no final.
+- **Ágil**: Planeja em ciclos curtos (Sprints). Entrega partes do software funcionando frequentemente (Incremental e Iterativo).
 
 ---
 
-## 💻 Em Prática
-
-Vamos criar um programa que pergunta o ano de nascimento e calcula a idade aproximada.
-
-```python
-# calculadora_idade.py
-
-# 1. Entrada
-ano_nascimento = input("Em que ano você nasceu? ")
-
-# 2. Processamento (Conversão + Cálculo)
-ano_nascimento_int = int(ano_nascimento)
-ano_atual = 2024 # Atualize para o ano atual
-idade = ano_atual - ano_nascimento_int
-
-# 3. Saída
-print(f"Você tem (ou fará) {idade} anos.")
-```
+## 📽 Roteiro de Slides
+- **Slide 1: Capa**
+    - Título: Processos de Software
+    - Subtítulo: Aula 02 - Do Cascata ao Ágil
+- **Slide 2: Modelo Cascata**
+    - Diagrama de escada/cachoeira.
+    - Prós: Simples, disciplinado.
+    - Contras: Rígido, difícil acomodar mudanças.
+- **Slide 3: O Problema da Mudança**
+    - Gráfico de Custo da Mudança (cresce exponencialmente com o tempo).
+- **Slide 4: O Nascimento do Ágil**
+    - Manifesto Ágil de 2001.
+    - Os 4 valores principais.
+- **Slide 5: Comparação**
+    - Cascata: Entrega única no final.
+    - Ágil: Entregas frequentes e incrementais.
 
 ---
 
-## 📝 Resumo
+## 📝 Quiz
 
-- **Variáveis** guardam dados (`nome = "João"`).
-- Tipos principais: `int`, `float`, `str`, `bool`.
-- `input()` lê dados do teclado (sempre como texto!).
-- **Casting** (`int()`, `float()`) converte tipos de dados.
-- Operadores matemáticos permitem cálculos (`+`, `-`, `*`, `/`).
+**1. Qual a principal característica do Modelo Cascata?**
+A) Permite mudanças a qualquer momento sem custo.
+B) As fases são sequenciais; uma termina para a outra começar.
+C) Não existe planejamento.
+D) O cliente vê o software todo dia.
+
+**2. O que o Manifesto Ágil valoriza MAIS?**
+A) Processos e Ferramentas.
+B) Documentação Abrangente.
+C) Software em Funcionamento.
+D) Negociação de Contratos.
+
+**3. No modelo Ágil, como é a entrega do software?**
+A) Única, apenas no final do projeto.
+B) Incremental e frequente (em partes).
+C) Apenas quando o cliente paga tudo.
+D) Aleatória.
+
+**4. Por que o Cascata é comparado à construção civil?**
+A) Porque engenheiros de software usam capacetes.
+B) Porque é difícil mudar a estrutura depois de pronta (rigidez).
+C) Porque usa cimento.
+D) Porque é barato.
+
+**5. Qual destes NÃO é um valor do Manifesto Ágil?**
+A) Responder a mudanças.
+B) Colaboração com o cliente.
+C) Seguir um plano rigorosamente acima de tudo.
+D) Indivíduos e interações.
+
+**Gabarito:**
+1-B, 2-C, 3-B, 4-B, 5-C
 
 ---
 
-## 🎯 Próximos Passos
+## 🛠 Exercícios
+1.  **Estudo de Caso**: Imagine que você está construindo um software para controlar o lançamento de um foguete espacial. Qual modelo seria mais seguro: Cascata (com requisitos fixos e rigorosos) ou Ágil (onde "bugs" podem ser corrigidos depois)? Justifique.
+2.  **Comparação**: Faça uma tabela simples comparando "Frequência de Entrega" no Cascata vs. Ágil.
+3.  **Reflexão**: Por que o modelo Ágil se tornou tão popular em startups, onde o modelo de negócio muda o tempo todo?
 
-<div class="grid cards" markdown>
+---
 
--   :material-presentation: **Acessar Slides**
-    -   [Ver Slides da Aula](../slides/slide-02.html)
+## 🚀 Projeto da Aula: Escolhendo o Processo
+Continuando com nosso **To-Do App**:
 
--   :material-school: **Quiz**
-    -   [Responder Quiz](../quizzes/quiz-02.md)
-
--   :material-dumbbell: **Exercícios**
-    -   [Lista de Exercícios](../exercicios/exercicio-02.md)
-
--   :material-rocket: **Projeto**
-    -   [Mini Projeto](../projetos/projeto-02.md)
-
-</div>
+**Atividade da Aula:**
+- **Decisão**: Vamos adotar uma abordagem **Ágil** simplificada para este projeto.
+- **Ação**:
+    1.  Divida as funcionalidades que você listou na Aula 01 em 3 "Entregas" (ou Sprints).
+    2.  *Entrega 1*: O básico do básico (MVP).
+    3.  *Entrega 2*: Melhorias importantes.
+    4.  *Entrega 3*: Extras ("firulas").
+    5.  Escreva isso no seu documento de projeto.

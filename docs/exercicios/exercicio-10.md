@@ -1,29 +1,22 @@
-# Exercícios - Aula 10
+# Exercício 10 - Testes de Software
 
-## 1. Módulo Math
-Importe o módulo `math`.
-- Calcule a raiz quadrada de 144.
-- Calcule o fatorial de 5 (`math.factorial`).
-- Imprima o valor de Pi (`math.pi`).
+## 🛠 Questões Práticas
 
-## 2. Dados Viciados (Random)
-Importe o módulo `random`.
-Simule o lançamento de um dado de 6 faces (1 a 6) por 10 vezes.
-Armazene os resultados em uma lista.
+**1. Escrevendo Testes Unitários**
+Dada a função javascript:
+```javascript
+function podeBeber(idade) {
+    if (idade >= 18) return true;
+    else return false;
+}
+```
+Quais valores de entrada (input) você usaria para testar todos os cenários possíveis? (Dica: Teste o limite).
 
-## 3. Data e Hora
-Importe o módulo `datetime`.
-Imprima a data e hora atuais.
-Tente formatar a data para "DD/MM/AAAA" (Pesquise sobre `.strftime`).
+**2. Integração vs Unitário**
+Se você está testando se o seu código consegue salvar dados corretamente no Banco de Dados MySQL, isso é um teste Unitário ou de Integração? Por que?
 
-## 4. Seu Primeiro Módulo
-1. Crie um arquivo chamado `operacoes.py` (simbolicamente).
-2. Nele, imagine que define funções `soma(a,b)` e `subtracao(a,b)`.
-3. Em outro arquivo (o principal), mostre como você importaria e usaria essas funções.
-*(Como não estamos rodando arquivos reais, escreva o código como resposta)*.
-
-## 5. Sorteio de Alunos
-Crie uma lista com 5 nomes de alunos.
-Use `random.choice` para escolher um aluno para apagar o quadro.
-Use `random.shuffle` para misturar a ordem de apresentação dos trabalhos.
-Mostre o escolhido e a lista misturada.
+**3. TDD na Prática**
+Imagine que você tem que criar uma função `somar(a, b)`.
+Passo 1 (Red): Qual teste você escreve primeiro?
+Passo 2 (Green): Qual o código mais estúpido/simples para passar nesse teste?
+Passo 3 (Refactor): Como melhorar?

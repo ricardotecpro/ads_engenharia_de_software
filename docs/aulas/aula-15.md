@@ -1,150 +1,93 @@
-# Aula 15 - APIs, JSON e Requisições
+# Aula 15 – Manutenção e Evolução
 
-## 🎯 Objetivos da Aula
-
-- [ ] Entender o que é uma **API** (Application Programming Interface)
-- [ ] Conhecer o formato **JSON** (JavaScript Object Notation)
-- [ ] Fazer requisições HTTP (`GET`) para consumir dados da internet
-- [ ] Usar a biblioteca `requests`
-
----
+## 🎯 Objetivos de Aprendizagem
+- Entender que o software nunca está "pronto".
+- Conhecer a diferença entre Manutenção Corretiva, Preventiva e Evolutiva.
+- Entender o conceito de Refatoração.
+- Analisar o conceito de Dívida Técnica (Technical Debt).
 
 ## 📚 Conteúdo
 
-### 1. O que é uma API?
+### 1. O Software Morre?
+Diferente de uma ponte (que degrada sozinha com a chuva), o software só "estragar" se o ambiente mudar ou se tentarmos mudá-lo.
+- **Lei de Lehman**: Um software que é usado precisa evoluir, senão torna-se obsoleto.
 
-API é como um garçom.
-- **Você (Cliente):** Faz o pedido ("Quero a previsão do tempo").
-- **API (Garçom):** Leva o pedido até a cozinha (Servidor).
-- **Servidor (Cozinha):** Prepara os dados.
-- **API:** Traz a resposta para você.
+### 2. Tipos de Manutenção
+- **Corretiva**: Consertar bugs (o "band-aid").
+- **Adaptativa**: Mudar para usar novo SO ou Banco de Dados (ex: migrar para Windows 11).
+- **Perfeccionista (Evolutiva)**: Adicionar novas funcionalidades ou melhorar performance.
+- **Preventiva (Refatoração)**: Melhorar a estrutura do código antes que quebre.
 
-```mermaid
-sequenceDiagram
-    participant Cliente
-    participant API
-    participant Servidor
-    Cliente->>API: Pedido (Request)
-    API->>Servidor: Repassa Pedido
-    Servidor->>API: Resposta (Dados)
-    API->>Cliente: Entrega Resposta (JSON)
-```
+### 3. Refatoração (Refactoring)
+É limpar a cozinha depois de cozinhar. Alterar a estrutura interna do código sem mudar seu comportamento externo.
+- Objetivo: Tornar o código mais fácil de entender e modificar.
+- Quando fazer? O tempo todo (regra do escoteiro: deixe o código mais limpo do que encontrou).
 
-Grandes sites (Google, Facebook, Twitter, Previsão do Tempo) oferecem APIs para que nossos programas possam interagir com eles.
-
-### 2. O Formato JSON
-
-Como os sistemas conversam? Eles usam JSON, que é MUITO parecido com os Dicionários do Python.
-
-```json
-{
-  "cidade": "São Paulo",
-  "temperatura": 25,
-  "chuva": false,
-  "previsao": ["Sol", "Nublado"]
-}
-```
-
-Em Python, usamos a biblioteca `json` para traduzir:
-- `json.dumps()`: Dicionário -> JSON (String).
-- `json.loads()`: JSON (String) -> Dicionário.
-
-### 3. A biblioteca `requests`
-
-O Python não vem com `requests` instalado por padrão, mas é a biblioteca mais famosa do mundo. (Vamos assumir que está instalada ou mostrar como usar `urllib` nativa se preferir, mas `requests` é o padrão de mercado).
-
-*Nota: Se estivéssemos em um ambiente local, rodaríamos `pip install requests`.*
-
-```python
-import requests
-
-# Fazendo um pedido (GET) para uma API pública
-resposta = requests.get("https://viacep.com.br/ws/01001000/json/")
-
-# Verificando se deu certo (Status 200 = OK)
-if resposta.status_code == 200:
-    dados = resposta.json() # Converte JSON para Dicionário
-    print(dados['logradouro']) # Praça da Sé
-else:
-    print("Erro na requisição")
-```
-
-### 4. Métodos HTTP
-
-- **GET:** Buscar dados (Leitura).
-- **POST:** Enviar dados (Criar).
-- **PUT/PATCH:** Atualizar dados.
-- **DELETE:** Apagar dados.
-
-Hoje focaremos no **GET**.
+### 4. Dívida Técnica (Technical Debt)
+Às vezes, fazemos o código "rápido e sujo" para entregar logo. Isso é um empréstimo.
+- O "juro" é a dificuldade extra de trabalhar nesse código depois.
+- Se não pagarmos a dívida (refatorando), o projeto pode falir (ficar impossível de manter).
 
 ---
 
-## 💻 Em Prática
-
-Vamos criar um Consultor de CEP usando a API gratuita ViaCEP.
-
-```python
-# consulta_cep.py
-import requests
-
-def buscar_cep(cep):
-    # API do ViaCEP
-    url = f"https://viacep.com.br/ws/{cep}/json/"
-    
-    try:
-        response = requests.get(url)
-        response.raise_for_status() # Lança erro se status != 200
-        
-        dados = response.json()
-        
-        if "erro" in dados:
-            return None
-        
-        return dados
-        
-    except requests.exceptions.RequestException as e:
-        print(f"Erro de conexão: {e}")
-        return None
-
-# Programa Principal
-cep_input = input("Digite o CEP (apenas números): ")
-
-resultado = buscar_cep(cep_input)
-
-if resultado:
-    print(f"Endereço: {resultado['logradouro']}")
-    print(f"Bairro: {resultado['bairro']}")
-    print(f"Cidade: {resultado['localidade']} - {resultado['uf']}")
-else:
-    print("CEP não encontrado ou inválido.")
-```
+## 📽 Roteiro de Slides
+- **Slide 1**: Manutenção de Software
+- **Slide 2**: A Lei da Evolução (O software nunca está pronto).
+- **Slide 3**: Os tipos de Manutenção (Corretiva, Evolutiva, etc).
+- **Slide 4**: O que é Refatoração? (Limpar a cozinha).
+- **Slide 5**: Dívida Técnica (O cartão de crédito do código).
+- **Slide 6**: O Custo de não manter (Entropia).
 
 ---
 
-## 📝 Resumo
+## 📝 Quiz
 
-- **API:** Ponte entre sistemas.
-- **JSON:** Formato padrão de troca de dados (parece `dict`).
-- **Requests:** Biblioteca para acessar a web.
-- **GET:** Método para "pegar" dados.
+**1. O que é Refatoração?**
+A) Mudar o software para ele fazer coisas novas.
+B) Apagar todo o código e começar do zero.
+C) Alterar a estrutura interna do código para melhorá-lo, sem mudar o comportamento externo.
+D) Adicionar bugs.
+
+**2. O que significa "Dívida Técnica"?**
+A) Quanto dinheiro o projeto deve ao banco.
+B) O custo futuro gerado por escolher uma solução rápida e fácil agora em vez de uma abordagem melhor.
+C) O salário do programador.
+D) O preço da licença do software.
+
+**3. Manutenção Corretiva serve para:**
+A) Adicionar novas telas.
+B) Corrigir defeitos (bugs).
+C) Melhorar a performance.
+D) Adaptar ao novo Windows.
+
+**4. Segundo a Regra do Escoteiro no código:**
+A) Devemos acampar no escritório.
+B) Devemos sempre deixar o código um pouco mais limpo do que encontramos.
+C) Só devemos mexer no que está quebrado.
+D) Devemos apagar comentários.
+
+**5. Por que o software precisa evoluir?**
+A) Porque o mundo, os negócios e as tecnologias mudam.
+B) Porque programadores ficam entediados.
+C) Para gastar dinheiro.
+D) Não precisa, software dura para sempre igual.
+
+**Gabarito:**
+1-C, 2-B, 3-B, 4-B, 5-A
 
 ---
 
-## 🎯 Próximos Passos
+## 🛠 Exercícios
+1.  **Metáfora**: Explique Dívida Técnica comparando com não lavar a louça do jantar por uma semana. O que acontece quando você precisa cozinhar de novo?
+2.  **Identificando Oportunidade**: Você abre um código e vê a mesma função de 20 linhas copiada em 3 arquivos diferentes. Que tipo de manutenção você deve fazer? (Preventiva/Refatoração).
+3.  **Decisão**: Seu chefe quer lançar o produto AMANHÃ, mas o código está feio. Você assume a dívida técnica? Se sim, o que você deve negociar para depois do lançamento?
 
-<div class="grid cards" markdown>
+---
 
--   :material-presentation: **Acessar Slides**
-    -   [Ver Slides da Aula](../slides/slide-15.html)
+## 🚀 Projeto da Aula: Refatorando (De novo)
+**Atividade da Aula:**
+Vamos "pagar" uma dívida técnica do nosso To-Do App.
 
--   :material-school: **Quiz**
-    -   [Responder Quiz](../quizzes/quiz-15.md)
-
--   :material-dumbbell: **Exercícios**
-    -   [Lista de Exercícios](../exercicios/exercicio-15.md)
-
--   :material-rocket: **Projeto**
-    -   [Mini Projeto](../projetos/projeto-15.md)
-
-</div>
+1.  **Analise seu CSS/Design**: Você escreveu estilos direto no HTML (`style="..."`) ou criou classes confusas?
+2.  **Ação**: Simplifique. Se tiver cores repetidas, crie variáveis CSS (`:root { --cor-principal: blue; }`).
+3.  **Documente**: No seu projeto, crie uma seção "Histórico de Mudanças" e adicione: "Refatoração do CSS para usar variáveis. Motivo: Facilitar mudança de tema futuro."

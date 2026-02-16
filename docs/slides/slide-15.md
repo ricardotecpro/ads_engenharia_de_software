@@ -1,97 +1,29 @@
-# Aula 15
-## APIs e JSON
+# Slide 15 - Manutenção e Evolução
 
-![bg right:40% 80%](https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg)
+## Slide 1: Título
+- **Título**: Manutenção de Software
+- **Subtítulo**: Aula 15 - Cuidando do Jardim
 
----
+## Slide 2: Dívida Técnica
+- Escolher o caminho mais rápido agora = Pagar juros depois.
+- Juros = Dificuldade de manutenção.
+- Se não pagar (Refatorar), a dívida quebra o projeto.
 
-## 🎯 Objetivos
+## Slide 3: Refatoração
+- Mudar COMO faz, sem mudar O QUE faz.
+- Melhora legibilidade e estrutura.
+- "Limpar a casa".
 
-- O que é uma API?
-- O que é JSON?
-- Consumindo dados da Web (`requests`)
-- Status Codes HTTP (200, 404, 500)
+## Slide 4: Tipos de Manutenção
+- **Corretiva**: Arrumar bug.
+- **Evolutiva**: Criar feature.
+- **Adaptativa**: Migrar ambiente.
+- **Preventiva**: Evitar problemas futuros.
 
----
+## Slide 5: A Regra do Escoteiro
+- Deixe o código melhor do que você encontrou.
+- Pequenas melhorias constantes > Grandes reescritas traumáticas.
 
-## 🌐 API (Interface de Programação)
-
-É como programas conversam entre si.
-Em vez de clicar num site, seu código manda uma mensagem:
-*"Ei, me dá a cotação do Dólar!"*
-
-E a API responde com dados.
-
----
-
-## 📦 JSON (JavaScript Object Notation)
-
-É a língua universal da Web.
-Muito parecido com Dicionários Python!
-
-```json
-{
-  "nome": "Mario",
-  "vidas": 3,
-  "poderes": ["pulo", "fogo"]
-}
-```
-
-Python converte isso para `dict` facilmente.
-
----
-
-## 📡 Fazendo Requisições
-
-Usamos a biblioteca `requests` (tem que instalar: `pip install requests`).
-
-```python
-import requests
-
-url = "https://api.exemplo.com/dados"
-resposta = requests.get(url)
-
-print(resposta.status_code) # 200 = Sucesso
-print(resposta.json()) # O dicionário com os dados
-```
-
----
-
-## 🚦 Códigos HTTP
-
-O servidor diz se deu certo ou errado.
-
-- **200 OK:** Deu certo! 👍
-- **404 Not Found:** Não achei. 🔍
-- **500 Internal Server Error:** O servidor quebrou. 🔥
-
----
-
-## 🔎 Exemplo Real: ViaCEP
-
-`https://viacep.com.br/ws/01001000/json/`
-
-Retorna:
-```json
-{
-  "cep": "01001-000",
-  "logradouro": "Praça da Sé",
-  "bairro": "Sé",
-  "localidade": "São Paulo",
-  "uf": "SP"
-}
-```
-
----
-
-## 🏁 Resumo
-
-1. **APIs** conectam o mundo.
-2. **JSON** é o formato de dados.
-3. **`requests.get()`** busca os dados.
-4. **`.json()`** transforma em dicionário.
-
----
-
-# Prática! 🚀
-Vamos conectar na Matrix.
+## Slide 6: Resumo
+- Software requer cuidado contínuo.
+- Não tenha medo de mudar o código para melhor.

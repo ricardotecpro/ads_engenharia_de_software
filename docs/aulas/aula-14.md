@@ -1,181 +1,109 @@
-# Aula 14 - Orientação a Objetos (Avançado)
+# Aula 14 – Documentação Técnica
 
-## 🎯 Objetivos da Aula
-
-- [ ] Entender o conceito de **Herança** (Inheritance)
-- [ ] Aplicar **Polimorfismo** (Polymorphism)
-- [ ] Conhecer o **Encapsulamento** (variáveis "privadas")
-- [ ] Sobrescrever métodos (`super()`)
-
----
+## 🎯 Objetivos de Aprendizagem
+- Entender por que documentar é essencial (e não perda de tempo).
+- Conhecer os tipos de documentação (Técnica vs. Usuário).
+- Aprender a escrever um bom README.
+- Conhecer ferramentas como Markdown e Wikis.
 
 ## 📚 Conteúdo
 
-### 1. Herança (Inheritance)
+### 1. "O código se documenta sozinho"? (Mentira!)
+Um código limpo ajuda, mas ele não explica o **PORQUÊ** das decisões, nem como instalar o projeto.
+- Documentação é amor ao seu "eu" do futuro e aos colegas.
 
-A Herança permite criar uma nova classe baseada em uma já existente.
-Ela "herda" todos os atributos e métodos da classe pai (Superclasse).
+### 2. Tipos de Documentação
+#### Para Usuário Final
+- Manuais, Tutoriais, FAQ.
+- Linguagem simples, sem jargão técnico.
 
-**Exemplo:**
-Um `Aluno` **é uma** `Pessoa`.
-Um `Professor` **é uma** `Pessoa`.
-Ambos têm nome e idade, mas fazem coisas diferentes.
+#### Para Desenvolvedores (Técnica)
+- **README**: A capa do projeto. O que é? Como instala?
+- **Wiki/Docs Internos**: Arquitetura, padrões, decisões.
+- **API Docs**: Swagger/OpenAPI (como integrar).
+- **Comentários no Código**: Usar com moderação (explicar o *porquê*, não o *o quê*).
 
-```mermaid
-classDiagram
-    class Pessoa {
-        +nome
-        +idade
-    }
-    class Aluno {
-        +estudar()
-    }
-    class Professor {
-        +ensinar()
-    }
-    Pessoa <|-- Aluno
-    Pessoa <|-- Professor
-```
+### 3. O Poder do Markdown
+Markdown (o formato `.md` que estamos usando agora) é o padrão da indústria. Simples, legível e converte para HTML.
+- Títulos com `#`
+- Listas com `-`
+- Código com crases `` ` ``
 
-```python
-class Pessoa: # Classe Pai (Superclasse)
-    def __init__(self, nome, idade):
-        self.nome = nome
-        self.idade = idade
-
-    def se_apresentar(self):
-        print(f"Olá, sou {self.nome}.")
-
-class Aluno(Pessoa): # Classe Filha (Subclasse)
-    def estudar(self):
-        print(f"{self.nome} está estudando.")
-
-# Testando
-p1 = Pessoa("Carlos", 40)
-a1 = Aluno("Ana", 20)
-
-a1.se_apresentar() # Herdou de Pessoa!
-a1.estudar()       # Método exclusivo de Aluno
-# p1.estudar()     # ERRO! Pessoa não estuda (genericamente)
-```
-
-### 2. Polimorfismo
-
-Polimorfismo significa "muitas formas".
-Classes filhos podem ter o **mesmo método** da classe pai, mas com comportamento diferente.
-
-```python
-class Animal:
-    def fazer_som(self):
-        print("Som genérico")
-
-class Cachorro(Animal):
-    def fazer_som(self): # Sobrescrita (Override)
-        print("Au au!")
-
-class Gato(Animal):
-    def fazer_som(self):
-        print("Miau!")
-
-# A mágica do Polimorfismo
-animais = [Cachorro(), Gato(), Animal()]
-
-for bicho in animais:
-    bicho.fazer_som()
-    # O Python sabe qual método chamar para cada tipo!
-```
-
-### 3. O Método `super()`
-
-Às vezes, queremos usar a lógica da classe pai e ADICIONAR algo a mais.
-
-```python
-class Aluno(Pessoa):
-    def __init__(self, nome, idade, matricula):
-        # Chama o construtor da Pessoa para cuidar do nome e idade
-        super().__init__(nome, idade)
-        self.matricula = matricula # Atributo exclusivo
-
-    def se_apresentar(self):
-        super().se_apresentar() # Chama o original
-        print(f"Minha matrícula é {self.matricula}")
-```
-
-### 4. Encapsulamento (Privado vs Público)
-
-Em Python, não existem atributos verdadeiramente "privados" (como em Java), mas temos uma convenção forte:
-
-- `self.nome`: Público. Pode ser acessado de qualquer lugar.
-- `self._saldo`: Protegido. Só deve ser acessado dentro da classe ou subclasses. (Aviso aos programadores: "Cuidado").
-- `self.__senha`: Privado. O Python muda o nome internamente para dificultar o acesso direto.
-
-```python
-class Conta:
-    def __init__(self, saldo):
-        self.__saldo = saldo # Privado
-
-    def get_saldo(self): # Getter
-        return self.__saldo
-
-c = Conta(100)
-# print(c.__saldo) # ERRO! Não existe (diretamente)
-print(c.get_saldo()) # 100 (Acesso controlado)
-```
+### 4. Como escrever um bom README
+Um README deve responder em 5 segundos:
+1.  O que esse projeto faz?
+2.  Como eu rodo ele na minha máquina?
+3.  Quais tecnologias usa?
 
 ---
 
-## 💻 Em Prática
-
-Vamos refatorar o sistema bancário com Herança.
-
-```python
-class Conta:
-    def __init__(self, titular):
-        self.titular = titular
-        self.saldo = 0
-
-    def depositar(self, valor):
-        self.saldo += valor
-
-class ContaCorrente(Conta):
-    def sacar(self, valor):
-        if valor <= self.saldo:
-            self.saldo -= valor
-            print("Saque realizado.")
-        else:
-            print("Saldo insuficiente.")
-
-class ContaPoupanca(Conta):
-    def render_juros(self):
-        self.saldo *= 1.05 # Rende 5%
-        print("Juros aplicados.")
-```
+## 📽 Roteiro de Slides
+- **Slide 1**: Documentação Técnica
+- **Slide 2**: O mito do código autoexplicativo ("O código diz O QUE, a doc diz POR QUE").
+- **Slide 3**: Tipos de Doc (Usuário vs. Dev).
+- **Slide 4**: Markdown (Linguagem universal de doc).
+- **Slide 5**: Anatomia de um README perfeito.
+- **Slide 6**: Ferramentas (MkDocs, Notion, Confluence).
 
 ---
 
-## 📝 Resumo
+## 📝 Quiz
 
-- **Herança (`class Filho(Pai):`)**: Reutiliza código.
-- **Polimorfismo**: Métodos com mesmo nome, comportamentos diferentes.
-- **`super()`**: Acessa a classe pai.
-- **Encapsulamento**: Protege dados sensíveis (`__var`).
+**1. Qual a melhor definição para a frase "O código se documenta sozinho"?**
+A) Uma verdade absoluta, nunca precisamos escrever documentos.
+B) Um mito perigoso. Código limpo ajuda, mas documentação de contexto é essencial.
+C) O código fala com a gente usando IA.
+D) Documentação é proibida no Ágil.
+
+**2. O que deve conter um arquivo README.md?**
+A) A história da vida do programador.
+B) Receitas de bolo.
+C) Resumo do projeto, como instalar e usar.
+D) Versículos bíblicos.
+
+**3. Para quem é voltada a Documentação de API?**
+A) Para o cliente final (dona de casa).
+B) Para outros desenvolvedores que vão integrar com seu sistema.
+C) Para o gerente de vendas.
+D) Para ninguém.
+
+**4. O que é Markdown?**
+A) Uma marca de roupa.
+B) Uma linguagem de marcação leve usada para formatar textos (como este aqui).
+C) Um código difícil de ler.
+D) Um banco de dados.
+
+**5. Qual a diferença entre documentação de Usuário e Técnica?**
+A) De usuário é para quem usa o software; Técnica é para quem constrói/mantém.
+B) Não há diferença.
+C) Técnica deve ser escrita em latim.
+D) De usuário deve ser escrita em código.
+
+**Gabarito:**
+1-B, 2-C, 3-B, 4-B, 5-A
 
 ---
 
-## 🎯 Próximos Passos
+## 🛠 Exercícios
+1.  **Refatorando README**: Você encontrou um projeto no GitHub que tem um README escrito apenas: "Projeto TCC Final". Como você melhoraria isso? Escreva 3 tópicos que faltam.
+2.  **Markdown na Veia**: Escreva seu nome em Negrito, Itálico e como Código usando a sintaxe Markdown.
+3.  **Comentários**: O comentário abaixo é bom ou ruim? Por que?
+    ```javascript
+    // Incrementa i em 1
+    i = i + 1;
+    ```
 
-<div class="grid cards" markdown>
+---
 
--   :material-presentation: **Acessar Slides**
-    -   [Ver Slides da Aula](../slides/slide-14.html)
+## 🚀 Projeto da Aula: Criando o README
+**Atividade da Aula:**
+Chegou a hora de criar a "capa" do nosso To-Do App.
 
--   :material-school: **Quiz**
-    -   [Responder Quiz](../quizzes/quiz-14.md)
-
--   :material-dumbbell: **Exercícios**
-    -   [Lista de Exercícios](../exercicios/exercicio-14.md)
-
--   :material-rocket: **Projeto**
-    -   [Mini Projeto](../projetos/projeto-14.md)
-
-</div>
+1.  Crie um arquivo `README.md` (simulado no seu documento de projeto).
+2.  Escreva:
+    - **Título**: To-Do App Super.
+    - **Descrição**: Um gerenciador de tarefas simples e ágil.
+    - **Tecnologias**: HTML, CSS, JS, LocalStorage.
+    - **Como rodar**: "Abra o arquivo index.html no navegador".
+    - **Autor**: Seu Nome.
+3.  **Entrega**: Cole o conteúdo Markdown no seu documento oficial.

@@ -1,49 +1,35 @@
-# Quiz 16 - Introdução
+# Quiz 16 - Carreira e Ética
 
---8<-- "assets/quiz.html"
+**1. O que é um profissional "T-Shaped"?**
+A) Alguém que só usa camisetas com gola T.
+B) Alguém que tem conhecimento profundo em uma área e conhecimentos gerais em outras.
+C) Alguém que só sabe uma coisa e ignora o resto.
+D) Alguém que sabe tudo sobre tudo.
 
-<div class="quiz-container">
-  <div class="quiz-question">1. O que significa TDD?</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Test During Development</div>
-  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! Test Driven Development">Test Driven Development</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Technical Design Document</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">The Developer Dream</div>
-  <div class="quiz-feedback"></div>
-</div>
+**2. Por que a ética é fundamental na Engenharia de Software?**
+A) Porque softwares impactam vidas, privacidade e a sociedade.
+B) Porque é bonito no currículo.
+C) Para passar na faculdade.
+D) Não é importante.
 
-<div class="quiz-container">
-  <div class="quiz-question">2. Qual a ordem correta do ciclo TDD?</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Code, Test, Refactor</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Refactor, Code, Test</div>
-  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! Red, Green, Refactor">Red, Green, Refactor</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Green, Red, Refactor</div>
-  <div class="quiz-feedback"></div>
-</div>
+**3. Qual destas é uma Soft Skill essencial?**
+A) Saber programar em Assembly.
+B) Comunicação clara e empática.
+C) Digitar muito rápido.
+D) Instalar o Windows.
 
-<div class="quiz-container">
-  <div class="quiz-question">3. Qual palavra-chave do Python é usada para verificar se uma condição é verdadeira nos testes?</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">check</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">verify</div>
-  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! assert">assert</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">test</div>
-  <div class="quiz-feedback"></div>
-</div>
+**4. Sobre o futuro com IA na programação:**
+A) A IA vai programar tudo sozinha amanhã e ninguém mais terá emprego.
+B) A IA servirá como ferramenta de apoio, aumentando a produtividade dos engenheiros.
+C) A IA é proibida.
+D) Devemos voltar a usar papel e caneta.
 
-<div class="quiz-container">
-  <div class="quiz-question">4. O padrão AAA em testes significa:</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Authentication, Authorization, Accounting</div>
-  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! Arrange, Act, Assert">Arrange, Act, Assert</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Analysis, Action, Approval</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Apply, Accept, Avoid</div>
-  <div class="quiz-feedback"></div>
-</div>
+**5. Qual o próximo passo após terminar este curso?**
+A) Parar de estudar para sempre.
+B) Continuar praticando, construir portfólio e aprender novas tecnologias (Lifelong Learning).
+C) Esquecer tudo.
+D) Mudar de área.
 
-<div class="quiz-container">
-  <div class="quiz-question">5. Para que serve a fase "Refactor" no TDD?</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Para escrever novos testes</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Para corrigir bugs encontrados</div>
-  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! Para melhorar a qualidade do código sem alterar seu comportamento (mantendo os testes passando)">Para melhorar a qualidade do código sem alterar seu comportamento (mantendo os testes passando)</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Para adicionar novas funcionalidades</div>
-  <div class="quiz-feedback"></div>
-</div>
-
+---
+**Gabarito:**
+1-B, 2-A, 3-B, 4-B, 5-B

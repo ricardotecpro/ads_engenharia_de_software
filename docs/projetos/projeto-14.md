@@ -1,35 +1,37 @@
-# Projeto 14 - Sistema de RPG Simples
+# Projeto 14 - O README Oficial
 
 ## 🎯 Objetivo
-Criar um sistema de batalha de RPG usando classes, herança e polimorfismo.
+Criar a documentação pública do projeto.
 
-## 📋 Requisitos
-1. Classe Base `Personagem`:
-    - Atributos: `nome`, `vida`, `forca`.
-    - Método `atacar(inimigo)`: Tira vida do inimigo baseado na força.
-    - Método `esta_vivo()`: Retorna True se vida > 0.
+## 📝 Descrição
+Um projeto sem README é um projeto fantasma. Ninguém sabe para que serve nem como usa.
 
-2. Classes Filhas:
-    - `Guerreiro`: Força alta, vida alta.
-    - `Mago`: Força média, mas tem método `lancar_magia(inimigo)` (dano extra, gasta mana).
-    - `Monstro`: Personagem genérico para bater.
+## 🚀 Modelo de README
+Preencha o modelo abaixo com os dados do seu To-Do App:
 
-## 👣 Passo a Passo
-1. Crie a classe `Personagem`.
-2. Crie `Guerreiro` herdando de `Personagem`. Personalize o `__init__`.
-3. Crie `Mago` herdando de `Personagem`. Adicione atributo `mana`.
-4. Simule uma batalha:
-    - Instancie um Guerreiro e um Monstro.
-    - Faça um loop onde eles se atacam até um morrer.
-    - Exiba o log da batalha ("Guerreiro atacou Monstro: -10 HP").
+```markdown
+# [Nome do App]
 
-## 🚀 Desafio Extra
-Crie uma classe `Arqueiro` que tem chance de "Crítico" (dano dobrado) quando ataca. Use o módulo `random` para calcular essa chance.
+## 📋 Descrição
+[Uma frase de impacto explicando o que o app faz]
 
-## 🧪 Testes
+## 🚀 Tecnologias
+- HTML5
+- CSS3
+- JavaScript (Vanilla)
+- LocalStorage
 
-Se possível, crie um arquivo `test_rpg.py` para validar sua lógica:
+## 📦 Como Usar
+1. Baixe o projeto.
+2. Abra o arquivo `index.html` no seu navegador.
+3. Comece a adicionar tarefas!
 
-1. Teste se o Personagem morre quando vida chega a 0.
-2. Teste se o Guerreiro tem mais vida que o Mago.
-3. Teste se o ataque reduz a vida do inimigo corretamente.
+## 🛡 Segurança
+Este projeto roda 100% no navegador. Seus dados não são enviados para a nuvem.
+
+## 📄 Licença
+MIT
+```
+
+## 📤 Entrega
+Adicione o código acima (preenchido) no seu documento de projeto.

@@ -1,164 +1,109 @@
-# Aula 08 - Dicionários
+# Aula 08 – Design de Software e SOLID
 
-## 🎯 Objetivos da Aula
-
-- [ ] Entender a estrutura de dados Dicionário (`dict`)
-- [ ] Compreender o conceito de Chave-Valor (Key-Value)
-- [ ] Acessar, Adicionar e Remover itens
-- [ ] Percorrer dicionários com loops
-- [ ] Usar métodos úteis (`keys`, `values`, `items`, `get`)
-
----
+## 🎯 Objetivos de Aprendizagem
+- Entender os princípios de um bom design de software.
+- Compreender os conceitos de Acoplamento e Coesão.
+- Introduzir o princípio KISS (Keep It Simple, Stupid) e DRY (Don't Repeat Yourself).
+- Conhecer os Princípios SOLID (visão geral).
 
 ## 📚 Conteúdo
 
-### 1. O que são Dicionários?
+### 1. Design de Software
+Design não é (só) sobre cores. É sobre como organizar o código para que ele não se torne um "Monstro de Espaguete" impossível de dar manutenção.
 
-Dicionários são coleções flexíveis onde armazenamos dados em pares **Chave: Valor**.
-Pense em um dicionário real: você procura uma palavra (chave) para encontrar seu significado (valor).
+### 2. Conceitos Chave
+#### Coesão (Bom)
+Uma peça de software (função, classe) deve fazer **uma única coisa** e fazê-la bem.
+- *Exemplo Ruim*: Uma função `processarTudo()` que calcula imposto, salva no banco e envia e-mail.
+- *Exemplo Bom*: 3 funções separadas: `calcularImposto()`, `salvarPedido()`, `enviarEmail()`.
 
-Em Python, usamos chaves `{}` (assim como sets), mas com a sintaxe `chave: valor`.
+#### Acoplamento (Ruim quando alto)
+O quanto uma peça depende da outra. Se você muda A e precisa mudar B, C e D, o acoplamento está alto.
+- Queremos **Baixo Acoplamento** e **Alta Coesão**.
 
-**Estrutura:**
-- **Chave** → **Valor**
-- `"nome"` → `"Ricardo"`
-- `"idade"` → `30`
+### 3. Princípios Básicos
+- **KISS (Keep It Simple, Stupid)**: A solução mais simples quase sempre é a melhor. Não complique.
+- **DRY (Don't Repeat Yourself)**: Nunca copie e cole código. Se a lógica se repete, crie uma função.
 
-```python
-# Criando um dicionário
-aluno = {
-    "nome": "Ricardo",
-    "idade": 30,
-    "curso": "Python",
-    "aprovado": True
-}
-```
-
-### 2. Acessando Valores
-
-Diferente das listas (que usam índices `0, 1, 2`), dicionários usam as **chaves** que você definiu.
-
-```python
-print(aluno["nome"]) # Ricardo
-print(aluno["idade"]) # 30
-```
-
-> **Erro Comum:** Tentar acessar uma chave que não existe gera um `KeyError`.
-> Para evitar isso, use o método `.get()`:
-
-```python
-print(aluno.get("email")) # None (não dá erro!)
-print(aluno.get("email", "Não informado")) # Valor padrão
-```
-
-### 3. Adicionando e Modificando
-
-É muito simples: basta atribuir um valor a uma chave. Se a chave já existe, atualiza. Se não, cria.
-
-```python
-# Modificando
-aluno["idade"] = 31
-
-# Adicionando nova chave
-aluno["nota"] = 9.5
-
-print(aluno)
-# {'nome': 'Ricardo', 'idade': 31, 'curso': 'Python', 'aprovado': True, 'nota': 9.5}
-```
-
-### 4. Removendo Itens
-
-- `del dicionario["chave"]`: Remove a chave e o valor.
-- `.pop("chave")`: Remove e retorna o valor.
-
-```python
-del aluno["curso"]
-nota = aluno.pop("nota")
-```
-
-### 5. Percorrendo Dicionários
-
-Podemos usar loops para ver chaves, valores ou ambos.
-
-```python
-pessoa = {"nome": "Ana", "cidade": "SP"}
-
-# Loop pelas chaves (padrão)
-for chave in pessoa:
-    print(chave) # nome, cidade
-
-# Loop pelos valores
-for valor in pessoa.values():
-    print(valor) # Ana, SP
-
-# Loop por ambos (muito útil!)
-for chave, valor in pessoa.items():
-    print(f"{chave}: {valor}")
-```
-
-### 6. Listas de Dicionários (Estrutura Comum)
-
-É muito comum ter uma lista onde cada item é um dicionário (como um banco de dados).
-
-```python
-turma = [
-    {"nome": "Ana", "nota": 8},
-    {"nome": "Beto", "nota": 5},
-    {"nome": "Carla", "nota": 10}
-]
-
-for aluno in turma:
-    print(f"{aluno['nome']} tirou {aluno['nota']}")
-```
+### 4. SOLID (Visão Geral)
+São 5 mandamentos da Orientação a Objetos:
+- **S**RP (Single Responsibility): Uma classe deve ter um único motivo para mudar.
+- **O**CP (Open/Closed): Aberto para extensão, fechado para modificação.
+- **L**SP (Liskov): Filhos devem substituir pais sem quebrar nada.
+- **I**SP (Interface Segregation): Interfaces específicas são melhores que uma geral.
+- **D**IP (Dependency Inversion): Dependa de abstrações, não de implementações.
 
 ---
 
-## 💻 Em Prática
-
-Vamos criar um pequeno sistema de cadastro de produtos.
-
-```python
-# cadastro_produtos.py
-
-produto = {}
-
-produto["nome"] = input("Nome do produto: ")
-produto["preco"] = float(input("Preço: "))
-produto["estoque"] = int(input("Quantidade: "))
-
-print("\n--- Resumo ---")
-for k, v in produto.items():
-    print(f"{k.capitalize()}: {v}")
-
-print(f"Valor total em estoque: R$ {produto['preco'] * produto['estoque']:.2f}")
-```
+## 📽 Roteiro de Slides
+- **Slide 1**: Design de Software
+- **Slide 2**: O objetivo (Código limpo e sustentável).
+- **Slide 3**: Coesão vs. Acoplamento (A regra de ouro).
+- **Slide 4**: Princípios KISS e DRY.
+- **Slide 5**: Introdução ao SOLID (Só os nomes).
+- **Slide 6**: Exemplo Visual (Espaguete vs. Modular).
 
 ---
 
-## 📝 Resumo
+## 📝 Quiz
 
-- **Dicionários** usam `{chave: valor}`.
-- Chaves devem ser únicas e imutáveis (strings, números).
-- `.get()` é mais seguro que `[]` para acessar.
-- `.keys()`, `.values()` e `.items()` ajudam nos loops.
-- São a base para lidar com formatos como JSON e APIs.
+**1. O que é "Coesão" no design de software?**
+A) Quando o código está todo junto num arquivo só.
+B) Quando um módulo/classe foca em uma única responsabilidade bem definida.
+C) Quando usamos cola para unir as páginas.
+D) Quando o software não funciona.
+
+**2. O que queremos em um bom sistema?**
+A) Baixo Acoplamento e Alta Coesão.
+B) Alto Acoplamento e Baixa Coesão.
+C) Código Espaguete.
+D) Bugs complexos.
+
+**3. O que significa a sigla DRY?**
+A) Do Repeat Yourself (Repita-se).
+B) Don't Repeat Yourself (Não se repita - Evite duplicação).
+C) Data Run Yard.
+D) Dry Code (Código Seco).
+
+**4. O princípio KISS sugere que:**
+A) Devemos beijar o computador.
+B) Devemos criar as soluções mais complexas possíveis.
+C) Devemos manter as coisas simples (Keep It Simple).
+D) Code is Stupid Simple.
+
+**5. Qual a letra "S" do SOLID?**
+A) Simple Code Principle.
+B) Single Responsibility Principle (Princípio da Responsabilidade Única).
+C) Super Class Principle.
+D) Silicon Valley.
+
+**Gabarito:**
+1-B, 2-A, 3-B, 4-C, 5-B
 
 ---
 
-## 🎯 Próximos Passos
+## 🛠 Exercícios
+1.  **Refatoração (Teórica)**: Você encontrou uma função de 500 linhas chamada `GerenciarUsuario` que cadastra, envia e-mail de boas-vindas, valida CPF e gera relatório. Usando o princípio da **Coesão**, como você dividiria essa função?
+2.  **Identificando DRY**: Se você escreveu a lógica de calcular desconto de 10% em 5 lugares diferentes do código, o que acontece se o desconto mudar para 15%? Como o princípio DRY resolveria isso?
+3.  **Monstro de Espaguete**: Pesquise o termo "Spaghetti Code" e escreva uma frase sobre como evitá-lo.
 
-<div class="grid cards" markdown>
+---
 
--   :material-presentation: **Acessar Slides**
-    -   [Ver Slides da Aula](../slides/slide-08.html)
+## 🚀 Projeto da Aula: Refatorando o Design
+**Atividade da Aula:**
+Vamos aplicar o DRY no nosso projeto teórico.
 
--   :material-school: **Quiz**
-    -   [Responder Quiz](../quizzes/quiz-08.md)
-
--   :material-dumbbell: **Exercícios**
-    -   [Lista de Exercícios](../exercicios/exercicio-08.md)
-
--   :material-rocket: **Projeto**
-    -   [Mini Projeto](../projetos/projeto-08.md)
-
-</div>
+1.  **Cenário**: No nosso To-Do App, toda vez que uma tarefa é concluída, precisamos atualizar o contador de "Tarefas Pendentes" na tela. Isso acontece quando criamos, excluímos ou completamos uma tarefa.
+2.  **Problema**: Se escrevermos o código de contar e atualizar a tela em todos esses lugares, ferimos o DRY.
+3.  **Solução**: Crie uma função chamada `atualizarContador()`.
+4.  **No Documento**: Escreva em pseudocódigo:
+    ```
+    função atualizarContador() {
+       pendentes = contarTarefasNaoFeitas()
+       tela.exibir(pendentes)
+    }
+    
+    // Agora só chamamos a função:
+    aoCriarTarefa -> atualizarContador()
+    aoExcluirTarefa -> atualizarContador()
+    ```

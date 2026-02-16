@@ -1,163 +1,106 @@
-# Aula 06 - Listas
+# Aula 06 – Arquitetura de Software
 
-## 🎯 Objetivos da Aula
-
-- [ ] Entender a estrutura de dados Listas (`list`)
-- [ ] Acessar itens pelo índice (Indexing)
-- [ ] Fatiar listas (Slicing)
-- [ ] Adicionar e remover itens (`append`, `insert`, `remove`, `pop`)
-- [ ] Usar funções úteis (`len`, `max`, `min`, `sum`)
-
----
+## 🎯 Objetivos de Aprendizagem
+- Entender o conceito de Arquitetura de Software.
+- Conhecer padrões arquiteturais comuns (Monólito, Microserviços).
+- Entender a separação Frontend vs. Backend.
+- Compreender MVC e Padrões de Camadas.
 
 ## 📚 Conteúdo
 
-### 1. O que são Listas?
+### 1. O que é Arquitetura?
+Se a modelagem (Aula 05) é a planta baixa da casa, a Arquitetura é a estrutura e engenharia por trás. Define se será um prédio de aço, uma casa de madeira ou uma cabana.
+- Define a organização fundamental do sistema.
+- Difícil de mudar depois de pronto.
 
-Listas são coleções ordenadas de itens. Elas são mutáveis (podemos alterar) e permitem itens duplicados.
-Em Python, delimitamos listas com colchetes `[]`.
+### 2. Monólito vs. Microserviços
+#### Monólito (Tudo junto)
+O sistema inteiro é um único bloco de código.
+- **Vantagens**: Simples de desenvolver e implantar no início.
+- **Desvantagens**: Se uma parte cai, tudo cai. Difícil de escalar.
 
-```python
-# Lista de números
-numeros = [1, 2, 3, 4, 5]
+#### Microserviços (Peças separadas)
+O sistema é dividido em pequenos serviços independentes que conversam entre si (via API).
+- **Vantagens**: Se o serviço de "Pagamento" cair, o "Catálogo" continua funcionando. Cada time cuida de um pedaço.
+- **Desvantagens**: Muito mais complexo de gerenciar.
 
-# Lista de strings
-frutas = ["Maçã", "Banana", "Uva"]
+### 3. Client-Server (Cliente-Servidor)
+A arquitetura mais comum na Web.
+- **Client (Frontend)**: O que o usuário vê (Navegador, App Mobile).
+- **Server (Backend)**: Onde os dados e a lógica vivem.
+- Eles conversam via **HTTP** (Internet).
 
-# Lista mista (Python permite!)
-mistura = [10, "Olá", True, 3.14]
-```
-
-**Visualização da Lista:**
-```
-Índice:  0      1        2       3
-Valor:  [10] ["Olá"] [True] [3.14]
-```
-
-### 2. Acessando Itens (Indexação)
-
-Cada item tem um endereço (índice), começando do **ZERO**.
-
-```python
-frutas = ["Maçã", "Banana", "Uva"]
-# Índices:   0        1        2
-
-print(frutas[0]) # Maçã
-print(frutas[1]) # Banana
-```
-
-> **Índices Negativos:** Começam do final. `-1` é o último item.
-> `print(frutas[-1])` -> Uva
-
-### 3. Fatiamento (Slicing)
-
-Podemos pegar um pedaço da lista.
-Sintaxe: `lista[inicio:fim:passo]`
-*O `fim` não é incluído!*
-
-```python
-numeros = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-
-print(numeros[0:3]) # [0, 1, 2] (índices 0, 1, 2)
-print(numeros[5:])  # [5, 6, 7, 8, 9] (do 5 até o fim)
-print(numeros[:4])  # [0, 1, 2, 3] (do início até o 4 - não incluso)
-print(numeros[::2]) # [0, 2, 4, 6, 8] (pula de 2 em 2)
-```
-
-### 4. Modificando Listas
-
-Podemos alterar o valor de um item específico.
-
-```python
-frutas = ["Maçã", "Banana"]
-frutas[0] = "Pera"
-print(frutas) # ['Pera', 'Banana']
-```
-
-### 5. Adicionando e Removendo Itens
-
-Principais métodos:
-
-- **Adicionar:**
-    - `lista.append(item)`: Adiciona ao final.
-    - `lista.insert(posicao, item)`: Adiciona em uma posição específica.
-
-- **Remover:**
-    - `lista.remove(item)`: Remove a primeira ocorrência do valor.
-    - `lista.pop(indice)`: Remove pelo índice e retorna o valor (se vazio, remove o último).
-
-```python
-msg = []
-msg.append("Olá")
-msg.append("Python")
-print(msg) # ['Olá', 'Python']
-
-msg.pop() # Remove 'Python'
-print(msg) # ['Olá']
-```
-
-### 6. Funções Úteis
-
-- `len(lista)`: Tamanho da lista.
-- `sum(lista)`: Soma dos elementos (se forem números).
-- `max(lista)`: Maior valor.
-- `min(lista)`: Menor valor.
-- `item in lista`: Verifica se existe (retorna True/False).
+### 4. Padrões de Camadas (Layered)
+Organizar o código em "fatias" para não virar uma bagunça.
+- **Apresentação (UI)**: Botões, telas.
+- **Lógica de Negócio**: Regras (ex: "Não pode sacar mais que o saldo").
+- **Dados (Persistência)**: Salvar no Banco de Dados.
 
 ---
 
-## 💻 Em Prática
-
-Vamos gerenciar uma lista de compras.
-
-```python
-# lista_compras.py
-
-compras = []
-
-while True:
-    print("\n1. Adicionar item")
-    print("2. Ver lista")
-    print("3. Sair")
-    opcao = input("Opção: ")
-
-    if opcao == "1":
-        item = input("Digite o item: ")
-        compras.append(item)
-    elif opcao == "2":
-        print("Sua lista:", compras)
-    elif opcao == "3":
-        break
-    else:
-        print("Opção inválida!")
-```
+## 📽 Roteiro de Slides
+- **Slide 1**: Arquitetura de Software
+- **Slide 2**: O conceito (Estrutura fundamental).
+- **Slide 3**: Monólito (Blocão único).
+- **Slide 4**: Microserviços (Muitas partes pequenas).
+- **Slide 5**: Cliente-Servidor (A base da Web).
+- **Slide 6**: Camadas (UI, Lógica, Dados).
 
 ---
 
-## 📝 Resumo
+## 📝 Quiz
 
-- Listas são **ordenadas** e **mutáveis**.
-- Use `[]` para criar e `[i]` para acessar.
-- Índices começam em `0`.
-- `append()` adiciona, `pop()` remove.
-- `len()` diz o tamanho.
+**1. Qual a principal característica de uma arquitetura Monolítica?**
+A) O sistema é composto por milhares de pequenos serviços.
+B) O sistema é um único bloco de código onde tudo está junto.
+C) O sistema não usa banco de dados.
+D) O sistema só roda em celulares.
+
+**2. Na arquitetura Cliente-Servidor, o que o "Cliente" geralmente faz?**
+A) Armazena todos os dados do mundo.
+B) Processa pagamentos bancários sozinho.
+C) Envia requisições e exibe a interface para o usuário.
+D) Gera energia para o servidor.
+
+**3. Qual a vantagem dos Microserviços?**
+A) São extremamente simples de configurar.
+B) Se um serviço falhar, o resto do sistema pode continuar funcionando.
+C) Não precisam de internet.
+D) Usam menos memória sempre.
+
+**4. O que é a camada de "Lógica de Negócio"?**
+A) A parte visual (cores e botões).
+B) Onde ficam as regras do sistema (ex: cálculos, validações).
+C) O cabo de rede.
+D) A marca do computador.
+
+**5. Arquitetura de Software é fácil de mudar depois que o projeto está pronto?**
+A) Sim, muda-se em 5 minutos.
+B) Não, geralmente é caro e difícil (como mudar a fundação de um prédio).
+C) Depende da cor do software.
+D) Arquitetura não existe.
+
+**Gabarito:**
+1-B, 2-C, 3-B, 4-B, 5-B
 
 ---
 
-## 🎯 Próximos Passos
+## 🛠 Exercícios
+1.  **Análise de App**: Pense no Uber. O App no seu celular é o **Cliente** ou o **Servidor**? Onde ficam guardados os dados dos motoristas?
+2.  **Desenho**: Desenhe três caixas empilhadas representando as camadas: Apresentação (Topo), Lógica (Meio) e Dados (Base). Onde você colocaria o código que verifica se a senha do usuário tem 8 dígitos?
+3.  **Reflexão**: Por que a Netflix usa Microserviços? (Dica: Imagine milhões de pessoas assistindo coisas diferentes ao mesmo tempo. Se o módulo de "Legendas" falhar, o filme deve parar?).
 
-<div class="grid cards" markdown>
+---
 
--   :material-presentation: **Acessar Slides**
-    -   [Ver Slides da Aula](../slides/slide-06.html)
+## 🚀 Projeto da Aula: Definindo a Arquitetura
+**Atividade da Aula:**
+Vamos definir a arquitetura do To-Do App.
 
--   :material-school: **Quiz**
-    -   [Responder Quiz](../quizzes/quiz-06.md)
-
--   :material-dumbbell: **Exercícios**
-    -   [Lista de Exercícios](../exercicios/exercicio-06.md)
-
--   :material-rocket: **Projeto**
-    -   [Mini Projeto](../projetos/projeto-06.md)
-
-</div>
+1.  **Tipo**: Vamos usar uma arquitetura **Web Simples (SPA - Single Page Application)**.
+    - **Frontend**: HTML/JS (simulado no navegador).
+    - **Backend**: Simulado (Local Storage do navegador).
+2.  **Desenho da Arquitetura**:
+    - Desenhe um quadrado "Navegador" contendo "HTML" e "JavaScript".
+    - Desenhe um "Banco de Dados Local" dentro do navegador.
+    - Isso mostra que, no nosso MVP, não teremos servidor externo (Serverless/Local).
+3.  **Decisão**: Escreva no seu documento de projeto: "Arquitetura escolhida: Local/Client-side apenas". Justificativa: "Simplicidade para aprender e custo zero".

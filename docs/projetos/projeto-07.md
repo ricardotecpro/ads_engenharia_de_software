@@ -1,28 +1,32 @@
-# Projeto 07 - Sorteador de Loteria
+# Projeto 07 - Controle de Versão
 
 ## 🎯 Objetivo
-Criar um gerador de palpites para a Mega Sena.
+estabelecer uma estratégia de versionamento para o projeto.
 
-## 📋 Requisitos
-Uma aposta da Mega Sena consiste em 6 números únicos entre 1 e 60.
-1. O programa deve perguntar quantos jogos o usuário quer gerar.
-2. Para cada jogo, gere 6 números aleatórios.
-3. Use um `set` para garantir que não haja números repetidos dentro do mesmo jogo (se o `random` sortear repetido, o set ignora, mas você precisa garantir que o jogo tenha 6 números no final).
-4. Mostre os jogos ordenados (ordem crescente).
+## 📝 Descrição
+Mesmo trabalhando sozinho, usar Git é essencial para criar o hábito de salvar "capítulos" do seu trabalho.
 
-## 💡 Dicas
-- Use `while len(jogo) < 6:` para continuar sorteando até ter 6 números únicos.
-- `random.randint(1, 60)` gera os números.
-- Para ordenar visualmente, converta o set para lista e use `.sort()`.
+## 🚀 Passo a Passo
 
-## 👣 Passo a Passo
-1. Importe `random`.
-2. Pergunte a quantidade de jogos.
-3. Crie um loop `for` para a quantidade de jogos.
-4. Dentro do loop, crie um set vazio `jogo = set()`.
-5. Crie um loop `while` que roda enquanto `len(jogo) < 6`.
-6. Adicione o número aleatório.
-7. Converta para lista, ordene e imprima.
+### 1. Mensagens de Commit
+Boas mensagens explicam O QUE foi feito e POR QUE.
+- **Ruim**: "alterações", "arrumei", "teste".
+- **Bom**: "Adiciona botão de excluir tarefa", "Corrige erro de cálculo na soma".
 
-## 🚀 Desafio Extra
-Não permitir jogos repetidos! (Se o gerador criar 6 números que já foram gerados em um jogo anterior, descarte e gere outro).
+### 2. Estratégia de Branches (Git Flow Simplificado)
+Para nosso projeto, usaremos:
+- `main`: Código que funciona (Produção).
+- `develop` (opcional): Onde integramos as coisas.
+- `feature/nome-da-tarefa`: Para cada item do Backlog.
+
+**Exemplo**:
+Vou criar o "Login".
+1. Crio branch `feature/login`.
+2. Faço o código.
+3. Commit: "Implementa formulário de login".
+4. Volto para `main` e "junto" (Merge) a `feature/login`.
+
+## 📤 Entrega
+Adicione ao seu documento:
+1.  Um exemplo de mensagem de commit boa e uma ruim.
+2.  O desenho de como seria visualmente sua árvore de commits (pode ser bolinhas ligadas por linhas).

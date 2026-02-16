@@ -1,29 +1,23 @@
-# Projeto 15 - Buscador de GitHub
+# Projeto 15 - Registro de Melhorias
 
 ## 🎯 Objetivo
-Criar uma ferramenta que busca informações de um usuário do GitHub usando a API pública deles.
+Documentar a evolução e manutenção do código.
 
-## 📋 Requisitos
-1. Pergunte o nome do usuário do GitHub (ex: `torvalds`, `microsoft`).
-2. Acesse a API: `https://api.github.com/users/{usuario}`.
-3. Se o usuário existir (200 OK):
-    - Mostre o Nome Completo.
-    - Mostre a Bio.
-    - Mostre o número de Seguidores.
-    - Mostre o número de Repositórios Públicos.
-4. Se não existir (404), diga "Usuário não encontrado".
+## 📝 Descrição
+Software vivo muda. Vamos registrar nossas "faxinas".
 
-## 💡 Dica
-A API do GitHub é gratuita, mas tem limite de acessos por hora para anônimos. Se parar de funcionar, espere um pouco ou teste com outra API (como PokeAPI).
+## 🚀 Changelog (Diário de Mudanças)
 
-## 👣 Passo a Passo
-1. Importe `requests`.
-2. Pegue o input do usuário.
-3. Monte a URL (f-string).
-4. Faça o GET e verifique o `status_code`.
-5. Se for 200, `dados = resposta.json()`.
-6. Acesse as chaves `name`, `bio`, `followers`, `public_repos`.
+Crie um arquivo ou seção chamada `CHANGELOG.md` no seu projeto simulado:
 
-## 🚀 Desafio Extra
-Liste também os nomes dos 5 últimos repositórios do usuário.
-(Dica: Explore a chave `repos_url` que vem no primeiro JSON, ou acesse `https://api.github.com/users/{usuario}/repos`).
+```markdown
+### Versão 1.1.0 - Refatoração
+**Data**: Hoje
+
+- **[Refactor]**: Extraída lógica de "Salvar" para função própria.
+- **[Fix]**: Corrigido bug que permitia tarefas vazias.
+- **[Style]**: Padronização das cores usando variáveis CSS.
+```
+
+## 📤 Entrega
+Adicione esse trecho de Changelog ao seu documento. Isso mostra profissionalismo e controle sobre a evolução do produto.

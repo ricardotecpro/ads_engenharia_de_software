@@ -1,28 +1,16 @@
-# Exercícios - Aula 16
+# Exercício 16 - Encerramento
 
-## 1. Instalando Pytest
-Instale o pytest (`pip install pytest`) se ainda não tiver.
-Crie um arquivo `test_exemplo.py` com um teste simples que passa (`assert 1 + 1 == 2`) e outro que falha (`assert 1 + 1 == 3`).
-Rode `pytest` no terminal e veja a saída colorida.
+## 🛠 Questões Práticas
 
-## 2. Testando Funções Puras
-Crie um arquivo `matematica.py` com funções `soma`, `subtracao`, `multiplicacao`.
-Crie um arquivo `test_matematica.py` e escreva pelo menos um teste para cada função.
+**1. O Código de Ética**
+Pesquise sobre o "Código de Ética da ACM/IEEE para Engenharia de Software". Escolha um princípio e explique por que ele é importante. (Ex: "Público - Engenheiros de software devem agir de acordo com o interesse público").
 
-## 3. Testando Exceções
-Crie uma função `divisao(a, b)` que lança `ValueError` se `b == 0`.
-No teste, use `pytest.raises(ValueError)` (pesquise como usar) para garantir que o erro é lançado corretamente.
+**2. Plano de Carreira**
+Onde você quer estar daqui a 2 anos?
+- Júnior em uma empresa grande?
+- Freelancer?
+- Criando sua startup?
+O que você precisa estudar para chegar lá (além de código)?
 
-## 4. TDD: Palíndromo
-Escreva PRIMEIRO o teste para uma função `eh_palindromo(texto)`.
-- "ana" -> True
-- "caio" -> False
-- "Arara" -> True (deve ignorar maiúsculas)
-Depois, implemente a função até os testes passarem.
-
-## 5. TDD: Validador de Email Simples
-Escreva testes para `validar_email(email)`:
-- Deve ter "@"
-- Deve ter "." depois do "@"
-- Não pode ter espaços
-Implemente a função para passar nos testes.
+**3. Carta para o Futuro**
+Escreva um parágrafo para você mesmo ler daqui a 6 meses. "Hoje aprendi que engenharia de software é... Prometo não desistir quando..."

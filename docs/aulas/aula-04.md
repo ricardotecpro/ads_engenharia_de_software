@@ -1,164 +1,113 @@
-# Aula 04 - Estruturas Condicionais (if/elif/else)
+# Aula 04 – Requisitos de Software
 
-## 🎯 Objetivos da Aula
-
-- [ ] Entender o fluxo de controle de um programa
-- [ ] Aprender a sintaxe do `if` (se)
-- [ ] Usar o `else` (senão) para alternativas
-- [ ] Usar o `elif` (senão se) para múltiplas condições
-- [ ] Compreender a importância da **Indentação** em Python
-- [ ] Aninhar condições (if dentro de if)
-
----
+## 🎯 Objetivos de Aprendizagem
+- Entender o que são Requisitos de Software.
+- Diferenciar Requisitos Funcionais de Não-Funcionais.
+- Aprender a escrever Histórias de Usuário (User Stories).
+- Compreender a importância do documento de requisitos.
 
 ## 📚 Conteúdo
 
-### 1. O que são Condicionais?
+### 1. O que são Requisitos?
+Requisitos são as necessidades e condições que o software deve atender. É a tradução do que o cliente "quer" para o que o time "vai construir".
+- **Sem requisitos claros** = Projeto fracassado (O famoso balanço na árvore).
 
-Até agora, nossos programas seguiam uma linha reta: passo 1, passo 2, passo 3...
-Mas a vida real é cheia de decisões:
-*"SE estiver chovendo, levo guarda-chuva. SENÃO, vou de óculos escuros."*
+### 2. Tipos de Requisitos
+#### A) Requisitos Funcionais (RF)
+Descrevem o que o sistema **FAZ**. São as funcionalidades perceptíveis pelo usuário.
+- *Exemplo*: "O sistema deve permitir cadastrar um novo cliente."
+- *Exemplo*: "O sistema deve calcular o total da compra."
 
-Em Python, usamos estruturas condicionais para desviar o fluxo do programa baseando-se em testes lógicos (`True` ou `False`).
+#### B) Requisitos Não-Funcionais (RNF)
+Descrevem **COMO** o sistema deve ser. São restrições e qualidades (performance, segurança, usabilidade).
+- *Exemplo*: "O sistema deve carregar qualquer página em menos de 2 segundos." (Performance)
+- *Exemplo*: "O sistema deve funcionar em celulares Android e iOS." (Portabilidade)
+- *Exemplo*: "A senha deve ser criptografada." (Segurança)
 
+### 3. User Stories (Histórias de Usuário)
+No modelo Ágil, usamos User Stories para descrever requisitos de forma simples, focada no valor para o usuário.
+**Modelo**:
+`Como um <tipo de usuário>, eu quero <ação>, para que <benefício>.`
 
-```mermaid
-graph TD
-    A[Início] --> B{Chovendo?}
-    B -- Sim --> C[Levar Guarda-Chuva]
-    B -- Não --> D[Ir de Óculos Escuros]
-    C --> E[Sair de Casa]
-    D --> E
-```
+*Exemplo*:
+"Como um **usuário do To-Do App**, eu quero **criar uma nova tarefa**, para que **eu não esqueça meus compromissos**."
 
-### 2. A Estrutura `if` (Se)
-
-O bloco `if` só executa se a condição for verdadeira (`True`).
-
-```python
-idade = 20
-
-if idade >= 18:
-    print("Você é maior de idade.")
-    print("Pode entrar na festa.") # Este código também depende do if
-
-print("Fim do programa.") # Executa sempre
-```
-
-> **🔑 Indentação:** Note que o código dentro do `if` está "empurrado" para a direita (geralmente 4 espaços). Isso diz ao Python que aquele bloco pertence ao `if`. Se tirar a indentação, dá erro ou muda a lógica!
-
-### 3. A Estrutura `else` (Senão)
-
-O `else` é o plano B. Ele executa **somente se** o `if` for falso.
-
-```python
-idade = 15
-
-if idade >= 18:
-    print("Maior de idade.")
-else:
-    print("Menor de idade.")
-```
-
-> O `else` nunca tem condição. Ele é "todo o resto".
-
-### 4. A Estrutura `elif` (Senão Se)
-
-Para testar várias condições em sequência. O primeiro que for verdadeiro ganha.
-
-```python
-nota = 8.5
-
-if nota >= 9.0:
-    print("Conceito A (Excelente!)")
-elif nota >= 7.0:
-    print("Conceito B (Aprovado)")
-elif nota >= 5.0:
-    print("Conceito C (Recuperação)")
-else:
-    print("Conceito D (Reprovado)")
-```
-
-### 5. If Aninhado (If dentro de If)
-
-Você pode colocar um `if` dentro de outro. Isso é útil para verificar condições dependentes.
-
-```python
-idade = 20
-cnh = False
-
-if idade >= 18:
-    print("Tem idade para dirigir.")
-    if cnh:
-        print("Pode pegar o carro!")
-    else:
-        print("Mas precisa tirar a CNH primeiro.")
-else:
-    print("Muito novo para dirigir.")
-```
-
-### 6. Combinando com Operadores Lógicos
-
-Podemos deixar o código mais limpo usando `and`, `or`, `not`.
-
-```python
-# Versão melhor do exemplo anterior
-if idade >= 18 and cnh:
-    print("Pode dirigir!")
-elif idade >= 18 and not cnh:
-    print("Falta a CNH.")
-else:
-    print("Não pode dirigir.")
-```
+### 4. Critérios de Aceite
+Complementam a User Story definindo quando ela está "pronta".
+*Ex para "Criar Tarefa"*:
+- O campo de título é obrigatório.
+- A data de vencimento é opcional.
+- Ao salvar, deve aparecer na lista principal.
 
 ---
 
-## 💻 Em Prática
-
-Vamos criar um programa que verifica se um ano é Bissexto.
-Regra:
-1. Divisível por 4? (Sim -> pode ser. Não -> não é)
-2. Divisível por 100? (Sim -> não é, a menos que...)
-3. Divisível por 400? (Sim -> é!)
-
-Simplificando: É bissexto se for divisível por 4 E (NÃO divisível por 100 OU divisível por 400).
-
-```python
-# ano_bissexto.py
-
-ano = int(input("Digite um ano: "))
-
-if (ano % 4 == 0 and ano % 100 != 0) or (ano % 400 == 0):
-    print(f"{ano} é Bissexto!")
-else:
-    print(f"{ano} NÃO é Bissexto.")
-```
+## 📽 Roteiro de Slides
+- **Slide 1**: Requisitos de Software
+- **Slide 2**: Funcionais vs. Não-Funcionais (O que faz vs. Como é).
+- **Slide 3**: Exemplos de RF e RNF.
+- **Slide 4**: User Stories (Como um... Quero... Para...).
+- **Slide 5**: Critérios de Aceite (O "Done").
+- **Slide 6**: A importância de requisitos claros (Evitar retrabalho).
 
 ---
 
-## 📝 Resumo
+## 📝 Quiz
 
-- **`if`**: Testa uma condição.
-- **`elif`**: Testa outra condição se a anterior falhou.
-- **`else`**: Executa se nada acima for verdade.
-- **Indentação**: Fundamental em Python para definir blocos de código.
+**1. "O sistema deve enviar um e-mail de confirmação de cadastro". Isso é um:**
+A) Requisito Não-Funcional.
+B) Requisito Funcional.
+C) Bug.
+D) User Story.
+
+**2. "O sistema deve suportar 1 milhão de usuários simultâneos". Isso é um:**
+A) Requisito Não-Funcional (Performance).
+B) Requisito Funcional.
+C) Requisito de Design.
+D) Exagero.
+
+**3. Qual a estrutura correta de uma User Story?**
+A) Quero <ação>, Como <usuário>, Para <benefício>.
+B) Como <usuário>, Eu quero <ação>, Para que <benefício>.
+C) O sistema deve <ação>.
+D) O usuário precisa de <ação>.
+
+**4. Para que servem os Critérios de Aceite?**
+A) Para o cliente aceitar pagar mais.
+B) Para definir as regras técnicas do banco de dados.
+C) Para definir claramente quando uma história está concluída e correta.
+D) Para nada.
+
+**5. Qual o maior risco de requisitos mal definidos?**
+A) O programador ficar entediado.
+B) Construir o software errado, desperdiçando tempo e dinheiro.
+C) O computador travar.
+D) A Internet cair.
+
+**Gabarito:**
+1-B, 2-A, 3-B, 4-C, 5-B
 
 ---
 
-## 🎯 Próximos Passos
+## 🛠 Exercícios
+1.  **Classificação**: Classifique os itens abaixo em RF (Funcional) ou RNF (Não-Funcional):
+    - "O site deve ter fundo azul."
+    - "O usuário pode recuperar sua senha via e-mail."
+    - "O sistema deve rodar 24/7 sem cair."
+    - "O sistema deve calcular juros compostos."
+    
+2.  **Escrita de User Story**: O To-Do App precisa de um "Modo Noturno". Escreva isso como uma User Story seguindo o modelo.
 
-<div class="grid cards" markdown>
+3.  **Critérios de Aceite**: Defina 3 critérios para a funcionalidade "Excluir Tarefa". (Ex: O sistema deve pedir confirmação? O que acontece com a tarefa depois de excluída?)
 
--   :material-presentation: **Acessar Slides**
-    -   [Ver Slides da Aula](../slides/slide-04.html)
+---
 
--   :material-school: **Quiz**
-    -   [Responder Quiz](../quizzes/quiz-04.md)
+## 🚀 Projeto da Aula: Definindo Histórias
+**Atividade da Aula:**
+Vamos detalhar a **Sprint 1** (MVP) usando User Stories.
 
--   :material-dumbbell: **Exercícios**
-    -   [Lista de Exercícios](../exercicios/exercicio-04.md)
-
--   :material-rocket: **Projeto**
-    -   [Mini Projeto](../projetos/projeto-04.md)
-
-</div>
+1.  Pegue os itens que você colocou na coluna "To Do" do seu quadro (Aula 03).
+2.  Reescreva cada um deles no formato de User Story.
+    - *Ex*: De "Login" para "Como um usuário cadastrado, quero fazer login, para acessar minhas tarefas privadas."
+3.  Adicione pelo menos 2 Critérios de Aceite para cada história.
+    - *Ex*: "Login com senha errada deve mostrar mensagem de erro."
+4.  Identifique 1 Requisito Não-Funcional para seu app (ex: ele deve funcionar offline?).

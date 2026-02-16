@@ -1,152 +1,105 @@
-# Aula 13 - Orientação a Objetos (Introdução)
+# Aula 13 – Gerenciamento de Projetos e Estimativas
 
-## 🎯 Objetivos da Aula
-
-- [ ] Entender o paradigma de **Orientação a Objetos (POO)**
-- [ ] Diferenciar **Classe** de **Objeto**
-- [ ] Criar classes com `class`
-- [ ] Definir atributos (`__init__` e `self`)
-- [ ] Criar métodos (comportamentos)
-
----
+## 🎯 Objetivos de Aprendizagem
+- Entender o Triângulo de Ferro (Escopo, Tempo, Custo).
+- Aprender o conceito de MVP (Minimum Viable Product).
+- Conhecer técnicas de estimativa Ágil (Planning Poker).
+- Saber priorizar tarefas (MoSCoW).
 
 ## 📚 Conteúdo
 
-### 1. O que é POO?
+### 1. O Triângulo de Ferro
+Em qualquer projeto, você tem três restrições conectadas:
+- **Escopo** (O que fazer).
+- **Tempo** (Prazo).
+- **Custo** (Dinheiro/Recursos).
 
-Até agora, programamos de forma **Procedural** (uma lista de instruções passo a passo) ou **Funcional** (funções isoladas).
-A Programação Orientada a Objetos tenta modelar o mundo real. No mundo real, temos **Objetos** (Carro, Pessoa, Cachorro) que têm **Características** (Cor, Nome) e **Ações** (Andar, Falar).
+Se você quiser mais escopo em menos tempo, o custo aumenta. Se reduzir o custo e o tempo, o escopo diminui. (E a Qualidade está no meio afetando tudo).
 
-### 2. Classe vs Objeto
+### 2. MVP (Mínimo Produto Viável)
+É a versão mais simples do produto que resolve o problema do usuário.
+- *Não é*: Um produto mal feito.
+- *É*: Uma bicicleta (funcional) em vez de uma roda de carro (inútil sozinha).
+- Construa o MVP -> Receba Feedback -> Melhore.
 
-Essa é a distinção mais importante.
+### 3. Estimativas Ágeis
+Humanos são péssimos em estimar horas ("Levo 2 horas" -> Leva 2 dias).
+No Ágil, usamos **Story Points** (Pontos de História) baseados em complexidade relativa.
+- *Planning Poker*: O time usa cartas com a sequência de Fibonacci (1, 2, 3, 5, 8, 13) para votar na complexidade da tarefa.
 
-- **Classe:** É o **molde**, a planta, o contrato. Ela define como o objeto deve ser. (Ex: "Planta da Casa").
-- **Objeto:** É a **instância** concreta criada a partir da classe. (Ex: "A Casa construída na rua X").
-
-> Posso ter 1000 casas (objetos) feitas a partir de uma única planta (classe).
-
-
-**Hierarquia de Classes:**
-```
-        Casa (Classe Base)
-        ├── cor
-        ├── numero
-        └── abrir_porta()
-            │
-            ├── Casa_Rua_X (herda de Casa)
-            └── Casa_Rua_Y (herda de Casa)
-```
-
-### 3. Criando uma Classe
-
-```python
-# Convenção: Nomes de classes usam PascalCase (PrimeiraLetraMaiuscula)
-class Cachorro:
-    pass # Classe vazia por enquanto
-```
-
-### 4. Atributos e o Método `__init__`
-
-Atributos são as variáveis internas do objeto (dados).
-O método especial `__init__` (construtor) roda automaticamente quando criamos um novo objeto. Ele serve para inicializar os atributos.
-
-**O misterioso `self`:**
-O `self` representa "este objeto aqui". É como o objeto refere a si mesmo.
-
-```python
-class Cachorro:
-    def __init__(self, nome, raca):
-        self.nome = nome  # Atributo 'nome' recebe o valor do parâmetro 'nome'
-        self.raca = raca
-
-# Instanciando objetos
-dog1 = Cachorro("Rex", "Vira-lata")
-dog2 = Cachorro("Luna", "Poodle")
-
-print(dog1.nome) # Rex
-print(dog2.nome) # Luna
-```
-
-### 5. Métodos (Comportamentos)
-
-Métodos são funções dentro de uma classe. Eles definem o que o objeto **faz**.
-
-```python
-class Cachorro:
-    def __init__(self, nome):
-        self.nome = nome
-
-    def latir(self):
-        print(f"{self.nome} diz: Au au!")
-
-    def comer(self, comida):
-        print(f"{self.nome} está comendo {comida}.")
-
-dog1 = Cachorro("Rex")
-dog1.latir()          # Rex diz: Au au!
-dog1.comer("Ração")   # Rex está comendo Ração.
-```
+### 4. Priorização (MoSCoW)
+Como decidir o que fazer primeiro?
+- **M**ust have: Tem que ter (Senão não funciona).
+- **S**hould have: Deveria ter (Importante, mas pode esperar).
+- **C**ould have: Poderia ter (Seria legal, se sobrar tempo).
+- **W**on't have: Não terá agora (Fica para o futuro).
 
 ---
 
-## 💻 Em Prática
-
-Vamos modelar uma Conta Bancária simples.
-
-```python
-# banco.py
-
-class ContaBancaria:
-    def __init__(self, titular, saldo_inicial=0):
-        self.titular = titular
-        self.saldo = saldo_inicial
-
-    def depositar(self, valor):
-        self.saldo += valor
-        print(f"Depósito de R$ {valor}. Novo saldo: R$ {self.saldo}")
-
-    def sacar(self, valor):
-        if valor > self.saldo:
-            print("Saldo insuficiente!")
-        else:
-            self.saldo -= valor
-            print(f"Saque de R$ {valor}. Novo saldo: R$ {self.saldo}")
-
-# Usando
-minha_conta = ContaBancaria("Ricardo", 100)
-minha_conta.depositar(50) # Saldo: 150
-minha_conta.sacar(200)    # Erro
-minha_conta.sacar(20)     # Saldo: 130
-```
+## 📽 Roteiro de Slides
+- **Slide 1**: Gerenciamento de Projetos
+- **Slide 2**: O Triângulo de Ferro (Não dá para ter tudo).
+- **Slide 3**: MVP (A imagem do Skate -> Bicicleta -> Carro).
+- **Slide 4**: Estimativas (Por que horas falham?).
+- **Slide 5**: Story Points e Fibonacci.
+- **Slide 6**: MoSCoW (Priorizando o Backlog).
 
 ---
 
-## 📝 Resumo
+## 📝 Quiz
 
-- **Classe:** O molde (`class Carro`).
-- **Objeto:** A peça real (`meu_carro = Carro()`).
-- **Atributo:** Característica (`self.cor`).
-- **Método:** Ação (`def acelerar(self)`).
-- **`self`**: Referência ao próprio objeto.
-- **`__init__`**: Método construtor (inicializa os dados).
+**1. O que acontece se tentarmos aumentar o escopo de um projeto mantendo o mesmo prazo e custo?**
+A) A qualidade provavelmente cairá.
+B) O projeto ficará pronto mais cedo.
+C) Os desenvolvedores ficarão felizes.
+D) Nada.
+
+**2. O que significa MVP?**
+A) Most Valuable Player.
+B) Minimum Viable Product (Mínimo Produto Viável).
+C) Maximum Virtual Process.
+D) Mini Video Player.
+
+**3. Qual o objetivo do "Planning Poker"?**
+A) Jogar cartas e apostar dinheiro.
+B) Estimar a complexidade das tarefas em equipe de forma colaborativa.
+C) Decidir quem vai pagar o almoço.
+D) Escolher o nome do produto.
+
+**4. Na técnica MoSCoW, o que significa o "M" (Must Have)?**
+A) Funcionalidades que TALVEZ o sistema tenha.
+B) Funcionalidades OBRIGATÓRIAS para o sistema funcionar.
+C) Funcionalidades que NÃO teremos.
+D) Funcionalidades de Marketing.
+
+**5. Por que usamos pontos (Fibonacci) em vez de horas para estimar?**
+A) Porque horas são muito precisas.
+B) Porque a complexidade relativa é mais fácil de acertar do que o tempo exato.
+C) Porque Fibonacci era um programador famoso.
+D) Porque horas custam dinheiro.
+
+**Gabarito:**
+1-A, 2-B, 3-B, 4-B, 5-B
 
 ---
 
-## 🎯 Próximos Passos
+## 🛠 Exercícios
+1.  **MoSCoW na Prática**: Você está organizando uma festa de aniversário. Classifique os itens: Bolo, Palhaço, Convidados, Bexigas, DJ Famoso.
+2.  **MVP**: Você quer criar um concorrente para o Uber. Qual seria o MVP? (Dica: Precisa de um App para passageiro e outro para Motorista? Ou dá para começar com um grupo de WhatsApp e uma planilha?).
+3.  **Triângulo**: Seu chefe pede "Quero o dobro de funcionalidades para semana que vem, sem contratar ninguém". Qual lado do triângulo você deve mexer para explicar que isso é impossível?
 
-<div class="grid cards" markdown>
+---
 
--   :material-presentation: **Acessar Slides**
-    -   [Ver Slides da Aula](../slides/slide-13.html)
+## 🚀 Projeto da Aula: Priorizando o MVP
+**Atividade da Aula:**
+Volte ao Backlog do seu To-Do App (Aula 03).
 
--   :material-school: **Quiz**
-    -   [Responder Quiz](../quizzes/quiz-13.md)
-
--   :material-dumbbell: **Exercícios**
-    -   [Lista de Exercícios](../exercicios/exercicio-13.md)
-
--   :material-rocket: **Projeto**
-    -   [Mini Projeto](../projetos/projeto-13.md)
-
-</div>
+1.  **Aplique MoSCoW**: Marque cada item com M, S, C ou W.
+    - *Criar Tarefa*: Must?
+    - *Editar Tarefa*: Should?
+    - *Modo Escuro*: Could?
+    - *Integração com Google Agenda*: Won't?
+2.  **Defina os Pontos (Estimativa)**:
+    - Atribua pontos (1, 2, 3, 5, 8) para o esforço de cada tarefa.
+    - Ex: Criar Tarefa (5 pontos), Excluir Tarefa (2 pontos).
+3.  **Corte**: Se sua Sprint só "aguenta" 10 pontos, quais tarefas entram?

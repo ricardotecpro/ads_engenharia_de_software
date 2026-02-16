@@ -1,49 +1,35 @@
-# Quiz 04 - Introdução
+# Quiz 04 - Requisitos de Software
 
---8<-- "assets/quiz.html"
+**1. "O sistema deve enviar um e-mail de confirmação de cadastro". Isso é um:**
+A) Requisito Não-Funcional.
+B) Requisito Funcional.
+C) Bug.
+D) User Story.
 
-<div class="quiz-container">
-  <div class="quiz-question">1. O que acontece se você não indentar o código dentro de um `if`?</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">O código executa normalmente</div>
-  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! O Python gera um erro (IndentationError)">O Python gera um erro (IndentationError)</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">O bloco `if` é ignorado</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">O código vira um comentário</div>
-  <div class="quiz-feedback"></div>
-</div>
+**2. "O sistema deve suportar 1 milhão de usuários simultâneos". Isso é um:**
+A) Requisito Não-Funcional (Performance).
+B) Requisito Funcional.
+C) Requisito de Design.
+D) Exagero.
 
-<div class="quiz-container">
-  <div class="quiz-question">2. Qual estrutura executa apenas se todas as condições anteriores forem falsas?</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">if</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">elif</div>
-  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! else">else</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">then</div>
-  <div class="quiz-feedback"></div>
-</div>
+**3. Qual a estrutura correta de uma User Story?**
+A) Quero <ação>, Como <usuário>, Para <benefício>.
+B) Como <usuário>, Eu quero <ação>, Para que <benefício>.
+C) O sistema deve <ação>.
+D) O usuário precisa de <ação>.
 
-<div class="quiz-container">
-  <div class="quiz-question">3. Quantos blocos `else` posso ter em uma única estrutura condicional?</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Quantos quiser</div>
-  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! No máximo um">No máximo um</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Pelo menos dois</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Depende da memória RAM</div>
-  <div class="quiz-feedback"></div>
-</div>
+**4. Para que servem os Critérios de Aceite?**
+A) Para o cliente aceitar pagar mais.
+B) Para definir as regras técnicas do banco de dados.
+C) Para definir claramente quando uma história está concluída e correta.
+D) Para nada.
 
-<div class="quiz-container">
-  <div class="quiz-question">4. O `elif` é obrigatório sempre que tem um `if`?</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Sim</div>
-  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! Não, é opcional">Não, é opcional</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Apenas se tiver `else` junto</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Apenas em loops</div>
-  <div class="quiz-feedback"></div>
-</div>
+**5. Qual o maior risco de requisitos mal definidos?**
+A) O programador ficar entediado.
+B) Construir o software errado, desperdiçando tempo e dinheiro.
+C) O computador travar.
+D) A Internet cair.
 
-<div class="quiz-container">
-  <div class="quiz-question">5. Qual a sintaxe correta?</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">if x = 10 then:</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">if (x == 10) {</div>
-  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! if x == 10:">if x == 10:</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">if x == 10</div>
-  <div class="quiz-feedback"></div>
-</div>
-
+---
+**Gabarito:**
+1-B, 2-A, 3-B, 4-C, 5-B

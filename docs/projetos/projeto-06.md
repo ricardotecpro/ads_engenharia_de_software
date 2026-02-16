@@ -1,31 +1,32 @@
-# Projeto 06 - Gerenciador de Tarefas (To-Do List)
+# Projeto 06 - Definição da Arquitetura
 
 ## 🎯 Objetivo
-Criar um aplicativo de linha de comando para gerenciar uma lista de tarefas.
+Escolher e documentar a arquitetura técnica do To-Do App.
 
-## 📋 Requisitos
-O programa deve ter um menu com as opções:
-1. **Adicionar Tarefa:** Pede o nome da tarefa e adiciona na lista.
-2. **Listar Tarefas:** Mostra todas as tarefas numeradas (1. Estudar Python, 2. Ir na academia...).
-3. **Concluir Tarefa:** Pede o número da tarefa e a remove da lista.
-4. **Sair:** Encerra o programa.
+## 📝 Descrição
+Como estamos aprendendo conceitos, nosso projeto não precisa de servidores caros na nuvem. Vamos criar uma arquitetura que rode 100% no navegador do usuário.
 
-## 💡 Dicas
-- Use um loop `while True` para o menu.
-- Para listar numerado, use `enumerate()` no `for`:
-  ```python
-  for i, tarefa in enumerate(tarefas):
-      print(f"{i+1}. {tarefa}")
-  ```
-- Lembre-se que o usuário vê o número 1, mas o índice interno é 0. Você precisará subtrair 1 quando ele escolher qual remover.
-- Trate o erro caso o usuário tente remover uma tarefa que não existe (índice inválido).
+## 🚀 Arquitetura Escolhida: Client-Side (Local)
+Para este projeto educativo, usaremos uma arquitetura onde Front-end e "Back-end" rodam no mesmo lugar (o navegador).
 
-## 👣 Passo a Passo
-1. Crie uma lista vazia `tarefas = []`.
-2. Imprima o menu.
-3. Leia a opção.
-4. Implemente cada opção (`if/elif/else`).
-5. No "Listar", verifique se a lista não está vazia.
+- **Frontend (Interface)**: HTML5 e CSS3.
+- **Lógica**: JavaScript.
+- **Persistência (Dados)**: LocalStorage do navegador.
 
-## 🚀 Desafio Extra
-Adicione uma funcionalidade de "Editar Tarefa", onde o usuário escolhe o número e digita o novo nome.
+### Por que essa escolha?
+1.  **Zero Custo**: Não precisa pagar servidor.
+2.  **Simplicidade**: Focamos na lógica e no processo, não em configurar Linux/Docker agora.
+3.  **Portabilidade**: Qualquer um com um navegador pode rodar.
+
+## 🚀 Diagrama
+Adicione este esquema ao seu projeto:
+
+```mermaid
+graph TD
+    User((Usuário)) -->|Interage| UI[Interface Web - HTML/CSS]
+    UI -->|Clica| Logic[Lógica JS - Controller]
+    Logic -->|Salva/Lê| DB[(LocalStorage)]
+```
+
+## 📤 Entrega
+Adicione a seção "Arquitetura Técnica" ao seu documento de projeto com o diagrama acima (ou desenhado à mão).

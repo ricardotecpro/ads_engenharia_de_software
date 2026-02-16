@@ -1,148 +1,120 @@
-# Aula 05 - Estruturas de Repetição (for/while)
+# Aula 05 – Modelagem de Sistemas e UML
 
-## 🎯 Objetivos da Aula
-
-- [ ] Entender o conceito de Loops (Laços de Repetição)
-- [ ] Dominar o loop `for` e a função `range()`
-- [ ] Dominar o loop `while`
-- [ ] Saber quando usar cada um (`for` vs `while`)
-- [ ] Controlar loops com `break` e `continue`
-
----
+## 🎯 Objetivos de Aprendizagem
+- Entender o que é Modelagem de Software.
+- Conhecer a UML (Unified Modeling Language).
+- Aprender a ler Diagramas de Caso de Uso.
+- Aprender a ler Diagramas de Classes básicos.
 
 ## 📚 Conteúdo
 
-### 1. O que são Loops?
+### 1. Por que modelar?
+Assim como arquitetos desenham plantas antes de construir, engenheiros de software criam modelos para:
+- Visualizar o sistema antes de codificar.
+- Comunicar ideias com o time.
+- Encontrar erros de lógica cedo.
 
-Imagine que você precisa imprimir o nome de 100 alunos. Escrever 100 `print()` seria cansativo e nada inteligente.
-Loops permitem repetir um bloco de código várias vezes.
+### 2. O que é UML?
+UML (Linguagem de Modelagem Unificada) é o padrão mundial para desenhar diagramas de software. Não é uma linguagem de programação, é uma linguagem visual.
 
+### 3. Diagrama de Caso de Uso (O "O Quê" e "Quem")
+Mostra as interações entre usuários (Atores) e o sistema (Casos de Uso).
+
+- **Ator (Boneco palito)**: Quem usa o sistema (ex: Cliente, Admin).
+- **Caso de Uso (Elipse)**: Uma funcionalidade (ex: "Fazer Login", "Comprar Produto").
+- **Linha**: Conecta quem faz o quê.
+
+*Exemplo*: Um boneco "Cliente" ligado a uma elipse "Realizar Pedido".
+
+### 4. Diagrama de Classes (A Estrutura)
+Mostra a estrutura estática do sistema: as "coisas" que existem nele e seus relacionamentos.
+
+- **Classe (Retângulo)**: Representa um conceito (ex: `Carro`).
+- **Atributos**: O que a classe tem (ex: `cor`, `modelo`).
+- **Métodos**: O que a classe faz (ex: `acelerar()`, `frear()`).
+
+*Exemplo*:
 ```mermaid
-graph TD
-    A[Início] --> B{Condição Verdadeira?}
-    B -- Sim --> C[Executar Bloco]
-    C --> B
-    B -- Não --> D[Sair do Loop]
+classDiagram
+    Pessoa <|-- Aluno
+    class Pessoa {
+        +nome: string
+        +idade: int
+        +andar()
+    }
+    class Aluno {
+        +matricula: int
+        +estudar()
+    }
 ```
-
-### 2. O Loop `for` (Para)
-
-O `for` é usado quando sabemos **quantas vezes** queremos repetir algo, ou para percorrer itens de uma coleção (que veremos na próxima aula).
-
-Para repetir um número exato de vezes, usamos a função auxiliar `range()`.
-
-`range(inicio, fim, passo)`:
-- `range(5)`: Gera 0, 1, 2, 3, 4 (O limite final nunca entra!)
-- `range(1, 6)`: Gera 1, 2, 3, 4, 5
-- `range(0, 10, 2)`: Gera 0, 2, 4, 6, 8 (pula de 2 em 2)
-
-```python
-# Contando de 0 a 4
-for i in range(5):
-    print(f"Contador: {i}")
-
-print("Fim do loop")
-```
-
-> A variável `i` (índice) atualiza automaticamente a cada volta.
-
-### 3. O Loop `while` (Enquanto)
-
-O `while` repete o bloco **enquanto** uma condição for verdadeira.
-É usado quando **não sabemos** quantas vezes vamos repetir (ex: esperar o usuário digitar a senha certa).
-
-```python
-senha = ""
-
-while senha != "1234":
-    senha = input("Digite a senha: ")
-
-print("Acesso liberado!")
-```
-
-> ⚠️ **Perigo: Loop Infinito!** Se a condição nunca ficar falsa, o programa roda para sempre.
-> ```python
-> # NUNCA FAÇA ISSO SEM UM BREAK
-> while True:
->     print("Socorro!")
-> ```
-
-### 4. Controle de Loops (`break` e `continue`)
-
-Às vezes precisamos interromper o fluxo natural do loop.
-
-- **`break`**: Para o loop imediatamente (sai dele).
-- **`continue`**: Pula a volta atual e vai para a próxima (volta pro início).
-
-```python
-# Exemplo de break
-for i in range(10):
-    if i == 5:
-        print("Encontrei o 5, parando!")
-        break
-    print(i)
-# Imprime 0, 1, 2, 3, 4... e para.
-
-# Exemplo de continue
-for i in range(5):
-    if i == 2:
-        continue # Pula o 2
-    print(i)
-# Imprime 0, 1, 3, 4
-```
-
-### 5. `for` vs `while`
-
-| Loop | Melhor uso |
-| :--- | :--- |
-| **for** | Quando você sabe o número de repetições (ex: "repetir 10 vezes", "para cada item da lista"). |
-| **while** | Quando a repetição depende de uma condição externa (ex: "enquanto o jogo não acabar", "enquanto o usuário quiser"). |
+*(Nota: O diagrama acima mostra que Aluno é um tipo de Pessoa - Herança).*
 
 ---
 
-## 💻 Em Prática
-
-Vamos criar uma Tabuada personalizada.
-
-```python
-# tabuada.py
-
-numero = int(input("Tabuada de qual número? "))
-
-print(f"--- Tabuada do {numero} ---")
-
-for i in range(1, 11):
-    resultado = numero * i
-    print(f"{numero} x {i} = {resultado}")
-```
+## 📽 Roteiro de Slides
+- **Slide 1**: Modelagem de Sistemas e UML.
+- **Slide 2**: A importância de desenhar antes de codificar.
+- **Slide 3**: O que é UML? (Padrão visual).
+- **Slide 4**: Diagrama de Caso de Uso (Atores e Funcionalidades).
+- **Slide 5**: Exemplo visual de Caso de Uso.
+- **Slide 6**: Diagrama de Classe (Retângulos, Atributos, Métodos).
+- **Slide 7**: Exemplo visual de Classe.
 
 ---
 
-## 📝 Resumo
+## 📝 Quiz
 
-- **`for`**: Ideal para sequências definidas (`range()`).
-- **`while`**: Ideal para condições lógicas (`enquanto...`).
-- **`range(n)`**: Gera números de 0 a n-1.
-- **`break`**: Sai do loop.
-- **`continue`**: Pula para a próxima iteração.
-- **Cuidado** com loops infinitos no `while`!
+**1. O que significa UML?**
+A) Ultramodern Modeling Language
+B) Unified Modeling Language (Linguagem de Modelagem Unificada)
+C) Universal Machine Language
+D) User Management Logistic
+
+**2. No Diagrama de Caso de Uso, o que o "boneco palito" representa?**
+A) Um erro no sistema.
+B) O banco de dados.
+C) Um Ator (quem interage com o sistema).
+D) O gerente do projeto.
+
+**3. Qual diagrama mostra a estrutura estática (classes e atributos) do sistema?**
+A) Diagrama de Caso de Uso.
+B) Diagrama de Classes.
+C) Diagrama de Sequência.
+D) Fluxograma.
+
+**4. Para que serve a modelagem de software?**
+A) Para deixar o escritório mais bonito com desenhos.
+B) Para visualizar, comunicar e documentar o sistema antes de programar.
+C) Para substituir o código final.
+D) Para tornar o software mais lento.
+
+**5. Em um diagrama de classes, o que são os "Métodos"?**
+A) As características da classe (ex: cor).
+B) As ações ou comportamentos da classe (ex: andar).
+C) O nome da classe.
+D) As conexões.
+
+**Gabarito:**
+1-B, 2-C, 3-B, 4-B, 5-B
 
 ---
 
-## 🎯 Próximos Passos
+## 🛠 Exercícios
+1.  **Observação**: Olhe para o seu celular. Se o "Celular" fosse uma Classe, cite 3 atributos (o que ele tem) e 3 métodos (o que ele faz).
+2.  **Caso de Uso**: Desenhe (no papel) um diagrama de Caso de Uso simples para um "Caixa Eletrônico". Atores: Cliente e Técnico. Casos de uso: Sacar Dinheiro, Depositar, Repor Dinheiro.
+3.  **Leitura**: Se você ver uma seta conectando a classe `Cachorro` à classe `Animal`, o que isso provavelmente significa? (Dica: Herança).
 
-<div class="grid cards" markdown>
+---
 
--   :material-presentation: **Acessar Slides**
-    -   [Ver Slides da Aula](../slides/slide-05.html)
+## 🚀 Projeto da Aula: Modelando o App
+**Atividade da Aula:**
+Vamos criar modelos simples para o To-Do App.
 
--   :material-school: **Quiz**
-    -   [Responder Quiz](../quizzes/quiz-05.md)
-
--   :material-dumbbell: **Exercícios**
-    -   [Lista de Exercícios](../exercicios/exercicio-05.md)
-
--   :material-rocket: **Projeto**
-    -   [Mini Projeto](../projetos/projeto-05.md)
-
-</div>
+1.  **Diagrama de Caso de Uso**:
+    - Identifique os Atores (ex: Usuário Comum, talvez? Admin?).
+    - Desenhe (ou liste) os Casos de Uso ligados a eles (ex: Criar Tarefa, Completar Tarefa).
+2.  **Diagrama de Classes (Conceitual)**:
+    - Pense na principal "coisa" do seu app: a `Tarefa`.
+    - Quais atributos ela tem? (Título, Descrição, Data, EstáConcluída?).
+    - Quais métodos ela poderia ter? (Concluir(), Editar(), Adiar()?).
+3.  **Ferramenta**: Use papel e caneta, ou ferramentas online como Draw.io ou Mermaid.live.

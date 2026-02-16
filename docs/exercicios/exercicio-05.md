@@ -1,21 +1,17 @@
-# Exercícios - Aula 05
+# Exercício 05 - Modelagem e UML
 
-## 1. Contagem Regressiva
-Faça um programa que mostre uma contagem regressiva de 10 até 0 e imprima "FOGO!" no final.
+## 🛠 Questões Práticas
 
-## 2. Tabuada Completa
-Peça um número e mostre a tabuada dele de 1 a 10 usando um loop `for`.
+**1. O Celular como Classe**
+Se você tivesse que modelar seu celular como uma Classe de software:
+- Quais seriam os **Atributos** (propriedades)? (Cite 3. Ex: tamanhoTela)
+- Quais seriam os **Métodos** (ações)? (Cite 3. Ex: ligar())
 
-## 3. Soma de 1 a 100
-Calcule e mostre a soma de todos os números de 1 a 100 (1+2+3+...+100).
+**2. Desenhando Casos de Uso**
+Imagine um sistema de Biblioteca.
+- Atores: Leitor, Bibliotecário.
+- Casos de Uso: Pegar Livro, Devolver Livro, Cadastrar Livro, Pagar Multa.
+Quem faz o quê? Desenhe ou descreva quem se conecta a qual bolinha.
 
-## 4. Números Pares
-Imprima todos os números pares entre 1 e 50.
-Tente fazer isso de duas formas:
-- Usando `if` dentro do loop.
-- Usando o passo do `range` (ex: `range(0, 50, 2)`).
-
-## 5. Validação de Dados (Loop Infinito)
-Peça para o usuário digitar o sexo ('M' ou 'F').
-Enquanto ele digitar algo diferente, continue pedindo: "Inválido, digite novamente:".
-Quando digitar certo, imprima "Obrigado!".
+**3. Interpretação**
+Um diagrama mostra a classe `Carro` ligada à classe `Pneu` com uma linha que tem um losango preenchido (composição). O que isso significa na prática sobre a relação entre Carro e Pneu? (Pesquise sobre "Composição UML").
