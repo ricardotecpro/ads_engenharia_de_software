@@ -1,16 +1,5 @@
-# Exercício 16 - Encerramento
+# Exercício 16
 
-## 🛠 Questões Práticas
-
-**1. O Código de Ética**
-Pesquise sobre o "Código de Ética da ACM/IEEE para Engenharia de Software". Escolha um princípio e explique por que ele é importante. (Ex: "Público - Engenheiros de software devem agir de acordo com o interesse público").
-
-**2. Plano de Carreira**
-Onde você quer estar daqui a 2 anos?
-- Júnior em uma empresa grande?
-- Freelancer?
-- Criando sua startup?
-O que você precisa estudar para chegar lá (além de código)?
-
-**3. Carta para o Futuro**
-Escreva um parágrafo para você mesmo ler daqui a 6 meses. "Hoje aprendi que engenharia de software é... Prometo não desistir quando..."
+1.  **Dilema Ético**: Seu chefe pede para você criar um algoritmo que mostre vagas de emprego de alto salário apenas para homens. O que você faz? (Isso viola princípios éticos e legais).
+2.  **Autoavaliação**: Desenhe um "T". Na barra vertical, coloque o que você mais gostou/quer aprofundar (ex: Backend, Frontend, Testes). Na horizontal, o que você precisa conhecer o básico.
+3.  **Portfólio**: Reúna todos os documentos do "Projeto To-Do App" que fizemos. Isso já é um início de portfólio mostrando que você sabe documentar e pensar o software.

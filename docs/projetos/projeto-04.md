@@ -1,26 +1,11 @@
-# Projeto 04 - Descrição de User Stories
+# Projeto 04
 
-## 🎯 Objetivo
-Transformar itens simples do backlog em Histórias de Usuário detalhadas com Critérios de Aceite.
+**Atividade da Aula:**
+Vamos detalhar a **Sprint 1** (MVP) usando User Stories.
 
-## 📝 Descrição
-No desenvolvimento Ágil, a comunicação é chave. Uma tarefa solta como "Fazer Login" pode ser interpretada de mil maneiras. User Stories trazem contexto.
-
-## 🚀 Passo a Passo
-1.  Selecione os cartões da coluna **Sprint 1 (To Do)**.
-2.  Para cada cartão, crie um pequeno documento (ou escreva no verso do post-it/descrição do Trello) contendo:
-    - **Título**: (Ex: Fazer Login)
-    - **User Story**: "Como um... Quero... Para..."
-    - **Critérios de Aceite**: Lista de verificações (Checklist).
-
-## Exemplo Prático (To-Do App)
-**Cartão: Criar Tarefa**
-- **História**: "Como usuário organizado, quero adicionar uma nova tarefa à minha lista, para que eu lembre do que preciso fazer."
-- **Critérios de Aceite**:
-    - [ ] O campo "título" não pode ficar vazio.
-    - [ ] Deve ser possível adicionar uma descrição opcional.
-    - [ ] Ao clicar em "Salvar", a tarefa deve aparecer imediatamente na tela.
-    - [ ] Deve haver um botão "Cancelar" para desistir da criação.
-
-## 📤 Entrega
-Suas histórias da Sprint 1 detalhadas. Isso será a "especificação" para quando formos codificar.
+1.  Pegue os itens que você colocou na coluna "To Do" do seu quadro (Aula 03).
+2.  Reescreva cada um deles no formato de User Story.
+    - *Ex*: De "Login" para "Como um usuário cadastrado, quero fazer login, para acessar minhas tarefas privadas."
+3.  Adicione pelo menos 2 Critérios de Aceite para cada história.
+    - *Ex*: "Login com senha errada deve mostrar mensagem de erro."
+4.  Identifique 1 Requisito Não-Funcional para seu app (ex: ele deve funcionar offline?).

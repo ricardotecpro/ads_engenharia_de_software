@@ -1,36 +1,34 @@
 # Quiz 02
 
-1. Qual o tipo de dado da variável `x` em `x = 10.5`?
+**1. Qual a principal característica do Modelo Cascata?**
+A) Permite mudanças a qualquer momento sem custo.
+B) As fases são sequenciais; uma termina para a outra começar.
+C) Não existe planejamento.
+D) O cliente vê o software todo dia.
 
-    - [ ] int
-    - [x] float
-    - [ ] str
-    - [ ] bool
+**2. O que o Manifesto Ágil valoriza MAIS?**
+A) Processos e Ferramentas.
+B) Documentação Abrangente.
+C) Software em Funcionamento.
+D) Negociação de Contratos.
 
-2. Qual a saída do código `print(type("10"))`?
+**3. No modelo Ágil, como é a entrega do software?**
+A) Única, apenas no final do projeto.
+B) Incremental e frequente (em partes).
+C) Apenas quando o cliente paga tudo.
+D) Aleatória.
 
-    - [ ] <class 'int'>
-    - [ ] <class 'float'>
-    - [x] "><class 'str'>
-    - [ ] <class 'bool'>
+**4. Por que o Cascata é comparado à construção civil?**
+A) Porque engenheiros de software usam capacetes.
+B) Porque é difícil mudar a estrutura depois de pronta (rigidez).
+C) Porque usa cimento.
+D) Porque é barato.
 
-3. O que a função `input()` retorna por padrão?
+**5. Qual destes NÃO é um valor do Manifesto Ágil?**
+A) Responder a mudanças.
+B) Colaboração com o cliente.
+C) Seguir um plano rigorosamente acima de tudo.
+D) Indivíduos e interações.
 
-    - [ ] Um número inteiro (int)
-    - [ ] Um número decimal (float)
-    - [x] Um texto (str)
-    - [ ] O tipo que o usuário escolher
-
-4. Qual variável segue as boas práticas (snake_case) do Python?
-
-    - [ ] NomeUsuario
-    - [x] nome_usuario
-    - [ ] nome-usuario
-    - [ ] NOMEUSUARIO
-
-5. Qual o resultado de `10 // 3` (divisão inteira)?
-
-    - [ ] 3.3333...
-    - [x] 3
-    - [ ] 1
-    - [ ] 10
+**Gabarito:**
+1-B, 2-C, 3-B, 4-B, 5-C

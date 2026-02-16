@@ -1,36 +1,16 @@
-# Slide 03 - Metodologias Ágeis: Scrum e Kanban
+# Slide 03
 
-## Slide 1: Título
-- **Título**: Scrum e Kanban
-- **Subtítulo**: Aula 03 - Gerenciando Projetos Ágeis
-
-## Slide 2: Scrum - A Estrutura
-- **Sprints**: Ciclos de tempo fixo (1-4 semanas).
-- **Cerimônias**:
-    - Planning
-    - Daily
-    - Review
-    - Agile
-
-## Slide 3: Papéis do Scrum
-- **Product Owner (PO)**: Define "O Quê". Voz do cliente.
-- **Scrum Master**: Define "Como" (processo). Cuida do time.
-- **Time**: Constrói o produto. Auto-organizável.
-
-## Slide 4: Kanban - O Fluxo
-- Origem no Sistema Toyota de Produção (Just-in-Time).
-- **Princípios**:
-    - Visualize o trabalho.
-    - Limite o trabalho em progresso (WIP).
-    - Gerencie o fluxo.
-
-## Slide 5: Quadro Kanban
-- Colunas típicas:
-    - Backlog (Lista de pedidos)
-    - To Do (Selecionados)
-    - Doing (Em andamento)
-    - Done (Feito)
-
-## Slide 6: Resumo
-- Scrum organiza o trabalho em caixas de tempo (Sprints).
-- Kanban organiza o trabalho em fluxo contínuo.
+- **Slide 1: Capa**
+    - Metodologias Ágeis: Scrum e Kanban.
+- **Slide 2: Scrum - Visão Geral**
+    - Ciclos (Sprints) de 2 a 4 semanas.
+    - 3 Papéis: PO, Scrum Master, Time.
+- **Slide 3: O Fluxo do Scrum**
+    - Backlog -> Planning -> Sprint (Dailies) -> Review/Retro -> Incremento.
+- **Slide 4: Kanban**
+    - Visualização do fluxo de trabalho.
+    - Quadro: To Do -> Doing -> Done.
+    - Foco em terminar tarefas antes de começar novas.
+- **Slide 5: Qual escolher?**
+    - Scrum: Para criar produtos novos com time focado.
+    - Kanban: Para fluxo contínuo (suporte, manutenção).

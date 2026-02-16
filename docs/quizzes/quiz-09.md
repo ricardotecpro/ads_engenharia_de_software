@@ -3,47 +3,47 @@
 --8<-- "assets/quiz.html"
 
 <div class="quiz-container">
-  <div class="quiz-question">1. Qual palavra-chave é usada para definir uma função em Python?</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">function</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">fun</div>
-  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! def">def</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">define</div>
+  <div class="quiz-question">1. Um desenvolvedor estava cansado e digitou a fórmula de juros errada. Isso é um:</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Defeito.</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! Erro (Ação Humana).">Erro (Ação Humana).</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Falha.</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Acerto.</div>
   <div class="quiz-feedback"></div>
 </div>
 
 <div class="quiz-container">
-  <div class="quiz-question">2. Para que serve o `return`?</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Para imprimir algo na tela</div>
-  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! Para devolver um valor e encerrar a função">Para devolver um valor e encerrar a função</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Para voltar ao início do loop</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Para repetir a função</div>
+  <div class="quiz-question">2. O sistema calculou o valor errado para o cliente na tela. Isso é uma:</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Erro.</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Defeito.</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! Falha (Comportamento observável).">Falha (Comportamento observável).</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Feature.</div>
   <div class="quiz-feedback"></div>
 </div>
 
 <div class="quiz-container">
-  <div class="quiz-question">3. Onde deve ficar a Docstring de uma função?</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Fora da função, antes do def</div>
-  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! Logo abaixo da linha do def, indentada">Logo abaixo da linha do def, indentada</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">No final da função</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Em um arquivo separado</div>
+  <div class="quiz-question">3. Qual a diferença entre QA e Teste?</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! QA foca em prevenir defeitos (processo); Teste foca em achar defeitos (produto).">QA foca em prevenir defeitos (processo); Teste foca em achar defeitos (produto).</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">QA é para hardware.</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Teste é feito pelo cliente.</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">São sinônimos.</div>
   <div class="quiz-feedback"></div>
 </div>
 
 <div class="quiz-container">
-  <div class="quiz-question">4. Se uma função não tem `return`, o que ela retorna por padrão?</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">0</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">False</div>
-  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! None">None</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Erro</div>
+  <div class="quiz-question">4. Segundo a regra 1-10-100, quando é mais barato corrigir um problema?</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Na produção (quando o cliente usa).</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Nos testes.</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! No início (Requisitos/Design).">No início (Requisitos/Design).</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Nunca.</div>
   <div class="quiz-feedback"></div>
 </div>
 
 <div class="quiz-container">
-  <div class="quiz-question">5. Qual a diferença entre `print(funcao())` e `funcao()`?</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Nenhuma</div>
-  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! O print exibe o valor retornado pela função; a chamada direta apenas executa o código">O print exibe o valor retornado pela função; a chamada direta apenas executa o código</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">A chamada direta é mais rápida</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">O print executa a função duas vezes</div>
+  <div class="quiz-question">5. Um software perfeito é:</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Aquele sem nenhum bug (impossível na prática, mas almejado).</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! Aquele que atende aos requisitos e satisfaz o usuário.">Aquele que atende aos requisitos e satisfaz o usuário.</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Aquele feito em Python.</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Aquele que nunca foi lançado.</div>
   <div class="quiz-feedback"></div>
 </div>
 
@@ -51,10 +51,10 @@
 <details>
 <summary><strong>Gabarito:</strong></summary>
 <ul>
-  <li>1- def</li>
-  <li>2- Para devolver um valor e encerrar a função</li>
-  <li>3- Logo abaixo da linha do def, indentada</li>
-  <li>4- None</li>
-  <li>5- O print exibe o valor retornado pela função; a chamada direta apenas executa o código</li>
+  <li>1- Erro (Ação Humana).</li>
+  <li>2- Falha (Comportamento observável).</li>
+  <li>3- QA foca em prevenir defeitos (processo); Teste foca em achar defeitos (produto).</li>
+  <li>4- No início (Requisitos/Design).</li>
+  <li>5- Aquele que atende aos requisitos e satisfaz o usuário.</li>
 </ul>
 </details>

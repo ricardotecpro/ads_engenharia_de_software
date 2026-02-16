@@ -3,47 +3,47 @@
 --8<-- "assets/quiz.html"
 
 <div class="quiz-container">
-  <div class="quiz-question">1. Qual a principal diferença entre Lista e Tupla?</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Listas usam parênteses, Tuplas usam colchetes</div>
-  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! Listas são mutáveis, Tuplas são imutáveis">Listas são mutáveis, Tuplas são imutáveis</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Tuplas aceitam duplicatas, Listas não</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Não há diferença</div>
+  <div class="quiz-question">1. Qual a diferença entre Git e GitHub?</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Git é pago, GitHub é grátis.</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! Git é a ferramenta de versionamento; GitHub é a plataforma de hospedagem.">Git é a ferramenta de versionamento; GitHub é a plataforma de hospedagem.</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">São a mesma coisa.</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">GitHub é para jogos.</div>
   <div class="quiz-feedback"></div>
 </div>
 
 <div class="quiz-container">
-  <div class="quiz-question">2. Qual estrutura remove duplicatas automaticamente?</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">List</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Tuple</div>
-  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! Set">Set</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Dictionary</div>
+  <div class="quiz-question">2. Qual comando "tira a foto" (salva a versão) no histórico local?</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">`git add`</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">`git upload`</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! `git commit`">`git commit`</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">`git save`</div>
   <div class="quiz-feedback"></div>
 </div>
 
 <div class="quiz-container">
-  <div class="quiz-question">3. O que acontece se tentarmos fazer `meu_set[0]`?</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Acessa o primeiro item</div>
-  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! Gera um erro (TypeError) pois set não tem índice">Gera um erro (TypeError) pois set não tem índice</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Retorna None</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Retorna o set inteiro</div>
+  <div class="quiz-question">3. O que é um "Branch"?</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Um erro no código.</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! Uma ramificação paralela para desenvolver sem afetar o código principal.">Uma ramificação paralela para desenvolver sem afetar o código principal.</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">A marca do computador.</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Um tipo de vírus.</div>
   <div class="quiz-feedback"></div>
 </div>
 
 <div class="quiz-container">
-  <div class="quiz-question">4. Qual operador faz a **interseção** de dois sets (itens em comum)?</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">|</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">-</div>
-  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! &">&</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">+</div>
+  <div class="quiz-question">4. Para que serve o `git push`?</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Para empurrar o computador.</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! Para enviar as alterações locais para o repositório remoto (GitHub).">Para enviar as alterações locais para o repositório remoto (GitHub).</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Para baixar atualizações.</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Para apagar tudo.</div>
   <div class="quiz-feedback"></div>
 </div>
 
 <div class="quiz-container">
-  <div class="quiz-question">5. Dado `t = (1, 2, 3)`, o comando `t[0] = 10` funciona?</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Sim, a tupla vira `(10, 2, 3)`</div>
-  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! Não, erro de TypeError (item assignment)">Não, erro de TypeError (item assignment)</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Sim, mas a tupla vira uma lista</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Depende da versão do Python</div>
+  <div class="quiz-question">5. Por que usamos controle de versão?</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Para gastar mais espaço em disco.</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! Para ter histórico, backup e facilitar o trabalho em equipe.">Para ter histórico, backup e facilitar o trabalho em equipe.</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Porque é difícil.</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Para nada.</div>
   <div class="quiz-feedback"></div>
 </div>
 
@@ -51,10 +51,10 @@
 <details>
 <summary><strong>Gabarito:</strong></summary>
 <ul>
-  <li>1- Listas são mutáveis, Tuplas são imutáveis</li>
-  <li>2- Set</li>
-  <li>3- Gera um erro (TypeError) pois set não tem índice</li>
-  <li>4- &</li>
-  <li>5- Não, erro de TypeError (item assignment)</li>
+  <li>1- Git é a ferramenta de versionamento; GitHub é a plataforma de hospedagem.</li>
+  <li>2- `git commit`</li>
+  <li>3- Uma ramificação paralela para desenvolver sem afetar o código principal.</li>
+  <li>4- Para enviar as alterações locais para o repositório remoto (GitHub).</li>
+  <li>5- Para ter histórico, backup e facilitar o trabalho em equipe.</li>
 </ul>
 </details>

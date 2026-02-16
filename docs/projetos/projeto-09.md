@@ -1,26 +1,12 @@
-# Projeto 09 - Plano de Qualidade (QA)
+# Projeto 09
 
-## 🎯 Objetivo
-Criar um processo de garantia de qualidade para o projeto.
+**Atividade da Aula:**
+Como vamos garantir a qualidade do To-Do App?
 
-## 📝 Descrição
-Qualidade não acontece por acaso. Vamos definir um checklist simples para garantir que não vamos entregar código quebrado.
-
-## 🚀 Passo a Passo
-
-### Checklist de Verificação Manual
-Para cada funcionalidade que implementarmos (ex: Criar Tarefa), devemos passar por este checklist:
-
-1.  **Teste do Caminho Feliz**:
-    - O usuário consegue fazer o que queria sem erros?
-2.  **Teste de Entradas Inválidas**:
-    - O que acontece se deixar campos vazios?
-    - O que acontece se colocar caracteres especiais?
-3.  **Teste de Interface**:
-    - O layout quebra se o texto for muito longo?
-    - O botão está visível no celular?
-4.  **Teste de Persistência**:
-    - Se eu recarregar a página, os dados continuam lá?
-
-## 📤 Entrega
-Copie e cole esse checklist no seu documento de projeto. Comprometa-se a usá-lo antes de dar qualquer tarefa como "Done".
+1.  **Critérios de Aceite**: Revise os critérios que você criou na Aula 04. Eles são a base do teste.
+2.  **Checklist de QA Manual**: Crie uma lista de checagem para ser feita ANTES de dizer que uma tarefa está pronta.
+    - *Ex*:
+        - [ ] Funciona no Chrome?
+        - [ ] Funciona no Celular?
+        - [ ] O que acontece se eu tentar criar uma tarefa sem título? (Teste Negativo)
+3.  **Ação**: Adicione esse "Checklist de Qualidade" ao seu documento de projeto.

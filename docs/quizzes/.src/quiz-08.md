@@ -1,36 +1,34 @@
 # Quiz 08
 
-1. Como se acessa o valor associado à chave "nome" no dicionário `d`?
+**1. O que é "Coesão" no design de software?**
+A) Quando o código está todo junto num arquivo só.
+B) Quando um módulo/classe foca em uma única responsabilidade bem definida.
+C) Quando usamos cola para unir as páginas.
+D) Quando o software não funciona.
 
-    - [ ] d.nome
-    - [x] d["nome"]
-    - [ ] d(nome)
-    - [ ] d -> nome
+**2. O que queremos em um bom sistema?**
+A) Baixo Acoplamento e Alta Coesão.
+B) Alto Acoplamento e Baixa Coesão.
+C) Código Espaguete.
+D) Bugs complexos.
 
-2. O que acontece se fizermos `d["chave"] = valor` e a chave já existir?
+**3. O que significa a sigla DRY?**
+A) Do Repeat Yourself (Repita-se).
+B) Don't Repeat Yourself (Não se repita - Evite duplicação).
+C) Data Run Yard.
+D) Dry Code (Código Seco).
 
-    - [ ] Cria uma chave duplicada
-    - [ ] Gera um erro
-    - [x] Atualiza o valor existente
-    - [ ] Ignora o comando
+**4. O princípio KISS sugere que:**
+A) Devemos beijar o computador.
+B) Devemos criar as soluções mais complexas possíveis.
+C) Devemos manter as coisas simples (Keep It Simple).
+D) Code is Stupid Simple.
 
-3. Qual método retorna uma lista de tuplas (chave, valor)?
+**5. Qual a letra "S" do SOLID?**
+A) Simple Code Principle.
+B) Single Responsibility Principle (Princípio da Responsabilidade Única).
+C) Super Class Principle.
+D) Silicon Valley.
 
-    - [ ] .all()
-    - [ ] .list()
-    - [x] .items()
-    - [ ] .pairs()
-
-4. Qual a saída de `d.get("chave_inexistente")`?
-
-    - [ ] KeyError
-    - [x] None
-    - [ ] False
-    - [ ] 0
-
-5. As chaves de um dicionário devem ser:
-
-    - [ ] Strings apenas
-    - [ ] Objetos mutáveis (como listas)
-    - [x] Objetos imutáveis (strings, números, tuplas) e únicas
-    - [ ] Ordenadas alfabeticamente
+**Gabarito:**
+1-B, 2-A, 3-B, 4-C, 5-B

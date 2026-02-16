@@ -1,36 +1,34 @@
 # Quiz 14
 
-1. Qual a sintaxe para criar uma classe `Carro` que herda de `Veiculo`?
+**1. Qual a melhor definição para a frase "O código se documenta sozinho"?**
+A) Uma verdade absoluta, nunca precisamos escrever documentos.
+B) Um mito perigoso. Código limpo ajuda, mas documentação de contexto é essencial.
+C) O código fala com a gente usando IA.
+D) Documentação é proibida no Ágil.
 
-    - [ ] class Carro extends Veiculo:
-    - [x] class Carro(Veiculo):
-    - [ ] class Carro inherits Veiculo:
-    - [ ] def Carro(Veiculo):
+**2. O que deve conter um arquivo README.md?**
+A) A história da vida do programador.
+B) Receitas de bolo.
+C) Resumo do projeto, como instalar e usar.
+D) Versículos bíblicos.
 
-2. O que é Polimorfismo?
+**3. Para quem é voltada a Documentação de API?**
+A) Para o cliente final (dona de casa).
+B) Para outros desenvolvedores que vão integrar com seu sistema.
+C) Para o gerente de vendas.
+D) Para ninguém.
 
-    - [ ] A capacidade de um objeto mudar de classe
-    - [x] A capacidade de objetos diferentes responderem ao mesmo método de formas diferentes
-    - [ ] A capacidade de herdar múltiplos pais
-    - [ ] A capacidade de criptografar dados
+**4. O que é Markdown?**
+A) Uma marca de roupa.
+B) Uma linguagem de marcação leve usada para formatar textos (como este aqui).
+C) Um código difícil de ler.
+D) Um banco de dados.
 
-3. Qual a função do `super()`?
+**5. Qual a diferença entre documentação de Usuário e Técnica?**
+A) De usuário é para quem usa o software; Técnica é para quem constrói/mantém.
+B) Não há diferença.
+C) Técnica deve ser escrita em latim.
+D) De usuário deve ser escrita em código.
 
-    - [ ] Cancelar a herança
-    - [x] Chamar métodos da classe pai (superclasse)
-    - [ ] Acessar variáveis globais
-    - [ ] Criar um super usuário
-
-4. Como definimos um atributo "privado" em Python (por convenção forte)?
-
-    - [ ] private variavel
-    - [ ] _variavel
-    - [x] __variavel (dois underlines)
-    - [ ] (variavel)
-
-5. Se tenho `class A` e `class B(A)`, qual afirmação é verdadeira?
-
-    - [ ] A é subclasse de B
-    - [ ] B herda apenas os atributos de A, não os métodos
-    - [x] B é subclasse de A e herda atributos e métodos
-    - [ ] A precisa ser instanciada dentro de B
+**Gabarito:**
+1-B, 2-C, 3-B, 4-B, 5-A

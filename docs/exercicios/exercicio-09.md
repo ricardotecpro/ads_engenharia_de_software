@@ -1,15 +1,5 @@
-# Exercício 09 - Qualidade de Software
+# Exercício 09
 
-## 🛠 Questões Práticas
-
-**1. Identificando a Falha**
-Você abre um app de banco e seu saldo aparece como "NaN" (Not a Number).
-- Qual foi a **Falha**? (O que você viu).
-- Qual pode ter sido o **Defeito**? (No código).
-- Qual pode ter sido o **Erro**? (No raciocínio do dev).
-
-**2. Teste Caixa Preta vs. Branca**
-Pesquise rapidamente: Qual a diferença entre "Teste de Caixa Branca" (olhando o código) e "Teste de Caixa Preta" (sem olhar o código)? Qual deles o usuário final executa sem querer?
-
-**3. Cultura de Qualidade**
-Em algumas empresas, o time de desenvolvimento joga o código para o time de QA e diz "Vocês que lutem para achar os bugs". Por que essa atitude é ruim (e cara)?
+1.  **Classificação**: O programador esqueceu de converter uma data (`Erro`). O código ficou salvando o ano como 1900 (`Defeito`). O cliente viu sua idade como 123 anos (`Falha`). Identifique cada um no seu próprio exemplo.
+2.  **Debate**: Por que corrigir um bug em produção custa 100x mais? (Pense em: parar o time, fazer patch, reputação da marca, dados corrompidos).
+3.  **QA vs Teste**: Se você revisa o documento de requisitos para ver se falta algo, você está fazendo QA ou Teste de Código?

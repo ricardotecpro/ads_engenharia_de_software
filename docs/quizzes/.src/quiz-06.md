@@ -1,36 +1,34 @@
 # Quiz 06
 
-1. Qual índice acessa o primeiro elemento de uma lista?
+**1. Qual a principal característica de uma arquitetura Monolítica?**
+A) O sistema é composto por milhares de pequenos serviços.
+B) O sistema é um único bloco de código onde tudo está junto.
+C) O sistema não usa banco de dados.
+D) O sistema só roda em celulares.
 
-    - [ ] 1
-    - [x] 0
-    - [ ] -1
-    - [ ] inicio
+**2. Na arquitetura Cliente-Servidor, o que o "Cliente" geralmente faz?**
+A) Armazena todos os dados do mundo.
+B) Processa pagamentos bancários sozinho.
+C) Envia requisições e exibe a interface para o usuário.
+D) Gera energia para o servidor.
 
-2. O que faz o método `.append(x)`?
+**3. Qual a vantagem dos Microserviços?**
+A) São extremamente simples de configurar.
+B) Se um serviço falhar, o resto do sistema pode continuar funcionando.
+C) Não precisam de internet.
+D) Usam menos memória sempre.
 
-    - [ ] Adiciona `x` no início da lista
-    - [x] Adiciona `x` no final da lista
-    - [ ] Remove `x` da lista
-    - [ ] Substitui tudo por `x`
+**4. O que é a camada de "Lógica de Negócio"?**
+A) A parte visual (cores e botões).
+B) Onde ficam as regras do sistema (ex: cálculos, validações).
+C) O cabo de rede.
+D) A marca do computador.
 
-3. Dada a lista `x = [10, 20, 30]`, quanto é `x[-1]`?
+**5. Arquitetura de Software é fácil de mudar depois que o projeto está pronto?**
+A) Sim, muda-se em 5 minutos.
+B) Não, geralmente é caro e difícil (como mudar a fundação de um prédio).
+C) Depende da cor do software.
+D) Arquitetura não existe.
 
-    - [ ] 10
-    - [ ] 20
-    - [x] 30
-    - [ ] Erro
-
-4. Como verificar o tamanho da lista `my_list`?
-
-    - [ ] size(my_list)
-    - [ ] count(my_list)
-    - [x] len(my_list)
-    - [ ] my_list.length
-
-5. O slicing `lista[1:3]` inclui o elemento do índice 3?
-
-    - [ ] Sim
-    - [x] Não
-    - [ ] Depende da lista
-    - [ ] Apenas se for string
+**Gabarito:**
+1-B, 2-C, 3-B, 4-B, 5-B

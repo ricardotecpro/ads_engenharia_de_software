@@ -1,18 +1,5 @@
-# Exercício 08 - Design de Software
+# Exercício 08
 
-## 🛠 Questões Práticas
-
-**1. Refatorando**
-Analise o código abaixo (JavaScript simples) e diga qual princípio ele viola (DRY ou KISS):
-```javascript
-function calcularAreaQuadrado() { return 5 * 5; }
-function calcularAreaSala() { return 5 * 5; }
-function calcularAreaTapete() { return 5 * 5; }
-```
-Como você corrigiria?
-
-**2. Responsabilidade Única**
-Você tem uma classe `Usuario`. Ela deveria ter um método `enviarEmailPromocional()`? Por que? (Pensa na coesão).
-
-**3. Acoplamento**
-Imagine que a classe `Carro` chama diretamente a classe `PneuMichelin`. Se quisermos trocar o pneu para `Pirelli`, teremos que mudar a classe `Carro`. Isso é alto acoplamento. Como resolver? (Dica: criar uma interface genérica `Pneu`).
+1.  **Refatoração (Teórica)**: Você encontrou uma função de 500 linhas chamada `GerenciarUsuario` que cadastra, envia e-mail de boas-vindas, valida CPF e gera relatório. Usando o princípio da **Coesão**, como você dividiria essa função?
+2.  **Identificando DRY**: Se você escreveu a lógica de calcular desconto de 10% em 5 lugares diferentes do código, o que acontece se o desconto mudar para 15%? Como o princípio DRY resolveria isso?
+3.  **Monstro de Espaguete**: Pesquise o termo "Spaghetti Code" e escreva uma frase sobre como evitá-lo.

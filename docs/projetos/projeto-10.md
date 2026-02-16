@@ -1,22 +1,11 @@
-# Projeto 10 - Plano de Testes
+# Projeto 10
 
-## 🎯 Objetivo
-Criar cenários de teste para validar nossas funcionalidades.
+**Atividade da Aula:**
+Vamos planejar os testes para o nosso To-Do App.
 
-## 📝 Descrição
-Antes de considerar o código pronto, precisamos saber se ele passa nos testes básicos.
-
-## 🚀 Passo a Passo
-
-### Tabela de Casos de Teste
-Crie uma tabela com as colunas: ID, Cenário, Passos, Resultado Esperado.
-
-| ID | Funcionalidade | Cenário | Passos | Resultado Esperado |
-| :--- | :--- | :--- | :--- | :--- |
-| CT01 | Criar Tarefa | Criar com sucesso | 1. Digitar "Estudar"<br>2. Clicar Salvar | Tarefa aparece na lista |
-| CT02 | Criar Tarefa | Título vazio | 1. Deixar em branco<br>2. Clicar Salvar | Alerta "Título obrigatório" |
-| CT03 | Concluir Tarefa | Marcar como feita | 1. Clicar no checkbox da tarefa | Texto fica riscado (strike) |
-| CT04 | Excluir Tarefa | Remover item | 1. Clicar no ícone lixeira | Item some da lista |
-
-## 📤 Entrega
-Adicione essa tabela ao seu documento. Quando você (ou um amigo) for testar o app, seguirá esse roteiro.
+1.  **Escolha uma funcionalidade**: Vamos usar "Adicionar Tarefa".
+2.  **Crie Casos de Teste (Cenários)**:
+    - *CT01*: Adicionar tarefa com título válido. (Resultado Esperado: Tarefa aparece na lista).
+    - *CT02*: Tentar adicionar tarefa sem título. (Resultado Esperado: Erro/Alerta, tarefa NÃO aparece).
+    - *CT03*: Adicionar tarefa com título muito longo (ex: 500 caracteres). (Resultado Esperado: Truncar ou erro?).
+3.  **Ação**: Adicione uma tabela "Plano de Testes" ao seu documento de projeto com esses casos.

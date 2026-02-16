@@ -3,47 +3,47 @@
 --8<-- "assets/quiz.html"
 
 <div class="quiz-container">
-  <div class="quiz-question">1. Como se acessa o valor associado à chave "nome" no dicionário `d`?</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">d.nome</div>
-  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! d["nome"]">d["nome"]</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">d(nome)</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">d -> nome</div>
+  <div class="quiz-question">1. O que é "Coesão" no design de software?</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Quando o código está todo junto num arquivo só.</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! Quando um módulo/classe foca em uma única responsabilidade bem definida.">Quando um módulo/classe foca em uma única responsabilidade bem definida.</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Quando usamos cola para unir as páginas.</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Quando o software não funciona.</div>
   <div class="quiz-feedback"></div>
 </div>
 
 <div class="quiz-container">
-  <div class="quiz-question">2. O que acontece se fizermos `d["chave"] = valor` e a chave já existir?</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Cria uma chave duplicada</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Gera um erro</div>
-  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! Atualiza o valor existente">Atualiza o valor existente</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Ignora o comando</div>
+  <div class="quiz-question">2. O que queremos em um bom sistema?</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! Baixo Acoplamento e Alta Coesão.">Baixo Acoplamento e Alta Coesão.</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Alto Acoplamento e Baixa Coesão.</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Código Espaguete.</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Bugs complexos.</div>
   <div class="quiz-feedback"></div>
 </div>
 
 <div class="quiz-container">
-  <div class="quiz-question">3. Qual método retorna uma lista de tuplas (chave, valor)?</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">.all()</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">.list()</div>
-  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! .items()">.items()</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">.pairs()</div>
+  <div class="quiz-question">3. O que significa a sigla DRY?</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Do Repeat Yourself (Repita-se).</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! Don't Repeat Yourself (Não se repita - Evite duplicação).">Don't Repeat Yourself (Não se repita - Evite duplicação).</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Data Run Yard.</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Dry Code (Código Seco).</div>
   <div class="quiz-feedback"></div>
 </div>
 
 <div class="quiz-container">
-  <div class="quiz-question">4. Qual a saída de `d.get("chave_inexistente")`?</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">KeyError</div>
-  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! None">None</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">False</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">0</div>
+  <div class="quiz-question">4. O princípio KISS sugere que:</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Devemos beijar o computador.</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Devemos criar as soluções mais complexas possíveis.</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! Devemos manter as coisas simples (Keep It Simple).">Devemos manter as coisas simples (Keep It Simple).</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Code is Stupid Simple.</div>
   <div class="quiz-feedback"></div>
 </div>
 
 <div class="quiz-container">
-  <div class="quiz-question">5. As chaves de um dicionário devem ser:</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Strings apenas</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Objetos mutáveis (como listas)</div>
-  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! Objetos imutáveis (strings, números, tuplas) e únicas">Objetos imutáveis (strings, números, tuplas) e únicas</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Ordenadas alfabeticamente</div>
+  <div class="quiz-question">5. Qual a letra "S" do SOLID?</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Simple Code Principle.</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! Single Responsibility Principle (Princípio da Responsabilidade Única).">Single Responsibility Principle (Princípio da Responsabilidade Única).</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Super Class Principle.</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Silicon Valley.</div>
   <div class="quiz-feedback"></div>
 </div>
 
@@ -51,10 +51,10 @@
 <details>
 <summary><strong>Gabarito:</strong></summary>
 <ul>
-  <li>1- d["nome"]</li>
-  <li>2- Atualiza o valor existente</li>
-  <li>3- .items()</li>
-  <li>4- None</li>
-  <li>5- Objetos imutáveis (strings, números, tuplas) e únicas</li>
+  <li>1- Quando um módulo/classe foca em uma única responsabilidade bem definida.</li>
+  <li>2- Baixo Acoplamento e Alta Coesão.</li>
+  <li>3- Don't Repeat Yourself (Não se repita - Evite duplicação).</li>
+  <li>4- Devemos manter as coisas simples (Keep It Simple).</li>
+  <li>5- Single Responsibility Principle (Princípio da Responsabilidade Única).</li>
 </ul>
 </details>

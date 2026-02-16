@@ -1,36 +1,34 @@
 # Quiz 07
 
-1. Qual a principal diferença entre Lista e Tupla?
+**1. Qual a diferença entre Git e GitHub?**
+A) Git é pago, GitHub é grátis.
+B) Git é a ferramenta de versionamento; GitHub é a plataforma de hospedagem.
+C) São a mesma coisa.
+D) GitHub é para jogos.
 
-    - [ ] Listas usam parênteses, Tuplas usam colchetes
-    - [x] Listas são mutáveis, Tuplas são imutáveis
-    - [ ] Tuplas aceitam duplicatas, Listas não
-    - [ ] Não há diferença
+**2. Qual comando "tira a foto" (salva a versão) no histórico local?**
+A) `git add`
+B) `git upload`
+C) `git commit`
+D) `git save`
 
-2. Qual estrutura remove duplicatas automaticamente?
+**3. O que é um "Branch"?**
+A) Um erro no código.
+B) Uma ramificação paralela para desenvolver sem afetar o código principal.
+C) A marca do computador.
+D) Um tipo de vírus.
 
-    - [ ] List
-    - [ ] Tuple
-    - [x] Set
-    - [ ] Dictionary
+**4. Para que serve o `git push`?**
+A) Para empurrar o computador.
+B) Para enviar as alterações locais para o repositório remoto (GitHub).
+C) Para baixar atualizações.
+D) Para apagar tudo.
 
-3. O que acontece se tentarmos fazer `meu_set[0]`?
+**5. Por que usamos controle de versão?**
+A) Para gastar mais espaço em disco.
+B) Para ter histórico, backup e facilitar o trabalho em equipe.
+C) Porque é difícil.
+D) Para nada.
 
-    - [ ] Acessa o primeiro item
-    - [x] Gera um erro (TypeError) pois set não tem índice
-    - [ ] Retorna None
-    - [ ] Retorna o set inteiro
-
-4. Qual operador faz a **interseção** de dois sets (itens em comum)?
-
-    - [ ] |
-    - [ ] -
-    - [x] &
-    - [ ] +
-
-5. Dado `t = (1, 2, 3)`, o comando `t[0] = 10` funciona?
-
-    - [ ] Sim, a tupla vira `(10, 2, 3)`
-    - [x] Não, erro de TypeError (item assignment)
-    - [ ] Sim, mas a tupla vira uma lista
-    - [ ] Depende da versão do Python
+**Gabarito:**
+1-B, 2-C, 3-B, 4-B, 5-B

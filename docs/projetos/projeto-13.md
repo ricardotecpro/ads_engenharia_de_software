@@ -1,26 +1,14 @@
-# Projeto 13 - Priorização e Estimativa
+# Projeto 13
 
-## 🎯 Objetivo
-Refinar o backlog usando técnicas profissionais de priorização.
+**Atividade da Aula:**
+Volte ao Backlog do seu To-Do App (Aula 03).
 
-## 📝 Descrição
-Recursos (tempo e energia) são finitos. Decidir o que NÃO fazer é tão importante quanto decidir o que fazer.
-
-## 🚀 Passo a Passo
-
-### 1. Classificação MoSCoW
-Revise seu Backlog e adicione etiquetas:
-- **[M] Must**: Tem que ter agora.
-- **[S] Should**: Deveria ter logo.
-- **[C] Could**: Legal ter depois.
-- **[W] Won't**: Esquece por enquanto.
-
-### 2. Estimativa de Esforço (T-Shirt Sizing)
-Como estamos sozinhos, em vez de poker, use tamanhos de camiseta:
-- **P**: Tarefa rápida (ex: Mudar cor do botão).
-- **M**: Tarefa média (ex: Criar tela de lista).
-- **G**: Tarefa complexa (ex: Sistema de Login).
-- **GG**: Tarefa muito complexa (ex: Sincronizar com a nuvem).
-
-## 📤 Entrega
-Atualize seu Backlog (tabela ou lista) adicionando duas colunas: **Prioridade** e **Esforço**.
+1.  **Aplique MoSCoW**: Marque cada item com M, S, C ou W.
+    - *Criar Tarefa*: Must?
+    - *Editar Tarefa*: Should?
+    - *Modo Escuro*: Could?
+    - *Integração com Google Agenda*: Won't?
+2.  **Defina os Pontos (Estimativa)**:
+    - Atribua pontos (1, 2, 3, 5, 8) para o esforço de cada tarefa.
+    - Ex: Criar Tarefa (5 pontos), Excluir Tarefa (2 pontos).
+3.  **Corte**: Se sua Sprint só "aguenta" 10 pontos, quais tarefas entram?

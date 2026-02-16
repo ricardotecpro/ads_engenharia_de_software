@@ -1,12 +1,5 @@
-# Exercício 12 - Segurança
+# Exercício 12
 
-## 🛠 Questões Práticas
-
-**1. Analisando URL**
-Você recebe um link: `banco-seguro.com/login?usuario=<script>alert(1)</script>`. Se você clicar e aparecer um alerta na tela, o site tem uma vulnerabilidade. Qual é o nome dela? (Dica: começa com X).
-
-**2. Autenticação de Dois Fatores (2FA)**
-Por que usar apenas senha não é mais considerado seguro o suficiente? O que é o "segundo fator" (algo que você tem ou algo que você é)?
-
-**3. Princípio do Menor Privilégio**
-Um estagiário precisa acessar o banco de dados para tirar um relatório. Você deve dar a ele a senha de `admin` (acesso total) ou criar um usuário com permissão apenas de `leitura` (SELECT)? Por que?
+1.  **Cenário de Ataque**: Você criou um site onde o usuário digita o ID do pedido na URL (`site.com/pedido?id=10`) para ver os detalhes. O que acontece se o usuário mudar o 10 para 11? Se ele ver o pedido de outra pessoa, qual pilar da segurança foi quebrado? (Confidencialidade).
+2.  **Engenharia Social**: Por que o "fator humano" é frequentemente o elo mais fraco da segurança? (Pesquise sobre Phishing).
+3.  **Senha Fraca**: Por que sites obrigam você a usar letras maiúsculas, números e símbolos na senha? Isso ajuda contra qual tipo de ataque? (Força Bruta).

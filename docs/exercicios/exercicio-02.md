@@ -1,16 +1,5 @@
-# Exercício 02 - Processos de Software
+# Exercício 02
 
-## 🛠 Questões Práticas
-
-**1. Estudo de Caso: O Foguete vs. O E-commerce**
-Imagine dois cenários:
-A) Um software para controlar o lançamento de um foguete da NASA.
-B) Um site de e-commerce para uma loja de roupas local.
-Qual modelo de processo (Cascata x Ágil) você recomendaria para cada um e por quê? Considere o "custo do erro" e a "necessidade de mudanças".
-
-**2. Comparação de Entregas**
-Desenhe uma linha do tempo simples comparando como o cliente recebe valor no Cascata vs. Ágil em um projeto de 6 meses.
-*Ex: Cascata entrega 100% no mês 6. E o Ágil?*
-
-**3. Reflexão Startup**
-Por que startups de tecnologia quase sempre usam metodologias Ágeis em vez de Cascata? Pense sobre como o mercado e os concorrentes influenciam isso.
+1.  **Estudo de Caso**: Imagine que você está construindo um software para controlar o lançamento de um foguete espacial. Qual modelo seria mais seguro: Cascata (com requisitos fixos e rigorosos) ou Ágil (onde "bugs" podem ser corrigidos depois)? Justifique.
+2.  **Comparação**: Faça uma tabela simples comparando "Frequência de Entrega" no Cascata vs. Ágil.
+3.  **Reflexão**: Por que o modelo Ágil se tornou tão popular em startups, onde o modelo de negócio muda o tempo todo?

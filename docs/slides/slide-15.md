@@ -1,29 +1,8 @@
-# Slide 15 - Manutenção e Evolução
+# Slide 15
 
-## Slide 1: Título
-- **Título**: Manutenção de Software
-- **Subtítulo**: Aula 15 - Cuidando do Jardim
-
-## Slide 2: Dívida Técnica
-- Escolher o caminho mais rápido agora = Pagar juros depois.
-- Juros = Dificuldade de manutenção.
-- Se não pagar (Refatorar), a dívida quebra o projeto.
-
-## Slide 3: Refatoração
-- Mudar COMO faz, sem mudar O QUE faz.
-- Melhora legibilidade e estrutura.
-- "Limpar a casa".
-
-## Slide 4: Tipos de Manutenção
-- **Corretiva**: Arrumar bug.
-- **Evolutiva**: Criar feature.
-- **Adaptativa**: Migrar ambiente.
-- **Preventiva**: Evitar problemas futuros.
-
-## Slide 5: A Regra do Escoteiro
-- Deixe o código melhor do que você encontrou.
-- Pequenas melhorias constantes > Grandes reescritas traumáticas.
-
-## Slide 6: Resumo
-- Software requer cuidado contínuo.
-- Não tenha medo de mudar o código para melhor.
+- **Slide 1**: Manutenção de Software
+- **Slide 2**: A Lei da Evolução (O software nunca está pronto).
+- **Slide 3**: Os tipos de Manutenção (Corretiva, Evolutiva, etc).
+- **Slide 4**: O que é Refatoração? (Limpar a cozinha).
+- **Slide 5**: Dívida Técnica (O cartão de crédito do código).
+- **Slide 6**: O Custo de não manter (Entropia).

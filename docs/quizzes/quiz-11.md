@@ -3,47 +3,47 @@
 --8<-- "assets/quiz.html"
 
 <div class="quiz-container">
-  <div class="quiz-question">1. Qual a função usada para abrir arquivos em Python?</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">file()</div>
-  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! open()">open()</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">read()</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">load()</div>
+  <div class="quiz-question">1. O que significa DevOps?</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Desenvolvimento de Operações Secretas.</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! Development + Operations (União de Desenvolvimento e Operações).">Development + Operations (União de Desenvolvimento e Operações).</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Um novo sistema operacional.</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Departamento de Vendas.</div>
   <div class="quiz-feedback"></div>
 </div>
 
 <div class="quiz-container">
-  <div class="quiz-question">2. O que acontece se abrirmos um arquivo existente no modo `'w'`?</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Ele adiciona conteúdo ao final</div>
-  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! Ele apaga todo o conteúdo existente e começa do zero">Ele apaga todo o conteúdo existente e começa do zero</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Ele gera um erro</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Ele abre em modo de leitura</div>
+  <div class="quiz-question">2. Qual o principal objetivo do DevOps?</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Criar barreiras entre os times.</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! Entregar software com mais velocidade e qualidade através da colaboração e automação.">Entregar software com mais velocidade e qualidade através da colaboração e automação.</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Eliminar todos os gerentes.</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Usar computadores mais rápidos.</div>
   <div class="quiz-feedback"></div>
 </div>
 
 <div class="quiz-container">
-  <div class="quiz-question">3. Para adicionar conteúdo ao final de um arquivo sem apagar o que já existe, qual modo usamos?</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">'r'</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">'w'</div>
-  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! 'a'">'a'</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">'x'</div>
+  <div class="quiz-question">3. O que acontece na etapa de "CI" (Integração Contínua)?</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! O código é misturado e testado automaticamente com frequência.">O código é misturado e testado automaticamente com frequência.</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">O cliente testa o software.</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">O computador é reiniciado.</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Nada.</div>
   <div class="quiz-feedback"></div>
 </div>
 
 <div class="quiz-container">
-  <div class="quiz-question">4. Qual a vantagem de usar o bloco `with`?</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">O código fica mais rápido</div>
-  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! Ele fecha o arquivo automaticamente, evitando vazamento de memória">Ele fecha o arquivo automaticamente, evitando vazamento de memória</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Ele criptografa o arquivo</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Ele permite ler arquivos PDF</div>
+  <div class="quiz-question">4. A frase "Funciona na minha máquina" é um sintoma de:</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! Falta de um ambiente padronizado e automatizado (Problema que DevOps resolve).">Falta de um ambiente padronizado e automatizado (Problema que DevOps resolve).</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Um computador muito bom.</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Um programador excelente.</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Sorte.</div>
   <div class="quiz-feedback"></div>
 </div>
 
 <div class="quiz-container">
-  <div class="quiz-question">5. O que o método `.read()` faz?</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Lê apenas a primeira linha</div>
-  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! Lê todo o conteúdo do arquivo como uma única string">Lê todo o conteúdo do arquivo como uma única string</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Lê o arquivo como uma lista de linhas</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Lê o nome do arquivo</div>
+  <div class="quiz-question">5. O que é um Pipeline de CI/CD?</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Um cano de água.</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! Uma sequência de passos automatizados que o código percorre (Build, Test, Deploy).">Uma sequência de passos automatizados que o código percorre (Build, Test, Deploy).</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Um jogo de encanador.</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Uma ferramenta de chat.</div>
   <div class="quiz-feedback"></div>
 </div>
 
@@ -51,10 +51,10 @@
 <details>
 <summary><strong>Gabarito:</strong></summary>
 <ul>
-  <li>1- open()</li>
-  <li>2- Ele apaga todo o conteúdo existente e começa do zero</li>
-  <li>3- 'a'</li>
-  <li>4- Ele fecha o arquivo automaticamente, evitando vazamento de memória</li>
-  <li>5- Lê todo o conteúdo do arquivo como uma única string</li>
+  <li>1- Development + Operations (União de Desenvolvimento e Operações).</li>
+  <li>2- Entregar software com mais velocidade e qualidade através da colaboração e automação.</li>
+  <li>3- O código é misturado e testado automaticamente com frequência.</li>
+  <li>4- Falta de um ambiente padronizado e automatizado (Problema que DevOps resolve).</li>
+  <li>5- Uma sequência de passos automatizados que o código percorre (Build, Test, Deploy).</li>
 </ul>
 </details>

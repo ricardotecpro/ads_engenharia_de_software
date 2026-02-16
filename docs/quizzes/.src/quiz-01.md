@@ -1,36 +1,34 @@
 # Quiz 01
 
-1. O que é um algoritmo?
+**1. Qual é o principal objetivo da Engenharia de Software?**
+A) Escrever código o mais rápido possível, sem se preocupar com erros.
+B) Aplicar uma abordagem sistemática e disciplinada para o desenvolvimento de software.
+C) Criar apenas jogos de computador.
+D) Consertar computadores quebrados (hardware).
 
-    - [ ] Um tipo de computador super rápido
-    - [x] Uma sequência finita de passos para resolver um problema
-    - [ ] Uma peça de hardware do computador
-    - [ ] Um erro de programação
+**2. O que significa a sigla SDLC?**
+A) Software Design Leveled Code
+B) System Development Linear Code
+C) Software Development Life Cycle (Ciclo de Vida de Desenvolvimento de Software)
+D) Super Dynamic Life Cycle
 
-2. Qual função usamos para exibir informações na tela em Python?
+**3. Em qual fase do SDLC definimos "O QUE" será construído?**
+A) Testes
+B) Implementação
+C) Levantamento de Requisitos
+D) Manutenção
 
-    - [ ] echo()
-    - [ ] write()
-    - [ ] show()
-    - [x] print()
+**4. O que ocorre na fase de "Manutenção"?**
+A) O software é deletado.
+B) O software é planejado do zero.
+C) Correções e melhorias são feitas após o software estar em uso.
+D) Os desenvolvedores tiram férias.
 
-3. Qual o caractere usado para comentários de uma linha em Python?
+**5. Qual a diferença principal entre Programação e Engenharia de Software?**
+A) Programação é apenas escrever código; Engenharia envolve todo o ciclo de vida e gestão.
+B) Não há diferença, são sinônimos.
+C) Engenharia de Software é apenas para hardware.
+D) Programação é mais difícil que Engenharia.
 
-    - [ ] //
-    - [ ] --
-    - [x] #
-    - [ ] %
-
-4. O Python é sensível a letras maiúsculas e minúsculas (Case Sensitive)?
-
-    - [x] Sim, 'print' é diferente de 'Print'
-    - [ ] Não, tanto faz
-    - [ ] Apenas em variáveis
-    - [ ] Apenas no Windows
-
-5. O que acontece se você escrever `print "Olá"` (sem parênteses) no Python 3?
-
-    - [ ] Exibe "Olá" normalmente
-    - [x] Gera um erro de sintaxe (SyntaxError)
-    - [ ] O computador trava
-    - [ ] Abre uma janela pop-up
+**Gabarito:**
+1-B, 2-C, 3-C, 4-C, 5-A

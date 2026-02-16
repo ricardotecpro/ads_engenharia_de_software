@@ -9,52 +9,82 @@ from rich.progress import track
 
 def parse_quiz_markdown(content: str) -> list:
     """
-    Parse quiz markdown format e extrai perguntas
+    Parse quiz markdown format e extrai perguntas no formato texto
     
     Formato esperado:
-    1. Pergunta aqui?
-    
-        - [ ] Opção incorreta
-        - [x] Opção correta
-        - [ ] Outra incorreta
+    **1. Pergunta?**
+    A) Opção A
+    B) Opção B
+    ...
+    **Gabarito:**
+    1-A, 2-B
     """
     questions = []
     
-    # Regex para encontrar perguntas numeradas
-    question_pattern = r'(\d+)\.\s+(.+?)(?=\n\n|\n\s*-|\Z)'
+    # 1. Extrair Gabarito primeiro para saber as respostas
+    gabarito_match = re.search(r'Gabarito:\*?\*?\s*\n?(.+)', content, re.IGNORECASE | re.DOTALL)
+    answers_map = {}
+    if gabarito_match:
+        gabarito_text = gabarito_match.group(1).strip()
+        # Parse "1-A, 2-B" or "1-A 2-B"
+        # Regex finds pairs of Number + Buffer + Letter
+        pairs = re.findall(r'(\d+)\s*[-:]\s*([A-D])', gabarito_text, re.IGNORECASE)
+        for num, letter in pairs:
+            answers_map[int(num)] = letter.upper()
+
+    # 2. Extrair Perguntas
+    # Regex flexível para "**1. Pergunta**" ou "1. Pergunta"
+    question_pattern = r'(?:\*\*)?(\d+)\.\s+(.+?)(?:\*\*)?\n'
     
-    # Encontrar todas as perguntas
-    for match in re.finditer(question_pattern, content, re.DOTALL):
-        question_num = match.group(1)
-        question_text = match.group(2).strip()
+    current_pos = 0
+    while True:
+        match = re.search(question_pattern, content[current_pos:])
+        if not match:
+            break
+            
+        q_num = int(match.group(1))
+        q_text = match.group(2).strip()
+        start = current_pos + match.end()
         
-        # Encontrar opções após esta pergunta
-        # Procurar até a próxima pergunta ou fim do arquivo
-        start_pos = match.end()
-        next_question = re.search(r'\n\d+\.\s+', content[start_pos:])
-        end_pos = start_pos + next_question.start() if next_question else len(content)
+        # Encontrar onde termina esta pergunta (começo da próxima ou Gabarito ou fim)
+        next_match = re.search(question_pattern, content[start:])
+        gabarito_start = re.search(r'Gabarito:', content[start:], re.IGNORECASE)
         
-        options_text = content[start_pos:end_pos]
+        end = len(content)
+        if next_match:
+            end = start + next_match.start()
+        if gabarito_start and (start + gabarito_start.start() < end):
+            end = start + gabarito_start.start()
+            
+        options_block = content[start:end]
         
-        # Parse opções
+        # Parse Opções A) B) C) D)
         options = []
-        option_pattern = r'-\s+\[([ x])\]\s+(.+?)(?=\n\s*-|\n\n|\Z)'
+        # Regex finds "A) Text"
+        opt_matches = re.findall(r'([A-D])\)\s+(.+?)(?=\n[A-D]\)|\n\n|\Z)', options_block, re.DOTALL)
         
-        for opt_match in re.finditer(option_pattern, options_text, re.DOTALL):
-            is_correct = opt_match.group(1) == 'x'
-            option_text = opt_match.group(2).strip()
+        correct_letter = answers_map.get(q_num, 'A') # Default to A if not found (avoid crash)
+        
+        for letter, text in opt_matches:
+            is_correct = (letter.upper() == correct_letter)
             options.append({
-                'text': option_text,
-                'correct': is_correct
+                'text': text.strip(),
+                'correct': is_correct,
+                'letter': letter
             })
-        
-        if options:  # Só adiciona se encontrou opções
+            
+        if options:
             questions.append({
-                'number': question_num,
-                'text': question_text,
+                'number': str(q_num),
+                'text': q_text,
                 'options': options
             })
-    
+            
+        current_pos = end
+        # Break if we reached gabarito or end
+        if gabarito_start and (current_pos >= start + gabarito_start.start()):
+            break
+
     return questions
 
 

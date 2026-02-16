@@ -1,23 +1,8 @@
-# Projeto 15 - Registro de Melhorias
+# Projeto 15
 
-## 🎯 Objetivo
-Documentar a evolução e manutenção do código.
+**Atividade da Aula:**
+Vamos "pagar" uma dívida técnica do nosso To-Do App.
 
-## 📝 Descrição
-Software vivo muda. Vamos registrar nossas "faxinas".
-
-## 🚀 Changelog (Diário de Mudanças)
-
-Crie um arquivo ou seção chamada `CHANGELOG.md` no seu projeto simulado:
-
-```markdown
-### Versão 1.1.0 - Refatoração
-**Data**: Hoje
-
-- **[Refactor]**: Extraída lógica de "Salvar" para função própria.
-- **[Fix]**: Corrigido bug que permitia tarefas vazias.
-- **[Style]**: Padronização das cores usando variáveis CSS.
-```
-
-## 📤 Entrega
-Adicione esse trecho de Changelog ao seu documento. Isso mostra profissionalismo e controle sobre a evolução do produto.
+1.  **Analise seu CSS/Design**: Você escreveu estilos direto no HTML (`style="..."`) ou criou classes confusas?
+2.  **Ação**: Simplifique. Se tiver cores repetidas, crie variáveis CSS (`:root { --cor-principal: blue; }`).
+3.  **Documente**: No seu projeto, crie uma seção "Histórico de Mudanças" e adicione: "Refatoração do CSS para usar variáveis. Motivo: Facilitar mudança de tema futuro."

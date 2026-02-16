@@ -1,36 +1,34 @@
 # Quiz 04
 
-1. O que acontece se você não indentar o código dentro de um `if`?
+**1. "O sistema deve enviar um e-mail de confirmação de cadastro". Isso é um:**
+A) Requisito Não-Funcional.
+B) Requisito Funcional.
+C) Bug.
+D) User Story.
 
-    - [ ] O código executa normalmente
-    - [x] O Python gera um erro (IndentationError)
-    - [ ] O bloco `if` é ignorado
-    - [ ] O código vira um comentário
+**2. "O sistema deve suportar 1 milhão de usuários simultâneos". Isso é um:**
+A) Requisito Não-Funcional (Performance).
+B) Requisito Funcional.
+C) Requisito de Design.
+D) Exagero.
 
-2. Qual estrutura executa apenas se todas as condições anteriores forem falsas?
+**3. Qual a estrutura correta de uma User Story?**
+A) Quero <ação>, Como <usuário>, Para <benefício>.
+B) Como <usuário>, Eu quero <ação>, Para que <benefício>.
+C) O sistema deve <ação>.
+D) O usuário precisa de <ação>.
 
-    - [ ] if
-    - [ ] elif
-    - [x] else
-    - [ ] then
+**4. Para que servem os Critérios de Aceite?**
+A) Para o cliente aceitar pagar mais.
+B) Para definir as regras técnicas do banco de dados.
+C) Para definir claramente quando uma história está concluída e correta.
+D) Para nada.
 
-3. Quantos blocos `else` posso ter em uma única estrutura condicional?
+**5. Qual o maior risco de requisitos mal definidos?**
+A) O programador ficar entediado.
+B) Construir o software errado, desperdiçando tempo e dinheiro.
+C) O computador travar.
+D) A Internet cair.
 
-    - [ ] Quantos quiser
-    - [x] No máximo um
-    - [ ] Pelo menos dois
-    - [ ] Depende da memória RAM
-
-4. O `elif` é obrigatório sempre que tem um `if`?
-
-    - [ ] Sim
-    - [x] Não, é opcional
-    - [ ] Apenas se tiver `else` junto
-    - [ ] Apenas em loops
-
-5. Qual a sintaxe correta?
-
-    - [ ] if x = 10 then:
-    - [ ] if (x == 10) {
-    - [x] if x == 10:
-    - [ ] if x == 10
+**Gabarito:**
+1-B, 2-A, 3-B, 4-C, 5-B

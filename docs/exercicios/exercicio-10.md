@@ -1,22 +1,8 @@
-# Exercício 10 - Testes de Software
+# Exercício 10
 
-## 🛠 Questões Práticas
-
-**1. Escrevendo Testes Unitários**
-Dada a função javascript:
-```javascript
-function podeBeber(idade) {
-    if (idade >= 18) return true;
-    else return false;
-}
-```
-Quais valores de entrada (input) você usaria para testar todos os cenários possíveis? (Dica: Teste o limite).
-
-**2. Integração vs Unitário**
-Se você está testando se o seu código consegue salvar dados corretamente no Banco de Dados MySQL, isso é um teste Unitário ou de Integração? Por que?
-
-**3. TDD na Prática**
-Imagine que você tem que criar uma função `somar(a, b)`.
-Passo 1 (Red): Qual teste você escreve primeiro?
-Passo 2 (Green): Qual o código mais estúpido/simples para passar nesse teste?
-Passo 3 (Refactor): Como melhorar?
+1.  **Escrevendo Testes (Papel)**: Imagine uma função `ehMaiorDeIdade(idade)`. Escreva 3 casos de teste para ela.
+    - Ex: Entrada 10 -> Esperado: Falso.
+    - Ex: Entrada 18 -> Esperado: ???
+    - Ex: Entrada 25 -> Esperado: ???
+2.  **Classificação**: Um teste que verifica se, ao clicar no botão "Login", o usuário é redirecionado para a "Home", é Unitário ou E2E?
+3.  **Reflexão TDD**: Por que escrever o teste antes ajuda a desenhar melhor o código? (Pense em como você é "obrigado" a pensar na entrada e saída da função).

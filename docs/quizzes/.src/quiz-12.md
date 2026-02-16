@@ -1,36 +1,34 @@
 # Quiz 12
 
-1. Qual bloco contém o código que pode gerar um erro?
+**1. Qual e a diferença entre Autenticação e Autorização?**
+A) Autenticação confirma quem você é; Autorização define o que você pode fazer.
+B) São a mesma coisa.
+C) Autenticação é para sair do sistema.
+D) Autorização é para entrar no sistema.
 
-    - [ ] except
-    - [x] try
-    - [ ] catch
-    - [ ] test
+**2. O que significa a sigla CIA em segurança?**
+A) Central Intelligence Agency.
+B) Confidentiality, Integrity, Availability.
+C) Code Is Awesome.
+D) Computer Internet Access.
 
-2. Qual bloco é executado SEMPRE, independentemente de erro?
+**3. O que é SQL Injection?**
+A) Uma técnica para deixar o banco de dados mais rápido.
+B) Um ataque onde código malicioso é inserido em campos de entrada para manipular o banco de dados.
+C) Uma vacina para computadores.
+D) Um tipo de monitor.
 
-    - [ ] else
-    - [ ] always
-    - [x] finally
-    - [ ] default
+**4. Quando devemos começar a pensar na segurança do software?**
+A) Depois que o software for hackeado.
+B) Apenas na fase de testes.
+C) Desde o início do projeto (Security by Design).
+D) Nunca, segurança é problema do usuário.
 
-3. Qual exceção é levantada ao tentar dividir um número por zero?
+**5. O que é a OWASP?**
+A) Uma marca de antivírus.
+B) Uma organização que documenta e compartilha conhecimentos sobre segurança de software.
+C) Um governo.
+D) Um tipo de senha.
 
-    - [ ] ValueError
-    - [ ] TypeError
-    - [ ] MathError
-    - [x] ZeroDivisionError
-
-4. O comando `raise` serve para:
-
-    - [ ] Tratar um erro
-    - [ ] Ignorar um erro
-    - [x] Lançar (gerar) um erro propositalmente
-    - [ ] Aumentar a prioridade do erro
-
-5. É considerado boa prática usar `except:` sem especificar o tipo de erro?
-
-    - [ ] Sim, economiza código
-    - [x] Não, pois pode ocultar erros inesperados e dificultar a depuração
-    - [ ] Sim, o Python recomenda
-    - [ ] Tanto faz
+**Gabarito:**
+1-A, 2-B, 3-B, 4-C, 5-B

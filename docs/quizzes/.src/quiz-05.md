@@ -1,36 +1,34 @@
 # Quiz 05
 
-1. Qual a saída de `list(range(3))`?
+**1. O que significa UML?**
+A) Ultramodern Modeling Language
+B) Unified Modeling Language (Linguagem de Modelagem Unificada)
+C) Universal Machine Language
+D) User Management Logistic
 
-    - [ ] [1, 2, 3]
-    - [ ] [0, 1, 2, 3]
-    - [x] [0, 1, 2]
-    - [ ] [1, 2]
+**2. No Diagrama de Caso de Uso, o que o "boneco palito" representa?**
+A) Um erro no sistema.
+B) O banco de dados.
+C) Um Ator (quem interage com o sistema).
+D) O gerente do projeto.
 
-2. O que acontece se a condição do `while` nunca for False?
+**3. Qual diagrama mostra a estrutura estática (classes e atributos) do sistema?**
+A) Diagrama de Caso de Uso.
+B) Diagrama de Classes.
+C) Diagrama de Sequência.
+D) Fluxograma.
 
-    - [ ] O programa para sozinho
-    - [x] Loop infinito
-    - [ ] O Python corrige
-    - [ ] Nada
+**4. Para que serve a modelagem de software?**
+A) Para deixar o escritório mais bonito com desenhos.
+B) Para visualizar, comunicar e documentar o sistema antes de programar.
+C) Para substituir o código final.
+D) Para tornar o software mais lento.
 
-3. Qual comando **interrompe** totalmente um loop?
+**5. Em um diagrama de classes, o que são os "Métodos"?**
+A) As características da classe (ex: cor).
+B) As ações ou comportamentos da classe (ex: andar).
+C) O nome da classe.
+D) As conexões.
 
-    - [ ] stop
-    - [ ] continue
-    - [x] break
-    - [ ] exit
-
-4. Qual comando **pula** a iteração atual e volta ao início do loop?
-
-    - [ ] skip
-    - [ ] next
-    - [ ] break
-    - [x] continue
-
-5. Para repetir um código exatamente 10 vezes, qual a melhor opção?
-
-    - [ ] while i < 10
-    - [x] for i in range(10)
-    - [ ] if i == 10
-    - [ ] print(10)
+**Gabarito:**
+1-B, 2-C, 3-B, 4-B, 5-B

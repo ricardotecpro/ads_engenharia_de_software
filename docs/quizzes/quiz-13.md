@@ -3,47 +3,47 @@
 --8<-- "assets/quiz.html"
 
 <div class="quiz-container">
-  <div class="quiz-question">1. O que é uma Classe em POO?</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Uma variável global</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Um objeto já instanciado</div>
-  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! O molde ou modelo para criar objetos">O molde ou modelo para criar objetos</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Uma função que retorna dados</div>
+  <div class="quiz-question">1. O que acontece se tentarmos aumentar o escopo de um projeto mantendo o mesmo prazo e custo?</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! A qualidade provavelmente cairá.">A qualidade provavelmente cairá.</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">O projeto ficará pronto mais cedo.</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Os desenvolvedores ficarão felizes.</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Nada.</div>
   <div class="quiz-feedback"></div>
 </div>
 
 <div class="quiz-container">
-  <div class="quiz-question">2. Qual método especial é executado automaticamente ao criar um novo objeto?</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">`__start__`</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">`__main__`</div>
-  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! `__init__`">`__init__`</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">`__class__`</div>
+  <div class="quiz-question">2. O que significa MVP?</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Most Valuable Player.</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! Minimum Viable Product (Mínimo Produto Viável).">Minimum Viable Product (Mínimo Produto Viável).</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Maximum Virtual Process.</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Mini Video Player.</div>
   <div class="quiz-feedback"></div>
 </div>
 
 <div class="quiz-container">
-  <div class="quiz-question">3. O que o parâmetro `self` representa em um método?</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">A classe inteira</div>
-  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! A instância atual do objeto (o próprio objeto)">A instância atual do objeto (o próprio objeto)</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Uma variável local protegida</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">O módulo onde a classe está</div>
+  <div class="quiz-question">3. Qual o objetivo do "Planning Poker"?</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Jogar cartas e apostar dinheiro.</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! Estimar a complexidade das tarefas em equipe de forma colaborativa.">Estimar a complexidade das tarefas em equipe de forma colaborativa.</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Decidir quem vai pagar o almoço.</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Escolher o nome do produto.</div>
   <div class="quiz-feedback"></div>
 </div>
 
 <div class="quiz-container">
-  <div class="quiz-question">4. Como acessamos o atributo `nome` de um objeto chamado `pessoa`?</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">pessoa->nome</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">pessoa[nome]</div>
-  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! pessoa.nome">pessoa.nome</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Class.pessoa(nome)</div>
+  <div class="quiz-question">4. Na técnica MoSCoW, o que significa o "M" (Must Have)?</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Funcionalidades que TALVEZ o sistema tenha.</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! Funcionalidades OBRIGATÓRIAS para o sistema funcionar.">Funcionalidades OBRIGATÓRIAS para o sistema funcionar.</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Funcionalidades que NÃO teremos.</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Funcionalidades de Marketing.</div>
   <div class="quiz-feedback"></div>
 </div>
 
 <div class="quiz-container">
-  <div class="quiz-question">5. Posso criar vários objetos diferentes a partir de uma mesma classe?</div>
-  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! Sim, quantos quiser (instâncias)">Sim, quantos quiser (instâncias)</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Não, apenas um (Singleton)</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Sim, mas eles compartilham os mesmos dados</div>
-  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Depende da memória RAM</div>
+  <div class="quiz-question">5. Por que usamos pontos (Fibonacci) em vez de horas para estimar?</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Porque horas são muito precisas.</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! Porque a complexidade relativa é mais fácil de acertar do que o tempo exato.">Porque a complexidade relativa é mais fácil de acertar do que o tempo exato.</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Porque Fibonacci era um programador famoso.</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Porque horas custam dinheiro.</div>
   <div class="quiz-feedback"></div>
 </div>
 
@@ -51,10 +51,10 @@
 <details>
 <summary><strong>Gabarito:</strong></summary>
 <ul>
-  <li>1- O molde ou modelo para criar objetos</li>
-  <li>2- `__init__`</li>
-  <li>3- A instância atual do objeto (o próprio objeto)</li>
-  <li>4- pessoa.nome</li>
-  <li>5- Sim, quantos quiser (instâncias)</li>
+  <li>1- A qualidade provavelmente cairá.</li>
+  <li>2- Minimum Viable Product (Mínimo Produto Viável).</li>
+  <li>3- Estimar a complexidade das tarefas em equipe de forma colaborativa.</li>
+  <li>4- Funcionalidades OBRIGATÓRIAS para o sistema funcionar.</li>
+  <li>5- Porque a complexidade relativa é mais fácil de acertar do que o tempo exato.</li>
 </ul>
 </details>

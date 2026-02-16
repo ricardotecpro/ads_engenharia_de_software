@@ -1,36 +1,34 @@
 # Quiz 11
 
-1. Qual a função usada para abrir arquivos em Python?
+**1. O que significa DevOps?**
+A) Desenvolvimento de Operações Secretas.
+B) Development + Operations (União de Desenvolvimento e Operações).
+C) Um novo sistema operacional.
+D) Departamento de Vendas.
 
-    - [ ] file()
-    - [x] open()
-    - [ ] read()
-    - [ ] load()
+**2. Qual o principal objetivo do DevOps?**
+A) Criar barreiras entre os times.
+B) Entregar software com mais velocidade e qualidade através da colaboração e automação.
+C) Eliminar todos os gerentes.
+D) Usar computadores mais rápidos.
 
-2. O que acontece se abrirmos um arquivo existente no modo `'w'`?
+**3. O que acontece na etapa de "CI" (Integração Contínua)?**
+A) O código é misturado e testado automaticamente com frequência.
+B) O cliente testa o software.
+C) O computador é reiniciado.
+D) Nada.
 
-    - [ ] Ele adiciona conteúdo ao final
-    - [x] Ele apaga todo o conteúdo existente e começa do zero
-    - [ ] Ele gera um erro
-    - [ ] Ele abre em modo de leitura
+**4. A frase "Funciona na minha máquina" é um sintoma de:**
+A) Falta de um ambiente padronizado e automatizado (Problema que DevOps resolve).
+B) Um computador muito bom.
+C) Um programador excelente.
+D) Sorte.
 
-3. Para adicionar conteúdo ao final de um arquivo sem apagar o que já existe, qual modo usamos?
+**5. O que é um Pipeline de CI/CD?**
+A) Um cano de água.
+B) Uma sequência de passos automatizados que o código percorre (Build, Test, Deploy).
+C) Um jogo de encanador.
+D) Uma ferramenta de chat.
 
-    - [ ] 'r'
-    - [ ] 'w'
-    - [x] 'a'
-    - [ ] 'x'
-
-4. Qual a vantagem de usar o bloco `with`?
-
-    - [ ] O código fica mais rápido
-    - [x] Ele fecha o arquivo automaticamente, evitando vazamento de memória
-    - [ ] Ele criptografa o arquivo
-    - [ ] Ele permite ler arquivos PDF
-
-5. O que o método `.read()` faz?
-
-    - [ ] Lê apenas a primeira linha
-    - [x] Lê todo o conteúdo do arquivo como uma única string
-    - [ ] Lê o arquivo como uma lista de linhas
-    - [ ] Lê o nome do arquivo
+**Gabarito:**
+1-B, 2-B, 3-A, 4-A, 5-B

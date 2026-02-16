@@ -1,23 +1,14 @@
-# Projeto 11 - Política de Automação (CI Simplificado)
+# Projeto 11
 
-## 🎯 Objetivo
-Estabelecer uma regra de "Integração Contínua Manual" para garantir a estabilidade.
+**Atividade da Aula:**
+Não vamos configurar um servidor Jenkins/GitHub Actions real, mas vamos simular o processo.
 
-## 📝 Descrição
-Mesmo sem robôs, podemos ter a disciplina do CI. A regra é: **Código quebrado não entra no repositório**.
-
-## 🚀 O Pipeline Manual
-
-Defina os passos que **obrigatoriamente** devem ser seguidos antes de cada commit.
-
-1.  **Build (Verificação de Sintaxe)**:
-    - O código não tem erros de digitação óbvios?
-    - O console do navegador (F12) mostra erros vermelhos?
-2.  **Test (Verificação Funcional)**:
-    - Execute os testes manuais definidos na Aula 10.
-    - A nova funcionalidade quebrou algo antigo? (Teste de Regressão Rápido).
-3.  **Commit (Integração)**:
-    - Se tudo passou, aí sim: `git add` e `git commit`.
-
-## 📤 Entrega
-Adicione o texto acima (personalizado) ao seu documento, sob o título "Política de Qualidade e Integração".
+1.  **Regra do Projeto**: A partir de agora, ninguém (você) pode considerar uma tarefa "Pronta" sem rodar os testes da Aula 10.
+2.  **O Pipeline Manual**:
+    - Toda vez que você terminar uma tarefa:
+        1.  Salve o arquivo.
+        2.  Abra o navegador.
+        3.  Teste se funciona (Executar Testes Manuais).
+        4.  Se passar -> Faça o Commit.
+        5.  Se falhar -> Corrija e volte ao passo 1.
+3.  **Documentação**: Escreva no seu projeto: "Política de CI: Commits apenas após testes passarem com sucesso".

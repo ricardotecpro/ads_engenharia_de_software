@@ -1,21 +1,11 @@
-# Projeto 12 - Segurança e Ameaças
+# Projeto 12
 
-## 🎯 Objetivo
-Identificar vulnerabilidades potenciais no projeto (Threat Modeling).
+**Atividade da Aula:**
+Vamos pensar como um hacker para proteger nosso To-Do App.
 
-## 📝 Descrição
-Nenhum sistema é 100% seguro, mas devemos conhecer os riscos. Vamos analisar o To-Do App.
-
-## 🚀 Análise de Riscos
-
-### 1. Cross-Site Scripting (XSS)
-- **Ameaça**: Um usuário malicioso pode tentar salvar uma tarefa com código JavaScript no título. Ex: `<script>roubarCookies()</script>`.
-- **Consequência**: Quando a lista for carregada, o navegador pode executar esse script.
-- **Solução**: Nunca confiar no input do usuário. Ao exibir o texto na tela, usar funções que convertem caracteres especiais (ex: `<` vira `&lt;`). `innerText` é mais seguro que `innerHTML`.
-
-### 2. Privacidade Local
-- **Ameaça**: Como usamos LocalStorage, qualquer pessoa que usar o mesmo computador/navegador pode ver as tarefas.
-- **Solução**: Aviso ao usuário: "Não use em computadores públicos". (Para um sistema real, precisaríamos de Login no Backend).
-
-## 📤 Entrega
-Adicione esses dois pontos ao seu documento. Desenhe um "Alerta de Segurança" simbólico.
+1.  **Identifique Riscos**:
+    - *Risco 1*: Alguém pode ver as tarefas de outra pessoa? (No nosso caso localstorage, só quem usa o PC vê. Mas e se fosse na web?).
+    - *Risco 2*: Injeção de Script (XSS). Se eu criar uma tarefa com o título `<script>alert('oi')</script>`, o navegador vai executar esse código?
+2.  **Mitigação (Proteção)**:
+    - Para o Risco 2: Devemos "higienizar" (sanitize) tudo que o usuário digita antes de mostrar na tela. O texto deve ser tratado como texto, nunca como código executável.
+3.  **Documentação**: Adicione uma seção "Segurança" no seu projeto listando: "Risco de XSS nos títulos das tarefas" e a solução "Sanitize inputs".

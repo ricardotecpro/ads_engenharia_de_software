@@ -1,17 +1,5 @@
-# Exercício 05 - Modelagem e UML
+# Exercício 05
 
-## 🛠 Questões Práticas
-
-**1. O Celular como Classe**
-Se você tivesse que modelar seu celular como uma Classe de software:
-- Quais seriam os **Atributos** (propriedades)? (Cite 3. Ex: tamanhoTela)
-- Quais seriam os **Métodos** (ações)? (Cite 3. Ex: ligar())
-
-**2. Desenhando Casos de Uso**
-Imagine um sistema de Biblioteca.
-- Atores: Leitor, Bibliotecário.
-- Casos de Uso: Pegar Livro, Devolver Livro, Cadastrar Livro, Pagar Multa.
-Quem faz o quê? Desenhe ou descreva quem se conecta a qual bolinha.
-
-**3. Interpretação**
-Um diagrama mostra a classe `Carro` ligada à classe `Pneu` com uma linha que tem um losango preenchido (composição). O que isso significa na prática sobre a relação entre Carro e Pneu? (Pesquise sobre "Composição UML").
+1.  **Observação**: Olhe para o seu celular. Se o "Celular" fosse uma Classe, cite 3 atributos (o que ele tem) e 3 métodos (o que ele faz).
+2.  **Caso de Uso**: Desenhe (no papel) um diagrama de Caso de Uso simples para um "Caixa Eletrônico". Atores: Cliente e Técnico. Casos de uso: Sacar Dinheiro, Depositar, Repor Dinheiro.
+3.  **Leitura**: Se você ver uma seta conectando a classe `Cachorro` à classe `Animal`, o que isso provavelmente significa? (Dica: Herança).
