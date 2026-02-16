@@ -1,47 +1,47 @@
 # Quizzes Interativos
 
-Teste seus conhecimentos com quizzes interativos para cada aula!
+Teste seus conhecimentos com quizzes rápidos ao final de cada tópico!
 
 <div class="grid cards" markdown>
 
--   :material-numeric-1-box: **Módulo 1 – Fundamentos**
+-   :material-numeric-1-box: **Módulo 1 – Fundamentos e Processos**
     
-    - [Quiz 01 - Introdução](quiz-01.md)
-    - [Quiz 02 - Variáveis](quiz-02.md)
-    - [Quiz 03 - Operadores](quiz-03.md)
-    - [Quiz 04 - Condicionais](quiz-04.md)
+    - [Quiz 01 - Fundamentos](quiz-01.md)
+    - [Quiz 02 - Processos de Software](quiz-02.md)
+    - [Quiz 03 - Metodologias Ágeis](quiz-03.md)
 
--   :material-numeric-2-box: **Módulo 2 – Estruturas de Controle**
+-   :material-numeric-2-box: **Módulo 2 – Requisitos e Modelagem**
     
-    - [Quiz 05 - Loops](quiz-05.md)
-    - [Quiz 06 - Listas](quiz-06.md)
-    - [Quiz 07 - Tuplas e Sets](quiz-07.md)
-    - [Quiz 08 - Dicionários](quiz-08.md)
+    - [Quiz 04 - Requisitos](quiz-04.md)
+    - [Quiz 05 - Modelagem UML](quiz-05.md)
 
--   :material-numeric-3-box: **Módulo 3 – Funções**
+-   :material-numeric-3-box: **Módulo 3 – Arquitetura e Design**
     
-    - [Quiz 09 - Funções I](quiz-09.md)
-    - [Quiz 10 - Módulos](quiz-10.md)
+    - [Quiz 06 - Arquitetura](quiz-06.md)
+    - [Quiz 07 - Git e Versionamento](quiz-07.md)
+    - [Quiz 08 - Design Patterns e SOLID](quiz-08.md)
 
--   :material-numeric-4-box: **Módulo 4 – Arquivos e Exceções**
+-   :material-numeric-4-box: **Módulo 4 – Qualidade e Testes**
     
-    - [Quiz 11 - Arquivos](quiz-11.md)
-    - [Quiz 12 - Exceções](quiz-12.md)
+    - [Quiz 09 - Garantia de Qualidade](quiz-09.md)
+    - [Quiz 10 - Testes de Software](quiz-10.md)
 
--   :material-numeric-5-box: **Módulo 5 – POO**
+-   :material-numeric-5-box: **Módulo 5 – DevOps e Segurança**
     
-    - [Quiz 13 - POO Intro](quiz-13.md)
-    - [Quiz 14 - POO Avançado](quiz-14.md)
+    - [Quiz 11 - DevOps e CI/CD](quiz-11.md)
+    - [Quiz 12 - Segurança da Informação](quiz-12.md)
 
--   :material-numeric-6-box: **Módulo 6 – Ecossistema**
+-   :material-numeric-6-box: **Módulo 6 – Gestão e Evolução**
     
-    - [Quiz 15 - APIs](quiz-15.md)
-    - [Quiz 16 - Testes](quiz-16.md)
+    - [Quiz 13 - Gestão de Projetos](quiz-13.md)
+    - [Quiz 14 - Documentação](quiz-14.md)
+    - [Quiz 15 - Manutenção de Software](quiz-15.md)
+    - [Quiz 16 - Ética e Carreira](quiz-16.md)
 
 </div>
 
 ## 🎯 Como Usar
 
-- Responda todas as perguntas antes de verificar o resultado
-- Use os quizzes para revisar o conteúdo das aulas
-- Refaça os quizzes até acertar 100%!
+- Responda as perguntas para validar seu entendimento.
+- Verifique o **Gabarito** ao final para explicações detalhadas.
+- Use como revisão antes de avançar para o próximo módulo.
