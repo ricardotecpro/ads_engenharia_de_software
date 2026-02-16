@@ -98,7 +98,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#exercicios-aula-15" class="md-skip">
+        <a href="#exercicio-15-manutencao" class="md-skip">
           Pular para conteúdo
         </a>
       
@@ -2591,54 +2591,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-instalando-requests" class="md-nav__link">
+  <a href="#questoes-praticas" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Instalando Requests
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-consumindo-uma-api-publica" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. Consumindo uma API Pública
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-lista-de-usuarios" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3. Lista de Usuários
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-cotacao-de-moedas" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4. Cotação de Moedas
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-tratamento-de-erro" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5. Tratamento de Erro
+        🛠 Questões Práticas
       
     </span>
   </a>
@@ -3996,54 +3952,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-instalando-requests" class="md-nav__link">
+  <a href="#questoes-praticas" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Instalando Requests
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-consumindo-uma-api-publica" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. Consumindo uma API Pública
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-lista-de-usuarios" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3. Lista de Usuários
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-cotacao-de-moedas" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4. Cotação de Moedas
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-tratamento-de-erro" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5. Tratamento de Erro
+        🛠 Questões Práticas
       
     </span>
   </a>
@@ -4070,24 +3982,18 @@
   
 
 
-<h1 id="exercicios-aula-15">Exercícios - Aula 15</h1>
-<h2 id="1-instalando-requests">1. Instalando Requests</h2>
-<p><em>(Exercício de configuração)</em>
-Abra seu terminal e execute: <code>pip install requests</code> (ou verifique se já está instalado).
-Crie um arquivo <code>.py</code> e faça <code>import requests</code> para ver se não dá erro.</p>
-<h2 id="2-consumindo-uma-api-publica">2. Consumindo uma API Pública</h2>
-<p>Use a URL <code>https://jsonplaceholder.typicode.com/todos/1</code>.
-Faça um GET e imprima o título (<code>title</code>) da tarefa que retornou.</p>
-<h2 id="3-lista-de-usuarios">3. Lista de Usuários</h2>
-<p>Use a URL <code>https://jsonplaceholder.typicode.com/users</code>.
-Isso retorna uma LISTA de dicionários.
-Faça um loop e imprima o <code>name</code> e o <code>email</code> de cada usuário.</p>
-<h2 id="4-cotacao-de-moedas">4. Cotação de Moedas</h2>
-<p>A API <code>https://awesomeapi.com.br/last/USD-BRL</code> retorna a cotação do Dólar.
-Faça um programa que acessa essa API e diz quanto está valendo 1 Dólar em Reais (<code>bid</code> ou <code>ask</code>).</p>
-<h2 id="5-tratamento-de-erro">5. Tratamento de Erro</h2>
-<p>Tente acessar uma URL que não existe (ex: <code>https://google.com/naoexiste</code>).
-Use <code>try/except</code> para capturar o erro e imprimir "Página não encontrada" em vez de deixar o programa explodir.</p>
+<h1 id="exercicio-15-manutencao">Exercício 15 - Manutenção</h1>
+<h2 id="questoes-praticas">🛠 Questões Práticas</h2>
+<p><strong>1. O Chefe Apressado</strong>
+Seu chefe diz "Não temos tempo para refatorar, temos que entregar features novas!". Como você explicaria para ele, usando uma metáfora financeira (Dívida), que se não refatorar agora, o time vai ficar cada vez mais lento nas próximas entregas?</p>
+<p><strong>2. Código Legado</strong>
+Você recebeu um código escrito há 10 anos, sem documentação e com nomes de variáveis como <code>x</code>, <code>y</code> e <code>temp</code>. Qual o primeiro passo para começar a dar manutenção nisso sem quebrar tudo? (Dica: Testes).</p>
+<p><strong>3. Refatoração Visual</strong>
+Olhe este código:
+</p><div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">if</span> <span class="p">(</span><span class="n">idade</span> <span class="o">&gt;</span> <span class="mi">18</span> <span class="ow">and</span> <span class="n">dinheiro</span> <span class="o">&gt;</span> <span class="mi">50</span> <span class="ow">and</span> <span class="n">temCarro</span> <span class="o">==</span> <span class="kc">True</span> <span class="ow">and</span> <span class="n">naoBebeu</span> <span class="o">==</span> <span class="kc">True</span><span class="p">):</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>   <span class="n">podeDirigir</span> <span class="o">=</span> <span class="kc">True</span>
+</span></code></pre></div>
+Como você refatoraria essa condição complexa para torná-la legível? (Talvez extrair para uma função <code>estaAptoParaDirigir()</code>?).<p></p>
 
 
 
@@ -4110,7 +4016,7 @@ Use <code>try/except</code> para capturar o erro e imprimir "Página não encont
     <span class="md-icon" title="Última atualização">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="16 de fevereiro de 2026 15:57:31 UTC">16 de fevereiro de 2026 15:57:31</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="16 de fevereiro de 2026 16:17:32 UTC">16 de fevereiro de 2026 16:17:32</span>
   </span>
 
     

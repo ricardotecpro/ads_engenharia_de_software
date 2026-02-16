@@ -98,7 +98,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#exercicios-aula-12" class="md-skip">
+        <a href="#exercicio-12-seguranca" class="md-skip">
           Pular para conteúdo
         </a>
       
@@ -2507,54 +2507,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-divisao-segura" class="md-nav__link">
+  <a href="#questoes-praticas" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Divisão Segura
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-lista-segura" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. Lista Segura
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-dicionario-seguro" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3. Dicionário Seguro
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-validador-de-senha" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4. Validador de Senha
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-arquivo-fantasma" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5. Arquivo Fantasma
+        🛠 Questões Práticas
       
     </span>
   </a>
@@ -3996,54 +3952,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-divisao-segura" class="md-nav__link">
+  <a href="#questoes-praticas" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Divisão Segura
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-lista-segura" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. Lista Segura
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-dicionario-seguro" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3. Dicionário Seguro
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-validador-de-senha" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4. Validador de Senha
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-arquivo-fantasma" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5. Arquivo Fantasma
+        🛠 Questões Práticas
       
     </span>
   </a>
@@ -4070,34 +3982,14 @@
   
 
 
-<h1 id="exercicios-aula-12">Exercícios - Aula 12</h1>
-<h2 id="1-divisao-segura">1. Divisão Segura</h2>
-<p>Peça dois números ao usuário e faça a divisão.
-Trate os erros:
-- <code>ValueError</code> (se não digitar números).
-- <code>ZeroDivisionError</code> (se dividir por zero).
-Mostre o resultado ou a mensagem de erro apropriada.</p>
-<h2 id="2-lista-segura">2. Lista Segura</h2>
-<p>Crie uma lista com 3 nomes: <code>lista = ["Ana", "Bia", "Carol"]</code>.
-Peça ao usuário um índice (número inteiro).
-Imprima o nome correspondente.
-Trate os erros:
-- <code>ValueError</code> (se não digitar inteiro).
-- <code>IndexError</code> (se o índice não existir na lista).</p>
-<h2 id="3-dicionario-seguro">3. Dicionário Seguro</h2>
-<p>Crie um dicionário com alguns produtos e preços.
-Peça ao usuário o nome de um produto.
-Tente imprimir o preço.
-Se o produto não existir (<code>KeyError</code>), avise o usuário e mostre os produtos disponíveis.</p>
-<h2 id="4-validador-de-senha">4. Validador de Senha</h2>
-<p>Crie uma função <code>verificar_senha(senha)</code> que:
-- Lance uma exceção <code>ValueError</code> se a senha tiver menos de 6 caracteres.
-- Lance uma exceção <code>ValueError</code> se a senha for apenas números (<code>.isdigit()</code>).
-Use <code>try/except</code> para testar sua função com senhas válidas e inválidas.</p>
-<h2 id="5-arquivo-fantasma">5. Arquivo Fantasma</h2>
-<p>Tente abrir um arquivo chamado <code>nao_existe.txt</code> para leitura.
-Capture o erro <code>FileNotFoundError</code> e imprima "Arquivo não encontrado, criando um novo...".
-No bloco <code>except</code>, crie o arquivo vazio.</p>
+<h1 id="exercicio-12-seguranca">Exercício 12 - Segurança</h1>
+<h2 id="questoes-praticas">🛠 Questões Práticas</h2>
+<p><strong>1. Analisando URL</strong>
+Você recebe um link: <code>banco-seguro.com/login?usuario=&lt;script&gt;alert(1)&lt;/script&gt;</code>. Se você clicar e aparecer um alerta na tela, o site tem uma vulnerabilidade. Qual é o nome dela? (Dica: começa com X).</p>
+<p><strong>2. Autenticação de Dois Fatores (2FA)</strong>
+Por que usar apenas senha não é mais considerado seguro o suficiente? O que é o "segundo fator" (algo que você tem ou algo que você é)?</p>
+<p><strong>3. Princípio do Menor Privilégio</strong>
+Um estagiário precisa acessar o banco de dados para tirar um relatório. Você deve dar a ele a senha de <code>admin</code> (acesso total) ou criar um usuário com permissão apenas de <code>leitura</code> (SELECT)? Por que?</p>
 
 
 
@@ -4120,7 +4012,7 @@ No bloco <code>except</code>, crie o arquivo vazio.</p>
     <span class="md-icon" title="Última atualização">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="16 de fevereiro de 2026 15:57:31 UTC">16 de fevereiro de 2026 15:57:31</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="16 de fevereiro de 2026 16:17:32 UTC">16 de fevereiro de 2026 16:17:32</span>
   </span>
 
     

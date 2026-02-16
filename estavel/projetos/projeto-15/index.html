@@ -98,7 +98,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#projeto-15-buscador-de-github" class="md-skip">
+        <a href="#projeto-15-registro-de-melhorias" class="md-skip">
           Pular para conteúdo
         </a>
       
@@ -3712,10 +3712,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#requisitos" class="md-nav__link">
+  <a href="#descricao" class="md-nav__link">
     <span class="md-ellipsis">
       
-        📋 Requisitos
+        📝 Descrição
       
     </span>
   </a>
@@ -3723,10 +3723,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#dica" class="md-nav__link">
+  <a href="#changelog-diario-de-mudancas" class="md-nav__link">
     <span class="md-ellipsis">
       
-        💡 Dica
+        🚀 Changelog (Diário de Mudanças)
       
     </span>
   </a>
@@ -3734,21 +3734,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#passo-a-passo" class="md-nav__link">
+  <a href="#entrega" class="md-nav__link">
     <span class="md-ellipsis">
       
-        👣 Passo a Passo
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#desafio-extra" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🚀 Desafio Extra
+        📤 Entrega
       
     </span>
   </a>
@@ -4007,10 +3996,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#requisitos" class="md-nav__link">
+  <a href="#descricao" class="md-nav__link">
     <span class="md-ellipsis">
       
-        📋 Requisitos
+        📝 Descrição
       
     </span>
   </a>
@@ -4018,10 +4007,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#dica" class="md-nav__link">
+  <a href="#changelog-diario-de-mudancas" class="md-nav__link">
     <span class="md-ellipsis">
       
-        💡 Dica
+        🚀 Changelog (Diário de Mudanças)
       
     </span>
   </a>
@@ -4029,21 +4018,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#passo-a-passo" class="md-nav__link">
+  <a href="#entrega" class="md-nav__link">
     <span class="md-ellipsis">
       
-        👣 Passo a Passo
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#desafio-extra" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🚀 Desafio Extra
+        📤 Entrega
       
     </span>
   </a>
@@ -4070,36 +4048,22 @@
   
 
 
-<h1 id="projeto-15-buscador-de-github">Projeto 15 - Buscador de GitHub</h1>
+<h1 id="projeto-15-registro-de-melhorias">Projeto 15 - Registro de Melhorias</h1>
 <h2 id="objetivo">🎯 Objetivo</h2>
-<p>Criar uma ferramenta que busca informações de um usuário do GitHub usando a API pública deles.</p>
-<h2 id="requisitos">📋 Requisitos</h2>
-<ol>
-<li>Pergunte o nome do usuário do GitHub (ex: <code>torvalds</code>, <code>microsoft</code>).</li>
-<li>Acesse a API: <code>https://api.github.com/users/{usuario}</code>.</li>
-<li>Se o usuário existir (200 OK):<ul>
-<li>Mostre o Nome Completo.</li>
-<li>Mostre a Bio.</li>
-<li>Mostre o número de Seguidores.</li>
-<li>Mostre o número de Repositórios Públicos.</li>
-</ul>
-</li>
-<li>Se não existir (404), diga "Usuário não encontrado".</li>
-</ol>
-<h2 id="dica">💡 Dica</h2>
-<p>A API do GitHub é gratuita, mas tem limite de acessos por hora para anônimos. Se parar de funcionar, espere um pouco ou teste com outra API (como PokeAPI).</p>
-<h2 id="passo-a-passo">👣 Passo a Passo</h2>
-<ol>
-<li>Importe <code>requests</code>.</li>
-<li>Pegue o input do usuário.</li>
-<li>Monte a URL (f-string).</li>
-<li>Faça o GET e verifique o <code>status_code</code>.</li>
-<li>Se for 200, <code>dados = resposta.json()</code>.</li>
-<li>Acesse as chaves <code>name</code>, <code>bio</code>, <code>followers</code>, <code>public_repos</code>.</li>
-</ol>
-<h2 id="desafio-extra">🚀 Desafio Extra</h2>
-<p>Liste também os nomes dos 5 últimos repositórios do usuário.
-(Dica: Explore a chave <code>repos_url</code> que vem no primeiro JSON, ou acesse <code>https://api.github.com/users/{usuario}/repos</code>).</p>
+<p>Documentar a evolução e manutenção do código.</p>
+<h2 id="descricao">📝 Descrição</h2>
+<p>Software vivo muda. Vamos registrar nossas "faxinas".</p>
+<h2 id="changelog-diario-de-mudancas">🚀 Changelog (Diário de Mudanças)</h2>
+<p>Crie um arquivo ou seção chamada <code>CHANGELOG.md</code> no seu projeto simulado:</p>
+<div class="language-markdown highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="gu">### Versão 1.1.0 - Refatoração</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="gs">**Data**</span>: Hoje
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="k">-</span><span class="w"> </span><span class="gs">**[Refactor]**</span>: Extraída lógica de "Salvar" para função própria.
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="k">-</span><span class="w"> </span><span class="gs">**[Fix]**</span>: Corrigido bug que permitia tarefas vazias.
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="k">-</span><span class="w"> </span><span class="gs">**[Style]**</span>: Padronização das cores usando variáveis CSS.
+</span></code></pre></div>
+<h2 id="entrega">📤 Entrega</h2>
+<p>Adicione esse trecho de Changelog ao seu documento. Isso mostra profissionalismo e controle sobre a evolução do produto.</p>
 
 
 
@@ -4122,7 +4086,7 @@
     <span class="md-icon" title="Última atualização">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="16 de fevereiro de 2026 15:57:31 UTC">16 de fevereiro de 2026 15:57:31</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="16 de fevereiro de 2026 16:17:32 UTC">16 de fevereiro de 2026 16:17:32</span>
   </span>
 
     

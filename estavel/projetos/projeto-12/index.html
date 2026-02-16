@@ -98,7 +98,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#projeto-12-calculadora-robusta-com-testes" class="md-skip">
+        <a href="#projeto-12-seguranca-e-ameacas" class="md-skip">
           Pular para conteúdo
         </a>
       
@@ -3628,10 +3628,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#requisitos" class="md-nav__link">
+  <a href="#descricao" class="md-nav__link">
     <span class="md-ellipsis">
       
-        📋 Requisitos
+        📝 Descrição
       
     </span>
   </a>
@@ -3639,32 +3639,49 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#testes-automatizados" class="md-nav__link">
+  <a href="#analise-de-riscos" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧪 Testes Automatizados
+        🚀 Análise de Riscos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🚀 Análise de Riscos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-cross-site-scripting-xss" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Cross-Site Scripting (XSS)
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#passo-a-passo" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#2-privacidade-local" class="md-nav__link">
     <span class="md-ellipsis">
       
-        👣 Passo a Passo
+        2. Privacidade Local
       
     </span>
   </a>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#desafio-extra" class="md-nav__link">
+  <a href="#entrega" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🚀 Desafio Extra
+        📤 Entrega
       
     </span>
   </a>
@@ -4007,10 +4024,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#requisitos" class="md-nav__link">
+  <a href="#descricao" class="md-nav__link">
     <span class="md-ellipsis">
       
-        📋 Requisitos
+        📝 Descrição
       
     </span>
   </a>
@@ -4018,32 +4035,49 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#testes-automatizados" class="md-nav__link">
+  <a href="#analise-de-riscos" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧪 Testes Automatizados
+        🚀 Análise de Riscos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🚀 Análise de Riscos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-cross-site-scripting-xss" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Cross-Site Scripting (XSS)
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#passo-a-passo" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#2-privacidade-local" class="md-nav__link">
     <span class="md-ellipsis">
       
-        👣 Passo a Passo
+        2. Privacidade Local
       
     </span>
   </a>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#desafio-extra" class="md-nav__link">
+  <a href="#entrega" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🚀 Desafio Extra
+        📤 Entrega
       
     </span>
   </a>
@@ -4070,49 +4104,25 @@
   
 
 
-<h1 id="projeto-12-calculadora-robusta-com-testes">Projeto 12 - Calculadora Robusta com Testes</h1>
+<h1 id="projeto-12-seguranca-e-ameacas">Projeto 12 - Segurança e Ameaças</h1>
 <h2 id="objetivo">🎯 Objetivo</h2>
-<p>Criar uma calculadora que realiza as 4 operações básicas, mas que é "imune" a erros de digitação e divisão por zero.</p>
-<h2 id="requisitos">📋 Requisitos</h2>
-<p>Crie um módulo <code>calculadora.py</code>:
-1. Funções: <code>somar(a, b)</code>, <code>subtrair(a, b)</code>, <code>multiplicar(a, b)</code>, <code>dividir(a, b)</code>.
-2. A função <code>dividir</code> deve lançar (<code>raise</code>) um <code>ValueError</code> se o divisor for zero (ou deixar o Python lançar <code>ZeroDivisionError</code>, mas vamos tratar no menu).
-3. Função <code>ler_numero(mensagem)</code>: Faz um loop infinito pedindo input até o usuário digitar um número válido (<code>float</code>). Trata <code>ValueError</code> internamente.</p>
-<p>Crie um <code>main.py</code> (ou bloco main):
-- Usa <code>ler_numero</code> para obter os valores.
-- Chama as operações.
-- Trata erros de divisão por zero.</p>
-<h2 id="testes-automatizados">🧪 Testes Automatizados</h2>
-<p>Crie <code>test_calculadora.py</code>.
-Vamos testar o caminho feliz (sucesso) e o caminho triste (erro).</p>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">pytest</span> <span class="c1"># Se tiver pytest instalado, senão use unittest ou try/except manual</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">calculadora</span><span class="w"> </span><span class="kn">import</span> <span class="n">dividir</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="c1"># Vamos usar try/except manual para não depender de bibliotecas externas por enquanto</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="k">def</span><span class="w"> </span><span class="nf">testar_divisao</span><span class="p">():</span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="c1"># Teste Sucesso</span>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    <span class="k">assert</span> <span class="n">dividir</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="o">==</span> <span class="mf">5.0</span>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">"Divisão correta: PASSOU"</span><span class="p">)</span>
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>    <span class="c1"># Teste Erro (Divisão por Zero)</span>
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>    <span class="k">try</span><span class="p">:</span>
-</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>        <span class="n">dividir</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
-</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">"Divisão por zero: FALHOU (Deveria ter dado erro)"</span><span class="p">)</span>
-</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>    <span class="k">except</span> <span class="ne">ZeroDivisionError</span><span class="p">:</span> <span class="c1"># ou ValueError, dependendo da sua implementação</span>
-</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">"Divisão por zero: PASSOU (Erro capturado corretamente)"</span><span class="p">)</span>
-</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>
-</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">"__main__"</span><span class="p">:</span>
-</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>    <span class="n">testar_divisao</span><span class="p">()</span>
-</span></code></pre></div>
-<h2 id="passo-a-passo">👣 Passo a Passo</h2>
-<ol>
-<li>Crie <code>calculadora.py</code> com as funções matemáticas.</li>
-<li>Implemente <code>ler_numero</code> usando <code>try/except ValueError</code> dentro de um <code>while True</code>.</li>
-<li>No menu, envolva a chamada da divisão em um <code>try/except</code> para exibir mensagem bonita em vez de erro vermelho.</li>
-<li>Crie o script de teste e valide se o erro é lançado quando deve.</li>
-</ol>
-<h2 id="desafio-extra">🚀 Desafio Extra</h2>
-<p>Adicione uma função de Log que salva em arquivo <code>erros.log</code> toda vez que uma exceção acontecer, com data e hora.</p>
+<p>Identificar vulnerabilidades potenciais no projeto (Threat Modeling).</p>
+<h2 id="descricao">📝 Descrição</h2>
+<p>Nenhum sistema é 100% seguro, mas devemos conhecer os riscos. Vamos analisar o To-Do App.</p>
+<h2 id="analise-de-riscos">🚀 Análise de Riscos</h2>
+<h3 id="1-cross-site-scripting-xss">1. Cross-Site Scripting (XSS)</h3>
+<ul>
+<li><strong>Ameaça</strong>: Um usuário malicioso pode tentar salvar uma tarefa com código JavaScript no título. Ex: <code>&lt;script&gt;roubarCookies()&lt;/script&gt;</code>.</li>
+<li><strong>Consequência</strong>: Quando a lista for carregada, o navegador pode executar esse script.</li>
+<li><strong>Solução</strong>: Nunca confiar no input do usuário. Ao exibir o texto na tela, usar funções que convertem caracteres especiais (ex: <code>&lt;</code> vira <code>&amp;lt;</code>). <code>innerText</code> é mais seguro que <code>innerHTML</code>.</li>
+</ul>
+<h3 id="2-privacidade-local">2. Privacidade Local</h3>
+<ul>
+<li><strong>Ameaça</strong>: Como usamos LocalStorage, qualquer pessoa que usar o mesmo computador/navegador pode ver as tarefas.</li>
+<li><strong>Solução</strong>: Aviso ao usuário: "Não use em computadores públicos". (Para um sistema real, precisaríamos de Login no Backend).</li>
+</ul>
+<h2 id="entrega">📤 Entrega</h2>
+<p>Adicione esses dois pontos ao seu documento. Desenhe um "Alerta de Segurança" simbólico.</p>
 
 
 
@@ -4135,7 +4145,7 @@ Vamos testar o caminho feliz (sucesso) e o caminho triste (erro).</p>
     <span class="md-icon" title="Última atualização">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="16 de fevereiro de 2026 15:57:31 UTC">16 de fevereiro de 2026 15:57:31</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="16 de fevereiro de 2026 16:17:32 UTC">16 de fevereiro de 2026 16:17:32</span>
   </span>
 
     
