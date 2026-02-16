@@ -66,8 +66,8 @@ jobs:
           kill $PID
           
           # Clean local gh-pages to ensure fresh fetch/deploy
-          # Clean local gh-pages to ensure fresh fetch/deploy
-          git branch -D gh-pages || echo "gh-pages not present locally"
-          git fetch origin gh-pages --depth=1 || echo "gh-pages branch not found on remote"
+          # (Removed manual git branch operations as fetch-depth: 0 handles history)
+          # git branch -D gh-pages || echo "gh-pages not present locally"
+          # git fetch origin gh-pages --depth=1 || echo "gh-pages branch not found on remote"
           poetry run mike deploy --push --update-aliases estavel latest
           poetry run mike set-default --push estavel

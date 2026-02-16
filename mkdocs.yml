@@ -96,7 +96,7 @@ plugins:
         datetime_format: '%Y-%m-%d %H:%M:%S'
   - print-site:
       add_to_navigation: false
-      print_page_rel_path: 'print_page.md'
+      # print_page_rel_path: 'print_page.md' # Deprecated/Invalid
       print_page_title: 'Versão para Impressão'
       add_print_site_banner: false
       enumerate_headings: false
