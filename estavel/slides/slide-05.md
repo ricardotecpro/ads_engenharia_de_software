@@ -1,9 +1,31 @@
-# Slide 05
+## Modelagem de Sistemas e UML.
 
-- **Slide 1**: Modelagem de Sistemas e UML.
-- **Slide 2**: A importância de desenhar antes de codificar.
-- **Slide 3**: O que é UML? (Padrão visual).
-- **Slide 4**: Diagrama de Caso de Uso (Atores e Funcionalidades).
-- **Slide 5**: Exemplo visual de Caso de Uso.
-- **Slide 6**: Diagrama de Classe (Retângulos, Atributos, Métodos).
-- **Slide 7**: Exemplo visual de Classe.
+
+---
+
+## A importância de desenhar antes de codificar.
+
+
+---
+
+## O que é UML? (Padrão visual).
+
+
+---
+
+## Diagrama de Caso de Uso (Atores e Funcionalidades).
+
+
+---
+
+## Exemplo visual de Caso de Uso.
+
+
+---
+
+## Diagrama de Classe (Retângulos, Atributos, Métodos).
+
+
+---
+
+## Exemplo visual de Classe.

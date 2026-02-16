@@ -1,8 +1,26 @@
-# Slide 04
+## Requisitos de Software
 
-- **Slide 1**: Requisitos de Software
-- **Slide 2**: Funcionais vs. Não-Funcionais (O que faz vs. Como é).
-- **Slide 3**: Exemplos de RF e RNF.
-- **Slide 4**: User Stories (Como um... Quero... Para...).
-- **Slide 5**: Critérios de Aceite (O "Done").
-- **Slide 6**: A importância de requisitos claros (Evitar retrabalho).
+
+---
+
+## Funcionais vs. Não-Funcionais (O que faz vs. Como é).
+
+
+---
+
+## Exemplos de RF e RNF.
+
+
+---
+
+## User Stories (Como um... Quero... Para...).
+
+
+---
+
+## Critérios de Aceite (O "Done").
+
+
+---
+
+## A importância de requisitos claros (Evitar retrabalho).
