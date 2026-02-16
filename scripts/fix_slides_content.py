@@ -25,8 +25,9 @@ def fix_slide_content(md_path: pathlib.Path):
         if not line:
             continue
             
-        # Match "- **Slide X: Title**"
-        match = re.match(r'-\s*\*\*(Slide \d+: .+?)\*\*', line)
+        # Match "- **Slide X: Title**" OR "- **Slide X**: Title"
+        # Adjusted regex to handle colon inside or outside the bold
+        match = re.match(r'-\s*\*\*(Slide \d+)(?::\s*|)(.*?)\*\*:?\s*(.*)', line)
         if match:
             # If we have a previous slide, add it to new_lines with separator
             if current_slide:
@@ -34,9 +35,34 @@ def fix_slide_content(md_path: pathlib.Path):
                 new_lines.append('\n---\n') # Separator
                 current_slide = []
             
-            # Start new slide with the title as H2
-            title = match.group(1).split(':', 1)[1].strip()
-            current_slide.append(f"## {title}\n")
+            # Extract parts
+            # Group 1: Slide X
+            # Group 2: Title part inside ** (if any)
+            # Group 3: Title part outside ** (if any)
+            
+            part2 = match.group(2).strip()
+            part3 = match.group(3).strip()
+            
+            # Combine title parts
+            # Logic: if part2 has content, use it. If part3 has content, use it.
+            # Handle the colon if it was inside part2
+            
+            full_title = ""
+            if part2:
+                full_title += part2
+            if part3:
+                # If there was a colon in the match, it might be consumed or not
+                # Let's simplify:
+                # Case 1: "**Slide 1: Title**" -> group 1="Slide 1", group 2=": Title", group 3=""
+                # Case 2: "**Slide 1**: Title" -> group 1="Slide 1", group 2="", group 3="Title"
+                full_title += " " + part3
+
+            # Clean up leading colon/space
+            full_title = full_title.strip()
+            if full_title.startswith(':'):
+                full_title = full_title[1:].strip()
+                
+            current_slide.append(f"## {full_title}\n")
         
         # Match bullet points "- Content"
         elif line.startswith('- '):

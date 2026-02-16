@@ -1,6 +1,26 @@
-- **Slide 1**: Manutenção de Software
-- **Slide 2**: A Lei da Evolução (O software nunca está pronto).
-- **Slide 3**: Os tipos de Manutenção (Corretiva, Evolutiva, etc).
-- **Slide 4**: O que é Refatoração? (Limpar a cozinha).
-- **Slide 5**: Dívida Técnica (O cartão de crédito do código).
-- **Slide 6**: O Custo de não manter (Entropia).
+## Manutenção de Software
+
+
+---
+
+## A Lei da Evolução (O software nunca está pronto).
+
+
+---
+
+## Os tipos de Manutenção (Corretiva, Evolutiva, etc).
+
+
+---
+
+## O que é Refatoração? (Limpar a cozinha).
+
+
+---
+
+## Dívida Técnica (O cartão de crédito do código).
+
+
+---
+
+## O Custo de não manter (Entropia).

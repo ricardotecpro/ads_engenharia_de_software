@@ -1,6 +1,26 @@
-- **Slide 1**: Gerenciamento de Projetos
-- **Slide 2**: O Triângulo de Ferro (Não dá para ter tudo).
-- **Slide 3**: MVP (A imagem do Skate -> Bicicleta -> Carro).
-- **Slide 4**: Estimativas (Por que horas falham?).
-- **Slide 5**: Story Points e Fibonacci.
-- **Slide 6**: MoSCoW (Priorizando o Backlog).
+## Gerenciamento de Projetos
+
+
+---
+
+## O Triângulo de Ferro (Não dá para ter tudo).
+
+
+---
+
+## MVP (A imagem do Skate -> Bicicleta -> Carro).
+
+
+---
+
+## Estimativas (Por que horas falham?).
+
+
+---
+
+## Story Points e Fibonacci.
+
+
+---
+
+## MoSCoW (Priorizando o Backlog).

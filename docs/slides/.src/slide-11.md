@@ -1,6 +1,26 @@
-- **Slide 1**: DevOps e CI/CD
-- **Slide 2**: O Muro da Confusão (Dev vs Ops).
-- **Slide 3**: Cultura DevOps (Colaboração e Automação).
-- **Slide 4**: O que é CI (Integração Contínua - Testes).
-- **Slide 5**: O que é CD (Entrega Contínua - Deploy).
-- **Slide 6**: Exemplo visual de Pipeline (Build -> Test -> Deploy).
+## DevOps e CI/CD
+
+
+---
+
+## O Muro da Confusão (Dev vs Ops).
+
+
+---
+
+## Cultura DevOps (Colaboração e Automação).
+
+
+---
+
+## O que é CI (Integração Contínua - Testes).
+
+
+---
+
+## O que é CD (Entrega Contínua - Deploy).
+
+
+---
+
+## Exemplo visual de Pipeline (Build -> Test -> Deploy).

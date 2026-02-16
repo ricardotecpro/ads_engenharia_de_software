@@ -1,6 +1,26 @@
-- **Slide 1**: Testes de Software
-- **Slide 2**: Manual vs. Automatizado (Tartaruga vs. Foguete).
-- **Slide 3**: Pirâmide de Testes (Unitário > Integração > E2E).
-- **Slide 4**: Teste Unitário (A lupa no código).
-- **Slide 5**: Teste de Integração (O quebra-cabeça).
-- **Slide 6**: TDD (Red -> Green -> Refactor).
+## Testes de Software
+
+
+---
+
+## Manual vs. Automatizado (Tartaruga vs. Foguete).
+
+
+---
+
+## Pirâmide de Testes (Unitário > Integração > E2E).
+
+
+---
+
+## Teste Unitário (A lupa no código).
+
+
+---
+
+## Teste de Integração (O quebra-cabeça).
+
+
+---
+
+## TDD (Red -> Green -> Refactor).
