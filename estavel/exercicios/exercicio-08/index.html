@@ -98,7 +98,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#exercicio-08-design-de-software" class="md-skip">
+        <a href="#exercicio-08" class="md-skip">
           Pular para conteúdo
         </a>
       
@@ -2344,24 +2344,6 @@
         
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Exercício 08 - Dicionários
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -2378,36 +2360,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Índice">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Índice
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#questoes-praticas" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🛠 Questões Práticas
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -3945,25 +3897,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Índice
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#questoes-praticas" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🛠 Questões Práticas
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -3982,19 +3915,12 @@
   
 
 
-<h1 id="exercicio-08-design-de-software">Exercício 08 - Design de Software</h1>
-<h2 id="questoes-praticas">🛠 Questões Práticas</h2>
-<p><strong>1. Refatorando</strong>
-Analise o código abaixo (JavaScript simples) e diga qual princípio ele viola (DRY ou KISS):
-</p><div class="language-javascript highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">calcularAreaQuadrado</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="mf">5</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">5</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kd">function</span><span class="w"> </span><span class="nx">calcularAreaSala</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="mf">5</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">5</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="kd">function</span><span class="w"> </span><span class="nx">calcularAreaTapete</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="mf">5</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">5</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
-</span></code></pre></div>
-Como você corrigiria?<p></p>
-<p><strong>2. Responsabilidade Única</strong>
-Você tem uma classe <code>Usuario</code>. Ela deveria ter um método <code>enviarEmailPromocional()</code>? Por que? (Pensa na coesão).</p>
-<p><strong>3. Acoplamento</strong>
-Imagine que a classe <code>Carro</code> chama diretamente a classe <code>PneuMichelin</code>. Se quisermos trocar o pneu para <code>Pirelli</code>, teremos que mudar a classe <code>Carro</code>. Isso é alto acoplamento. Como resolver? (Dica: criar uma interface genérica <code>Pneu</code>).</p>
+<h1 id="exercicio-08">Exercício 08</h1>
+<ol>
+<li><strong>Refatoração (Teórica)</strong>: Você encontrou uma função de 500 linhas chamada <code>GerenciarUsuario</code> que cadastra, envia e-mail de boas-vindas, valida CPF e gera relatório. Usando o princípio da <strong>Coesão</strong>, como você dividiria essa função?</li>
+<li><strong>Identificando DRY</strong>: Se você escreveu a lógica de calcular desconto de 10% em 5 lugares diferentes do código, o que acontece se o desconto mudar para 15%? Como o princípio DRY resolveria isso?</li>
+<li><strong>Monstro de Espaguete</strong>: Pesquise o termo "Spaghetti Code" e escreva uma frase sobre como evitá-lo.</li>
+</ol>
 
 
 
@@ -4017,7 +3943,7 @@ Imagine que a classe <code>Carro</code> chama diretamente a classe <code>PneuMic
     <span class="md-icon" title="Última atualização">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="16 de fevereiro de 2026 16:17:32 UTC">16 de fevereiro de 2026 16:17:32</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="16 de fevereiro de 2026 19:28:23 UTC">16 de fevereiro de 2026 19:28:23</span>
   </span>
 
     

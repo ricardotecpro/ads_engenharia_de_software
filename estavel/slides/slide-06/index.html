@@ -21,7 +21,7 @@
     
     
       
-        <title>Aula 06 - Python Backend - Curso Completo</title>
+        <title>Slide 06 - Python Backend - Curso Completo</title>
       
     
     
@@ -94,7 +94,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#aula-06" class="md-skip">
+        <a href="#slide-06" class="md-skip">
           Pular para conteúdo
         </a>
       
@@ -131,7 +131,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Aula 06
+              Slide 06
             
           </span>
         </div>
@@ -3878,113 +3878,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Índice
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#listas" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Listas
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#objetivos" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🎯 Objetivos
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#o-que-e-uma-lista" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        📝 O que é uma Lista?
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#indices-posicao" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        📍 Índices (Posição)
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#slicing-fatiar" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        ✂️ Slicing (Fatiar)
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#adicionar-itens" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        ➕ Adicionar Itens
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#remover-itens" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🗑️ Remover Itens
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#funcoes-uteis" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        📏 Funções Úteis
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#resumo" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🏁 Resumo
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -4003,98 +3896,15 @@
   
 
 
-<h1 id="aula-06">Aula 06</h1>
-<h2 id="listas">Listas</h2>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" data-desc-position="bottom"><img alt="bg right:40% 80%" src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"></a></p>
-<hr>
-<h2 id="objetivos">🎯 Objetivos</h2>
+<h1 id="slide-06">Slide 06</h1>
 <ul>
-<li>Criar e manipular Listas</li>
-<li>Indexação (<code>[0]</code>) e Fatiamento (<code>[:]</code>)</li>
-<li>Métodos: <code>append</code>, <code>insert</code>, <code>pop</code>, <code>remove</code></li>
-<li>Funções: <code>len</code>, <code>max</code>, <code>min</code></li>
+<li><strong>Slide 1</strong>: Arquitetura de Software</li>
+<li><strong>Slide 2</strong>: O conceito (Estrutura fundamental).</li>
+<li><strong>Slide 3</strong>: Monólito (Blocão único).</li>
+<li><strong>Slide 4</strong>: Microserviços (Muitas partes pequenas).</li>
+<li><strong>Slide 5</strong>: Cliente-Servidor (A base da Web).</li>
+<li><strong>Slide 6</strong>: Camadas (UI, Lógica, Dados).</li>
 </ul>
-<hr>
-<h2 id="o-que-e-uma-lista">📝 O que é uma Lista?</h2>
-<p>Uma coleção ordenada de itens.
-Pode guardar qualquer coisa (números, strings, booleanos, outras listas).</p>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">vazia</span> <span class="o">=</span> <span class="p">[]</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">frutas</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"Maçã"</span><span class="p">,</span> <span class="s2">"Uva"</span><span class="p">,</span> <span class="s2">"Banana"</span><span class="p">]</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="n">mista</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="s2">"Oi"</span><span class="p">,</span> <span class="kc">True</span><span class="p">]</span>
-</span></code></pre></div>
-<hr>
-<h2 id="indices-posicao">📍 Índices (Posição)</h2>
-<p>Começa sempre do <strong>ZERO</strong>!</p>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1">#          0        1        2</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="n">times</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"Fla"</span><span class="p">,</span> <span class="s2">"Vasco"</span><span class="p">,</span> <span class="s2">"Botafogo"</span><span class="p">]</span>
-</span></code></pre></div>
-<ul>
-<li><code>times[0]</code> ➡ "Fla"</li>
-<li><code>times[-1]</code> ➡ "Botafogo" (Último)</li>
-</ul>
-<blockquote>
-<p><strong>Erro Comum:</strong> Tentar acessar um índice que não existe (<code>IndexError</code>).</p>
-</blockquote>
-<hr>
-<h2 id="slicing-fatiar">✂️ Slicing (Fatiar)</h2>
-<p>Pegar pedaços da lista.
-<code>[inicio : fim : passo]</code> (O fim não entra!)</p>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">letras</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"A"</span><span class="p">,</span> <span class="s2">"B"</span><span class="p">,</span> <span class="s2">"C"</span><span class="p">,</span> <span class="s2">"D"</span><span class="p">,</span> <span class="s2">"E"</span><span class="p">]</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">letras</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">])</span> <span class="c1"># ['A', 'B']</span>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">letras</span><span class="p">[</span><span class="mi">2</span><span class="p">:])</span>  <span class="c1"># ['C', 'D', 'E']</span>
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="nb">print</span><span class="p">(</span><span class="n">letras</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span> <span class="c1"># Inverte a lista! ['E', 'D'...]</span>
-</span></code></pre></div>
-<hr>
-<h2 id="adicionar-itens">➕ Adicionar Itens</h2>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">lista</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"A"</span><span class="p">]</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="c1"># No final (mais comum)</span>
-</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="n">lista</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">"B"</span><span class="p">)</span> 
-</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="c1"># lista agora é ["A", "B"]</span>
-</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>
-</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="c1"># Em posição específica</span>
-</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="n">lista</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="s2">"C"</span><span class="p">)</span> 
-</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="c1"># lista agora é ["C", "A", "B"]</span>
-</span></code></pre></div>
-<hr>
-<h2 id="remover-itens">🗑️ Remover Itens</h2>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">numeros</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">40</span><span class="p">]</span>
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
-</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="c1"># Pelo valor</span>
-</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="n">numeros</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span> <span class="c1"># [10, 30, 40]</span>
-</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>
-</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="c1"># Pelo índice (e retorna o valor)</span>
-</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="n">removido</span> <span class="o">=</span> <span class="n">numeros</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span> 
-</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="c1"># removido = 10</span>
-</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="c1"># numeros = [30, 40]</span>
-</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>
-</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="c1"># Último item</span>
-</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="n">numeros</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span> <span class="c1"># Remove 40</span>
-</span></code></pre></div>
-<hr>
-<h2 id="funcoes-uteis">📏 Funções Úteis</h2>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">nums</span> <span class="o">=</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
-</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
-</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="nb">len</span><span class="p">(</span><span class="n">nums</span><span class="p">)</span> <span class="c1"># 4 (Tamanho)</span>
-</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="nb">sum</span><span class="p">(</span><span class="n">nums</span><span class="p">)</span> <span class="c1"># 17 (Soma)</span>
-</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="nb">max</span><span class="p">(</span><span class="n">nums</span><span class="p">)</span> <span class="c1"># 8 (Maior)</span>
-</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="nb">min</span><span class="p">(</span><span class="n">nums</span><span class="p">)</span> <span class="c1"># 1 (Menor)</span>
-</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>
-</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="nb">sorted</span><span class="p">(</span><span class="n">nums</span><span class="p">)</span> <span class="c1"># [1, 3, 5, 8] (Ordena)</span>
-</span></code></pre></div>
-<hr>
-<h2 id="resumo">🏁 Resumo</h2>
-<ol>
-<li>Listas usam <code>[]</code>.</li>
-<li>São mutáveis (podemos mudar itens).</li>
-<li>Índices começam em 0.</li>
-<li><code>append</code> coloca no fim.</li>
-<li>Slicing recorta a lista.</li>
-</ol>
-<hr>
-<h1 id="pratica">Prática! 🚀</h1>
-<p>Vamos para os exercícios.</p>
 
 
 
@@ -4117,7 +3927,7 @@ Pode guardar qualquer coisa (números, strings, booleanos, outras listas).</p>
     <span class="md-icon" title="Última atualização">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="16 de fevereiro de 2026 16:17:32 UTC">16 de fevereiro de 2026 16:17:32</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="16 de fevereiro de 2026 19:28:23 UTC">16 de fevereiro de 2026 19:28:23</span>
   </span>
 
     
@@ -4142,7 +3952,7 @@ Pode guardar qualquer coisa (números, strings, booleanos, outras listas).</p>
     </span>
     <nav>
       
-        <a href="mailto:not.committed.yet">Not Committed Yet</a>
+        <a href="mailto:ricardotecpro@hotmail.com">Ricardo Pires</a>
     </nav>
   </span>
 

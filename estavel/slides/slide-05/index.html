@@ -21,7 +21,7 @@
     
     
       
-        <title>Aula 05 - Python Backend - Curso Completo</title>
+        <title>Slide 05 - Python Backend - Curso Completo</title>
       
     
     
@@ -94,7 +94,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#aula-05" class="md-skip">
+        <a href="#slide-05" class="md-skip">
           Pular para conteúdo
         </a>
       
@@ -131,7 +131,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Aula 05
+              Slide 05
             
           </span>
         </div>
@@ -3878,119 +3878,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Índice
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#estruturas-de-repeticao-loops" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Estruturas de Repetição (Loops)
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#objetivos" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🎯 Objetivos
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#por-que-usar-loops" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🔄 Por que usar Loops?
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#o-loop-for" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🔢 O Loop for
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🔢 O Loop for">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#a-funcao-range" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        A função range()
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#o-loop-while" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        ⏳ O Loop while
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#break-e-continue" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🛑 Break e Continue
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#for-vs-while" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🥊 for vs while
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#resumo" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🏁 Resumo
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -4009,88 +3896,16 @@
   
 
 
-<h1 id="aula-05">Aula 05</h1>
-<h2 id="estruturas-de-repeticao-loops">Estruturas de Repetição (Loops)</h2>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" data-desc-position="bottom"><img alt="bg right:40% 80%" src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"></a></p>
-<hr>
-<h2 id="objetivos">🎯 Objetivos</h2>
+<h1 id="slide-05">Slide 05</h1>
 <ul>
-<li>Automatizar tarefas repetitivas</li>
-<li>Loop <code>for</code> (com <code>range</code>)</li>
-<li>Loop <code>while</code></li>
-<li>Controles: <code>break</code> e <code>continue</code></li>
+<li><strong>Slide 1</strong>: Modelagem de Sistemas e UML.</li>
+<li><strong>Slide 2</strong>: A importância de desenhar antes de codificar.</li>
+<li><strong>Slide 3</strong>: O que é UML? (Padrão visual).</li>
+<li><strong>Slide 4</strong>: Diagrama de Caso de Uso (Atores e Funcionalidades).</li>
+<li><strong>Slide 5</strong>: Exemplo visual de Caso de Uso.</li>
+<li><strong>Slide 6</strong>: Diagrama de Classe (Retângulos, Atributos, Métodos).</li>
+<li><strong>Slide 7</strong>: Exemplo visual de Classe.</li>
 </ul>
-<hr>
-<h2 id="por-que-usar-loops">🔄 Por que usar Loops?</h2>
-<p>D.R.Y. (Don't Repeat Yourself) - Não se repita!</p>
-<p><strong>Sem Loop:</strong>
-</p><div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">print</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nb">print</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="nb">print</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="o">...</span>
-</span></code></pre></div><p></p>
-<p><strong>Com Loop:</strong>
-</p><div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">101</span><span class="p">):</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
-</span></code></pre></div><p></p>
-<hr>
-<h2 id="o-loop-for">🔢 O Loop <code>for</code></h2>
-<p>Para quando sabemos o limite.</p>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">sequencia</span><span class="p">:</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>    <span class="c1"># faça algo</span>
-</span></code></pre></div>
-<h3 id="a-funcao-range">A função <code>range()</code></h3>
-<p>Gera números.
-- <code>range(5)</code> → 0, 1, 2, 3, 4
-- <code>range(1, 6)</code> → 1, 2, 3, 4, 5
-- <code>range(0, 10, 2)</code> → 0, 2, 4, 6, 8 (passo)</p>
-<hr>
-<h2 id="o-loop-while">⏳ O Loop <code>while</code></h2>
-<p>Para quando não sabemos quando vai parar (depende de condição).</p>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">contador</span> <span class="o">=</span> <span class="mi">0</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="k">while</span> <span class="n">contador</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="p">:</span>
-</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">contador</span><span class="p">)</span>
-</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>    <span class="n">contador</span> <span class="o">+=</span> <span class="mi">1</span> <span class="c1"># Importante incrementar!</span>
-</span></code></pre></div>
-<blockquote>
-<p><strong>Cuidado:</strong> Se esquecer de atualizar a variável de controle, cria um <strong>Loop Infinito</strong> (trava o programa).</p>
-</blockquote>
-<hr>
-<h2 id="break-e-continue">🛑 Break e Continue</h2>
-<p>Comandos de controle.</p>
-<p><strong><code>break</code></strong>: "Sair agora!"
-</p><div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>    <span class="n">msg</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Digite 'sair': "</span><span class="p">)</span>
-</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>    <span class="k">if</span> <span class="n">msg</span> <span class="o">==</span> <span class="s2">"sair"</span><span class="p">:</span>
-</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>        <span class="k">break</span>
-</span></code></pre></div><p></p>
-<p><strong><code>continue</code></strong>: "Pula essa, vai pra próxima!"
-</p><div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
-</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>    <span class="k">if</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>        <span class="k">continue</span> <span class="c1"># Ignora números pares</span>
-</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="c1"># Só imprime ímpares</span>
-</span></code></pre></div><p></p>
-<hr>
-<h2 id="for-vs-while">🥊 for vs while</h2>
-<p>Use <code>for</code> para coleções e contagens fixas.
-- "Para cada aluno na turma..."
-- "Repita 10 vezes..."</p>
-<p>Use <code>while</code> para eventos incertos.
-- "Enquanto o jogador não morrer..."
-- "Enquanto não digitar a senha correta..."</p>
-<hr>
-<h2 id="resumo">🏁 Resumo</h2>
-<ol>
-<li>Loops economizam código.</li>
-<li><code>range(start, stop)</code> gera sequências numéricas.</li>
-<li><code>for</code> itera sobre sequências.</li>
-<li><code>while</code> repete enquanto for Verdade.</li>
-<li><code>break</code> e <code>continue</code> dão superpoderes aos loops.</li>
-</ol>
-<hr>
-<h1 id="lets-loop">Let's Loop! 🚀</h1>
-<p>Prática com repetições.</p>
 
 
 
@@ -4113,7 +3928,7 @@
     <span class="md-icon" title="Última atualização">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="16 de fevereiro de 2026 16:17:32 UTC">16 de fevereiro de 2026 16:17:32</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="16 de fevereiro de 2026 19:28:23 UTC">16 de fevereiro de 2026 19:28:23</span>
   </span>
 
     
@@ -4138,7 +3953,7 @@
     </span>
     <nav>
       
-        <a href="mailto:not.committed.yet">Not Committed Yet</a>
+        <a href="mailto:ricardotecpro@hotmail.com">Ricardo Pires</a>
     </nav>
   </span>
 
