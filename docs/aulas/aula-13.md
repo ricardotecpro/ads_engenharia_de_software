@@ -1,0 +1,152 @@
+# Aula 13 - Orientação a Objetos (Introdução)
+
+## 🎯 Objetivos da Aula
+
+- [ ] Entender o paradigma de **Orientação a Objetos (POO)**
+- [ ] Diferenciar **Classe** de **Objeto**
+- [ ] Criar classes com `class`
+- [ ] Definir atributos (`__init__` e `self`)
+- [ ] Criar métodos (comportamentos)
+
+---
+
+## 📚 Conteúdo
+
+### 1. O que é POO?
+
+Até agora, programamos de forma **Procedural** (uma lista de instruções passo a passo) ou **Funcional** (funções isoladas).
+A Programação Orientada a Objetos tenta modelar o mundo real. No mundo real, temos **Objetos** (Carro, Pessoa, Cachorro) que têm **Características** (Cor, Nome) e **Ações** (Andar, Falar).
+
+### 2. Classe vs Objeto
+
+Essa é a distinção mais importante.
+
+- **Classe:** É o **molde**, a planta, o contrato. Ela define como o objeto deve ser. (Ex: "Planta da Casa").
+- **Objeto:** É a **instância** concreta criada a partir da classe. (Ex: "A Casa construída na rua X").
+
+> Posso ter 1000 casas (objetos) feitas a partir de uma única planta (classe).
+
+
+**Hierarquia de Classes:**
+```
+        Casa (Classe Base)
+        ├── cor
+        ├── numero
+        └── abrir_porta()
+            │
+            ├── Casa_Rua_X (herda de Casa)
+            └── Casa_Rua_Y (herda de Casa)
+```
+
+### 3. Criando uma Classe
+
+```python
+# Convenção: Nomes de classes usam PascalCase (PrimeiraLetraMaiuscula)
+class Cachorro:
+    pass # Classe vazia por enquanto
+```
+
+### 4. Atributos e o Método `__init__`
+
+Atributos são as variáveis internas do objeto (dados).
+O método especial `__init__` (construtor) roda automaticamente quando criamos um novo objeto. Ele serve para inicializar os atributos.
+
+**O misterioso `self`:**
+O `self` representa "este objeto aqui". É como o objeto refere a si mesmo.
+
+```python
+class Cachorro:
+    def __init__(self, nome, raca):
+        self.nome = nome  # Atributo 'nome' recebe o valor do parâmetro 'nome'
+        self.raca = raca
+
+# Instanciando objetos
+dog1 = Cachorro("Rex", "Vira-lata")
+dog2 = Cachorro("Luna", "Poodle")
+
+print(dog1.nome) # Rex
+print(dog2.nome) # Luna
+```
+
+### 5. Métodos (Comportamentos)
+
+Métodos são funções dentro de uma classe. Eles definem o que o objeto **faz**.
+
+```python
+class Cachorro:
+    def __init__(self, nome):
+        self.nome = nome
+
+    def latir(self):
+        print(f"{self.nome} diz: Au au!")
+
+    def comer(self, comida):
+        print(f"{self.nome} está comendo {comida}.")
+
+dog1 = Cachorro("Rex")
+dog1.latir()          # Rex diz: Au au!
+dog1.comer("Ração")   # Rex está comendo Ração.
+```
+
+---
+
+## 💻 Em Prática
+
+Vamos modelar uma Conta Bancária simples.
+
+```python
+# banco.py
+
+class ContaBancaria:
+    def __init__(self, titular, saldo_inicial=0):
+        self.titular = titular
+        self.saldo = saldo_inicial
+
+    def depositar(self, valor):
+        self.saldo += valor
+        print(f"Depósito de R$ {valor}. Novo saldo: R$ {self.saldo}")
+
+    def sacar(self, valor):
+        if valor > self.saldo:
+            print("Saldo insuficiente!")
+        else:
+            self.saldo -= valor
+            print(f"Saque de R$ {valor}. Novo saldo: R$ {self.saldo}")
+
+# Usando
+minha_conta = ContaBancaria("Ricardo", 100)
+minha_conta.depositar(50) # Saldo: 150
+minha_conta.sacar(200)    # Erro
+minha_conta.sacar(20)     # Saldo: 130
+```
+
+---
+
+## 📝 Resumo
+
+- **Classe:** O molde (`class Carro`).
+- **Objeto:** A peça real (`meu_carro = Carro()`).
+- **Atributo:** Característica (`self.cor`).
+- **Método:** Ação (`def acelerar(self)`).
+- **`self`**: Referência ao próprio objeto.
+- **`__init__`**: Método construtor (inicializa os dados).
+
+---
+
+## 🎯 Próximos Passos
+
+<div class="grid cards" markdown>
+
+-   :material-presentation: **Acessar Slides**
+    -   [Ver Slides da Aula](../slides/slide-13.html)
+
+-   :material-school: **Quiz**
+    -   [Responder Quiz](../quizzes/quiz-13.md)
+
+-   :material-dumbbell: **Exercícios**
+    -   [Lista de Exercícios](../exercicios/exercicio-13.md)
+
+-   :material-rocket: **Projeto**
+    -   [Mini Projeto](../projetos/projeto-13.md)
+
+</div>
