@@ -1,18 +1,18 @@
-# Bem-vindo ao Curso de Python Backend
+# Bem-vindo ao Curso de Engenharia de Software para Iniciantes
 
-Aprenda Python do zero ao profissional com um curso completo, prático e estruturado!
+Aprenda os fundamentos da Engenharia de Software, do zero ao profissional, com uma abordagem prática e estruturada!
 
 ## 🎯 Sobre o Curso
 
-Este curso foi desenvolvido para te levar do básico ao avançado em Python, com foco em desenvolvimento backend. Você aprenderá através de aulas práticas, exercícios, projetos e quizzes interativos.
+Este curso foi desenvolvido para te introduzir ao mundo da Engenharia de Software. Você aprenderá conceitos essenciais, metodologias ágeis, modelagem, arquitetura e muito mais.
 
 **O que você vai aprender:**
-- Fundamentos da linguagem Python
-- Estruturas de dados e controle de fluxo
-- Programação Orientada a Objetos
-- Manipulação de arquivos e exceções
-- APIs e requisições HTTP
-- Testes e boas práticas
+- Ciclo de Vida de Desenvolvimento de Software (SDLC)
+- Metodologias Ágeis (Scrum, Kanban)
+- Requisitos e User Stories
+- Modelagem UML e Arquitetura
+- Versionamento com Git e GitHub
+- Testes, DevOps e Qualidade de Software
 
 ## 🚀 Comece Agora
 
@@ -70,14 +70,12 @@ Este curso foi desenvolvido para te levar do básico ao avançado em Python, com
 
 ## 📚 Estrutura do Curso
 
-O curso está organizado em **6 módulos progressivos**:
-
-1. **Módulo 1 – Fundamentos** (Aulas 01-04)
-2. **Módulo 2 – Estruturas de Controle** (Aulas 05-08)
-3. **Módulo 3 – Funções e Modularização** (Aulas 09-10)
-4. **Módulo 4 – Arquivos e Exceções** (Aulas 11-12)
-5. **Módulo 5 – Programação Orientada a Objetos** (Aulas 13-14)
-6. **Módulo 6 – Ecossistema** (Aulas 15-16)
+1. **Fundamentos e Processos** (Aulas 01-03)
+2. **Requisitos e Modelagem** (Aulas 04-05)
+3. **Arquitetura e Design** (Aulas 06-08)
+4. **Qualidade e Testes** (Aulas 09-10)
+5. **DevOps e Segurança** (Aulas 11-12)
+6. **Gestão e Evolução** (Aulas 13-16)
 
 ## 🎓 Como Usar Este Curso
 

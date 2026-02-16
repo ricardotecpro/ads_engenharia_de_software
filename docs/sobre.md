@@ -1,130 +1,25 @@
 # Sobre o Curso
 
-## 🎓 Python Backend - Do Zero ao Profissional
+## 🎓 Engenharia de Software para Iniciantes
 
-Este é um curso completo e estruturado de Python com foco em desenvolvimento backend. Desenvolvido para levar você do básico ao avançado, com uma abordagem prática e hands-on.
+Este curso foi desenhado para estudantes de Análise e Desenvolvimento de Sistemas (ADS), Ciência da Computação e iniciantes na área de tecnologia que desejam entender além do código.
 
-## 🎯 Objetivos do Curso
+### 🚀 Objetivo
+Transformar programadores em **Engenheiros de Software**. Enquanto cursos de programação ensinam *como escrever código*, este curso ensina *como construir sistemas robustos, escaláveis e de qualidade*.
 
-<div class="grid cards" markdown>
+### 📚 Metodologia
+O curso segue uma abordagem **Hands-on** (Mão na Massa), mas aplicada a conceitos teóricos. Em vez de apenas ler sobre Scrum ou Requisitos, você simulará um projeto real (um To-Do App) e aplicará cada conceito aula a aula.
 
--   :material-target: **Dominar Python**
-    
-    ---
-    
-    Aprender a sintaxe, estruturas de dados e conceitos fundamentais da linguagem Python.
+### 🛠 Ferramentas Utilizadas
+- **Git & GitHub**: Para versionamento e colaboração.
+- **UML**: Para modelagem visual.
+- **Kanban/Trello**: Para gestão de tarefas.
+- **VS Code**: Como ambiente de desenvolvimento.
+- **MkDocs**: Plataforma onde este curso está hospedado.
 
--   :material-code-braces: **Programação Orientada a Objetos**
-    
-    ---
-    
-    Entender e aplicar os princípios de POO: classes, objetos, herança e polimorfismo.
+### 👤 Público Alvo
+- **Estudantes** de graduação em TI.
+- **Desenvolvedores Júnior** que querem evoluir na carreira.
+- **Curiosos** que querem entender como grandes softwares são construídos.
 
--   :material-api: **Desenvolvimento Backend**
-    
-    ---
-    
-    Trabalhar com APIs, requisições HTTP e integração com serviços externos.
-
--   :material-test-tube: **Boas Práticas**
-    
-    ---
-    
-    Escrever código limpo, testável e seguindo as melhores práticas da indústria.
-
-</div>
-
-## 📚 O Que Você Vai Aprender
-
-### Módulo 1 – Fundamentos
-- Introdução ao Python e configuração do ambiente
-- Variáveis, tipos de dados e operadores
-- Estruturas condicionais e controle de fluxo
-
-### Módulo 2 – Estruturas de Controle
-- Laços de repetição (for, while)
-- Listas, tuplas e sets
-- Dicionários e manipulação de coleções
-
-### Módulo 3 – Funções e Modularização
-- Criação e uso de funções
-- Módulos e pacotes
-- Organização de código
-
-### Módulo 4 – Arquivos e Exceções
-- Leitura e escrita de arquivos
-- Tratamento de exceções
-- Gerenciamento de erros
-
-### Módulo 5 – Programação Orientada a Objetos
-- Classes e objetos
-- Herança e polimorfismo
-- Encapsulamento e abstração
-
-### Módulo 6 – Ecossistema Python
-- APIs e requisições HTTP
-- Testes automatizados
-- Boas práticas e padrões de código
-
-## 🛠️ Metodologia
-
-<div class="grid cards" markdown>
-
--   :material-book-open-variant: **Aulas Teóricas**
-    
-    ---
-    
-    Conteúdo explicativo com exemplos práticos e slides interativos.
-
--   :material-code-tags: **Exercícios Práticos**
-    
-    ---
-    
-    Listas de exercícios para fixar o conteúdo de cada aula.
-
--   :material-rocket-launch: **Projetos Reais**
-    
-    ---
-    
-    Desenvolva projetos práticos aplicando os conceitos aprendidos.
-
--   :material-head-question: **Quizzes Interativos**
-    
-    ---
-    
-    Teste seus conhecimentos com quizzes ao final de cada módulo.
-
-</div>
-
-## 👨‍🎓 Para Quem é Este Curso
-
-- **Iniciantes** que querem aprender programação do zero
-- **Desenvolvedores** que querem migrar para Python
-- **Estudantes** de ciência da computação e áreas relacionadas
-- **Profissionais** que querem se especializar em backend
-
-## 📋 Pré-requisitos
-
-- Computador com Windows, Linux ou macOS
-- Vontade de aprender e praticar
-- **Não é necessário conhecimento prévio de programação!**
-
-## 🎖️ O Que Você Receberá
-
-- ✅ 16 aulas completas e estruturadas
-- ✅ Slides interativos para todas as aulas
-- ✅ Exercícios práticos com soluções
-- ✅ Projetos reais para portfólio
-- ✅ Quizzes para autoavaliação
-- ✅ Guias de configuração de ambiente
-
-## 🚀 Comece Agora
-
-Pronto para começar sua jornada em Python?
-
-[:material-rocket: Ir para Aula 01](aulas/aula-01.md){ .md-button .md-button--primary }
-[:material-cog: Configurar Ambiente](setups/index.md){ .md-button }
-
----
-
-**Dúvidas?** Entre em contato ou acesse a [documentação completa](materiais.md).
+Pronto para começar sua jornada na Engenharia de Software?

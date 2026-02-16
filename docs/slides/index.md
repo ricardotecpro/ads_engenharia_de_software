@@ -4,39 +4,39 @@ Aqui você encontra os slides de apresentação de cada aula.
 
 <div class="grid cards" markdown>
 
--   :material-numeric-1-box: **Módulo 1 – Fundamentos**
+-   :material-numeric-1-box: **Fundamentos e Processos**
     
-    - [Slide 01 - Introdução ao Python](slide-01.html)
-    - [Slide 02 - Variáveis e Tipos de Dados](slide-02.html)
-    - [Slide 03 - Operadores e Expressões](slide-03.html)
-    - [Slide 04 - Estruturas Condicionais](slide-04.html)
+    - [Aula 01 - Fundamentos da Eng. de Software](slide-01.html)
+    - [Aula 02 - Processos: Cascata vs Ágil](slide-02.html)
+    - [Aula 03 - Metodologias Ágeis: Scrum e Kanban](slide-03.html)
 
--   :material-numeric-2-box: **Módulo 2 – Estruturas de Controle**
+-   :material-numeric-2-box: **Requisitos e Modelagem**
     
-    - [Slide 05 - Laços de Repetição](slide-05.html)
-    - [Slide 06 - Listas e Coleções](slide-06.html)
-    - [Slide 07 - Tuplas e Sets](slide-07.html)
-    - [Slide 08 - Dicionários](slide-08.html)
+    - [Aula 04 - Requisitos de Software](slide-04.html)
+    - [Aula 05 - Modelagem de Sistemas (UML)](slide-05.html)
 
--   :material-numeric-3-box: **Módulo 3 – Funções**
+-   :material-numeric-3-box: **Arquitetura e Design**
     
-    - [Slide 09 - Funções](slide-09.html)
-    - [Slide 10 - Módulos e Pacotes](slide-10.html)
+    - [Aula 06 - Arquitetura de Software](slide-06.html)
+    - [Aula 07 - Versionamento com Git](slide-07.html)
+    - [Aula 08 - Design de Software e SOLID](slide-08.html)
 
--   :material-numeric-4-box: **Módulo 4 – Arquivos e Exceções**
+-   :material-numeric-4-box: **Qualidade e Testes**
     
-    - [Slide 11 - Manipulação de Arquivos](slide-11.html)
-    - [Slide 12 - Tratamento de Exceções](slide-12.html)
+    - [Aula 09 - Qualidade de Software](slide-09.html)
+    - [Aula 10 - Testes de Software](slide-10.html)
 
--   :material-numeric-5-box: **Módulo 5 – POO**
+-   :material-numeric-5-box: **DevOps e Segurança**
     
-    - [Slide 13 - Introdução a Classes e Objetos](slide-13.html)
-    - [Slide 14 - Herança e Polimorfismo](slide-14.html)
+    - [Aula 11 - DevOps e CI/CD](slide-11.html)
+    - [Aula 12 - Segurança de Software](slide-12.html)
 
--   :material-numeric-6-box: **Módulo 6 – Ecossistema**
+-   :material-numeric-6-box: **Gestão e Evolução**
     
-    - [Slide 15 - APIs e Requisições HTTP](slide-15.html)
-    - [Slide 16 - Testes e Boas Práticas](slide-16.html)
+    - [Aula 13 - Gerenciamento de Projetos](slide-13.html)
+    - [Aula 14 - Documentação Técnica](slide-14.html)
+    - [Aula 15 - Manutenção e Evolução](slide-15.html)
+    - [Aula 16 - Carreira e Ética](slide-16.html)
 
 </div>
 
@@ -45,3 +45,4 @@ Aqui você encontra os slides de apresentação de cada aula.
 - Os slides usam RevealJS para apresentação interativa
 - Clique nos links acima para visualizar em tela cheia
 - Use as setas do teclado para navegar entre os slides
+- Pressione **F** para tela cheia e **S** para modo apresentador
