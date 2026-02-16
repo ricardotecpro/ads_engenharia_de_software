@@ -1,5 +1,3 @@
-# Slide 14
-
 - **Slide 1**: Documentação Técnica
 - **Slide 2**: O mito do código autoexplicativo ("O código diz O QUE, a doc diz POR QUE").
 - **Slide 3**: Tipos de Doc (Usuário vs. Dev).

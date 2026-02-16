@@ -1,5 +1,3 @@
-# Slide 12
-
 - **Slide 1**: Segurança de Software
 - **Slide 2**: CIA (Confidencialidade, Integridade, Disponibilidade).
 - **Slide 3**: Autenticação (Quem?) vs. Autorização (O quê?).

@@ -26,8 +26,8 @@ def generate_slide_html(lesson_number: int) -> str:
     <div class="reveal">
         <div class="slides">
             <section data-markdown="slide-{lesson_number:02d}.md"
-                     data-separator="^\\n---\\n$"
-                     data-separator-vertical="^\\n--\\n$">
+                     data-separator="^\\r?\\n---\\r?\\n$"
+                     data-separator-vertical="^\\r?\\n--\\r?\\n$">
             </section>
         </div>
     </div>

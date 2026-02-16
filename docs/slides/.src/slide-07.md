@@ -1,5 +1,3 @@
-# Slide 07
-
 - **Slide 1**: Git e GitHub
 - **Slide 2**: O problema "trabalho_final_v2" (Caos de versões).
 - **Slide 3**: Git (Ferramenta local) vs. GitHub (Nuvem).

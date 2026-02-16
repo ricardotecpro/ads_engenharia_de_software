@@ -1,5 +1,3 @@
-# Slide 06
-
 - **Slide 1**: Arquitetura de Software
 - **Slide 2**: O conceito (Estrutura fundamental).
 - **Slide 3**: Monólito (Blocão único).

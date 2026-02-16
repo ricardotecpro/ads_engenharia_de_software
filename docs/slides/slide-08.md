@@ -1,5 +1,3 @@
-# Slide 08
-
 - **Slide 1**: Design de Software
 - **Slide 2**: O objetivo (Código limpo e sustentável).
 - **Slide 3**: Coesão vs. Acoplamento (A regra de ouro).

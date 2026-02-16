@@ -122,6 +122,8 @@ extra:
       link: https://github.com/ricardotecpro
     - icon: fontawesome/brands/linkedin
       link: https://linkedin.com/in/ricardotecpro
+    - icon: fontawesome/solid/globe
+      link: https://ricardotecpro.github.io/
   version:
     provider: mike
     default: estavel

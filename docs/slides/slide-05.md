@@ -1,5 +1,3 @@
-# Slide 05
-
 - **Slide 1**: Modelagem de Sistemas e UML.
 - **Slide 2**: A importância de desenhar antes de codificar.
 - **Slide 3**: O que é UML? (Padrão visual).

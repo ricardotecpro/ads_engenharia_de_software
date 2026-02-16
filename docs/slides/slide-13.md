@@ -1,5 +1,3 @@
-# Slide 13
-
 - **Slide 1**: Gerenciamento de Projetos
 - **Slide 2**: O Triângulo de Ferro (Não dá para ter tudo).
 - **Slide 3**: MVP (A imagem do Skate -> Bicicleta -> Carro).

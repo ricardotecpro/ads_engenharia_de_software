@@ -1,5 +1,3 @@
-# Slide 15
-
 - **Slide 1**: Manutenção de Software
 - **Slide 2**: A Lei da Evolução (O software nunca está pronto).
 - **Slide 3**: Os tipos de Manutenção (Corretiva, Evolutiva, etc).

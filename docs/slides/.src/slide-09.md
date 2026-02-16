@@ -1,5 +1,3 @@
-# Slide 09
-
 - **Slide 1**: Qualidade de Software
 - **Slide 2**: O que é Qualidade? (Requisitos + Expectativas).
 - **Slide 3**: A trilogia do erro: Erro -> Defeito -> Falha.

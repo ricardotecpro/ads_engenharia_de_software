@@ -1,5 +1,3 @@
-# Slide 11
-
 - **Slide 1**: DevOps e CI/CD
 - **Slide 2**: O Muro da Confusão (Dev vs Ops).
 - **Slide 3**: Cultura DevOps (Colaboração e Automação).

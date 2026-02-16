@@ -1,5 +1,3 @@
-# Slide 16
-
 - **Slide 1**: Carreira e Ética
 - **Slide 2**: Ética Digital (O impacto do código no mundo real).
 - **Slide 3**: Hard Skills vs. Soft Skills.

@@ -1,5 +1,3 @@
-# Slide 04
-
 - **Slide 1**: Requisitos de Software
 - **Slide 2**: Funcionais vs. Não-Funcionais (O que faz vs. Como é).
 - **Slide 3**: Exemplos de RF e RNF.
