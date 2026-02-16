@@ -1,7 +1,7 @@
 import pytest
 from playwright.sync_api import Page, expect
 
-def test_shortcuts_hidden_in_fullscreen(page: Page):
+def test_shortcuts_hidden_in_fullscreen(page_with_base_url: Page, base_url: str):
     """
     Test that the .reveal-shortcuts element is hidden when the presentation
     enters fullscreen mode.
@@ -14,9 +14,10 @@ def test_shortcuts_hidden_in_fullscreen(page: Page):
     Actually, triggering 'F' in Reveal.js triggers the API. 
     Browsers usually require user gesture. page.keyboard.press helps.
     """
+    page = page_with_base_url
     # Load a slide
     page.on("console", lambda msg: print(f"BROWSER LOG: {msg.text}"))
-    page.goto("/slides/slide-01.html")
+    page.goto(f"{base_url}/slides/slide-01.html")
 
     
     # 1. Verify shortcuts are initially visible

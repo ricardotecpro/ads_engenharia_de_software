@@ -32,6 +32,14 @@ O GitHub é uma rede social para códigos. É um servidor na nuvem onde você gu
 3.  **Repository (`git commit`)**: Tira uma "foto" definitiva (Save Point).
 4.  **Remote (`git push`)**: Envia para o GitHub.
 
+Exemplo de fluxo no terminal:
+```bash
+$ git init
+$ git add .
+$ git commit -m "Meu primeiro commit"
+$ git push origin main
+```
+
 ### 5. Branches (Ramos)
 Imagine uma linha do tempo principal (`main`). Para criar uma nova funcionalidade sem quebrar o que já funciona, criamos uma linha paralela (`feature`). Se der certo, juntamos tudo (`merge`).
 

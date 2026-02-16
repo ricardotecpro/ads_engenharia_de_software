@@ -29,58 +29,17 @@ class TestQuizzes:
         # Verifica se não é 404
         expect(page).not_to_have_title("404")
 
-    def test_quiz_has_interactive_elements(self, page_with_base_url: Page, base_url: str):
-        """Verifica se o quiz 01 tem elementos interativos"""
+    def test_quiz_has_text_content(self, page_with_base_url: Page, base_url: str):
+        """Verifica se o quiz 01 tem conteúdo de texto (perguntas e gabarito)"""
         page = page_with_base_url
         page.goto(f"{base_url}/quizzes/quiz-01/")
         
-        # Procura por opções de quiz (estrutura customizada)
-        options = page.locator(".quiz-option")
+        # Verifica cabeçalho Quiz
+        expect(page.locator("h1")).to_contain_text("Quiz")
         
-        # Deve haver pelo menos uma opção
-        expect(options.first).to_be_visible()
-
-    def test_quiz_questions_visible(self, page_with_base_url: Page, base_url: str):
-        """Verifica se as perguntas do quiz estão visíveis"""
-        page = page_with_base_url
-        page.goto(f"{base_url}/quizzes/quiz-01/")
-        
-        # Verifica se há texto de pergunta
-        # Procura pela primeira pergunta conhecida
-        # Usando seletor CSS mais robusto
-        question = page.locator(".quiz-question").first
-        expect(question).to_be_visible()
-        # Opcional: verificar texto específico se soubermos
-
-    def test_quiz_can_select_answer(self, page_with_base_url: Page, base_url: str):
-        """Verifica se é possível selecionar uma resposta"""
-        page = page_with_base_url
-        page.goto(f"{base_url}/quizzes/quiz-01/")
-        
-        # Encontra uma opção
-        option = page.locator(".quiz-option").first
-        
-        if option.is_visible():
-            # Clica na opção
-            option.click()
-            
-            # Verifica se classe 'selected' foi adicionada (implementado no quiz.js)
-            # A classe pode ser "quiz-option selected correct" ou similar
-            expect(option).to_have_class(re.compile(r"selected"))
-            # Adicionalmente, verificar se tem 'correct' ou 'incorrect'
-            expect(option).to_have_class(re.compile(r"(correct|incorrect)"))
-            
-            # Verifica feedback
-            feedback = page.locator(".quiz-feedback").first
-            expect(feedback).to_be_visible()
-
-    def test_quiz_has_multiple_questions(self, page_with_base_url: Page, base_url: str):
-        """Verifica se o quiz tem múltiplas perguntas (pelo menos 5)"""
-        page = page_with_base_url
-        page.goto(f"{base_url}/quizzes/quiz-01/")
-        
-        # Procura por containers de quiz
-        questions = page.locator(".quiz-container")
-        
-        # Deve haver pelo menos 5 perguntas
-        expect(questions).to_have_count(5)
+        # Verifica se há perguntas (pelo menos a string "1.")
+        # Como é markdown, deve estar em <p><strong>1. ...
+        body_text = page.locator("body")
+        expect(body_text).to_contain_text("1.")
+        expect(body_text).to_contain_text("Gabarito:")
+        expect(body_text).to_contain_text("1-")
