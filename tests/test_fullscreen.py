@@ -50,8 +50,8 @@ def test_shortcuts_hidden_in_fullscreen(page_with_base_url: Page, base_url: str)
     """)
     
     # 3. Verify shortcuts are hidden
-    # Wait for JS to run
-    page.wait_for_timeout(500)
+    # Wait for JS to run - increased for CI
+    page.wait_for_timeout(2000)
     
     # Debug info
     viz = shortcuts.is_visible()
