@@ -84,6 +84,13 @@ def generate_quiz_html(quiz_number: int, questions: list) -> str:
         html_parts.append('  <div class="quiz-feedback"></div>\n')
         html_parts.append('</div>\n\n')
     
+    # Adicionar Gabarito
+    html_parts.append('<hr>\n<details>\n<summary><strong>Gabarito:</strong></summary>\n<ul>\n')
+    for q in questions:
+        correct_opt = next((opt['text'] for opt in q['options'] if opt['correct']), "Nenhuma")
+        html_parts.append(f'  <li>{q["number"]}- {correct_opt}</li>\n')
+    html_parts.append('</ul>\n</details>\n')
+
     return ''.join(html_parts)
 
 

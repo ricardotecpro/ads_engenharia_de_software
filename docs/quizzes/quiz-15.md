@@ -1,35 +1,60 @@
-# Quiz 15 - Manutenção e Evolução
+# Quiz 15 - Introdução
 
-**1. O que é Refatoração?**
-A) Mudar o software para ele fazer coisas novas.
-B) Apagar todo o código e começar do zero.
-C) Alterar a estrutura interna do código para melhorá-lo, sem mudar o comportamento externo.
-D) Adicionar bugs.
+--8<-- "assets/quiz.html"
 
-**2. O que significa "Dívida Técnica"?**
-A) Quanto dinheiro o projeto deve ao banco.
-B) O custo futuro gerado por escolher uma solução rápida e fácil agora em vez de uma abordagem melhor.
-C) O salário do programador.
-D) O preço da licença do software.
+<div class="quiz-container">
+  <div class="quiz-question">1. O que significa a sigla JSON?</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Java Source Object Network</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! JavaScript Object Notation">JavaScript Object Notation</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Python Dictionary Format</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Just Some Objects Now</div>
+  <div class="quiz-feedback"></div>
+</div>
 
-**3. Manutenção Corretiva serve para:**
-A) Adicionar novas telas.
-B) Corrigir defeitos (bugs).
-C) Melhorar a performance.
-D) Adaptar ao novo Windows.
+<div class="quiz-container">
+  <div class="quiz-question">2. Qual biblioteca Python é a mais popular para fazer requisições HTTP?</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">http.client</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">urllib</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! requests">requests</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">fetch</div>
+  <div class="quiz-feedback"></div>
+</div>
 
-**4. Segundo a Regra do Escoteiro no código:**
-A) Devemos acampar no escritório.
-B) Devemos sempre deixar o código um pouco mais limpo do que encontramos.
-C) Só devemos mexer no que está quebrado.
-D) Devemos apagar comentários.
+<div class="quiz-container">
+  <div class="quiz-question">3. Qual código HTTP indica sucesso na requisição?</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">404</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">500</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! 200">200</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">401</div>
+  <div class="quiz-feedback"></div>
+</div>
 
-**5. Por que o software precisa evoluir?**
-A) Porque o mundo, os negócios e as tecnologias mudam.
-B) Porque programadores ficam entediados.
-C) Para gastar dinheiro.
-D) Não precisa, software dura para sempre igual.
+<div class="quiz-container">
+  <div class="quiz-question">4. Se eu tenho uma string JSON, qual função uso para converter em Dicionário Python?</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">json.create()</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">json.dump()</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! json.loads()">json.loads()</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">dict()</div>
+  <div class="quiz-feedback"></div>
+</div>
 
----
-**Gabarito:**
-1-C, 2-B, 3-B, 4-B, 5-A
+<div class="quiz-container">
+  <div class="quiz-question">5. O método HTTP usado para **buscar** informações é:</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! GET">GET</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">POST</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">DELETE</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">PUSH</div>
+  <div class="quiz-feedback"></div>
+</div>
+
+<hr>
+<details>
+<summary><strong>Gabarito:</strong></summary>
+<ul>
+  <li>1- JavaScript Object Notation</li>
+  <li>2- requests</li>
+  <li>3- 200</li>
+  <li>4- json.loads()</li>
+  <li>5- GET</li>
+</ul>
+</details>

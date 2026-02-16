@@ -1,35 +1,60 @@
-# Quiz 02 - Processos de Software: Cascata e Ágil
+# Quiz 02 - Introdução
 
-**1. Qual a principal característica do Modelo Cascata?**
-A) Permite mudanças a qualquer momento sem custo.
-B) As fases são sequenciais; uma termina para a outra começar.
-C) Não existe planejamento.
-D) O cliente vê o software todo dia.
+--8<-- "assets/quiz.html"
 
-**2. O que o Manifesto Ágil valoriza MAIS?**
-A) Processos e Ferramentas.
-B) Documentação Abrangente.
-C) Software em Funcionamento.
-D) Negociação de Contratos.
+<div class="quiz-container">
+  <div class="quiz-question">1. Qual o tipo de dado da variável `x` em `x = 10.5`?</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">int</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! float">float</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">str</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">bool</div>
+  <div class="quiz-feedback"></div>
+</div>
 
-**3. No modelo Ágil, como é a entrega do software?**
-A) Única, apenas no final do projeto.
-B) Incremental e frequente (em partes).
-C) Apenas quando o cliente paga tudo.
-D) Aleatória.
+<div class="quiz-container">
+  <div class="quiz-question">2. Qual a saída do código `print(type("10"))`?</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente."><class 'int'></div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente."><class 'float'></div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! "><class 'str'>">"><class 'str'></div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente."><class 'bool'></div>
+  <div class="quiz-feedback"></div>
+</div>
 
-**4. Por que o Cascata é comparado à construção civil?**
-A) Porque engenheiros de software usam capacetes.
-B) Porque é difícil mudar a estrutura depois de pronta (rigidez).
-C) Porque usa cimento.
-D) Porque é barato.
+<div class="quiz-container">
+  <div class="quiz-question">3. O que a função `input()` retorna por padrão?</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Um número inteiro (int)</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Um número decimal (float)</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! Um texto (str)">Um texto (str)</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">O tipo que o usuário escolher</div>
+  <div class="quiz-feedback"></div>
+</div>
 
-**5. Qual destes NÃO é um valor do Manifesto Ágil?**
-A) Responder a mudanças.
-B) Colaboração com o cliente.
-C) Seguir um plano rigorosamente acima de tudo.
-D) Indivíduos e interações.
+<div class="quiz-container">
+  <div class="quiz-question">4. Qual variável segue as boas práticas (snake_case) do Python?</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">NomeUsuario</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! nome_usuario">nome_usuario</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">nome-usuario</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">NOMEUSUARIO</div>
+  <div class="quiz-feedback"></div>
+</div>
 
----
-**Gabarito:**
-1-B, 2-C, 3-B, 4-B, 5-C
+<div class="quiz-container">
+  <div class="quiz-question">5. Qual o resultado de `10 // 3` (divisão inteira)?</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">3.3333...</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! 3">3</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">1</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">10</div>
+  <div class="quiz-feedback"></div>
+</div>
+
+<hr>
+<details>
+<summary><strong>Gabarito:</strong></summary>
+<ul>
+  <li>1- float</li>
+  <li>2- "><class 'str'></li>
+  <li>3- Um texto (str)</li>
+  <li>4- nome_usuario</li>
+  <li>5- 3</li>
+</ul>
+</details>

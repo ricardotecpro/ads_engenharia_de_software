@@ -1,35 +1,60 @@
-# Quiz 06 - Arquitetura de Software
+# Quiz 06 - Introdução
 
-**1. Qual a principal característica de uma arquitetura Monolítica?**
-A) O sistema é composto por milhares de pequenos serviços.
-B) O sistema é um único bloco de código onde tudo está junto.
-C) O sistema não usa banco de dados.
-D) O sistema só roda em celulares.
+--8<-- "assets/quiz.html"
 
-**2. Na arquitetura Cliente-Servidor, o que o "Cliente" geralmente faz?**
-A) Armazena todos os dados do mundo.
-B) Processa pagamentos bancários sozinho.
-C) Envia requisições e exibe a interface para o usuário.
-D) Gera energia para o servidor.
+<div class="quiz-container">
+  <div class="quiz-question">1. Qual índice acessa o primeiro elemento de uma lista?</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">1</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! 0">0</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">-1</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">inicio</div>
+  <div class="quiz-feedback"></div>
+</div>
 
-**3. Qual a vantagem dos Microserviços?**
-A) São extremamente simples de configurar.
-B) Se um serviço falhar, o resto do sistema pode continuar funcionando.
-C) Não precisam de internet.
-D) Usam menos memória sempre.
+<div class="quiz-container">
+  <div class="quiz-question">2. O que faz o método `.append(x)`?</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Adiciona `x` no início da lista</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! Adiciona `x` no final da lista">Adiciona `x` no final da lista</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Remove `x` da lista</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Substitui tudo por `x`</div>
+  <div class="quiz-feedback"></div>
+</div>
 
-**4. O que é a camada de "Lógica de Negócio"?**
-A) A parte visual (cores e botões).
-B) Onde ficam as regras do sistema (ex: cálculos, validações).
-C) O cabo de rede.
-D) A marca do computador.
+<div class="quiz-container">
+  <div class="quiz-question">3. Dada a lista `x = [10, 20, 30]`, quanto é `x[-1]`?</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">10</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">20</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! 30">30</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Erro</div>
+  <div class="quiz-feedback"></div>
+</div>
 
-**5. Arquitetura de Software é fácil de mudar depois que o projeto está pronto?**
-A) Sim, muda-se em 5 minutos.
-B) Não, geralmente é caro e difícil (como mudar a fundação de um prédio).
-C) Depende da cor do software.
-D) Arquitetura não existe.
+<div class="quiz-container">
+  <div class="quiz-question">4. Como verificar o tamanho da lista `my_list`?</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">size(my_list)</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">count(my_list)</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! len(my_list)">len(my_list)</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">my_list.length</div>
+  <div class="quiz-feedback"></div>
+</div>
 
----
-**Gabarito:**
-1-B, 2-C, 3-B, 4-B, 5-B
+<div class="quiz-container">
+  <div class="quiz-question">5. O slicing `lista[1:3]` inclui o elemento do índice 3?</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Sim</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! Não">Não</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Depende da lista</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Apenas se for string</div>
+  <div class="quiz-feedback"></div>
+</div>
+
+<hr>
+<details>
+<summary><strong>Gabarito:</strong></summary>
+<ul>
+  <li>1- 0</li>
+  <li>2- Adiciona `x` no final da lista</li>
+  <li>3- 30</li>
+  <li>4- len(my_list)</li>
+  <li>5- Não</li>
+</ul>
+</details>

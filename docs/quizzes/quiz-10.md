@@ -1,35 +1,60 @@
-# Quiz 10 - Testes de Software
+# Quiz 10 - Introdução
 
-**1. Qual teste fica na base da Pirâmide de Testes (devemos ter em maior quantidade)?**
-A) Teste Manual.
-B) Teste End-to-End (E2E).
-C) Teste Unitário.
-D) Teste de Usabilidade.
+--8<-- "assets/quiz.html"
 
-**2. O que valida um Teste Unitário?**
-A) O sistema inteiro.
-B) A menor parte testável do código (ex: uma função).
-C) A integração com o banco de dados.
-D) A cor do botão.
+<div class="quiz-container">
+  <div class="quiz-question">1. Qual comando usamos para usar um código de outro arquivo?</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">include</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">require</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! import">import</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">use</div>
+  <div class="quiz-feedback"></div>
+</div>
 
-**3. No TDD (Test Driven Development), qual a ordem correta?**
-A) Código -> Teste -> Refatoração.
-B) Teste -> Código -> Refatoração.
-C) Refatoração -> Teste -> Código.
-D) Teste -> Refatoração -> Código.
+<div class="quiz-container">
+  <div class="quiz-question">2. Se eu fizer `import math`, como acesso a função `sqrt`?</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">sqrt()</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! math.sqrt()">math.sqrt()</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Math.sqrt()</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">import.sqrt()</div>
+  <div class="quiz-feedback"></div>
+</div>
 
-**4. Por que não devemos ter APENAS testes manuais?**
-A) Porque são lentos, caros e propensos a falhas humanas.
-B) Porque testadores manuais não existem.
-C) Porque computadores não gostam de mãos.
-D) Porque é muito rápido.
+<div class="quiz-container">
+  <div class="quiz-question">3. Qual a vantagem de usar `from modulo import funcao`?</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">O código roda mais rápido</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! Permite chamar a função diretamente pelo nome, sem o prefixo do módulo">Permite chamar a função diretamente pelo nome, sem o prefixo do módulo</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Importa o módulo inteiro para a memória</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Permite alterar o código da função original</div>
+  <div class="quiz-feedback"></div>
+</div>
 
-**5. O que significa o estado "Red" no TDD?**
-A) O teste falhou (porque a funcionalidade ainda não existe).
-B) O computador está superaquecendo.
-C) O código está pronto e funcionando.
-D) O teste deve ser apagado.
+<div class="quiz-container">
+  <div class="quiz-question">4. O que é um pacote em Python?</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Um arquivo .zip</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Um servidor de download</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! Uma pasta contendo módulos (e geralmente um `__init__.py`)">Uma pasta contendo módulos (e geralmente um `__init__.py`)</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Uma função que retorna vários valores</div>
+  <div class="quiz-feedback"></div>
+</div>
 
----
-**Gabarito:**
-1-C, 2-B, 3-B, 4-A, 5-A
+<div class="quiz-container">
+  <div class="quiz-question">5. Para usar o módulo `random` com o apelido `rnd`, como fazemos?</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">import random nickname rnd</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">import rnd from random</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! import random as rnd">import random as rnd</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">alias random = rnd</div>
+  <div class="quiz-feedback"></div>
+</div>
+
+<hr>
+<details>
+<summary><strong>Gabarito:</strong></summary>
+<ul>
+  <li>1- import</li>
+  <li>2- math.sqrt()</li>
+  <li>3- Permite chamar a função diretamente pelo nome, sem o prefixo do módulo</li>
+  <li>4- Uma pasta contendo módulos (e geralmente um `__init__.py`)</li>
+  <li>5- import random as rnd</li>
+</ul>
+</details>
