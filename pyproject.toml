@@ -1,9 +1,9 @@
 [project]
-name = "ads_engenharia_de_softwaren"
+name = "ads_engenharia_de_software"
 version = "1.0.0"
 description = "ads_engenharia_de_software"
 authors = [
-    {name = "Ricardo", email = "ricardo@example.com"}
+    {name = "Ricardo Tec Pro", email = "ricardotecpro@hotmail.com"}
 ]
 readme = "README.md"
 requires-python = ">=3.11,<4.0"
