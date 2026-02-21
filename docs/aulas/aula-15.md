@@ -8,33 +8,63 @@
 
 ## 📚 Conteúdo
 
-### 1. O Software Morre?
-Diferente de uma ponte (que degrada sozinha com a chuva), o software só "estragar" se o ambiente mudar ou se tentarmos mudá-lo.
-- **Lei de Lehman**: Um software que é usado precisa evoluir, senão torna-se obsoleto.
+### 1. O Software não é uma estátua
+Diferente de um monumento de pedra, o software é vivo. Se o mundo ao redor muda (novos celulares, novas leis, novos navegadores), o software precisa mudar junto.
 
-### 2. Tipos de Manutenção
-- **Corretiva**: Consertar bugs (o "band-aid").
-- **Adaptativa**: Mudar para usar novo SO ou Banco de Dados (ex: migrar para Windows 11).
-- **Perfeccionista (Evolutiva)**: Adicionar novas funcionalidades ou melhorar performance.
-- **Preventiva (Refatoração)**: Melhorar a estrutura do código antes que quebre.
-
-### 3. Refatoração (Refactoring)
-É limpar a cozinha depois de cozinhar. Alterar a estrutura interna do código sem mudar seu comportamento externo.
-- Objetivo: Tornar o código mais fácil de entender e modificar.
-- Quando fazer? O tempo todo (regra do escoteiro: deixe o código mais limpo do que encontrou).
-
-### 4. Dívida Técnica (Technical Debt)
-Às vezes, fazemos o código "rápido e sujo" para entregar logo. Isso é um empréstimo.
-- O "juro" é a dificuldade extra de trabalhar nesse código depois.
-- Se não pagarmos a dívida (refatorando), o projeto pode falir (ficar impossível de manter).
+!!! info "Lei da Evolução (Lehman)"
+    Um software que é usado em um ambiente real deve sofrer mudanças contínuas ou tornar-se progressivamente menos útil.
 
 ---
+
+### 2. Tipos de Manutenção
+
+-   **Corretiva**: Consertar erros/bugs (o famoso "apagar incêndio").
+-   **Adaptativa**: Mudar o sistema para funcionar em um novo ambiente (ex: migrar para a nuvem).
+-   **Evolutiva (Perfeccionista)**: Adicionar novas funcionalidades desejadas pelos usuários.
+-   **Preventiva**: Melhorar o código para evitar que ele quebre no futuro.
+
+---
+
+### 3. Refatoração e Dívida Técnica
+Refatorar é como limpar a cozinha enquanto você cozinha. Você não muda o sabor da comida (o comportamento), mas deixa o ambiente organizado (a estrutura).
+
+!!! warning "Cuidado com a Dívida"
+    Dívida Técnica ocorre quando escolhemos uma solução rápida em vez de uma solução correta. "Pagamos juros" cada vez que mexer nesse código fica mais difícil e lento.
+
+---
+
+### 4. Simulação de Refatoração (TermynalJS)
+
+<div class="termy" markdown>
+```bash
+$ # Analisando complexidade do código
+$ code-metrics ./src
+$ # Resultado: Alerta de Complexidade Ciclomática Alta!
+$ # Aplicando Refatoração: Extrair Método...
+$ # Novo resultado: Código 40% mais legível. Dívida reduzida!
+```
+</div>
+
+---
+
+## 📝 Exercícios Progressivos
+
+1.  **[Básico]** O que é manutenção Corretiva?
+2.  **[Básico]** O que significa "Refatorar" um código?
+3.  **[Intermediário]** Explique com uma metáfora o que é Dívida Técnica.
+4.  **[Intermediário]** Qual a diferença entre manutenção Evolutiva e Preventiva?
+5.  **[Desafio]** Qual o perigo de nunca refatorar um sistema que cresce constantemente?
+
+---
+
+## 🚀 Mini-Projeto 15: O Plano de Evolução
+Escolha um aplicativo que você usa e que mudou recentemente (ex: Instagram, WhatsApp). Identifique uma mudança que foi **Corretiva** (bug que sumiu) e uma que foi **Evolutiva** (nova função).
 
 ---
 
 ## 📅 Atividades
 
-- [ ] **[Ver Slides da Aula](../slides/slide-15.html)**
-- [ ] **[Fazer Quiz](../quizzes/quiz-15.md)**
-- [ ] **[Praticar Exercícios](../exercicios/exercicio-15.md)**
-- [ ] **[Realizar Projeto](../projetos/projeto-15.md)**
+- [ ] :material-presentation: **[Ver Slides da Aula](../slides/slide-15.html)**
+- [ ] :material-school: **[Fazer Quiz](../quizzes/quiz-15.md)**
+- [ ] :material-dumbbell: **[Praticar Exercícios](../exercicios/exercicio-15.md)**
+- [ ] :material-rocket: **[Realizar Projeto](../projetos/projeto-15.md)**

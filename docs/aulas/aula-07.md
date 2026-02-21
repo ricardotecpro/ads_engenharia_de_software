@@ -9,47 +9,72 @@
 ## 📚 Conteúdo
 
 ### 1. O Problema das Versões
-Sem versionamento, os arquivos ficam assim:
-- `trabalho_final.doc`
-- `trabalho_final_agora_vai.doc`
-- `trabalho_final_V2_corrigido.doc`
+Sem versionamento, os arquivos ficam desorganizados e é impossível saber quem mudou o quê. No desenvolvimento de software, precisamos de uma **Máquina do Tempo**.
 
-No desenvolvimento de software, isso é o caos. Precisamos de uma máquina do tempo.
-
-### 2. O que é Git?
-O Git é um sistema de controle de versão distribuído. Ele registra **quem** mudou **o que** e **quando**.
-- **Máquina do Tempo**: Você pode voltar o código para como ele estava ontem.
-- **Trabalho em Equipe**: Permite que várias pessoas mexam no mesmo projeto sem apagar o trabalho uma da outra.
-
-### 3. O que é GitHub?
-O GitHub é uma rede social para códigos. É um servidor na nuvem onde você guarda seus repositórios Git.
-- **Git** = Ferramenta instalada no seu PC.
-- **GitHub** = Site onde o código fica hospedado.
-
-### 4. Ciclo Básico
-1.  **Working Directory**: Onde você edita os arquivos.
-2.  **Staging Area (`git add`)**: Escolhe os arquivos que vão ser salvos.
-3.  **Repository (`git commit`)**: Tira uma "foto" definitiva (Save Point).
-4.  **Remote (`git push`)**: Envia para o GitHub.
-
-Exemplo de fluxo no terminal:
-```bash
-$ git init
-$ git add .
-$ git commit -m "Meu primeiro commit"
-$ git push origin main
-```
-
-### 5. Branches (Ramos)
-Imagine uma linha do tempo principal (`main`). Para criar uma nova funcionalidade sem quebrar o que já funciona, criamos uma linha paralela (`feature`). Se der certo, juntamos tudo (`merge`).
+!!! info "Por que usar Git?"
+    O Git resolve o problema do "final_final_v2.zip". Ele permite salvar estados do código e alternar entre eles com segurança.
 
 ---
+
+### 2. Git vs. GitHub
+Não confunda a ferramenta com o serviço!
+
+-   **Git**: O motor. É um software que você instala no seu computador para controlar as versões localmente.
+-   **GitHub**: O estacionamento. É uma plataforma na nuvem onde você guarda seus projetos e colabora com outros desenvolvedores.
+
+---
+
+### 3. O Fluxo de Trabalho (Ciclo de Vida)
+
+```mermaid
+graph LR
+    A["Workspace (Edição)"] -- "git add" --> B["Staging (Seleção)"]
+    B -- "git commit" --> C["Local Repo (Foto)"]
+    C -- "git push" --> D["GitHub (Nuvem)"]
+```
+
+!!! tip "Dica de Ouro"
+    Pense no `git add` como colocar as compras no carrinho e no `git commit` como passar no caixa e finalizar a compra.
+
+---
+
+### 4. Praticando no Terminal (TermynalJS)
+
+<div class="termy" markdown>
+```bash
+$ # Iniciando um novo projeto
+$ git init
+$ git add .
+$ git commit -m "feat: estrutura inicial do curso"
+$ # Conectando ao GitHub e enviando
+$ git remote add origin https://github.com/usuario/projeto.git
+$ git push origin main
+```
+</div>
+
+!!! warning "Atenção"
+    Sempre escreva mensagens de commit claras (ex: "fix: corrige erro no login") para que seus colegas entendam o que você fez.
+
+---
+
+## 📝 Exercícios Progressivos
+
+1.  **[Básico]** Qual a diferença entre Git e GitHub?
+2.  **[Básico]** Para que serve o comando `git add`?
+3.  **[Intermediário]** O que acontece quando executamos um `git commit`?
+4.  **[Intermediário]** Explique o conceito de "Branch" (Ramo) e por que ele é importante para trabalhar em equipe.
+5.  **[Desafio]** Você descobriu um erro grave no código que foi enviado ontem. Como o Git pode te ajudar a voltar para a versão de anteontem? (Pesquise sobre `git checkout` ou `git revert`).
+
+---
+
+## 🚀 Mini-Projeto 07: Meu Primeiro Repo
+Crie um repositório no seu GitHub chamado `estudos-eng-software`. Faça o commit de um arquivo `README.md` explicando o que você está aprendendo nesta aula e envie-o para a nuvem.
 
 ---
 
 ## 📅 Atividades
 
-- [ ] **[Ver Slides da Aula](../slides/slide-07.html)**
-- [ ] **[Fazer Quiz](../quizzes/quiz-07.md)**
-- [ ] **[Praticar Exercícios](../exercicios/exercicio-07.md)**
-- [ ] **[Realizar Projeto](../projetos/projeto-07.md)**
+- [ ] :material-presentation: **[Ver Slides da Aula](../slides/slide-07.html)**
+- [ ] :material-school: **[Fazer Quiz](../quizzes/quiz-07.md)**
+- [ ] :material-dumbbell: **[Praticar Exercícios](../exercicios/exercicio-07.md)**
+- [ ] :material-rocket: **[Realizar Projeto](../projetos/projeto-07.md)**

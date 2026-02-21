@@ -8,43 +8,81 @@
 
 ## 📚 Conteúdo
 
-### 1. O Problema "Funciona na minha máquina"
-Antigamente, Desenvolvedores (Dev) criavam o  software e jogavam por cima do muro para Operações (Ops) instalar.
-- Resultado: Conflitos, demoras e culpa ("Foi culpa do servidor!", "Não, foi culpa do código!").
+### 1. O fim do "No meu PC funciona"
+Antigamente, desenvolvedores criavam o software e o "jogavam por cima do muro" para o time de Operações (infraestrutura) instalar. Isso gerava muitos conflitos.
 
-### 2. DevOps (Dev + Ops)
-DevOps não é uma cargo, é uma cultura. É a união de pessoas, processos e ferramentas para entregar software com velocidade e qualidade.
-- **Objetivo**: Diminuir o tempo entre "Tive uma ideia" e "O cliente está usando".
-
-### 3. CI/CD: A Esteira de Automação
-Imagine uma fábrica de carros robotizada. Isso é CI/CD.
-
-#### CI (Continuous Integration)
-- Todo código novo é integrado ao projeto principal frequentemente.
-- Robôs rodam os testes automaticamente.
-- Se quebrar algo, o time para e conserta na hora.
-
-#### CD (Continuous Delivery/Deployment)
-- Após passar no CI, o código é preparado automaticamente para ir para produção.
-- **Delivery**: Botão "Deploy" manual mas automatizado por trás.
-- **Deployment**: Vai direto para o ar sem intervenção humana.
-
-### 4. O Pipeline
-O caminho que o código percorre:
-1.  Dev faz `git push`.
-2.  **Build**: O robô compila o código.
-3.  **Test**: O robô roda os testes unitários.
-4.  **Deploy**: O robô atualiza o site.
-
-Se qualquer passo falhar, o processo para (Stop the Line).
+!!! info "Cultura DevOps"
+    DevOps não é uma ferramenta ou um cargo, é a união de **Dev**elopment (Desenvolvimento) e **Op**eration**s** (Operações). O objetivo é colaborar para entregar software rápido e com segurança.
 
 ---
+
+### 2. CI/CD: A Esteira de Automação
+Imagine uma fábrica de carros automatizada. Isso é o que chamamos de CI/CD em software.
+
+#### CI (Continuous Integration)
+Toda mudança é enviada para um repositório central e testada automaticamente.
+
+!!! tip "Vantagem da CI"
+    Descobrimos erros minutos após eles serem escritos, e não meses depois.
+
+#### CD (Continuous Delivery / Deployment)
+O código aprovado nos testes é preparado automaticamente para ir ao ar.
+
+-   **Delivery**: O deploy é um passo manual (clicar em um botão).
+-   **Deployment**: O deploy é 100% automático para os usuários.
+
+---
+
+### 3. O Pipeline (A jornada do código)
+
+```mermaid
+graph LR
+    A["Push (Git)"] --> B["Build"]
+    B --> C["Test (Check)"]
+    C --> D["Deploy (Nuvem)"]
+    
+    style C fill:#ccffcc,stroke:#333
+```
+
+!!! warning "Stop the Line"
+    Se o passo de **Test** falhar, o Pipeline para imediatamente e o código não vai para o ar. Qualidade em primeiro lugar!
+
+---
+
+### 4. Simulação de Pipeline (TermynalJS)
+
+<div class="termy" markdown>
+```bash
+$ git push origin main
+$ # Iniciando Workflow CI...
+$ # [STEP 1] Build: SUCCESS
+$ # [STEP 2] Unit Tests: SUCCESS
+$ # [STEP 3] Security Scan: SUCCESS
+$ # [STEP 4] Deploying to Production...
+$ # Done! Versão 1.2.0 está no ar. 🚀
+```
+</div>
+
+---
+
+## 📝 Exercícios Progressivos
+
+1.  **[Básico]** O que significa a sigla DevOps?
+2.  **[Básico]** Qual a diferença entre Integração Contínua (CI) e Entrega Contínua (CD)?
+3.  **[Intermediário]** Por que dizemos que DevOps é uma "cultura" e não apenas um software?
+4.  **[Intermediário]** Descreva os passos comuns de um Pipeline de automação.
+5.  **[Desafio]** Como a automação de testes (Aula 10) ajuda na implementação de uma cultura DevOps?
+
+---
+
+## 🚀 Mini-Projeto 11: Desenhando a Esteira
+Imagine que você é o líder técnico de um novo banco digital. Desenhe ou descreva quais seriam os passos obrigatórios do seu Pipeline de Deploy para garantir que nenhum bug de segurança chegue aos clientes.
 
 ---
 
 ## 📅 Atividades
 
-- [ ] **[Ver Slides da Aula](../slides/slide-11.html)**
-- [ ] **[Fazer Quiz](../quizzes/quiz-11.md)**
-- [ ] **[Praticar Exercícios](../exercicios/exercicio-11.md)**
-- [ ] **[Realizar Projeto](../projetos/projeto-11.md)**
+- [ ] :material-presentation: **[Ver Slides da Aula](../slides/slide-11.html)**
+- [ ] :material-school: **[Fazer Quiz](../quizzes/quiz-11.md)**
+- [ ] :material-dumbbell: **[Praticar Exercícios](../exercicios/exercicio-11.md)**
+- [ ] :material-rocket: **[Realizar Projeto](../projetos/projeto-11.md)**

@@ -1,7 +1,7 @@
 [project]
 name = "ads_engenharia_de_software"
 version = "1.0.0"
-description = "ads_engenharia_de_software"
+description = "Curso de Engenharia de Software - ADS"
 authors = [
     {name = "Ricardo Tec Pro", email = "ricardotecpro@hotmail.com"}
 ]

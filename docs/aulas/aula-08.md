@@ -3,43 +3,84 @@
 ## 🎯 Objetivos de Aprendizagem
 - Entender os princípios de um bom design de software.
 - Compreender os conceitos de Acoplamento e Coesão.
-- Introduzir o princípio KISS (Keep It Simple, Stupid) e DRY (Don't Repeat Yourself).
+- Introduzir o princípio KISS e DRY.
 - Conhecer os Princípios SOLID (visão geral).
 
 ## 📚 Conteúdo
 
 ### 1. Design de Software
-Design não é (só) sobre cores. É sobre como organizar o código para que ele não se torne um "Monstro de Espaguete" impossível de dar manutenção.
+Design não é apenas sobre cores e botões; em engenharia, é sobre a **organização interna** do código. Um bom design torna o software fácil de mudar e difícil de quebrar.
 
-### 2. Conceitos Chave
-#### Coesão (Bom)
-Uma peça de software (função, classe) deve fazer **uma única coisa** e fazê-la bem.
-- *Exemplo Ruim*: Uma função `processarTudo()` que calcula imposto, salva no banco e envia e-mail.
-- *Exemplo Bom*: 3 funções separadas: `calcularImposto()`, `salvarPedido()`, `enviarEmail()`.
-
-#### Acoplamento (Ruim quando alto)
-O quanto uma peça depende da outra. Se você muda A e precisa mudar B, C e D, o acoplamento está alto.
-- Queremos **Baixo Acoplamento** e **Alta Coesão**.
-
-### 3. Princípios Básicos
-- **KISS (Keep It Simple, Stupid)**: A solução mais simples quase sempre é a melhor. Não complique.
-- **DRY (Don't Repeat Yourself)**: Nunca copie e cole código. Se a lógica se repete, crie uma função.
-
-### 4. SOLID (Visão Geral)
-São 5 mandamentos da Orientação a Objetos:
-- **S**RP (Single Responsibility): Uma classe deve ter um único motivo para mudar.
-- **O**CP (Open/Closed): Aberto para extensão, fechado para modificação.
-- **L**SP (Liskov): Filhos devem substituir pais sem quebrar nada.
-- **I**SP (Interface Segregation): Interfaces específicas são melhores que uma geral.
-- **D**IP (Dependency Inversion): Dependa de abstrações, não de implementações.
+!!! info "O Código Espaguete"
+    Sem design, o código se torna um amontoado confuso de funções dependentes. O objetivo do design é manter a ordem.
 
 ---
+
+### 2. Conceitos Fundamentais
+
+#### A) Coesão (O foco)
+Cada parte do sistema deve fazer apenas uma coisa e fazê-la muito bem.
+
+!!! tip "Alta Coesão"
+    Imagine uma caixa de ferramentas. Cada ferramenta tem uma função única. Você não usa um martelo para parafusar.
+
+#### B) Acoplamento (A dependência)
+O quanto uma parte do sistema depende de outra. Queremos que as partes sejam independentes.
+
+!!! warning "Baixo Acoplamento"
+    Se você mudar o formato do banco de dados e precisar mexer em 50 arquivos diferentes, seu acoplamento está alto.
+
+---
+
+### 3. Princípios Práticos
+
+-   **KISS (Keep It Simple, Stupid)**: Mantenha as coisas simples. Se há duas formas de resolver, escolha a mais óbvia.
+-   **DRY (Don't Repeat Yourself)**: Não se repita. Se você copiou e colou código, você falhou no design.
+
+---
+
+### 4. SOLID (Os 5 Pilares)
+
+```mermaid
+graph TD
+    S["Single Responsibility"]
+    O["Open/Closed"]
+    L["Liskov Substitution"]
+    I["Interface Segregation"]
+    D["Dependency Inversion"]
+```
+
+<div class="termy" markdown>
+```bash
+$ # Analisando qualidade do design (Simulação)
+$ analyze-design --file Pedido.js
+$ # Alerta: Classe 'Pedido' faz muitas coisas! (Baixa Coesão)
+$ # Sugestão: Separe a lógica de 'Cálculo de Desconto' em outra classe.
+```
+</div>
+
+---
+
+## 📝 Exercícios Progressivos
+
+1.  **[Básico]** O que é "Coesão" em design de software?
+2.  **[Básico]** O que significa a sigla DRY?
+3.  **[Intermediário]** Por que um alto acoplamento é prejudicial para a manutenção?
+4.  **[Intermediário]** Explique o princípio KISS com um exemplo do mundo real.
+5.  **[Desafio]** Escolha DOIS princípios do SOLID e tente explicar a importância deles para um sistema que precisa crescer muito.
+
+---
+
+## 🚀 Mini-Projeto 08: Refatorando o Caos
+Abaixo está um pseudo-código:
+`função ProcessarPedido(id) { ValidarEstoque(); CobrarCartao(); EnviarEmailConfirmacao(); GerarNotaFiscal(); }`
+Como você separaria essa função seguindo o princípio de **Responsabilidade Única (SRP)**?
 
 ---
 
 ## 📅 Atividades
 
-- [ ] **[Ver Slides da Aula](../slides/slide-08.html)**
-- [ ] **[Fazer Quiz](../quizzes/quiz-08.md)**
-- [ ] **[Praticar Exercícios](../exercicios/exercicio-08.md)**
-- [ ] **[Realizar Projeto](../projetos/projeto-08.md)**
+- [ ] :material-presentation: **[Ver Slides da Aula](../slides/slide-08.html)**
+- [ ] :material-school: **[Fazer Quiz](../quizzes/quiz-08.md)**
+- [ ] :material-dumbbell: **[Praticar Exercícios](../exercicios/exercicio-08.md)**
+- [ ] :material-rocket: **[Realizar Projeto](../projetos/projeto-08.md)**

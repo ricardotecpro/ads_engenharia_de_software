@@ -3,37 +3,44 @@
 ## 🎯 Objetivos de Aprendizagem
 - Entender o que é Modelagem de Software.
 - Conhecer a UML (Unified Modeling Language).
-- Aprender a ler Diagramas de Caso de Uso.
-- Aprender a ler Diagramas de Classes básicos.
+- Aprender a ler Diagramas de Caso de Uso e de Classes.
 
 ## 📚 Conteúdo
 
 ### 1. Por que modelar?
-Assim como arquitetos desenham plantas antes de construir, engenheiros de software criam modelos para:
-- Visualizar o sistema antes de codificar.
-- Comunicar ideias com o time.
-- Encontrar erros de lógica cedo.
+Assim como arquitetos desenham plantas antes de construir, engenheiros de software criam modelos para visualizar a solução antes da codificação.
+
+!!! info "Comunicação Visual"
+    Diagramas ajudam a alinhar o entendimento entre o cliente (entidade de negócios) e o desenvolvedor (entidade técnica).
+
+---
 
 ### 2. O que é UML?
-UML (Linguagem de Modelagem Unificada) é o padrão mundial para desenhar diagramas de software. Não é uma linguagem de programação, é uma linguagem visual.
+A UML (Linguagem de Modelagem Unificada) é o padrão visual para documentar a arquitetura e o comportamento de sistemas orientados a objetos.
 
-### 3. Diagrama de Caso de Uso (O "O Quê" e "Quem")
-Mostra as interações entre usuários (Atores) e o sistema (Casos de Uso).
+---
 
-- **Ator (Boneco palito)**: Quem usa o sistema (ex: Cliente, Admin).
-- **Caso de Uso (Elipse)**: Uma funcionalidade (ex: "Fazer Login", "Comprar Produto").
-- **Linha**: Conecta quem faz o quê.
+### 3. Diagrama de Caso de Uso
+Foca no **"O que"** o sistema faz e **"Quem"** interage com ele.
 
-*Exemplo*: Um boneco "Cliente" ligado a uma elipse "Realizar Pedido".
+!!! tip "Elementos Básicos"
+    - **Atores**: Bonecos palito representam usuários ou sistemas externos.
+    - **Casos de Uso**: Elipses representam as funcionalidades.
 
-### 4. Diagrama de Classes (A Estrutura)
-Mostra a estrutura estática do sistema: as "coisas" que existem nele e seus relacionamentos.
+<div class="termy" markdown>
+```text
+$ # Fluxo de Caso de Uso: Comprar Produto
+$ # 1. Ator seleciona item
+$ # 2. Sistema valida estoque
+$ # 3. Sistema processa pagamento
+```
+</div>
 
-- **Classe (Retângulo)**: Representa um conceito (ex: `Carro`).
-- **Atributos**: O que a classe tem (ex: `cor`, `modelo`).
-- **Métodos**: O que a classe faz (ex: `acelerar()`, `frear()`).
+---
 
-*Exemplo*:
+### 4. Diagrama de Classes
+Mostra a estrutura estática do sistema (os dados e comportamentos).
+
 ```mermaid
 classDiagram
     class Pessoa {
@@ -47,15 +54,30 @@ classDiagram
     }
     Pessoa <|-- Aluno
 ```
-*(Nota: O diagrama acima mostra que Aluno é um tipo de Pessoa - Herança).*
+
+!!! warning "Sintaxe Mermaid"
+    Note que usamos `+String nome` em vez de `+nome: String` para garantir compatibilidade máxima com diferentes renderizadores.
 
 ---
+
+## 📝 Exercícios Progressivos
+
+1.  **[Básico]** O que significa a sigla UML?
+2.  **[Básico]** Qual a diferença entre um "Ator" e um "Usuário" em UML?
+3.  **[Intermediário]** No diagrama de classes, o que representa o símbolo `+` antes de um atributo?
+4.  **[Intermediário]** Desenhe (em papel) um pequeno Diagrama de Caso de Uso para um "Sistema de Caixa Eletrônico" (Saque, Consulta de Saldo).
+5.  **[Desafio]** No exemplo de Mermaid acima, o que significa a seta `<|--`? (Pesquise sobre Herança se necessário).
+
+---
+
+## 🚀 Mini-Projeto 05: Modelando o Mundo Real
+Crie um Diagrama de Classes simples para um "Sistema de E-commerce". Defina as classes `Produto`, `Cliente` e `Pedido`. Liste pelo menos 2 atributos e 1 método para cada uma.
 
 ---
 
 ## 📅 Atividades
 
-- [ ] **[Ver Slides da Aula](../slides/slide-05.html)**
-- [ ] **[Fazer Quiz](../quizzes/quiz-05.md)**
-- [ ] **[Praticar Exercícios](../exercicios/exercicio-05.md)**
-- [ ] **[Realizar Projeto](../projetos/projeto-05.md)**
+- [ ] :material-presentation: **[Ver Slides da Aula](../slides/slide-05.html)**
+- [ ] :material-school: **[Fazer Quiz](../quizzes/quiz-05.md)**
+- [ ] :material-dumbbell: **[Praticar Exercícios](../exercicios/exercicio-05.md)**
+- [ ] :material-rocket: **[Realizar Projeto](../projetos/projeto-05.md)**

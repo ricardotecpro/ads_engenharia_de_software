@@ -1,38 +1,73 @@
 # Aula 12 – Segurança de Software
 
 ## 🎯 Objetivos de Aprendizagem
-- Entender que segurança deve ser pensada desde o início (Security by Design).
-- Conhecer a OWASP e os principais riscos.
-- Entender conceitos básicos: Autenticação vs. Autorização.
-- Aprender sobre injeção de código (SQL Injection).
+- Entender o conceito de Security by Design.
+- Conhecer a Tríade CIA (Confidencialidade, Integridade e Disponibilidade).
+- Diferenciar Autenticação de Autorização.
+- Conhecer os principais riscos da OWASP (Injeção).
 
 ## 📚 Conteúdo
 
-### 1. Inseguro por padrão?
-Muitos softwares nascem inseguros porque os devs pensam apenas na funcionalidade ("Tem que funcionar") e esquecem da segurança ("Tem que proteger").
-- **Security by Design**: Pensar em segurança na fase de Design, não só no final.
+### 1. Security by Design
+Muitos sistemas falham porque a segurança é pensada apenas no final. A engenharia moderna exige que a segurança faça parte do design inicial.
 
-### 2. A Tríade CIA
-Os 3 pilares da segurança da informação:
-- **C**onfidencialidade: Só quem deve ver, vê. (Senha, criptografia).
-- **I**ntegridade: O dado não foi alterado indevidamente. (Ninguém mudou o saldo do banco).
-- **D**isponibilidade (Availability): O sistema está no ar quando preciso.
-
-### 3. Autenticação vs. Autorização
-- **Autenticação**: Quem é você? (Login/Senha, Biometria).
-- **Autorização**: O que você pode fazer? (Admin pode apagar tudo, Usuário só vê seus dados).
-
-### 4. OWASP Top 10
-A OWASP (Open Web Application Security Project) lista as falhas mais comuns. A nº 1 clássica é a **Injection** (Injeção).
-- *Exemplo*: Um hacker escreve um comando de banco de dados no campo de login e o sistema executa, revelando senhas.
+!!! info "Mentalidade de Segurança"
+    Segurança não é um produto que você compra, é um processo que você constrói desde a primeira linha de código.
 
 ---
+
+### 2. A Tríade CIA (Confidencialidade, Integridade e Disponibilidade)
+Os 3 pilares fundamentais da segurança da informação:
+
+1.  **Confidencialidade**: Garante que o dado só seja visto por quem tem permissão.
+2.  **Integridade**: Garante que a informação não seja alterada indevidamente.
+3.  **Disponibilidade**: Garante que o sistema esteja acessível quando o usuário precisar.
+
+!!! tip "Dica Didática"
+    **C** (Segredo) :material-arrow-right: **I** (Verdade) :material-arrow-right: **A** (Acesso).
+
+---
+
+### 3. Autenticação vs. Autorização
+Termos que parecem iguais, mas têm papéis diferentes:
+
+-   **Autenticação**: "Quem é você?" (Login, Senha, Biometria).
+-   **Autorização**: "O que você pode fazer?" (O usuário pode ler, mas só o admin pode apagar).
+
+---
+
+### 4. Simulação de Segurança (TermynalJS)
+
+<div class="termy" markdown>
+```bash
+$ # Rodando Scanner de Vulnerabilidades
+$ security-audit ./projeto
+$ # [ALERT] Vulnerabilidade encontrada no campo de Busca!
+$ # Risco: SQL Injection (Injeção de Código)
+$ # Sugestão: Use consultas parametrizadas.
+```
+</div>
+
+---
+
+## 📝 Exercícios Progressivos
+
+1.  **[Básico]** O que significa a sigla CIA em segurança?
+2.  **[Básico]** Qual a diferença entre Autenticação e Autorização?
+3.  **[Intermediário]** Explique o conceito de "Security by Design".
+4.  **[Intermediário]** O que é um ataque de Injeção (SQL Injection)?
+5.  **[Desafio]** Imagine que um site de notícias sofreu um ataque e todas as notícias foram apagadas. Qual pilar da tríade CIA foi mais afetado? Justifique.
+
+---
+
+## 🚀 Mini-Projeto 12: O Checkup de Segurança
+Escolha um aplicativo bancário ou de e-commerce que você usa. Liste quais métodos de Autenticação (ex: senha, biometria, Token) ele utiliza para garantir a Confidencialidade dos seus dados.
 
 ---
 
 ## 📅 Atividades
 
-- [ ] **[Ver Slides da Aula](../slides/slide-12.html)**
-- [ ] **[Fazer Quiz](../quizzes/quiz-12.md)**
-- [ ] **[Praticar Exercícios](../exercicios/exercicio-12.md)**
-- [ ] **[Realizar Projeto](../projetos/projeto-12.md)**
+- [ ] :material-presentation: **[Ver Slides da Aula](../slides/slide-12.html)**
+- [ ] :material-school: **[Fazer Quiz](../quizzes/quiz-12.md)**
+- [ ] :material-dumbbell: **[Praticar Exercícios](../exercicios/exercicio-12.md)**
+- [ ] :material-rocket: **[Realizar Projeto](../projetos/projeto-12.md)**

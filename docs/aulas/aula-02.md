@@ -9,33 +9,78 @@
 ## 📚 Conteúdo
 
 ### 1. O Modelo Cascata (Waterfall)
-O modelo mais antigo e tradicional. Nele, cada fase do SDLC deve ser completada antes da próxima começar.
+O modelo tradicional e sequencial. Nele, cada fase do ciclo de vida deve ser finalizada antes da próxima começar.
 
-- **Fluxo**: Requisitos -> Design -> Código -> Testes -> Deploy.
-- **Características**: Rígido, documentação extensa.
-- **Problema**: Se o cliente mudar de ideia na fase de testes, voltar para mudar os requisitos é muito caro e difícil. É como construir um prédio: difícil mudar a fundação depois que o teto está pronto.
+!!! info "Definição"
+    O Cascata é um modelo linear onde as etapas fluem para baixo, como uma queda d'água.
 
-### 2. O Modelo V (V-Model)
-Uma evolução do Cascata que enfatiza os testes. Para cada fase de desenvolvimento (verifique o lado esquerdo do V), existe uma fase de teste correspondente (lado direito do V).
-
-### 3. O Manifesto Ágil (2001)
-Devido à rigidez do Cascata, um grupo de desenvolvedores propôs uma nova forma de trabalhar, valorizando:
-- **Indivíduos e interações** mais que processos e ferramentas.
-- **Software em funcionamento** mais que documentação abrangente.
-- **Colaboração com o cliente** mais que negociação de contratos.
-- **Responder a mudanças** mais que seguir um plano.
-
-### 4. Abordagem Ágil vs. Tradicional
-- **Tradicional (Cascata)**: Planeja tudo no início (Big Design Up Front). Entrega o software só no final.
-- **Ágil**: Planeja em ciclos curtos (Sprints). Entrega partes do software funcionando frequentemente (Incremental e Iterativo).
+-   **Fluxo**: Requisitos :material-arrow-right: Design :material-arrow-right: Código :material-arrow-right: Testes :material-arrow-right: Deploy.
+-   **Vantagem**: Fácil de gerenciar e entender o progresso.
+-   **Problema**: Rígido. Mudar requisitos no meio do projeto é extremamente caro.
 
 ---
+
+### 2. O Modelo V (V-Model)
+Uma evolução do Cascata que coloca o foco na **Verificação e Validação**.
+
+```mermaid
+graph TD
+    A["Requisitos"] --- B["Testes de Aceitação"]
+    C["Arquitetura"] --- D["Testes de Sistema"]
+    E["Design Detalhado"] --- F["Testes de Integração"]
+    G["Codificação"] --- H["Testes Unitários"]
+    
+    A --> C --> E --> G --> H --> F --> D --> B
+```
+
+!!! warning "Atenção"
+    No Modelo V, para cada fase de construção, existe um plano de teste correspondente desde o início.
+
+---
+
+### 3. O Manifesto Ágil
+Devido à frustração com projetos lentos e burocráticos, surgiu o movimento Ágil.
+
+!!! tip "Os 4 Pilares"
+    1.  **Pessoas e Interações** > Processos e Ferramentas.
+    2.  **Software Funcional** > Documentação Extensa.
+    3.  **Colaboração com o Cliente** > Negociação de Contratos.
+    4.  **Responder a mudanças** > Seguir um plano fixo.
+
+---
+
+### 4. Demonstração de Agilidade (TermynalJS)
+
+<div class="termy" markdown>
+```bash
+$ # Ciclo Ágil: Feedback Rápido
+$ npm start --dev
+$ # Alteração detectada... Reloading!
+$ # Teste automatizado concluído: 100% OK
+$ git commit -m "feat: entrega incremental da sprint 1"
+```
+</div>
+
+---
+
+## 📝 Exercícios Progressivos
+
+1.  **[Básico]** Por que o modelo Cascata é chamado de "sequencial"?
+2.  **[Básico]** Liste os 4 valores principais do Manifesto Ágil.
+3.  **[Intermediário]** Qual a principal diferença entre o Modelo Cascata e o Modelo V?
+4.  **[Intermediário]** Em qual cenário o Modelo Cascata ainda pode ser útil hoje em dia?
+5.  **[Desafio]** Como a "Lei de Murphy" se aplica a projetos que utilizam apenas o modelo Cascata?
+
+---
+
+## 🚀 Mini-Projeto 02: O Comparativo
+Crie uma tabela comparando "Construir uma Ponte" com "Construir um Aplicativo de Entregas". Qual desses projetos combina melhor com Cascata e qual combina melhor com Agile? Justifique.
 
 ---
 
 ## 📅 Atividades
 
-- [ ] **[Ver Slides da Aula](../slides/slide-02.html)**
-- [ ] **[Fazer Quiz](../quizzes/quiz-02.md)**
-- [ ] **[Praticar Exercícios](../exercicios/exercicio-02.md)**
-- [ ] **[Realizar Projeto](../projetos/projeto-02.md)**
+- [ ] :material-presentation: **[Ver Slides da Aula](../slides/slide-02.html)**
+- [ ] :material-school: **[Fazer Quiz](../quizzes/quiz-02.md)**
+- [ ] :material-dumbbell: **[Praticar Exercícios](../exercicios/exercicio-02.md)**
+- [ ] :material-rocket: **[Realizar Projeto](../projetos/projeto-02.md)**
