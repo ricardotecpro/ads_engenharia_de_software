@@ -2,13 +2,15 @@ site_name: Engenharia de Software para Iniciantes
 site_url: https://ricardotecpro.github.io/ads_engenharia_de_software
 repo_url: https://github.com/ricardotecpro/ads_engenharia_de_software
 repo_name: ricardotecpro/ads_engenharia_de_software
+site_description: Curso completo de Engenharia de Software para Iniciantes - Fundamentos, Metodologias e Práticas.
 theme:
   name: material
   language: pt-BR
-  favicon: assets/images/python-logo-notext.svg
-  logo: assets/images/python-logo-notext.svg
+  favicon: assets/images/favicon.png
+  logo: material/book-open-page-variant
   custom_dir: overrides
   features:
+    - navigation.sections
     - navigation.tracking
     - navigation.tabs
     - navigation.expand
@@ -65,6 +67,8 @@ markdown_extensions:
   - attr_list
   - md_in_html
   - tables
+  - pymdownx.arithmetic:
+      content_type: "math/tex"
   - pymdownx.snippets:
       base_path: docs
 
@@ -116,9 +120,11 @@ extra_css:
 
 extra_javascript:
   - assets/js/quiz.js
-  - https://unpkg.com/mermaid@10.9.1/dist/mermaid.min.js
+  - https://unpkg.com/mermaid@11.12.3/dist/mermaid.min.js
   - assets/js/mermaid-init.js
   - assets/js/custom_termynal.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 extra:
   social:

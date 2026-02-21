@@ -62,7 +62,7 @@ Este curso foi desenvolvido para te introduzir ao mundo da Engenharia de Softwar
     
     ---
     
-    Guias de instalação e configuração do ambiente Python.
+    Guias de instalação e configuração do ambiente de desenvolvimento.
     
     [:octicons-arrow-right-24: Configurar ambiente](setups/index.md)
 

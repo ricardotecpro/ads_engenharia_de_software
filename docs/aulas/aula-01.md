@@ -14,13 +14,30 @@ Engenharia de Software é a aplicação de uma abordagem sistemática, disciplin
 - **Prazo e Custo**: O projeto será entregue no tempo e orçamento previstos?
 - **Manutenibilidade**: O código pode ser entendido e alterado por outras pessoas no futuro?
 
+#### Métrica de Exemplo (Estimativa de Esforço):
+No modelo COCOMO básico, o esforço $E$ em pessoas-mês é calculado como:
+$$ E = a \cdot (KLOC)^b $$
+Onde $KLOC$ é a quantidade de linhas de código em milhares.
+
 > "Software Engineering is programming integrated over time." — Titus Winters (Google)
 
 ### 2. A Crise do Software e a Necessidade de Processos
 Historicamente, muitos projetos de software falhavam (estouravam prazos, orçamentos ou não funcionavam). Isso levou à **Crise do Software**, que impulsionou a criação de métodos para organizar o trabalho.
 
 ### 3. O Ciclo de Vida de Desenvolvimento de Software (SDLC)
-O SDLC (Software Development Life Cycle) é a estrutura que define as etapas envolvidas na criação de um software. As fases clássicas são:
+O SDLC (Software Development Life Cycle) é a estrutura que define as etapas envolvidas na criação de um software.
+
+```mermaid
+graph TD
+    A[Levantamento de Requisitos] --> B[Análise e Design]
+    B --> C[Implementação]
+    C --> D[Testes]
+    D --> E[Implantação]
+    E --> F[Manutenção]
+    F --> A
+```
+
+As fases clássicas são:
 
 1.  **Levantamento de Requisitos**: Entender O QUE deve ser construído (ex: "O usuário precisa fazer login").
 2.  **Análise e Design**: Planejar COMO será construído (ex: "Usaremos um banco de dados SQL e uma interface web").

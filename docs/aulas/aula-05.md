@@ -36,16 +36,16 @@ Mostra a estrutura estática do sistema: as "coisas" que existem nele e seus rel
 *Exemplo*:
 ```mermaid
 classDiagram
-    Pessoa <|-- Aluno
     class Pessoa {
-        +nome: string
-        +idade: int
+        +String nome
+        +int idade
         +andar()
     }
     class Aluno {
-        +matricula: int
+        +int matricula
         +estudar()
     }
+    Pessoa <|-- Aluno
 ```
 *(Nota: O diagrama acima mostra que Aluno é um tipo de Pessoa - Herança).*
 

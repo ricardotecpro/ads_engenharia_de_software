@@ -50,7 +50,7 @@ def refactor_lesson(lesson_path: pathlib.Path):
 
     # 1. Slides
     if slides_content:
-        slide_path = pathlib.Path(f"docs/slides/.src/slide-{lesson_num}.md")
+        slide_path = pathlib.Path(f"docs/slides/src/slide-{lesson_num}.md")
         slide_path.parent.mkdir(parents=True, exist_ok=True)
         # Wrap content in a basic slide structure if it's just a list
         formatted_slides = f"# Slide {lesson_num}\n\n{slides_content}"
@@ -59,7 +59,7 @@ def refactor_lesson(lesson_path: pathlib.Path):
 
     # 2. Quizzes
     if quiz_content:
-        quiz_path = pathlib.Path(f"docs/quizzes/.src/quiz-{lesson_num}.md")
+        quiz_path = pathlib.Path(f"docs/quizzes/src/quiz-{lesson_num}.md")
         quiz_path.parent.mkdir(parents=True, exist_ok=True)
         formatted_quiz = f"# Quiz {lesson_num}\n\n{quiz_content}"
         quiz_path.write_text(formatted_quiz, encoding='utf-8')

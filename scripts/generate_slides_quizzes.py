@@ -1,4 +1,4 @@
-"""
+﻿"""
 Script para gerar automaticamente todos os slides HTML e quizzes interativos
 Baseado nos formatos antigos que funcionavam
 """
@@ -102,10 +102,10 @@ def clean_slide_markdown(md_path: pathlib.Path) -> None:
 def generate_all_slides():
     """Gera arquivos HTML para todos os 16 slides"""
     slides_dst_dir = pathlib.Path('docs/slides')
-    slides_src_dir = slides_dst_dir / '.src'
+    slides_src_dir = slides_dst_dir / 'src'
     
     if not slides_src_dir.exists():
-        print("[yellow]⚠ Pasta docs/slides/.src/ não encontrada.[/yellow]")
+        print("[yellow]⚠ Pasta docs/slides/src/ não encontrada.[/yellow]")
         return
     
     print("\n[bold cyan]📊 Gerando Slides HTML...[/bold cyan]")
@@ -133,6 +133,11 @@ def generate_all_slides():
                     lines = content.split('\n')
                     cleaned_lines = [line for line in lines if not line.strip().startswith('<!-- _class:')]
                     content = '\n'.join(cleaned_lines)
+            
+            # 2.5 Converter atalhos de fragmentos { .fragment } para sintaxe Reveal.js
+            # Exemplo: - Item { .fragment } -> - Item <!-- .element: class="fragment" -->
+            content = content.replace('{ .fragment }', '<!-- .element: class="fragment" -->')
+            content = content.replace('{.fragment}', '<!-- .element: class="fragment" -->')
             
             # 3. Escrever Markdown runtime em docs/slides/
             dst_md_path.write_text(content, encoding='utf-8')
