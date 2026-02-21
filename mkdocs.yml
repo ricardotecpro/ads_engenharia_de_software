@@ -6,8 +6,8 @@ site_description: Curso completo de Engenharia de Software para Iniciantes - Fun
 theme:
   name: material
   language: pt-BR
-  favicon: assets/images/favicon.png
-  logo: material/book-open-page-variant
+  favicon: assets/images/logo.png
+  logo: assets/images/logo.png
   custom_dir: overrides
   features:
     - navigation.sections
