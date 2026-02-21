@@ -90,6 +90,7 @@
     border: 2px solid var(--quiz-border);
     border-radius: 50%;
     transition: all 0.2s ease;
+    flex-shrink: 0;
 }
 
 .quiz-option.selected::before {
