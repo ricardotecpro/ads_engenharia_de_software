@@ -1,7 +1,7 @@
 site_name: Engenharia de Software para Iniciantes
-site_url: https://ricardotecpro.github.io/ads_engenharia_de_software
-repo_url: https://github.com/ricardotecpro/ads_engenharia_de_software
-repo_name: ricardotecpro/ads_engenharia_de_software
+site_url: https://ricardotecpro.github.io/ads_mod_14_engenharia_de_software
+repo_url: https://github.com/ricardotecpro/ads_mod_14_engenharia_de_software
+repo_name: ricardotecpro/ads_mod_14_engenharia_de_software
 site_description: Curso completo de Engenharia de Software para Iniciantes - Fundamentos, Metodologias e Práticas.
 theme:
   name: material
